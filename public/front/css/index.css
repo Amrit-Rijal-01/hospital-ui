@@ -1,0 +1,33 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar .logo {
+  height: 100px;
+  width: auto;
+}
+.navbar .navbar-nav .nav-item .nav-link::after {
+  display: none;
+}
+.navbar .feedback-contact .feedback-btn {
+  font-weight: 700;
+  display: flex;
+  padding: 10px 18px;
+  border-radius: 40px;
+  border: 1px solid #f04e30;
+  color: #58595B;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.navbar .bi-chevron-down {
+  height: 15px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    color: red;
+  }
+}/*# sourceMappingURL=index.css.map */
