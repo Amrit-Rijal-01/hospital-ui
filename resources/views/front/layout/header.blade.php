@@ -4,7 +4,7 @@
         <div class="">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">
                         Locations <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul class="dropdown-menu">
@@ -88,6 +88,10 @@
         <div class="feedback-contact d-flex">
             <a href="#" class="feedback-btn nav-link">
                 <img src="{{ asset('front/img/message-icon.png') }}" alt="Feedback">
+            </a>
+            <a href="#" class="call-back nav-link">
+                <img src="{{ asset('front/img/phone-icon.png') }}" alt="Call Back" class="call-back-image me-1">
+                <small>Request Call Back</small>
             </a>
 
         </div>
