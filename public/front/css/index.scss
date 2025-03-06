@@ -4,7 +4,15 @@
 @import './variables';
 
 body {
+    color: #58595B;
     font-family: var(--font-main);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @import './navbar/main';
+
+@import './home/main';
