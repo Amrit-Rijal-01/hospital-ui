@@ -19,11 +19,17 @@
 body {
   color: #58595B;
   font-family: var(--font-main);
+  min-height: 200vh;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main-container {
+  width: 95%;
+  margin: auto;
 }
 
 .navbar .logo {
@@ -84,14 +90,26 @@ a {
     color: red;
   }
 }
-.search-wrapper {
+.top-banner {
   position: relative;
+}
+.top-banner .search-wrapper {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 28px 28px;
+  padding: 4px 15px 15px;
+  background-color: #fff;
   width: 540px;
   max-width: 100%;
   margin: auto;
 }
-
-.search-field .search-box {
+.top-banner .search-field {
+  position: relative;
+}
+.top-banner .search-field .search-box {
   font-weight: 700;
   border: 1px solid var(--primary);
   outline: 0;
@@ -103,7 +121,7 @@ a {
   background-color: var(--color-main);
   color: #fff;
 }
-.search-field .search-icon {
+.top-banner .search-field .search-icon {
   background-color: #fff;
   text-align: center;
   border: 0;
@@ -111,20 +129,26 @@ a {
   height: 38px;
   border-radius: 50%;
   position: absolute;
-  right: 17px;
+  right: 7px;
   top: 5px;
   cursor: pointer;
 }
-
-.floating-banner {
+.top-banner .floating-tab {
   background-color: #f0f0f0;
   display: flex;
   box-shadow: 0 0 20px #f0f0f0;
   border-radius: 15px;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: -45px;
+  transform: translate(-50%, 0);
+  width: calc(90% - 40px);
+  z-index: 99;
+  overflow: hidden;
 }
-.floating-banner a {
+.top-banner .floating-tab a {
   border-right: 1px solid rgba(0, 0, 0, 0.08);
   padding: 10px 25px;
   display: flex;
@@ -136,17 +160,35 @@ a {
   justify-content: center;
   min-height: 80px;
 }
-.floating-banner a img {
+.top-banner .floating-tab a img {
   height: 35px;
   width: auto;
 }
-.floating-banner a:hover {
+.top-banner .floating-tab a:hover {
   background-color: var(--color-light-2);
   color: #fff;
 }
-.floating-banner .left-hover {
+.top-banner .floating-tab .left-hover {
   border-radius: 15px 0 0 15px;
 }
-.floating-banner .right-hover {
+.top-banner .floating-tab .right-hover {
   border-radius: 0 15px 15px 0;
+}
+
+.mobile-sticky-link {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.mobile-sticky-link ul li {
+  list-style: none;
+}
+.mobile-sticky-link ul li a {
+  text-align: center;
+}
+.mobile-sticky-link ul li img {
+  height: 35px;
+  width: 35px;
 }/*# sourceMappingURL=index.css.map */

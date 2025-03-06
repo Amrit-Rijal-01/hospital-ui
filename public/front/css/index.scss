@@ -6,6 +6,7 @@
 body {
     color: #58595B;
     font-family: var(--font-main);
+    min-height: 200vh;
 }
 
 a {
@@ -13,6 +14,13 @@ a {
     color: inherit;
 }
 
-@import './navbar/main';
+.main-container {
+    width: 95%;
+    margin: auto;
+}
+
+@import './header/main';
 
 @import './home/main';
+
+@import './footer/main';

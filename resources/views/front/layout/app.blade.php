@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="app" class="px-5">
+    <div id="app">
         @include('front.layout.header')
         <main>
             @yield('content')

@@ -1,0 +1,20 @@
+.mobile-sticky-link {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+
+    ul {
+        li {
+            list-style: none;
+            a {
+                text-align: center;
+            }
+            img {
+                height: 35px;
+                width: 35px;
+            }
+        }
+    }
+}
