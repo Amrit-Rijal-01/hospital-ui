@@ -175,6 +175,30 @@ a {
   border-radius: 0 15px 15px 0;
 }
 
+.specialities .main-container .specialities-inner .sp-inner-care {
+  flex-grow: 2;
+}
+.specialities .main-container .specialities-inner .sp-inner-care .sp-wrapper {
+  padding: 5px;
+}
+.specialities .main-container .specialities-inner .sp-inner-care .sp-wrapper a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.specialities .main-container .specialities-inner .sp-inner-care .sp-wrapper a img {
+  height: 35px;
+  width: 35px;
+  margin-right: 1rem;
+}
+.specialities .main-container .specialities-inner .sp-inner-care .sp-wrapper a:hover {
+  color: var(--color-light-2);
+}
+.specialities .main-container .specialities-inner .sp-inner-search {
+  flex-grow: 3;
+}
+
 .mobile-sticky-link {
   position: fixed;
   bottom: 0;

@@ -61,14 +61,14 @@
         overflow: hidden;
 
         a {
-            border-right: 1px solid rgba(0, 0, 0, .08);
+            border-right: 1px solid rgba(0, 0, 0, 0.08);
             padding: 10px 25px;
             display: flex;
             align-items: center;
             flex: 1;
             font-size: 14px;
             font-weight: 600;
-            transition: .5s;
+            transition: 0.5s;
             justify-content: center;
             min-height: 80px;
 
@@ -81,7 +81,6 @@
                 background-color: var(--color-light-2);
                 color: #fff;
             }
-
         }
 
         .left-hover {
@@ -90,6 +89,41 @@
 
         .right-hover {
             border-radius: 0 15px 15px 0;
+        }
+    }
+}
+
+.specialities {
+    .main-container {
+        .specialities-inner {
+            .sp-inner-heading {
+                // flex-shrink: 1;
+            }
+            .sp-inner-care {
+                flex-grow: 2;
+                .sp-wrapper {
+                    padding: 5px;
+                    a {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px 0;
+
+                        img {
+                            height: 35px;
+                            width: 35px;
+                            margin-right: 1rem;
+                        }
+
+                        &:hover {
+                            color: var(--color-light-2);
+                        }
+                    }
+                }
+            }
+            .sp-inner-search {
+                flex-grow: 3;
+            }
         }
     }
 }

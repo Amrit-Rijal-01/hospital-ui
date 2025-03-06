@@ -88,7 +88,7 @@
             </div>
             <div class="feedback-contact d-flex">
                 <a href="#" class="feedback-btn nav-link">
-                    <img src="{{ asset('front/img/message-icon.png') }}" alt="Feedback">
+                    <img src="{{ asset('front/img/write-message.png') }}" alt="Feedback">
                 </a>
                 <a href="#" class="call-back nav-link">
                     <img src="{{ asset('front/img/phone-icon.png') }}" alt="Call Back" class="call-back-image me-1">

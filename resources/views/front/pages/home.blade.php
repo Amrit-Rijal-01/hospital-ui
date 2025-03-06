@@ -56,5 +56,78 @@
 
         </div>
     </div>
+
+    <section class="specialities">
+
+        <div class="pt-5 main-container">
+            <div class="specialities-inner pt-5 d-flex flex-column flex-xl-row gap-2">
+                <div class="sp-inner-heading p-3">
+                    <h4 class="sp-subheading">Specialities</h4>
+                    <h2 class="sp-heading">An Ecosystem for Clinical Excellence</h2>
+                </div>
+                <div class="sp-inner-care p-3 border-end">
+                    <div class="sp-wrapper">
+                        <a href="#">
+                            <div class="speciality-row">
+                                <img src="{{ asset('front/img/heart.svg') }}" alt="Heart">
+                                <span>
+                                    Cardiac Care
+                                </span>
+                            </div> <i class="bi bi-chevron-right"></i>
+                        </a> <hr>
+                        <a href="#">
+                            <div class="speciality-row">
+                                <img src="{{ asset('front/img/cancer.svg') }}" alt="Cancer">
+                                <span>
+                                    Cancer Care
+                                </span>
+                            </div> <i class="bi bi-chevron-right"></i>
+                        </a> <hr>
+                        <a href="#">
+                            <div class="speciality-row">
+                                <img src="{{ asset('front/img/neuro.svg') }}" alt="Neuro Science">
+                                <span>
+                                    Neuroscience
+                                </span>
+                            </div> <i class="bi bi-chevron-right"></i>
+                        </a> <hr>
+                        <a href="#">
+                            <div class="speciality-row">
+                                <img src="{{ asset('front/img/gastro.svg') }}" alt="Gastro Science">
+                                <span>
+                                    Gastro Science
+                                </span>
+                            </div> <i class="bi bi-chevron-right"></i>
+                        </a> <hr>
+                        <a href="#">
+                            <d class="speciality-row">
+                                <img src="{{ asset('front/img/ortho.svg') }}" alt="Orthopaedics">
+                                <span>
+                                    Orthopaedics
+                                </span>
+                            </d><i class="bi bi-chevron-right"></i>
+                        </a> <hr>
+                        <a href="#">
+                            <div class="speciality-row">
+                                <img src="{{ asset('front/img/renal.svg') }}" alt="Renal Care">
+                                <span>
+                                    Renal Care
+                                </span>
+                            </div>
+                            <i class="bi bi-chevron-right"></i>
+                        </a> <hr>
+                    </div>
+                    <div class="common-button">
+                        <a href="#" class="anchor-button">View All Specialities <span></span> </a>
+                    </div>
+                </div>
+                <div class="sp-inner-search p-3">
+                    <h4>Search By</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
 @endsection
 m
