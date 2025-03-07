@@ -10,7 +10,7 @@
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>@yield('title')</title>
-    @yield('css')
+    @stack('css')
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    @yield('js')
+    @stack('js')
 </body>
 
 </html>

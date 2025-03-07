@@ -19,8 +19,51 @@ a {
     margin: auto;
 }
 
+.active {
+    background-color: var(--color-main);
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+.anchor-right-btn {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 47%;
+        translate: -50% -50%;
+        height: 8px;
+        width: 8px;
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+        transform: rotate(45deg);
+        pointer-events: none;
+        border-radius: 1px;
+    }
+}
+
+// .anchor-down-btn {
+//     &::after {
+//         content: '';
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         translate: -50% -50%;
+//         height: 8px;
+//         width: 8px;
+//         border-top: 3px solid #fff;
+//         border-right: 3px solid #fff;
+//         transform: rotate(90deg);
+//         pointer-events: none;
+//         border-radius: 1px;
+//     }
+// }
+
+
 @import './header/main';
 
 @import './home/main';
+
+@import './components/main';
 
 @import './footer/main';

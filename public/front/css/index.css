@@ -13,6 +13,7 @@
   --color-light-4: #f69583;
   --color-light-5: #f8a798;
   --color-grey: #58595B;
+  --secondary-white: #f6f6f6;
   --font-main: "Montserrat", sans-serif;
 }
 
@@ -30,6 +31,27 @@ a {
 .main-container {
   width: 95%;
   margin: auto;
+}
+
+.active {
+  background-color: var(--color-main);
+  color: #fff !important;
+  border-radius: 5px;
+}
+
+.anchor-right-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  translate: -50% -50%;
+  height: 8px;
+  width: 8px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+  pointer-events: none;
+  border-radius: 1px;
 }
 
 .navbar .logo {
@@ -175,8 +197,14 @@ a {
   border-radius: 0 15px 15px 0;
 }
 
+.specialities {
+  background-color: var(--secondary-white);
+}
+.specialities .main-container .specialities-inner .sp-inner-heading {
+  flex: 4;
+}
 .specialities .main-container .specialities-inner .sp-inner-care {
-  flex-grow: 2;
+  flex: 4;
 }
 .specialities .main-container .specialities-inner .sp-inner-care .sp-wrapper {
   padding: 5px;
@@ -196,7 +224,80 @@ a {
   color: var(--color-light-2);
 }
 .specialities .main-container .specialities-inner .sp-inner-search {
-  flex-grow: 3;
+  flex: 5;
+}
+.specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-by a {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid var(--color-grey);
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px;
+  transition: 0.5s;
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-by a:hover {
+  background-color: var(--color-light-2);
+  color: #fff;
+}
+.specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-letter {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+.specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-letter .letter-wrap {
+  position: relative;
+  width: 16.66%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-letter .letter-wrap a {
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+}
+.specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-letter .letter-wrap a span {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 22px #ddd;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: 0.2s;
+}
+.specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-letter .letter-wrap a span:hover {
+  color: #fff;
+  background-color: var(--color-light-2);
+}
+
+.hover-btn-link {
+  transition: gap 0.2s ease-out, color 0.2s ease-out;
+  gap: 0.5rem;
+}
+.hover-btn-link:hover {
+  gap: 0.8rem;
+  color: var(--color-light-2);
+}
+.hover-btn-link .orange-right {
+  background-color: var(--color-main);
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
 }
 
 .mobile-sticky-link {

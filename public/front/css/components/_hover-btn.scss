@@ -1,0 +1,17 @@
+.hover-btn-link {
+        transition: gap 0.2s ease-out, color 0.2s ease-out;
+        gap: 0.5rem;
+        &:hover {
+            gap: 0.8rem;
+            color: var(--color-light-2);
+        }
+    .orange-right {
+        background-color: var(--color-main);
+        color: #fff;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+}

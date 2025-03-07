@@ -5,7 +5,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             Locations <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu">

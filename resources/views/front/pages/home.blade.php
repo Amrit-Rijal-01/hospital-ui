@@ -65,7 +65,7 @@
                     <h4 class="sp-subheading">Specialities</h4>
                     <h2 class="sp-heading">An Ecosystem for Clinical Excellence</h2>
                 </div>
-                <div class="sp-inner-care p-3 border-end">
+                <div class="sp-inner-care p-3 border-end fw-bold">
                     <div class="sp-wrapper">
                         <a href="#">
                             <div class="speciality-row">
@@ -74,7 +74,8 @@
                                     Cardiac Care
                                 </span>
                             </div> <i class="bi bi-chevron-right"></i>
-                        </a> <hr>
+                        </a>
+                        <hr>
                         <a href="#">
                             <div class="speciality-row">
                                 <img src="{{ asset('front/img/cancer.svg') }}" alt="Cancer">
@@ -82,7 +83,8 @@
                                     Cancer Care
                                 </span>
                             </div> <i class="bi bi-chevron-right"></i>
-                        </a> <hr>
+                        </a>
+                        <hr>
                         <a href="#">
                             <div class="speciality-row">
                                 <img src="{{ asset('front/img/neuro.svg') }}" alt="Neuro Science">
@@ -90,7 +92,8 @@
                                     Neuroscience
                                 </span>
                             </div> <i class="bi bi-chevron-right"></i>
-                        </a> <hr>
+                        </a>
+                        <hr>
                         <a href="#">
                             <div class="speciality-row">
                                 <img src="{{ asset('front/img/gastro.svg') }}" alt="Gastro Science">
@@ -98,7 +101,8 @@
                                     Gastro Science
                                 </span>
                             </div> <i class="bi bi-chevron-right"></i>
-                        </a> <hr>
+                        </a>
+                        <hr>
                         <a href="#">
                             <d class="speciality-row">
                                 <img src="{{ asset('front/img/ortho.svg') }}" alt="Orthopaedics">
@@ -106,7 +110,8 @@
                                     Orthopaedics
                                 </span>
                             </d><i class="bi bi-chevron-right"></i>
-                        </a> <hr>
+                        </a>
+                        <hr>
                         <a href="#">
                             <div class="speciality-row">
                                 <img src="{{ asset('front/img/renal.svg') }}" alt="Renal Care">
@@ -115,14 +120,108 @@
                                 </span>
                             </div>
                             <i class="bi bi-chevron-right"></i>
-                        </a> <hr>
+                        </a>
+                        <hr>
                     </div>
-                    <div class="common-button">
-                        <a href="#" class="anchor-button">View All Specialities <span></span> </a>
+                    <div class="hover-button">
+                        <x-hoverBtn href="https://www.google.com" target="_blank">
+                            View All Specialities
+                        </x-hoverBtn>
                     </div>
                 </div>
                 <div class="sp-inner-search p-3">
-                    <h4>Search By</h4>
+                    <div class="sp-wrapper">
+                        <h4 class="sp-subheading">Search By</h4>
+                        <div class="sp-search-by">
+                            <a href="#" class="">Ailments</a>
+                            <a href="#" class="">Treatments</a>
+                            <a href="#" class="">Technologies</a>
+                        </div>
+                        <div class="sp-search-letter">
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">a</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">b</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">c</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">d</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">e</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">f</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">g</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">h</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">i</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">j</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">k</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">l</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">m</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">n</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">o</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">p</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">q</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">r</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">s</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#"
+                                    class=""><span class="">t</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">u</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">v</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">w</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">x</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">y</span></a>
+                            </div>
+                            <div class="letter-wrap"><a href="#" class=""><span
+                                        class="">z</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-button">
+                        <x-hoverBtn href="#">View All Technologies</x-hoverBtn>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -130,4 +229,3 @@
 
     </section>
 @endsection
-m
