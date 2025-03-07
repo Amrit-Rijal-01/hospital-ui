@@ -19,10 +19,14 @@ a {
     margin: auto;
 }
 
-.active {
+.active-link {
     background-color: var(--color-main);
     color: #fff !important;
     border-radius: 5px;
+}
+
+.active {
+    display: block;
 }
 
 .anchor-right-btn {

@@ -1,6 +1,6 @@
 @props(['href' => '#', 'target' => '_self'])
 
-<a href="{{ url($href) }}" class="hover-btn-link d-flex align-items-center" target="{{ $target }}">
+<a href="{{ url($href) }}" class="hover-btn-link d-inline-flex align-items-center" target="{{ $target }}">
     <div class="hover-btn">
         {{ $slot }}
     </div>

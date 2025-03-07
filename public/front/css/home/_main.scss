@@ -62,7 +62,7 @@
 
         a {
             border-right: 1px solid rgba(0, 0, 0, 0.08);
-            padding: 10px 25px;
+            padding: 10px 15px;
             display: flex;
             align-items: center;
             flex: 1;
@@ -133,8 +133,6 @@
                 .sp-wrapper {
                     .sp-search-by {
                         a {
-                            display: inline-block;
-                            width: 30%;
                             border: 1px solid var(--color-grey);
                             border-radius: 40px;
                             text-align: center;
@@ -193,6 +191,47 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team-section {
+    .main-container {
+        .meet-doc-content {
+            .find-doc {
+                .find-doc-form {
+                    .select-wrap {
+                        .default-location-item {
+                            background-color: var(--color-main);
+                            color: #fff;
+                            border: none;
+                            border-radius: 50px;
+                            padding: 10px 30px 10px 15px;
+                            cursor: pointer;
+                        }
+                        .default-speciality-item {
+                            border: 1px solid #000;
+                            border-radius: 50px;
+                            padding: 10px 30px 10px 15px;
+                            cursor: pointer;
+                        }
+
+                        .find-doc-list {
+                            display: none;
+                            border-bottom: 1px solid var(--color-grey);
+                            padding: 10px 30px 10px 15px;
+                            border-radius: 50px;
+                            width: 100%;
+                        }
+
+                        .find-doc-btn {
+                            border-radius: 50%;
+                            height: 100%;
+                            width: auto;
                         }
                     }
                 }

@@ -1,6 +1,6 @@
-<div class="mobile-sticky-link main-container d-xl-none">
+<div class="mobile-sticky-link d-xl-none">
 
-    <ul class="d-flex justify-content-between p-0">
+    <ul class="d-flex justify-content-between py-2 main-container">
         <li>
             <a class="toggle-menu" href="#">
                 <div class="icon open-icon">
