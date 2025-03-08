@@ -12,6 +12,10 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    transition: .2s ease-in-out;
+    &:hover {
+        color: var(--color-light-1);
+    }
 }
 
 .main-container {
@@ -62,6 +66,22 @@ a {
 //         border-radius: 1px;
 //     }
 // }
+.anchor-down-btn {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        height: 8px;
+        width: 8px;
+        border-right: 3px solid #000;
+        border-bottom: 3px solid #000;
+        transform: rotate(45deg);
+        pointer-events: none;
+        border-radius: 1px;
+    }
+}
 
 
 @import './header/main';
@@ -71,3 +91,5 @@ a {
 @import './components/main';
 
 @import './footer/main';
+
+@import './home/mobile-nav/main';

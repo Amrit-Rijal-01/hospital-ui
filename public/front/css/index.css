@@ -26,6 +26,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.2s ease-in-out;
+}
+a:hover {
+  color: var(--color-light-1);
 }
 
 .main-container {
@@ -53,6 +57,21 @@ a {
   width: 8px;
   border-top: 3px solid #fff;
   border-right: 3px solid #fff;
+  transform: rotate(45deg);
+  pointer-events: none;
+  border-radius: 1px;
+}
+
+.anchor-down-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  height: 8px;
+  width: 8px;
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
   transform: rotate(45deg);
   pointer-events: none;
   border-radius: 1px;
@@ -329,20 +348,43 @@ a {
   position: relative;
 }
 
+footer {
+  padding-bottom: 90px;
+}
+footer .footer-top .main-container .footer-row .footer-block .block-title {
+  font-weight: bold;
+}
+footer .footer-top .main-container .footer-row .footer-block ul {
+  padding: 0;
+}
+footer .footer-top .main-container .footer-row .footer-block ul li {
+  list-style: none;
+  padding: 5px 0;
+  font-size: 12px;
+}
+footer .footer-bottom .copyright {
+  font-size: 12px;
+}
+
 .mobile-sticky-link {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 999;
   background-color: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.14);
+  border-radius: 12px 12px 0 0;
 }
 .mobile-sticky-link ul li {
   list-style: none;
+  padding: 15px 10px;
 }
 .mobile-sticky-link ul li a {
   text-align: center;
+  font-size: 12px;
 }
-.mobile-sticky-link ul li img {
-  height: 35px;
-  width: 35px;
+.mobile-sticky-link ul li a img {
+  height: auto;
+  max-width: 25px;
 }/*# sourceMappingURL=index.css.map */
