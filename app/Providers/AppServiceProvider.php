@@ -21,5 +21,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Blade::component('front.components.button.hover-btn', 'hoverBtn');
+        Blade::component('front.components.svg.down', 'down');
     }
 }
