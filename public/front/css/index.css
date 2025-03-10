@@ -822,6 +822,52 @@ a:hover {
   font-weight: 600;
 }
 
+.services {
+  padding: 50px 0;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--color-dark-grey);
+  background-color: var(--secondary-white);
+}
+.services .main-container .service-slider {
+  padding: 18px 0;
+}
+.services .main-container .service-slider .slick-prev {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.services .main-container .service-slider .slick-next {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.services .main-container .service-slider .slide {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
+  margin: 20px;
+}
+
 .hover-btn-link {
   transition: 0.2s ease-out;
   gap: 0.5rem;
@@ -837,6 +883,54 @@ a:hover {
   width: 30px;
   border-radius: 50%;
   position: relative;
+}
+
+.main-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.main-card .body {
+  padding: 50px;
+  cursor: pointer;
+}
+@media (max-width: 1299px) {
+  .main-card .body {
+    padding: 30px;
+  }
+}
+.main-card .body .heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-dark-grey);
+  text-align: left;
+}
+@media (max-width: 992px) {
+  .main-card .body .heading {
+    font-size: 16px;
+  }
+}
+.main-card .body .content {
+  font-size: 18px;
+  width: 70%;
+  font-weight: 500;
+  text-align: left;
+  color: var(--color-grey);
+  margin: 14px 0;
+}
+@media (max-width: 992px) {
+  .main-card .body .content {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+.main-card .body .know-btn {
+  font-size: 12px;
+  font-weight: 600;
+}
+.main-card .body .service-logo {
+  width: 52px;
+  height: 52px;
 }
 
 footer {

@@ -22,5 +22,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Blade::component('front.components.button.hover-btn', 'hoverBtn');
         Blade::component('front.components.svg.down', 'down');
+        Blade::component('front.components.card', 'card');
     }
 }
