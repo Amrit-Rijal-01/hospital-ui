@@ -14,6 +14,7 @@
   --color-light-4: #f69583;
   --color-light-5: #f8a798;
   --color-black: #000;
+  --color-white: #fff;
   --color-grey: #58595B;
   --color-dark-grey: #454545;
   --secondary-white: #f6f6f6;
@@ -866,6 +867,121 @@ a:hover {
   background-color: #fff;
   box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
   margin: 20px;
+}
+
+.story {
+  padding: 50px 0;
+}
+.story .main-container .heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--color-dark-grey);
+}
+@media (max-width: 1199px) {
+  .story .main-container .videos {
+    padding-top: 50px;
+  }
+}
+.story .main-container .videos .video-wrapper {
+  position: relative;
+}
+.story .main-container .videos .video-wrapper .slick-prev {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.story .main-container .videos .video-wrapper .slick-next {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.story .main-container .videos .video-wrapper .video {
+  position: relative;
+  padding-bottom: 24px;
+}
+.story .main-container .videos .video-wrapper .video:hover img {
+  scale: 1.1;
+}
+@media (max-width: 1199px) {
+  .story .main-container .videos .video-wrapper .video {
+    margin: 0 20px;
+  }
+}
+.story .main-container .videos .video-wrapper .video .video-thumb {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  line-height: 0;
+  height: 100%;
+}
+.story .main-container .videos .video-wrapper .video .video-thumb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.story .main-container .videos .video-wrapper .video .video-thumb a {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 55;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+.story .main-container .videos .video-wrapper .video .video-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  z-index: 5;
+}
+.story .main-container .videos .video-wrapper .video .video-caption .title {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+@media (min-width: 1199px) {
+  .story .main-container .videos .video-wrapper .video .video-caption .title {
+    font-size: 20px;
+  }
+}
+.story .main-container .videos .video-wrapper .video .video-caption .name {
+  font-size: 11px;
+  font-weight: 500;
+}
+@media (min-width: 1199px) {
+  .story .main-container .videos .video-wrapper .video .video-caption .name {
+    font-size: 16px;
+  }
 }
 
 .hover-btn-link {

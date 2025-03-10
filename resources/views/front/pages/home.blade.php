@@ -12,4 +12,6 @@
     @include('front.includes.home.why-this')
 
     @include('front.includes.home.services')
+
+    @include('front.includes.home.story')
 @endsection
