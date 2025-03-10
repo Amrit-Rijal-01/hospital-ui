@@ -14,8 +14,10 @@
   --color-light-4: #f69583;
   --color-light-5: #f8a798;
   --color-grey: #58595B;
+  --color-dark-grey: #454545;
   --secondary-white: #f6f6f6;
   --border-color: #b7b7b7;
+  --border-color-light: #eee;
   --font-main: "Montserrat", sans-serif;
 }
 
@@ -542,6 +544,9 @@ a:hover {
   background-color: var(--color-light-2);
 }
 
+.team-section .main-container .meet-doc-content .meet-doc-title {
+  color: var(--color-dark-grey);
+}
 .team-section .main-container .meet-doc-content .find-doc .find-doc-form .select-wrap {
   width: 540px;
   max-width: 100%;
@@ -550,18 +555,19 @@ a:hover {
 }
 .team-section .main-container .meet-doc-content .find-doc .find-doc-form .select-wrap .find-doc-speciality-wrap {
   width: 50%;
-  box-shadow: 0 3px 40px rgba(0, 0, 0, 0.14);
+  position: relative;
 }
 .team-section .main-container .meet-doc-content .find-doc .find-doc-form .select-wrap .find-doc-speciality-wrap .default-speciality-wrap {
-  border: 1px solid #000;
   border-radius: 50px;
   padding: 10px 30px 10px 15px;
+  border: 1px solid #000;
   cursor: pointer;
+  position: relative;
   z-index: 100;
 }
 .team-section .main-container .meet-doc-content .find-doc .find-doc-form .select-wrap .find-doc-speciality-wrap .list-wrap {
   padding: 10px 0 20px;
-  padding-top: 41px;
+  padding-top: 50px;
   border-radius: 25px;
   background-color: #fff;
   display: none;
@@ -569,8 +575,9 @@ a:hover {
   overflow-y: auto;
   max-height: 240px;
   position: absolute;
-  top: 60%;
-  width: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
   box-shadow: 0 3px 40px rgba(0, 0, 0, 0.14);
   z-index: 99;
 }
@@ -582,7 +589,7 @@ a:hover {
 .team-section .main-container .meet-doc-content .find-doc .find-doc-form .select-wrap .find-doc-speciality-wrap .list-wrap .find-doc-list-speciality li {
   font-weight: 600;
   padding: 10px 20px;
-  border-bottom: var(--border-color);
+  border-bottom: 1px solid var(--border-color-light);
   font-size: 14px;
   cursor: pointer;
 }

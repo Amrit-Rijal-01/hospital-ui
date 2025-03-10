@@ -1,7 +1,7 @@
 <section class="team-section mt-5">
     <div class="main-container">
         <div class="meet-doc-content">
-            <h3 class="text-center fw-bold mb-4">Doctors, Pioneers, Life Savers</h3>
+            <h3 class="text-center fw-bold mb-4 meet-doc-title">Doctors, Pioneers, Life Savers</h3>
             <div class="text-center mb-5">
                 <p>
                     Our superspecialist doctors provide the highest quality of care through a team-based,
@@ -54,6 +54,7 @@
                 console.log('clicked');
                 if($('#list-wrap').css('display') == 'block') {
                     $('#list-wrap').css('display', 'none');
+                    return;
                 }
                 $('#list-wrap').css('display', 'block');
             });
@@ -64,7 +65,7 @@
 
                 $('#default-speciality-wrap span.default-speciality-item').text(selectedText);
                 $('#find-doc-location-input').val(selectedValue);
-                $('#find-doc-speciality').css('display', 'none');
+                $('#list-wrap').css('display', 'none');
             });
         });
     </script>
