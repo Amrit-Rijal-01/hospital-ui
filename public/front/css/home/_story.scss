@@ -134,3 +134,10 @@
         }
     }
 }
+.view-all {
+    font-size: 15px;
+    font-weight: 600;
+    @media (max-width:1199px) {
+        font-size: 13px;
+    }
+}

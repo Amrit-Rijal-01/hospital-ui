@@ -121,6 +121,9 @@
         </div>
     </div>
 </section>
+<div class="main-container text-center">
+    <x-hoverBtn href="#" class="view-all">View All Patients</x-hoverBtn>
+</div>
 
 @push('js')
     <script>

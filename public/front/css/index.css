@@ -984,13 +984,26 @@ a:hover {
   }
 }
 
+.view-all {
+  font-size: 15px;
+  font-weight: 600;
+}
+@media (max-width: 1199px) {
+  .view-all {
+    font-size: 13px;
+  }
+}
+
 .hover-btn-link {
   transition: 0.2s ease-out;
   gap: 0.5rem;
 }
 .hover-btn-link:hover {
-  gap: 0.8rem;
   color: var(--color-light-2);
+}
+.hover-btn-link:hover .orange-right {
+  transition: transform 0.2s ease-out;
+  transform: translateX(5px);
 }
 .hover-btn-link .orange-right {
   background-color: var(--color-main);
@@ -999,6 +1012,7 @@ a:hover {
   width: 30px;
   border-radius: 50%;
   position: relative;
+  transition: transform 0.2s ease-out;
 }
 
 .main-card img {
