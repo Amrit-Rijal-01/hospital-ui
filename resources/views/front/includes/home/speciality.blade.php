@@ -1,12 +1,12 @@
-<section class="specialities mb-4">
+<section class="specialities pb-5">
 
     <div class="pt-5 main-container">
         <div class="specialities-inner pt-5 d-flex flex-column flex-xl-row gap-2">
-            <div class="sp-inner-heading p-3">
+            <div class="sp-inner-heading">
                 <h4 class="sp-subheading">Specialities</h4>
                 <h2 class="sp-heading">An Ecosystem for Clinical Excellence</h2>
             </div>
-            <div class="sp-inner-care p-3 border-end fw-bold">
+            <div class="sp-inner-care p-3 pt-0 fw-bold">
                 <div class="sp-wrapper">
                     <a href="#">
                         <div class="speciality-row">
@@ -70,7 +70,7 @@
                     </x-hoverBtn>
                 </div>
             </div>
-            <div class="sp-inner-search p-3">
+            <div class="sp-inner-search p-3 pt-0">
                 <div class="sp-wrapper">
                     <h4 class="sp-subheading">Search By</h4>
                     <div class="sp-search-by d-flex justify-content-evenly gap-1">

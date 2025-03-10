@@ -17,34 +17,22 @@
                 <form>
                     <div class="find-doc-form">
                         <div class="select-wrap d-flex justify-content-center gap-2">
-                            <div class="find-doc-location-wrap">
-                                <div class="default-location-wrap d-flex justify-content-around gap-4">
-                                    <span class="default-location-item d-inline-block text-truncate"
-                                        id="default-location-item">Kathmandu</span>
-                                    <div class="position-relative">
-                                        <span class="anchor-down-btn d-inline-block"></span>
-                                    </div>
-                                </div>
-                                <ul class="find-doc-list-location" id="find-doc-location">
-                                    <li data-value="0">Kathmandu</li>
-                                    <li data-value="1">Pokhara</li>
-                                    <li data-value="2">Biratnagar</li>
-                                </ul>
-                                <input type="hidden" name="find-doc-location" id="find-doc-location-input">
-                            </div>
                             <div class="find-doc-speciality-wrap">
-                                <div class="default-speciality-wrap d-flex gap-5">
-                                    <span class="default-speciality-item d-inline-block text-truncate">All Specialities</span>
+                                <div class="default-speciality-wrap d-flex justify-content-between gap-5" id="default-speciality-wrap">
+                                    <span class="default-speciality-item d-inline-block text-truncate">All
+                                        Specialities</span>
                                     <div class="position-relative">
                                         <span class="anchor-down-btn d-inline-block" style="border-color: #000"></span>
                                     </div>
                                 </div>
-                                <ul class="find-doc-list-speciality" id="find-doc-speciality">
-                                    <li data-value="1">Cardiac Care</li>
-                                    <li data-value="2">Cancer Care</li>
-                                    <li data-value="3">Neuro Science</li>
-                                </ul>
-                                <input type="hidden" name="find-doc-speciality" id="find-doc-location-input">
+                                <div class="list-wrap" id="list-wrap">
+                                    <ul class="find-doc-list-speciality" id="find-doc-speciality">
+                                        <li data-value="1">Cardiac Care</li>
+                                        <li data-value="2">Cancer Care</li>
+                                        <li data-value="3">Neuro Science</li>
+                                    </ul>
+                                    <input type="hidden" name="find-doc-speciality" id="find-doc-speciality-input">
+                                </div>
                             </div>
                             <button type="submit" class="find-doc-btn">Go</button>
                         </div>
@@ -61,21 +49,23 @@
 </section>
 @push('js')
     <script>
-        $(function() {
-            $('#default-location-item').on('click', function() {
+        $(document).ready(function() {
+            $('#default-speciality-wrap').click(function() {
                 console.log('clicked');
-
-                $('#find-doc-location').toggleClass("active");
+                if($('#list-wrap').css('display') == 'block') {
+                    $('#list-wrap').css('display', 'none');
+                }
+                $('#list-wrap').css('display', 'block');
             });
 
-            $('#find-doc-location li').click(function() {
+            $('#list-wrap ul li').click(function() {
                 const selectedText = $(this).text();
                 const selectedValue = $(this).data('value');
 
-                $('#default-location-item').text(selectedText);
-                $('#selectedValue').val(selectedValue);
-                $('#find-doc-location').removeClass("active");
-            })
-        })
+                $('#default-speciality-wrap span.default-speciality-item').text(selectedText);
+                $('#find-doc-location-input').val(selectedValue);
+                $('#find-doc-speciality').css('display', 'none');
+            });
+        });
     </script>
 @endpush
