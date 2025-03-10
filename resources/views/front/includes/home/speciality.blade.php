@@ -74,9 +74,9 @@
                 <div class="sp-wrapper">
                     <h4 class="sp-subheading">Search By</h4>
                     <div class="sp-search-by d-flex justify-content-evenly gap-1">
-                        <a href="#" class="flex-fill">Ailments</a>
-                        <a href="#" class="flex-fill">Treatments</a>
-                        <a href="#" class="flex-fill">Technologies</a>
+                        <a href="#" class="flex-fill sp-btn active-btn" onclick="setActive(this)">Ailments</a>
+                        <a href="#" class="flex-fill sp-btn" onclick="setActive(this)">Treatments</a>
+                        <a href="#" class="flex-fill sp-btn" onclick="setActive(this)">Technologies</a>
                     </div>
                     <div class="sp-search-letter">
                         <div class="letter-wrap"><a href="#" class=""><span class="">a</span></a>
@@ -143,3 +143,12 @@
     </div>
 
 </section>
+
+@push('js')
+    <script>
+        function setActive(el) {
+            $('.sp-btn').removeClass('active-btn');
+            $(el).addClass('active-btn');
+        }
+    </script>
+@endpush

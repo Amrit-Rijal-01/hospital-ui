@@ -16,9 +16,6 @@
         </div>
     </div>
     <div class=" slide-list">
-        {{-- <button class="left-arrow">
-                <img src="{{ asset('front/img/vector-left.png') }}" alt="Left Arrow">
-            </button> --}}
         <div class="swiper-wrapper floating-tab d-flex" id="slick-slider">
             <a href="#" class="swiper-slide left-hover" target="_blank">
                 <img src="{{ asset('front/img/calendar-tick.svg') }}" class="me-2" alt="Appointment Image">
@@ -55,10 +52,6 @@
                 <span>Book a Test</span>
             </a>
         </div>
-        {{-- <button class="right-arrow">
-                <img src="{{ asset('front/img/vector-right.png') }}" alt="Right Arrow">
-            </button> --}}
-
     </div>
 </div>
 

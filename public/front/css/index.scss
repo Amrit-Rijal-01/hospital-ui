@@ -22,8 +22,14 @@ a {
 }
 
 .main-container {
-    width: 95%;
+    width: 90%;
     margin: auto;
+    @media (min-width: 1200px) and (max-width: 1499px) {
+        width: 95%;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        width: 98%;
+    }
 }
 
 .active-link {

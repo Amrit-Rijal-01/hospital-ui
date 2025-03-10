@@ -1,9 +1,11 @@
 .top-banner {
     position: relative;
+    margin-top: 88px;
 
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        margin-top: 62px;
     }
 
     .search-wrapper {
@@ -100,6 +102,7 @@
             transform: translate(-50%, 0);
             width: calc(90% - 40px);
             z-index: 99;
+            overflow: hidden;
 
             @media (max-width: 768px) {
                 width: 100%;
@@ -109,7 +112,6 @@
             }
 
             a {
-                border-right: 1px solid rgba(0, 0, 0, 0.08);
                 padding: 10px 25px;
                 display: flex;
                 align-items: center;
@@ -122,7 +124,6 @@
 
                 @media (max-width: 768px) {
                     border-radius: 15px;
-                    border-right: 0;
                     flex-direction: column;
                     text-align: center;
                     padding: 20px 8px;
@@ -140,7 +141,6 @@
                 &:hover {
                     background-color: var(--color-light-2);
                     color: #fff;
-                    border-radius: 15px;
                 }
             }
 
