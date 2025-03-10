@@ -8,4 +8,8 @@
     @include('front.includes.home.speciality')
 
     @include('front.includes.home.team-section')
+
+    @include('front.includes.home.why-this')
+
+    @include('front.includes.home.services')
 @endsection
