@@ -96,6 +96,7 @@ a:hover {
 
 .heading-sm {
   font-size: 22px;
+  font-weight: 500;
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
   .heading-sm {
@@ -139,6 +140,37 @@ a:hover {
 @media (max-width: 768px) {
   .heading-lg {
     font-size: 16px;
+  }
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+@media (min-width: 769px) and (max-width: 1599px) {
+  .heading {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+
+.xs-heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (min-width: 769px) and (max-width: 1599px) {
+  .xs-heading {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .xs-heading {
+    font-size: 13px;
   }
 }
 
@@ -605,6 +637,7 @@ a:hover {
   font-size: 20px;
   font-weight: 700;
   color: var(--color-grey);
+  margin-bottom: 26px;
 }
 .specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-by .active-btn {
   background-color: var(--color-main);
@@ -1242,6 +1275,171 @@ a:hover {
     transform: translate(0, 0);
     width: 100%;
   }
+}
+
+.update {
+  background: url("/front/img/updates-bg.jpg") center center/cover no-repeat;
+  padding-top: 60px;
+  margin-bottom: 50px;
+}
+.update .main-container {
+  padding: 0 20px;
+}
+.update .main-container .heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.update .main-container .update-slider {
+  position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  bottom: -100px;
+  position: relative;
+  margin-top: -100px;
+}
+.update .main-container .update-slider .slick-prev {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -2%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.update .main-container .update-slider .slick-next {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: -2%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.update .main-container .update-slider .update-card {
+  text-align: center;
+  border-right: 1px solid var(--border-color);
+  padding: 30px;
+}
+.update .main-container .update-slider .update-card img {
+  margin-bottom: 20px;
+}
+.update .main-container .update-slider .update-card .head {
+  font-weight: 600;
+  color: var(--color-dark-grey);
+  margin-bottom: 10px;
+}
+.update .main-container .update-slider .update-card .content {
+  width: 300px;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 66px;
+  font-weight: 500;
+}
+.update .main-container .update-slider .update-card .button {
+  margin-top: 1rem;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.awards {
+  margin-top: 150px;
+  background: url("/front/img/why-bg.png") top left;
+  padding: 40px 0;
+}
+.awards .main-container .award-slide .slick-prev {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.awards .main-container .award-slide .slick-next {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.awards .main-container .award-slide .slide-card {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 30px 90px;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
+  margin: 20px;
+}
+.awards .main-container .award-slide .slide-card .leaf-left {
+  width: 50px;
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  text-align: left;
+}
+.awards .main-container .award-slide .slide-card .leaf-left img {
+  display: inline-block;
+  height: auto;
+}
+.awards .main-container .award-slide .slide-card .year {
+  color: var(--color-main);
+}
+.awards .main-container .award-slide .slide-card .year::before {
+  background: url("/front/img/award-heading-vector-left.png") center center/100% no-repeat;
+  width: 40px;
+  vertical-align: middle;
+  height: 25px;
+  content: "";
+}
+.awards .main-container .award-slide .slide-card .year::after {
+  background: url("/front/img/award-heading-vector-right.png") center center/100% no-repeat;
+  width: 40px;
+  vertical-align: middle;
+  height: 25px;
+  content: "";
+}
+.awards .main-container .award-slide .slide-card .leaf-right {
+  width: 50px;
+  position: absolute;
+  right: 55px;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  text-align: left;
+}
+.awards .main-container .award-slide .slide-card .leaf-right img {
+  display: inline-block;
+  height: 50%;
 }
 
 .hover-btn-link {

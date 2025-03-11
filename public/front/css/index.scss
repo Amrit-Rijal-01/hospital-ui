@@ -78,6 +78,7 @@ a {
 
 .heading-sm {
     font-size: 22px;
+    font-weight: 500;
     @media (min-width: 1200px) and (max-width: 1599px) {
         font-size: 18px;
     }
@@ -104,6 +105,27 @@ a {
     }
     @media (max-width: 768px) {
         font-size: 16px;
+    }
+}
+.heading {
+    font-size: 32px;
+    font-weight: 700;
+    @media (min-width: 769px) and (max-width: 1599px) {
+        font-size: 24px;
+    }
+    @media (max-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+.xs-heading {
+    font-size: 18px;
+    font-weight: 600;
+    @media (min-width: 769px) and (max-width: 1599px) {
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        font-size: 13px;
     }
 }
 

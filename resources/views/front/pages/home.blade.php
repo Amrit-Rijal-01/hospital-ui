@@ -16,4 +16,10 @@
     @include('front.includes.home.story')
 
     @include('front.includes.home.national')
+
+    @include('front.includes.home.updates')
+
+    @include('front.includes.home.award')
+
+    @include('front.includes.home.events')
 @endsection
