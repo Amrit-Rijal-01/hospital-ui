@@ -61,7 +61,29 @@
     }
 
     .slide-list {
-        position: relative;
+        position: absolute;
+        width: calc(90% - 40px);
+        background-color: #fff;
+        display: flex;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -45px;
+        box-shadow: 0 0 20px #f0f0f0;
+        border-radius: 15px;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            position: relative;
+            transform: none;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            margin: -20px auto 20px;
+            width: 100%;
+            background-color: transparent;
+            box-shadow: none;
+        }
 
         .slick-prev {
 
@@ -90,26 +112,20 @@
 
 
         .floating-tab {
-            background-color: #fff;
-            display: flex;
-            box-shadow: 0 0 10px #f0f0f0;
-            border-radius: 15px;
-            justify-content: space-between;
-            align-items: center;
-            position: absolute;
-            left: 50%;
-            bottom: -45px;
-            transform: translate(-50%, 0);
-            width: calc(90% - 40px);
-            z-index: 99;
-            overflow: hidden;
+            &:not(swiper-wrapper) {
+                border-radius: 15px;
+                overflow: hidden;
+            }
 
-            @media (max-width: 768px) {
-                width: 100%;
-                background-color: transparent;
-                position: static;
+            // overflow: hidden;
+            .slick-list {
+                padding: 0 !important;
+                overflow: hidden;
 
             }
+
+            padding: 20px 50px 20px 0;
+            border-radius: 0;
 
             a {
                 padding: 10px 25px;

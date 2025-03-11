@@ -51,8 +51,8 @@ a {
         translate: -50% -50%;
         height: 8px;
         width: 8px;
-        border-top: 3px solid #fff;
-        border-right: 3px solid #fff;
+        border-top: 3px solid currentColor;
+        border-right: 3px solid currentColor;
         transform: rotate(45deg);
         pointer-events: none;
         border-radius: 1px;
@@ -73,6 +73,37 @@ a {
         transform: rotate(45deg);
         pointer-events: none;
         border-radius: 1px;
+    }
+}
+
+.heading-sm {
+    font-size: 22px;
+    @media (min-width: 1200px) and (max-width: 1599px) {
+        font-size: 18px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        font-size: 16px;
+    }
+    @media (min-width: 769px) and (max-width: 991px) {
+        font-size: 20px;
+    }
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+.heading-lg {
+    font-size: 40px;
+    @media (min-width: 1200px) and (max-width: 1599px) {
+        font-size: 28px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        font-size: 24px;
+    }
+    @media (min-width: 769px) and (max-width: 991px) {
+        font-size: 42px;
+    }
+    @media (max-width: 768px) {
+        font-size: 16px;
     }
 }
 

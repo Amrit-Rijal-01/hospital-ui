@@ -65,7 +65,7 @@
 
                     if (!$slider.hasClass('slick-initialized')) {
                         $slider.slick({
-                            slidesToShow: 2,
+                            slidesToShow: 5,
                             slidesToScroll: 1,
                             infinite: true,
                             centerMode: true,
@@ -74,7 +74,9 @@
                             responsive: [{
                                 breakpoint: 768,
                                 settings: {
-                                    arrows: false
+                                    arrows: false,
+                                    slidesToShow: 2,
+
                                 }
                             }]
                         })
@@ -105,7 +107,7 @@
             initSlider();
             $(window).on("resize", function() {
                 initSlider();
-                setEqualSlideHeights();
+                // setEqualSlideHeights();
             });
         })
     </script>

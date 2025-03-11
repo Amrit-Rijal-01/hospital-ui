@@ -72,8 +72,8 @@ a:hover {
   translate: -50% -50%;
   height: 8px;
   width: 8px;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-top: 3px solid currentColor;
+  border-right: 3px solid currentColor;
   transform: rotate(45deg);
   pointer-events: none;
   border-radius: 1px;
@@ -92,6 +92,54 @@ a:hover {
   transform: rotate(45deg);
   pointer-events: none;
   border-radius: 1px;
+}
+
+.heading-sm {
+  font-size: 22px;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .heading-sm {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .heading-sm {
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .heading-sm {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .heading-sm {
+    font-size: 14px;
+  }
+}
+
+.heading-lg {
+  font-size: 40px;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .heading-lg {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .heading-lg {
+    font-size: 24px;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .heading-lg {
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .heading-lg {
+    font-size: 16px;
+  }
 }
 
 .site-header {
@@ -363,7 +411,30 @@ a:hover {
   cursor: pointer;
 }
 .top-banner .slide-list {
-  position: relative;
+  position: absolute;
+  width: calc(90% - 40px);
+  background-color: #fff;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -45px;
+  box-shadow: 0 0 20px #f0f0f0;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .top-banner .slide-list {
+    position: relative;
+    transform: none;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin: -20px auto 20px;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
 .top-banner .slide-list .slick-prev {
   border: none;
@@ -388,26 +459,16 @@ a:hover {
   z-index: 99;
 }
 .top-banner .slide-list .floating-tab {
-  background-color: #fff;
-  display: flex;
-  box-shadow: 0 0 10px #f0f0f0;
+  padding: 20px 50px 20px 0;
+  border-radius: 0;
+}
+.top-banner .slide-list .floating-tab:not(swiper-wrapper) {
   border-radius: 15px;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  bottom: -45px;
-  transform: translate(-50%, 0);
-  width: calc(90% - 40px);
-  z-index: 99;
   overflow: hidden;
 }
-@media (max-width: 768px) {
-  .top-banner .slide-list .floating-tab {
-    width: 100%;
-    background-color: transparent;
-    position: static;
-  }
+.top-banner .slide-list .floating-tab .slick-list {
+  padding: 0 !important;
+  overflow: hidden;
 }
 .top-banner .slide-list .floating-tab a {
   padding: 10px 25px;
@@ -1042,14 +1103,144 @@ a:hover {
     font-size: 16px;
   }
 }
-
-.view-all {
+.story .view-all {
+  padding-top: 30px;
   font-size: 15px;
   font-weight: 600;
 }
 @media (max-width: 1199px) {
-  .view-all {
+  .story .view-all {
     font-size: 13px;
+  }
+}
+
+.national {
+  position: relative;
+}
+.national picture img {
+  width: 100%;
+}
+.national .main-container-2 .content {
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translate(0, -50%);
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-white);
+  display: flex;
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .national .main-container-2 .content {
+    top: 22%;
+    display: block;
+  }
+}
+.national .main-container-2 .content .inter-doc .text .heading-sm {
+  font-weight: 600;
+}
+.national .main-container-2 .content .inter-doc .text .para {
+  margin: 20px 0;
+  text-transform: capitalize;
+  line-height: 1.4;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .national .main-container-2 .content .inter-doc .text .para {
+    display: block;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .national .main-container-2 .content .inter-doc .text .para span {
+    line-break: strict;
+  }
+}
+.national .main-container-2 .content .inter-doc .text .buttons {
+  margin-top: 100px;
+  font-weight: 600;
+}
+.national .main-container-2 .content .inter-doc .text .buttons .common-button {
+  color: #fff important;
+  margin-bottom: 60px;
+}
+.national .main-container-2 .content .inter-doc .text .buttons .common-button:hover {
+  color: var(--color-white);
+}
+.national .main-container-2 .content .inter-doc .text .buttons .common-button .orange-right {
+  background-color: var(--color-white);
+}
+.national .main-container-2 .content .inter-doc .text .buttons .common-button .orange-right .anchor-right-btn {
+  color: var(--color-black);
+}
+.national .main-container-2 .content .inter-doc .text .buttons .enquiry-btn {
+  color: var(--color-dark-grey);
+  font-size: 13px;
+  padding: 16px 40px;
+  border-radius: 50px;
+  background-color: var(--color-white);
+}
+.national .main-container-2 .inter-counting {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .national .main-container-2 .inter-counting {
+    display: none;
+  }
+}
+.national .main-container-2 .inter-counting .stats-container {
+  margin-bottom: -100px;
+  margin-left: 300px;
+}
+@media (min-width: 1281px) and (max-width: 1799px) {
+  .national .main-container-2 .inter-counting .stats-container {
+    margin-bottom: -20px;
+    margin-left: 140px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .national .main-container-2 .inter-counting .stats-container {
+    margin-left: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  .national .main-container-2 .inter-counting .stats-container {
+    margin-left: 40px;
+    margin-bottom: -40px;
+  }
+}
+@media (max-width: 991px) {
+  .national .main-container-2 .inter-counting .stats-container {
+    margin-left: 0;
+  }
+}
+.national .main-container-2 .inter-counting .stats-container .stats .stats-inner .count {
+  font-size: 42px;
+  font-weight: 600;
+}
+.national .main-container-2 .inter-counting .stats-container .stats .stats-inner .title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.national .main-container-2 .inter-counting-mob {
+  display: none;
+}
+@media (max-width: 991px) {
+  .national .main-container-2 .inter-counting-mob {
+    display: block;
+    position: absolute;
+    bottom: 150px;
+    margin-bottom: 0 !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translate(0, 0);
+    width: 100%;
   }
 }
 
