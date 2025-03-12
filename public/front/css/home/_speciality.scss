@@ -1,6 +1,11 @@
 .specialities {
     background-color: var(--secondary-white);
 
+    padding: 100px 0 50px;
+    @media (max-width: 769px) {
+        padding: 30px 0;
+    }
+
     .main-container {
         .specialities-inner {
             .sp-inner-heading {

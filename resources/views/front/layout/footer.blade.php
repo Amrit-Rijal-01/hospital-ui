@@ -3,9 +3,9 @@
     <div class="footer-top">
         <div class="main-container">
             <div class="footer-row d-flex justify-content-evenly">
-                <div class="footer-block ">
-                    <h4 class="block-title">For Patients</h4>
-                    <ul class="footer-links">
+                <div class="footer-block" onclick="expand(this)">
+                    <h4 class="block-title" >For Patients </h4>
+                    <ul class="footer-links" >
                         <li><a href="#">Find a Doctor</a></li>
                         <li><a href="#">Book Appointment</a></li>
                         <li><a href="#">Treatments</a></li>
@@ -15,9 +15,9 @@
                         <li><a href="#">CPR</a></li>
                     </ul>
                 </div>
-                <div class="footer-block wow fadeInUp">
-                    <h4 class="block-title">Specialities</h4>
-                    <ul class="footer-links">
+                <div class="footer-block wow fadeInUp" onclick="expand(this)">
+                    <h4 class="block-title"  >Specialities</h4>
+                    <ul class="footer-links" >
                         <li> <a href="#">Cardiac Care</a> </li>
                         <li> <a href="#">Cancer Care</a> </li>
                         <li> <a href="#">Neurosciences</a> </li>
@@ -31,19 +31,18 @@
                         <li><a href="#">More</a></li>
                     </ul>
                 </div>
-                <div class="footer-block wow fadeInUp">
-                    <h4 class="block-title">Our Hospitals</h4>
+                <div class="footer-block wow fadeInUp" onclick="expand(this)">
+                    <h4 class="block-title"  >Our Hospitals</h4>
                     <ul class="footer-links">
                         <li><a>XYZ Kathmandu</a></li>
                         <li><a>XYZ Pokhara</a></li>
                         <li><a>XYZ Biratnagar</a></li>
                         <li><a>XYZ Birtamode</a></li>
                         <li><a>XYZ Itahari</a></li>
-                        </li>
                     </ul>
                 </div>
-                <div class="footer-block">
-                    <h4 class="block-title">Corporate</h4>
+                <div class="footer-block" onclick="expand(this)">
+                    <h4 class="block-title" >Corporate</h4>
                     <ul class="footer-links">
                         <li><a href="#">Help Desk</a></li>
                         <li><a href="#">About us</a></li>
@@ -173,3 +172,11 @@
     </div>
 
 </footer>
+
+@push('js')
+    <script>
+        function expand(el) {
+            $(el).toggleClass('active');
+        }
+    </script>
+@endpush

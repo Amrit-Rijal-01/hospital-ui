@@ -1,7 +1,7 @@
-<section class="specialities pb-5">
+<section class="specialities">
 
-    <div class="pt-5 main-container">
-        <div class="specialities-inner pt-5 d-flex flex-column flex-xl-row gap-2">
+    <div class="main-container">
+        <div class="specialities-inner d-flex flex-column flex-xl-row gap-2">
             <div class="sp-inner-heading">
                 <h4 class="sp-subheading">Specialities</h4>
                 <h2 class="sp-heading">An Ecosystem for Clinical Excellence</h2>

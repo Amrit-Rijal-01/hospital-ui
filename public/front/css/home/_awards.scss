@@ -56,7 +56,7 @@
 
                     img {
                         display: inline-block;
-                        height: auto;
+                        height: 100px;
                     }
                 }
 
@@ -85,14 +85,14 @@
                 .leaf-right {
                     width: 50px;
                     position: absolute;
-                    right: 55px;
+                    right: 35px;
                     top: 50%;
                     z-index: 1;
                     transform: translateY(-50%);
                     text-align: left;
                     img {
                         display: inline-block;
-                        height: 50%;
+                        height: 100px;
                     }
                 }
             }

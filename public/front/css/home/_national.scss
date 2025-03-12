@@ -20,11 +20,15 @@
             display: flex;
             align-items: flex-end;
             color: var(--color-white);
-            display: flex;
 
             @media (min-width: 769px) and (max-width: 991px) {
                 top: 22%;
                 display: block;
+            }
+
+            @media (max-width: 768px) {
+                top: 20%;
+                left: 30px;
             }
 
             .inter-doc {
@@ -56,6 +60,10 @@
                     .buttons {
                         margin-top: 100px;
                         font-weight: 600;
+
+                        @media (max-width: 991px) {
+                            display: none;
+                        }
 
                         .common-button {
                             color: #fff important;
@@ -107,11 +115,12 @@
 
                 @media (min-width: 1025px) and (max-width: 1280px) {
                     margin-left: 80px;
+                    margin-bottom: -20px;
                 }
 
                 @media (min-width: 992px) and (max-width: 1024px) {
                     margin-left: 40px;
-                    margin-bottom: -40px;
+                    margin-bottom: -15px;
                 }
 
                 @media (max-width: 991px) {
@@ -138,6 +147,8 @@
 
         .inter-counting-mob {
             display: none;
+            color: var(--color-white);
+            font-weight: 700;
 
             @media (max-width:991px) {
                 display: block;
@@ -150,6 +161,58 @@
                 transform: translate(0, 0);
                 width: 100%;
             }
+
+            @media screen and (max-width: 767px) {
+                bottom: 40px;
+                left: 0;
+                justify-content: center;
+            }
+
+            .stats-container {
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .button-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 100px;
+                font-size: 18px;
+
+                @media (max-width:768px) {
+                    font-size: 12px;
+                    margin-top: 50px;
+                }
+
+                .common-button {
+                    margin-right: 30px;
+
+                    @media (max-width: 991px) {
+                        margin-right: 18px;
+                    }
+
+                    .button {
+                        color: var(--color-white);
+
+                        .orange-right {
+                            background-color: var(--color-white);
+
+                            .anchor-right-btn {
+                                color: var(--color-black);
+                            }
+                        }
+                    }
+                }
+
+                .enq-btn {
+                    padding: 13px 30px;
+                    color: var(--color-dark-grey);
+                    background-color: var(--color-white);
+                    border-radius: 50px;
+                }
+            }
         }
     }
+
 }

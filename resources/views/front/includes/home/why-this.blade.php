@@ -2,7 +2,7 @@
     <div>
         <div class="why-wrapper">
             <h2 class="text-center heading pb-40 wow fadeInDown">
-                Medanta Model of Care​</h2>
+                Medanta Model of Care</h2>
             <div class="why-details">
                 <div class="why-list">
                     {{-- <div class="images"> --}}
@@ -98,8 +98,8 @@
 
                 <div class="accor-list wow fadeInUp">
                     <ul class="list-accor">
-                        <li>
-                            <h3 class="heading-sm accor-heading">Exceptional clinical talent</h3>
+                        <li onclick="expand(this)">
+                            <h3 class="heading-sm accor-heading" >Exceptional clinical talent</h3>
                             <div class="accor-collapse-wrapper">
                                 <img loading="lazy"
                                     src="{{asset('front/img/center-1.webp')}}"
@@ -110,8 +110,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <h3 class="heading-sm accor-heading ">World-class infrastructure</h3>
+                        <li onclick="expand(this)">
+                            <h3 class="heading-sm accor-heading " >World-class infrastructure</h3>
                             <div class="accor-collapse-wrapper" >
                                 <img loading="lazy"
                                     src="{{asset('front/img/center-2.webp')}}"
@@ -122,8 +122,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <h3 class="heading-sm accor-heading ">Latest high-end technology</h3>
+                        <li onclick="expand(this)">
+                            <h3 class="heading-sm accor-heading " >Latest high-end technology</h3>
                             <div class="accor-collapse-wrapper">
                                 <img loading="lazy"
                                     src="{{asset('front/img/center-3.webp')}}"
@@ -134,8 +134,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <h3 class="heading-sm accor-heading ">Caring systems and processes</h3>
+                        <li onclick="expand(this)">
+                            <h3 class="heading-sm accor-heading " >Caring systems and processes</h3>
                             <div class="accor-collapse-wrapper">
                                 <img loading="lazy"
                                     src="{{asset('front/img/center-4.webp')}}"
@@ -146,8 +146,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <h3 class="heading-sm accor-heading ">Trust-based compassionate care</h3>
+                        <li onclick="expand(this)">
+                            <h3 class="heading-sm accor-heading " >Trust-based compassionate care</h3>
                             <div class="accor-collapse-wrapper" >
                                 <img loading="lazy"
                                     src="{{asset('front/img/center-5.webp')}}"
@@ -165,3 +165,12 @@
     </div>
 
 </section>
+
+@push('js')
+    <script>
+        function expand(el) {
+            alert('click');
+            $(el).toggleClass('.active');
+        }
+    </script>
+@endpush

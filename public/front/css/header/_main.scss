@@ -9,16 +9,22 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.14);
     border-radius: 12px 12px 0 0;
 
-    @media (max-width: 1199px) {
+    @media (min-width: 481px) and (max-width: 1199px) {
         padding: 10px 0 7px;
         border-bottom: 1px solid #d9d9d9;
+        border-radius: 0;
+
+    }
+
+    @media (max-width:480px) {
+        padding: 10px 0;
+        border-radius: 0;
     }
 
     .main-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
 
         .logo {
             max-height: 40px;
@@ -28,6 +34,18 @@
         .navbar {
             color: var(--color-grey);
 
+            @media (max-width: 1199px) {
+                display: block;
+                position: fixed;
+                left: 0;
+                top: 62px;
+                right: 0;
+                bottom: 76px;
+                z-index: 999;
+                background-color: #fff;
+                overflow: auto;
+            }
+
             .nav-ul {
                 font-weight: bold;
                 display: flex;
@@ -36,6 +54,12 @@
                 list-style: none;
                 line-height: 1rem;
 
+                @media screen and (max-width: 1199px) {
+                    display: block;
+                    padding: 5px 20px;
+                    overflow: auto;
+                }
+
 
                 .navbar-item {
                     position: relative;
@@ -43,10 +67,36 @@
                     font-size: 15px;
                     margin: 0 7px;
 
+                    &.active-list {
+                        .drop-menu {
+                            display: block !important;
+                        }
+                    }
+
+                    @media (max-width:1199px) {
+                        border-bottom: 1px solid var(--border-color);
+
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                    }
+
                     &:hover {
                         .drop-menu {
                             display: block;
                         }
+                    }
+
+                    @media (max-width: 1199px) {
+                        &:hover {
+                            .drop-menu {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 1199px) {
+                        padding-right: 0;
                     }
 
                     @media (max-width: 1399px) {
@@ -57,6 +107,11 @@
                         font-size: 14px;
                     }
 
+                    .navbar-link {
+                        padding-right: 30px;
+
+                    }
+
                     .drop-menu {
                         display: none;
                         position: absolute;
@@ -65,10 +120,17 @@
                         border-radius: 15px;
                         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.14);
                         background-color: #fff;
-                        padding: 10px 20px;
+                        padding: 0 10px;
                         z-index: 999;
                         width: 280px;
                         list-style: none;
+
+                        @media screen and (max-width: 1199px) {
+                            position: static;
+                            width: auto;
+                            box-shadow: none;
+                            margin-bottom: 15px;
+                        }
 
                         li {
                             &:last-child {

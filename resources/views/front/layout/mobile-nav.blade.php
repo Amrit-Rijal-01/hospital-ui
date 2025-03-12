@@ -1,8 +1,8 @@
 <div class="mobile-sticky-link d-xl-none">
 
-    <ul class="d-flex justify-content-between align-items-center p-0 m-0 px-2">
+    <ul class="">
         <li>
-            <a class="toggle-menu" href="#">
+            <a class="toggle-menu" href="#" onclick="toggleMenu(this)">
                 <div class="icon open-icon">
                     <img src="{{ asset('front/img/hamburger-menu.svg') }}" alt="Menu">
                 </div>
@@ -48,3 +48,10 @@
     </ul>
 
 </div>
+
+<script>
+    var isMenuOpen = false;
+    function toggleMenu(ele) {
+        isMenuOpen = !isMenuOpen;
+    }
+</script>

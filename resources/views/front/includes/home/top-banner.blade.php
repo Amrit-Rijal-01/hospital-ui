@@ -15,7 +15,7 @@
             <button class="search-icon" type="button" name="search"><i class="bi bi-search"></i></button>
         </div>
     </div>
-    <div class=" slide-list">
+    <div class=" slide-list d-flex">
         <div class="swiper-wrapper floating-tab d-flex" id="slick-slider">
             <a href="#" class="swiper-slide left-hover" target="_blank">
                 <img src="{{ asset('front/img/calendar-tick.svg') }}" class="me-2" alt="Appointment Image">
@@ -65,10 +65,10 @@
 
                     if (!$slider.hasClass('slick-initialized')) {
                         $slider.slick({
-                            slidesToShow: 5,
+                            slidesToShow: 2,
                             slidesToScroll: 1,
                             infinite: true,
-                            centerMode: true,
+                            // centerMode: true,
                             prevArrow: '<button class="slick-prev left-arrow"><img src="{{ asset('front/img/vector-left.png') }}" alt="Left Arrow"></button>',
                             nextArrow: '<button class="slick-next right-arrow"><img src="{{ asset('front/img/vector-right.png') }}" alt="Right Arrow"></button>',
                             responsive: [{
@@ -78,7 +78,14 @@
                                     slidesToShow: 2,
 
                                 }
-                            }]
+                            },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                                arrows: false
+                            }
+                        }]
                         })
                     }
                 } else {
@@ -87,27 +94,9 @@
                     }
                 }
             }
-
-            function setEqualHeight() {
-
-                let maxHeight = 0;
-                $(".slider .slick-slide").each(function() {
-                    $(this).css("height", "auto");
-                    let slideHeight = $(this).outerHeight();
-                    if (slideHeight > maxHeight) {
-                        maxHeight = slideHeight;
-                    }
-                });
-
-                $(".slider .slick-slide").css("height", maxHeight + "px");
-            }
-            $(".slider").on("setPosition", function() {
-                setEqualSlideHeights();
-            });
             initSlider();
             $(window).on("resize", function() {
                 initSlider();
-                // setEqualSlideHeights();
             });
         })
     </script>

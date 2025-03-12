@@ -1,11 +1,11 @@
 <header class="site-header" id="site-header">
     <div class="main-container">
         <a href="#"><img src="{{ asset('front/img/logo.png') }}" class="logo" alt=""></a>
-        <nav class="navbar navbar-expand-xl p-0">
-            <div class="navbar-collapse collapse">
+        <nav class="navbar navbar-expand p-0">
+            <div class="">
                 <ul class="nav-ul">
-                    <li class="navbar-item dropdown">
-                        <a href="#" class="navbar-link" data-bs-toggle="dropdown">
+                    <li class="navbar-item" onclick="extendSubMenu(this)">
+                        <a href="#" class="navbar-link" >
                             Locations <x-down class="down-icon"></x-down>
                         </a>
                         <ul class="drop-menu">
@@ -20,8 +20,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="navbar-item dropdown">
-                        <a href="#" class="navbar-link" data-bs-toggle="dropdown">
+                    <li class="navbar-item" onclick="extendSubMenu(this)">
+                        <a href="#" class="navbar-link" >
                             Speciality <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
@@ -36,8 +36,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="navbar-item dropdown">
-                        <a href="#" class="navbar-link" data-bs-toggle="dropdown">
+                    <li class="navbar-item" onclick="extendSubMenu(this)">
+                        <a href="#" class="navbar-link" >
                             Health Library <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
@@ -52,8 +52,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="navbar-item dropdown">
-                        <a href="#" class="navbar-link" data-bs-toggle="dropdown">
+                    <li class="navbar-item" onclick="extendSubMenu(this)">
+                        <a href="#" class="navbar-link" >
                             Services <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
@@ -71,8 +71,8 @@
                     <li class="navbar-item">
                         <a href="#" class="navbar-link ">Career</a>
                     </li>
-                    <li class="navbar-item dropdown">
-                        <a href="#" class="navbar-link" data-bs-toggle="dropdown">
+                    <li class="navbar-item" onclick="extendSubMenu(this)">
+                        <a href="#" class="navbar-link" >
                             Contact Us <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
@@ -114,3 +114,17 @@
         </div>
     </div>
 </header>
+@push('js')
+    <script>
+            function extendSubMenu(el) {
+                if($(el).hasClass('active-list')) {
+                    $(el).removeClass('active-list');
+                    return;
+                }
+                $('.navbar-item').removeClass('active-list');
+
+               $(el).toggleClass('active-list');
+               event.preventDefault();
+            }
+    </script>
+@endpush

@@ -43,7 +43,7 @@
             <div class="inter-counting-mob">
                 <div class="stats-container">
                     <div class="stats">
-                        <div class="stats-inner">
+                        <div class="stats-inner heading-lg">
                             <div class="count">
                                 20000+
                             </div>
@@ -52,7 +52,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="button-container">
+                        <div class="common-button">
+                            <x-hoverBtn class="button">Know More</x-hoverBtn>
+                        </div>
+                        <div class="enquiry">
+                            <a href="#" class="enq-btn">Enquire Now</a>
+                        </div>
+                    </div>
                 </div>
+                b
             </div>
         </div>
     </div>
