@@ -1,12 +1,6 @@
 .top-banner {
     position: relative;
-    margin-top: 88px;
 
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        margin-top: 62px;
-    }
 
     .search-wrapper {
         position: absolute;

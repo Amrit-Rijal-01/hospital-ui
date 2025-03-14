@@ -33,6 +33,22 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin-top: 82px;
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+  main {
+    margin-top: 64px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 62px;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -454,14 +470,6 @@ a:hover {
 
 .top-banner {
   position: relative;
-  margin-top: 88px;
-}
-@media (max-width: 768px) {
-  .top-banner {
-    display: flex;
-    flex-direction: column;
-    margin-top: 62px;
-  }
 }
 .top-banner .search-wrapper {
   position: absolute;

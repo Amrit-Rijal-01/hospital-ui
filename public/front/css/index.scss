@@ -13,6 +13,19 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    margin-top: 82px;
+    @media (min-width: 769px) and (max-width: 1199px) {
+        margin-top: 64px;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 62px;
+    }
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -26,9 +39,11 @@ a {
 .main-container {
     width: 90%;
     margin: auto;
+
     @media (min-width: 1200px) and (max-width: 1499px) {
         width: 95%;
     }
+
     @media (min-width: 769px) and (max-width: 1199px) {
         width: 98%;
     }
@@ -81,51 +96,66 @@ a {
 .heading-sm {
     font-size: 22px;
     font-weight: 500;
+
     @media (min-width: 1200px) and (max-width: 1599px) {
         font-size: 18px;
     }
+
     @media (min-width: 992px) and (max-width: 1199px) {
         font-size: 16px;
     }
+
     @media (min-width: 769px) and (max-width: 991px) {
         font-size: 20px;
     }
+
     @media (max-width: 768px) {
         font-size: 14px;
     }
 }
+
 .heading-lg {
     font-size: 40px;
+
     @media (min-width: 1200px) and (max-width: 1599px) {
         font-size: 28px;
     }
+
     @media (min-width: 992px) and (max-width: 1199px) {
         font-size: 24px;
     }
+
     @media (min-width: 769px) and (max-width: 991px) {
         font-size: 42px;
     }
+
     @media (max-width: 768px) {
         font-size: 16px;
     }
 }
+
 .heading {
     font-size: 32px;
     font-weight: 700;
+
     @media (min-width: 769px) and (max-width: 1599px) {
         font-size: 24px;
     }
+
     @media (max-width: 768px) {
         font-size: 18px;
         margin-bottom: 30px;
     }
 }
+
 .xs-heading {
     font-size: 18px;
     font-weight: 600;
+
     @media (min-width: 769px) and (max-width: 1599px) {
         font-size: 14px;
     }
+
     @media (max-width: 768px) {
         font-size: 13px;
     }
@@ -139,6 +169,8 @@ a {
 @import './header/main';
 
 @import './home/main';
+
+@import './career/main';
 
 @import './components/main';
 
