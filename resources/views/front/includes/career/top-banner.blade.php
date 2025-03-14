@@ -2,19 +2,31 @@
     <div class="main-container">
         <div class="slider" id="slick-slider">
             <div class="image-card">
-                <img class="img-fluid" src="{{ asset('front/img/career/slide-banner-1.jpg') }}" alt="Slider Image">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="{{ asset('front/img/career/slide-banner-1.jpg') }}">
+                    <source media="(max-width: 767px)" srcset="{{ asset('front/img/career/slide-banner-mob-1.jpg') }}">
+                    <img class="img-fluid" src="{{ asset('front/img/career/slide-banner-1.jpg') }}" alt="Slider Image">
+                </picture>
 
             </div>
             <div class="image-card">
-                <img class="img-fluid" src="{{ asset('front/img/career/slide-banner-2.jpg') }}" alt="Slider Image">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="{{ asset('front/img/career/slide-banner-2.jpg') }}">
+                    <source media="(max-width: 767px)" srcset="{{ asset('front/img/career/slide-banner-mob-2.jpg') }}">
+                    <img class="img-fluid" src="{{ asset('front/img/career/slide-banner-2.jpg') }}" alt="Slider Image">
+                </picture>
 
             </div>
             <div class="image-card">
-                <img class="img-fluid" src="{{ asset('front/img/career/slide-banner-3.png') }}" alt="Slider Image">
-
+                <picture>
+                    <source media="(min-width:768px)" srcset="{{ asset('front/img/career/slide-banner-3.png') }}">
+                    <source media="(max-width:767px)" srcset="{{ asset('front/img/career/slide-banner-mob-3.jpg') }}">
+                    <img src="{{ asset('front/img/career/slide-banner-3.png') }}" alt="Slider Image" class="img-fluid">
+                </picture>
             </div>
         </div>
-        <button class="explore-btn">Explore Jobs</button>
+    </div>
+    <x-hoverBtn class="explore-btn">Explore Jobs</x-hoverBtn>
     </div>
 </section>
 
@@ -22,8 +34,8 @@
     <script>
         $(document).ready(function() {
             $('#slick-slider').slick({
-                autoplay: true,
-                autoplaySpeed: 2000,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
                 arrows: false,
                 dots: true
             })

@@ -6,7 +6,11 @@
             position: relative;
 
             .image-card {
-                max-height: 350px;
+                // max-height: 350px;
+                height: auto !important;
+                img {
+                    width: 100%;
+                }
 
             }
 
@@ -50,21 +54,18 @@
 
         .explore-btn {
             border: none;
-            background-color: var(--color-main);
-            border-radius: 20px;
-            padding: 10px 20px;
-            text-align: center;
-            color: var(--color-white);
+            // background-color: var(--color-main);
+            // border-radius: 20px;
+            // padding: 10px 20px;
+            // text-align: center;
+            // color: var(--color-black);
             font-weight: 600;
             position: absolute;
-            bottom: -12%;
+            bottom: -35px;
             left: 50%;
             transform: translateX(-50%);
             transition: 0.2s ease;
-
-            &:hover {
-                background-color: var(--color-dark-1);
-            }
+            font-size: 14px;
         }
 
     }
