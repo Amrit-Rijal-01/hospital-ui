@@ -1,3 +1,1 @@
-<section class="top-banner">
-    
-</section>
+top-banner
