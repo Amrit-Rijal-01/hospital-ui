@@ -1,7 +1,7 @@
 <header class="site-header" id="site-header">
     <div class="main-container">
         <a href="#"><img src="{{ asset('front/img/logo.png') }}" class="logo" alt=""></a>
-        <nav class="navbar navbar-expand p-0">
+        <nav class="navbar navbar-expand p-0" id="navbar">
             <div class="">
                 <ul class="nav-ul">
                     <li class="navbar-item" onclick="extendSubMenu(this)">

@@ -1,6 +1,7 @@
 @extends('front.layout.app')
 
 @section('title', 'Home')
+@section('meta', 'Home page for the website')
 
 @section('content')
     @include('front.includes.home.top-banner')

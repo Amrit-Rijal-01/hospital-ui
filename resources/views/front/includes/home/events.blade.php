@@ -62,9 +62,9 @@
             <div class="events">
                 <div class="heading-sm">Upcoming Events</div>
                 <ul class="tabs d-flex justify-content-evenly p-0">
-                    <li><a href="#" onclick="changeTab(this)" class="tab active-tab">CME</a></li>
-                    <li><a href="#" onclick="changeTab(this)" class="tab ">OPD</a></li>
-                    <li><a href="#" onclick="changeTab(this)" class="tab ">Webinar</a></li>
+                    <li><button onclick="changeTab(this)" class="tab active-tab">CME</button></li>
+                    <li><button onclick="changeTab(this)" class="tab ">OPD</button></li>
+                    <li><button onclick="changeTab(this)" class="tab ">Webinar</button></li>
                 </ul>
                 <div class="each-event d-flex align-items-center gap-2">
                     <div class="date d-flex flex-column justify-content-center align-items-center">

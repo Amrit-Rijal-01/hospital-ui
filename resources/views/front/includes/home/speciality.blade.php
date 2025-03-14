@@ -74,62 +74,62 @@
                 <div class="sp-wrapper">
                     <h4 class="sp-subheading">Search By</h4>
                     <div class="sp-search-by d-flex justify-content-evenly gap-1">
-                        <a href="#" class="flex-fill sp-btn active-btn" onclick="setActive(this)">Ailments</a>
-                        <a href="#" class="flex-fill sp-btn" onclick="setActive(this)">Treatments</a>
-                        <a href="#" class="flex-fill sp-btn" onclick="setActive(this)">Technologies</a>
+                        <button class="flex-fill sp-btn active-btn" onclick="setActive(this)">Ailments</button>
+                        <button class="flex-fill sp-btn" onclick="setActive(this)">Treatments</button>
+                        <button class="flex-fill sp-btn" onclick="setActive(this)">Technologies</button>
                     </div>
                     <div class="sp-search-letter">
-                        <div class="letter-wrap"><a href="#" class=""><span class="">a</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">a</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">b</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">b</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">c</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">c</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">d</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">d</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">e</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">e</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">f</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">f</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">g</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">g</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">h</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">h</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">i</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">i</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">j</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">j</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">k</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">k</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">l</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">l</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">m</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">m</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">n</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">n</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">o</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">o</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">p</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">p</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">q</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">q</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">r</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">r</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">s</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">s</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">t</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">t</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">u</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">u</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">v</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">v</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">w</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">w</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">x</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">x</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">y</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">y</span></button>
                         </div>
-                        <div class="letter-wrap"><a href="#" class=""><span class="">z</span></a>
+                        <div class="letter-wrap"><button class=""><span class="">z</span></button>
                         </div>
                     </div>
                 </div>

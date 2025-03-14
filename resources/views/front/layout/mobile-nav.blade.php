@@ -2,7 +2,7 @@
 
     <ul class="">
         <li>
-            <a class="toggle-menu" href="#" onclick="toggleMenu(this)">
+            <button class="toggle-menu" href="#" id="toggle-navbar">
                 <div class="icon open-icon">
                     <img src="{{ asset('front/img/hamburger-menu.svg') }}" alt="Menu">
                 </div>
@@ -10,7 +10,7 @@
                     <img src="{{ asset('front/img/close.svg') }}" alt="Close">
                 </div>
                 Menu
-            </a>
+            </button>
         </li>
         <li>
             <a href="#">
@@ -48,10 +48,17 @@
     </ul>
 
 </div>
+@push('js')
+    <script>
+        $(document).ready(function() {
+            $('#toggle-navbar').click(function() {
+                console.log('click');
 
-<script>
-    var isMenuOpen = false;
-    function toggleMenu(ele) {
-        isMenuOpen = !isMenuOpen;
-    }
-</script>
+                $('#navbar').toggleClass('show-navbar');
+                $('#navbar').css({
+                    'transform': 'scale(1)'
+                })
+            })
+        })
+    </script>
+@endpush

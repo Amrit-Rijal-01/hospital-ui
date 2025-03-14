@@ -93,7 +93,7 @@
                             color: var(--color-white);
                             transition: 0.2s ease-out;
                         }
-                        a {
+                        button {
                             border: 1px solid var(--color-grey);
                             border-radius: 40px;
                             text-align: center;
@@ -124,10 +124,14 @@
                             padding: 0 10px;
                             margin-bottom: 20px;
 
-                            a {
+                            button {
                                 display: block;
                                 padding-bottom: 100%;
                                 position: relative;
+                                border: 0;
+                                border-radius: 50%;
+                                width: 100%;
+                                background-color: var(--color-white);
 
                                 span {
                                     width: 100%;
