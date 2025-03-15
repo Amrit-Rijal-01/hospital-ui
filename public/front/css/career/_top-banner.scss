@@ -15,8 +15,8 @@
             }
 
             .slick-dots {
-                bottom: 45px;
-                z-index: 99;
+                bottom: 25px;
+                // z-index: 99;
                 display: flex;
                 position: absolute;
                 left: 0;
@@ -28,24 +28,12 @@
                 padding: 0;
 
                 li {
-                    margin: 5px;
-                    cursor: pointer;
-                    line-height: 0;
-                    display: block;
-                    font-size: 0;
-                    width: 6px;
-                    height: 6px;
-                    border-radius: 20px;
                     button {
-                        width: 20px;
                         display: none;
-                        background-color: var(--color-white);
-                        border: none;
                     }
-
                     &.slick-active {
-                            width: 40px;
-                            background-color: var(--color-main);
+                            color: var(--color-main);
+
                     }
                 }
 
@@ -54,11 +42,6 @@
 
         .explore-btn {
             border: none;
-            // background-color: var(--color-main);
-            // border-radius: 20px;
-            // padding: 10px 20px;
-            // text-align: center;
-            // color: var(--color-black);
             font-weight: 600;
             position: absolute;
             bottom: -35px;

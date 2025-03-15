@@ -138,6 +138,31 @@ a:hover {
   }
 }
 
+.heading-md {
+  font-size: 28px;
+  font-weight: 600;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .heading-md {
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .heading-md {
+    font-size: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .heading-md {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .heading-md {
+    font-size: 16px;
+  }
+}
+
 .heading-lg {
   font-size: 40px;
 }
@@ -1853,8 +1878,7 @@ a:hover {
   width: 100%;
 }
 .top-banner .main-container .slider .slick-dots {
-  bottom: 45px;
-  z-index: 99;
+  bottom: 25px;
   display: flex;
   position: absolute;
   left: 0;
@@ -1865,25 +1889,11 @@ a:hover {
   gap: 10px;
   padding: 0;
 }
-.top-banner .main-container .slider .slick-dots li {
-  margin: 5px;
-  cursor: pointer;
-  line-height: 0;
-  display: block;
-  font-size: 0;
-  width: 6px;
-  height: 6px;
-  border-radius: 20px;
-}
 .top-banner .main-container .slider .slick-dots li button {
-  width: 20px;
   display: none;
-  background-color: var(--color-white);
-  border: none;
 }
 .top-banner .main-container .slider .slick-dots li.slick-active {
-  width: 40px;
-  background-color: var(--color-main);
+  color: var(--color-main);
 }
 .top-banner .main-container .explore-btn {
   border: none;
@@ -2143,6 +2153,77 @@ a:hover {
 .employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .leaf-right img {
   display: inline-block;
   height: 100px;
+}
+
+.leader {
+  padding: 50px 0;
+}
+.leader .main-container .heading {
+  margin-bottom: 40px;
+}
+.leader .main-container .leader-wrapper {
+  position: relative;
+}
+.leader .main-container .leader-wrapper .slider-for .each-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .leader .main-container .leader-wrapper .slider-for .each-card {
+    flex-direction: column-reverse;
+  }
+}
+.leader .main-container .leader-wrapper .slider-for .each-card .detail {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .leader .main-container .leader-wrapper .slider-for .each-card .detail {
+    padding-top: 20px;
+    width: 100%;
+  }
+}
+.leader .main-container .leader-wrapper .slider-for .each-card .detail .heading-sm {
+  color: var(--color-main);
+  font-weight: 600;
+}
+.leader .main-container .leader-wrapper .slider-for .each-card .detail .heading-md .para {
+  color: var(--color-grey);
+  font-weight: 500;
+}
+.leader .main-container .leader-wrapper .slider-for .each-card img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+.leader .main-container .leader-wrapper .slider-nav {
+  padding: 40px 40px 0;
+  margin: 0 auto;
+  margin-top: 25px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .leader .main-container .leader-wrapper .slider-nav {
+    padding: 0;
+  }
+}
+.leader .main-container .leader-wrapper .slider-nav .slick-list {
+  padding: 0 !important;
+}
+.leader .main-container .leader-wrapper .slider-nav .each-card-nav {
+  max-width: 200px;
+  min-width: 80px;
+  padding: 0 15px;
+}
+.leader .main-container .leader-wrapper .slider-nav .each-card-nav img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .hover-btn-link {

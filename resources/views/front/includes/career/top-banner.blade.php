@@ -25,8 +25,7 @@
                 </picture>
             </div>
         </div>
-    </div>
-    <x-hoverBtn class="explore-btn">Explore Jobs</x-hoverBtn>
+        <x-hoverBtn class="explore-btn">Explore Jobs</x-hoverBtn>
     </div>
 </section>
 
