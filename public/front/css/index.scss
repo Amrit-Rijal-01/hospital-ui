@@ -161,6 +161,36 @@ a {
     }
 }
 
+.slick-prev {
+
+    border: none;
+    height: 38px;
+    width: 38px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.slick-next {
+    border: none;
+    height: 38px;
+    width: 38px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
 .show-navbar {
     display: block !important;
 }

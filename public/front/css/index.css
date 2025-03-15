@@ -193,6 +193,35 @@ a:hover {
   }
 }
 
+.slick-prev {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.slick-next {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
 .show-navbar {
   display: block !important;
 }
@@ -1816,7 +1845,10 @@ a:hover {
   position: relative;
 }
 .top-banner .main-container .slider .image-card {
-  max-height: 350px;
+  height: auto !important;
+}
+.top-banner .main-container .slider .image-card img {
+  width: 100%;
 }
 .top-banner .main-container .slider .slick-dots {
   bottom: 45px;
@@ -1853,20 +1885,78 @@ a:hover {
 }
 .top-banner .main-container .explore-btn {
   border: none;
-  background-color: var(--color-main);
-  border-radius: 20px;
-  padding: 10px 20px;
-  text-align: center;
-  color: var(--color-white);
   font-weight: 600;
   position: absolute;
-  bottom: -12%;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.2s ease;
+  font-size: 14px;
 }
-.top-banner .main-container .explore-btn:hover {
-  background-color: var(--color-dark-1);
+
+@media (min-width: 1200px) {
+  .profession .main-container .card-wrapper .slide {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+.profession .main-container .card-wrapper .slide .each-card {
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
+  height: auto;
+  border-radius: 20px;
+  margin: 0 15px;
+}
+.profession .main-container .card-wrapper .slide .each-card .image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  padding-bottom: 100%;
+}
+.profession .main-container .card-wrapper .slide .each-card .image-container img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profession .main-container .card-wrapper .slide .each-card .body {
+  cursor: pointer;
+  padding: 15px;
+}
+.profession .main-container .card-wrapper .slide .each-card .body .heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-dark-grey);
+}
+@media (max-width: 992px) {
+  .profession .main-container .card-wrapper .slide .each-card .body .heading {
+    font-size: 16px;
+  }
+}
+.profession .main-container .card-wrapper .slide .each-card .body .content {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-grey);
+  margin: 14px 0;
+}
+@media (max-width: 992px) {
+  .profession .main-container .card-wrapper .slide .each-card .body .content {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+.profession .main-container .card-wrapper .slide .each-card .body .know-btn {
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .hover-btn-link {

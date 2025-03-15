@@ -4,7 +4,7 @@
 
 @section('content')
     @include('front.includes.career.top-banner')
-    @include('front.includes.career.professionals')
+    @include('front.includes.career.profession')
     @include('front.includes.career.content')
     @include('front.includes.career.leader')
     @include('front.includes.career.not-sure')
