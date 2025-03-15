@@ -1658,6 +1658,7 @@ a:hover {
   color: var(--color-main);
 }
 .awards .main-container .award-slide .slide-card .year::before {
+  display: inline-block;
   background: url("/front/img/award-heading-vector-left.png") center center/100% no-repeat;
   width: 40px;
   vertical-align: middle;
@@ -1665,6 +1666,7 @@ a:hover {
   content: "";
 }
 .awards .main-container .award-slide .slide-card .year::after {
+  display: inline-block;
   background: url("/front/img/award-heading-vector-right.png") center center/100% no-repeat;
   width: 40px;
   vertical-align: middle;
@@ -1894,6 +1896,12 @@ a:hover {
   font-size: 14px;
 }
 
+.profession {
+  padding: 50px 0;
+}
+.profession .main-container .card-wrapper .slide .slick-list {
+  padding: 24px 0;
+}
 @media (min-width: 1200px) {
   .profession .main-container .card-wrapper .slide {
     display: flex;
@@ -1957,6 +1965,184 @@ a:hover {
 .profession .main-container .card-wrapper .slide .each-card .body .know-btn {
   font-size: 12px;
   font-weight: 600;
+}
+
+.employee-section {
+  padding: 50px 0;
+  background-color: var(--secondary-white);
+}
+.employee-section .main-container {
+  padding: 0 20px;
+}
+.employee-section .main-container .tabs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.employee-section .main-container .tabs .tab {
+  padding: 14px 14px;
+  border: 1px solid var(--color-black);
+  border-radius: 35px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  transition: 0.3s ease;
+}
+.employee-section .main-container .tabs .tab:hover {
+  background-color: var(--color-light-1);
+  color: var(--color-white);
+}
+.employee-section .main-container .tabs .active-tab {
+  background-color: var(--color-main);
+  border: none;
+  color: var(--color-white);
+}
+.employee-section .main-container .content-main {
+  padding-top: 30px;
+}
+.employee-section .main-container .content-main .employee-flex .employee {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .employee-section .main-container .content-main .employee-flex .employee {
+    width: 100%;
+  }
+}
+.employee-section .main-container .content-main .employee-flex .employee .heading-sm {
+  margin-left: 20px;
+}
+.employee-section .main-container .content-main .employee-flex .employee .employee-slider .slick-prev {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.employee-section .main-container .content-main .employee-flex .employee .employee-slider .slick-next {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.employee-section .main-container .content-main .employee-flex .employee .employee-slider .each-card {
+  margin: 0 20px;
+  background-color: var(--color-white);
+  max-width: 375px;
+  height: auto;
+  border-radius: 15px;
+}
+.employee-section .main-container .content-main .employee-flex .employee .employee-slider .each-card img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.employee-section .main-container .content-main .employee-flex .employee .employee-slider .each-card .body {
+  padding: 15px;
+}
+.employee-section .main-container .content-main .employee-flex .award {
+  width: 40%;
+}
+@media (max-width: 991px) {
+  .employee-section .main-container .content-main .employee-flex .award {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+.employee-section .main-container .content-main .employee-flex .award .heading-sm {
+  margin-left: 20px;
+}
+@media (min-width: 992px) {
+  .employee-section .main-container .content-main .employee-flex .award .award-slider {
+    overflow-y: auto;
+    height: 450px;
+    scrollbar-width: none;
+  }
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slick-list {
+  padding-bottom: 40px;
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card {
+  max-height: 200px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 60px 90px;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
+  margin: 20px 20px;
+}
+@media (max-width: 991px) {
+  .employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card {
+    max-height: 100%;
+    margin: 20px;
+  }
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .leaf-left {
+  width: 50px;
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  text-align: left;
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .leaf-left img {
+  display: inline-block;
+  height: 100px;
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .vertical {
+  height: 100%;
+  vertical-align: middle;
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .year {
+  color: var(--color-main);
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .year::before {
+  display: inline-block;
+  background: url("/front/img/award-heading-vector-left.png") center center/100% no-repeat;
+  width: 40px;
+  vertical-align: middle;
+  height: 25px;
+  content: "";
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .year::after {
+  display: inline-block;
+  background: url("/front/img/award-heading-vector-right.png") center center/100% no-repeat;
+  width: 40px;
+  vertical-align: middle;
+  height: 25px;
+  content: "";
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .leaf-right {
+  width: 50px;
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  text-align: left;
+}
+.employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .leaf-right img {
+  display: inline-block;
+  height: 100px;
 }
 
 .hover-btn-link {

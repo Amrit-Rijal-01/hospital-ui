@@ -3,7 +3,6 @@
     background: url('/front/img/why-bg.png') top left;
     padding: 40px 0;
     .main-container {
-        .heading {}
 
         .award-slide {
             .slick-prev {
@@ -64,6 +63,7 @@
                     color: var(--color-main);
 
                     &::before {
+                        display: inline-block;
                         background: url('/front/img/award-heading-vector-left.png') center center / 100% no-repeat;
                         width: 40px;
                         vertical-align: middle;
@@ -72,6 +72,7 @@
                     }
 
                     &::after {
+                        display: inline-block;
                         background: url('/front/img/award-heading-vector-right.png') center center / 100% no-repeat;
                         width: 40px;
                         vertical-align: middle;
@@ -79,8 +80,6 @@
                         content: "";
                     }
                 }
-
-                .content {}
 
                 .leaf-right {
                     width: 50px;
