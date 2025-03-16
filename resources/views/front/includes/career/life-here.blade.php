@@ -37,17 +37,23 @@
             </div>
         </div>
         <div class="mobile">
-            <div class="image-card">
-                <img src="{{ asset('front/img/career/staff.jpg') }}" alt="Staff">
+            <div class="mobile-slide">
+                <div class="image-card">
+                    <img src="{{ asset('front/img/career/staff.jpg') }}" alt="Staff">
+                </div>
+                <div class="image-card">
+                    <img src="{{ asset('front/img/career/paramedic.jpg') }}" alt="Paramedic">
+                </div>
+                <div class="image-card">
+                    <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Nurse">
+                </div>
+                <div class="image-card">
+                    <img src="{{ asset('front/img/career/doctor.jpg') }}" alt="Doctor">
+                </div>
             </div>
-            <div class="image-card">
-                <img src="{{ asset('front/img/career/paramedic.jpg') }}" alt="Paramedic">
-            </div>
-            <div class="image-card">
-                <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Nurse">
-            </div>
-            <div class="image-card">
-                <img src="{{ asset('front/img/career/doctor.jpg') }}" alt="Doctor">
+            <div class="mobile-btn w-100 d-flex justify-content-center py-2 fw-semibold">
+                <x-hoverBtn >View All</x-hoverBtn>
+
             </div>
         </div>
     </div>
@@ -57,7 +63,7 @@
         $(document).ready(function() {
             function lifeHereSlider() {
                 if ($(window).width() < 992) {
-                    $('.mobile').slick({
+                    $('.mobile-slide').slick({
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         infinite: true,
