@@ -2245,6 +2245,64 @@ a:hover {
   border-radius: 10px;
 }
 
+.not-sure {
+  background-color: var(--secondary-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .not-sure {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+}
+.not-sure .banner-para {
+  text-align: center;
+  width: 40%;
+}
+@media (max-width: 991px) {
+  .not-sure .banner-para {
+    padding: 0 30px 20px;
+    width: 100%;
+  }
+}
+.not-sure .banner-para .banner-title {
+  font-weight: 700;
+  color: var(--color-grey);
+  margin-bottom: 20px;
+}
+.not-sure .banner-para p {
+  font-weight: 400;
+  color: var(--color-grey);
+}
+.not-sure .banner-para .resume {
+  color: var(--color-white);
+  background-color: var(--color-main);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  transition: 0.2s ease;
+  border: none;
+}
+.not-sure .banner-para .resume:hover {
+  background-color: var(--color-dark-1);
+}
+.not-sure .banner-img {
+  flex: 1;
+}
+@media (max-width: 991px) {
+  .not-sure .banner-img {
+    width: 100%;
+  }
+}
+.not-sure .banner-img img {
+  width: 100%;
+  height: auto;
+}
+
 .hover-btn-link {
   transition: 0.2s ease-out;
   gap: 0.5rem;
