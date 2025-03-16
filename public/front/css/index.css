@@ -2303,6 +2303,100 @@ a:hover {
   height: auto;
 }
 
+.life-here {
+  padding: 50px 0;
+}
+.life-here .main-container .heading {
+  padding-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .life-here .main-container .desktop {
+    display: none !important;
+  }
+}
+.life-here .main-container .desktop img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: 0.2s ease;
+}
+.life-here .main-container .desktop img:hover {
+  transform: scale(1.1);
+}
+.life-here .main-container .desktop > * {
+  width: 25%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.life-here .main-container .desktop > *:first-child, .life-here .main-container .desktop > *:last-child {
+  display: flex;
+  align-items: center;
+}
+.life-here .main-container .desktop > *:first-child .img-1, .life-here .main-container .desktop > *:last-child .img-1 {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.life-here .main-container .desktop > *:nth-child(3) img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.life-here .main-container .desktop > *:nth-child(2) .img-1, .life-here .main-container .desktop > *:nth-child(4) .img-1 {
+  overflow: hidden;
+  margin-bottom: 16px;
+  border-radius: 20px;
+}
+.life-here .main-container .desktop > *:nth-child(2) .img-2, .life-here .main-container .desktop > *:nth-child(4) .img-2 {
+  overflow: hidden;
+  border-radius: 20px;
+}
+@media (min-width: 992px) {
+  .life-here .main-container .mobile {
+    display: none !important;
+  }
+}
+.life-here .main-container .mobile .slick-prev {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.life-here .main-container .mobile .slick-next {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.life-here .main-container .mobile .image-card {
+  height: auto;
+  border-radius: 20px;
+  margin: 0 20px;
+  overflow: hidden;
+}
+.life-here .main-container .mobile .image-card img {
+  border-radius: 20px;
+  width: 100%;
+  transition: 0.2s ease;
+}
+.life-here .main-container .mobile .image-card img:hover {
+  transform: scale(1.1);
+}
+
 .hover-btn-link {
   transition: 0.2s ease-out;
   gap: 0.5rem;
