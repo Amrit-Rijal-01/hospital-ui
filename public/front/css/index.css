@@ -72,6 +72,11 @@ a:hover {
     width: 98%;
   }
 }
+@media (max-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
+}
 
 .active-link {
   background-color: var(--color-main);
@@ -2057,6 +2062,11 @@ a:hover {
   height: auto;
   border-radius: 15px;
 }
+@media (max-width: 402px) {
+  .employee-section .main-container .content-main .employee-flex .employee .employee-slider .each-card {
+    margin: 0;
+  }
+}
 .employee-section .main-container .content-main .employee-flex .employee .employee-slider .each-card img {
   border-radius: 15px 15px 0 0;
   width: 100%;
@@ -2105,6 +2115,11 @@ a:hover {
     margin: 20px;
   }
 }
+@media (max-width: 402px) {
+  .employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card {
+    margin: 0;
+  }
+}
 .employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .leaf-left {
   width: 50px;
   position: absolute;
@@ -2128,7 +2143,8 @@ a:hover {
 .employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .year::before {
   display: inline-block;
   background: url("/front/img/award-heading-vector-left.png") center center/100% no-repeat;
-  width: 40px;
+  width: 15%;
+  max-width: 40px;
   vertical-align: middle;
   height: 25px;
   content: "";
@@ -2136,7 +2152,8 @@ a:hover {
 .employee-section .main-container .content-main .employee-flex .award .award-slider .slide-card .year::after {
   display: inline-block;
   background: url("/front/img/award-heading-vector-right.png") center center/100% no-repeat;
-  width: 40px;
+  width: 15%;
+  max-width: 40px;
   vertical-align: middle;
   height: 25px;
   content: "";
@@ -2174,10 +2191,11 @@ a:hover {
 @media (max-width: 768px) {
   .leader .main-container .leader-wrapper .slider-for .each-card {
     flex-direction: column-reverse;
+    padding: 0 15px;
   }
 }
 .leader .main-container .leader-wrapper .slider-for .each-card .detail {
-  width: 50%;
+  width: 60%;
 }
 @media (max-width: 768px) {
   .leader .main-container .leader-wrapper .slider-for .each-card .detail {
@@ -2196,6 +2214,7 @@ a:hover {
 .leader .main-container .leader-wrapper .slider-for .each-card img {
   flex: 1;
   width: 100%;
+  aspect-ratio: 1/1;
   height: auto;
   border-radius: 25px;
 }
