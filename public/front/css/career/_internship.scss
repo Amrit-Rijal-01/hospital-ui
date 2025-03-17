@@ -3,6 +3,10 @@
     background-color: var(--secondary-white);
 
     .main-container {
+        .heading {
+            padding-bottom: 30px;
+            margin: 0;
+        }
         .content {
             .slide-wrapper {
                 width: 50%;

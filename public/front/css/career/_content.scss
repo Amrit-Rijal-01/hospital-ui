@@ -4,9 +4,11 @@
 
     .main-container {
         padding: 0 20px;
-
+        .heading {
+            padding-bottom: 30px;
+            margin: 0;
+        }
         .tabs {
-            margin-top: 20px;
             display: flex;
             justify-content: center;
             gap: 20px;
