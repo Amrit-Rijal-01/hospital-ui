@@ -141,6 +141,8 @@ a {
 
 .heading-lg {
     font-size: 40px;
+    font-weight: 700;
+    color: var(--color-dark-grey);
 
     @media (min-width: 1200px) and (max-width: 1599px) {
         font-size: 28px;
@@ -173,9 +175,10 @@ a {
     }
 }
 
-.xs-heading {
+.heading-xs {
     font-size: 18px;
     font-weight: 600;
+    color: var(--color-dark-grey);
 
     @media (min-width: 769px) and (max-width: 1599px) {
         font-size: 14px;

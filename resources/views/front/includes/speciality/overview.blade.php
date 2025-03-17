@@ -1,1 +1,60 @@
-overview
+<section class="overview">
+    <div class="main-container">
+        <div class="col-wrapper d-flex justify-content-center align-items-center flex-column flex-xl-row">
+            <div class="left">
+                <h1 class="heading-lg">
+                    Cardiac Care
+                </h1>
+                <div class="buttons mt-2">
+                    <button class="btn me-3 mt-2">
+                        Enquire Now
+                    </button>
+                    <button class="btn mt-3">
+                        Find A Doctor
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="img-block">
+                    <div class="lg-img">
+                        <img src="{{ asset('front/img/speciality/top-banner.png') }}" alt="Desktop Heart Image">
+                    </div>
+                    <div class="md-img">
+                        <img src="{{ asset('front/img/speciality/top-banner-md.png') }}" alt="Mobile Heart Image">
+                    </div>
+                </div>
+                <div class="top-banner-slide">
+                    <div class="each-slide">
+                        <div class="heading-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aut.</div>
+                    </div>
+                    <div class="each-slide">
+                        <div class="heading-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nemo qui excepturi tenetur minima rerum.</div>
+                    </div>
+                    <div class="each-slide">
+                        <div class="heading-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum sit voluptatum nihil obcaecati excepturi ipsum vel, in voluptates commodi.</div>
+                    </div>
+                </div>
+                <div class="btn-mobile ">
+                    <button class="btn">
+                        Enquire Now
+                    </button>
+                    <button class="btn">
+                        Find A Doctor
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@push('js')
+    <script>
+        $(document).ready(function() {
+            $('.top-banner-slide').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                arrows: false
+            })
+        })
+    </script>
+@endpush
