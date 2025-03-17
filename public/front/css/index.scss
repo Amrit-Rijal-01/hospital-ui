@@ -37,6 +37,8 @@ a {
     }
 }
 
+@import './components/main';
+
 .main-container {
     width: 90%;
     margin: auto;
@@ -232,7 +234,7 @@ a {
 
 @import './career/main';
 
-@import './components/main';
+
 
 @import './footer/main';
 

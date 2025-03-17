@@ -58,6 +58,75 @@ a:hover {
   color: var(--color-light-1);
 }
 
+.hover-btn-link {
+  transition: 0.2s ease-out;
+  gap: 0.5rem;
+}
+.hover-btn-link:hover {
+  color: var(--color-light-2);
+}
+.hover-btn-link:hover .orange-right {
+  transition: transform 0.2s ease-out;
+  transform: translateX(5px);
+}
+.hover-btn-link .orange-right {
+  background-color: var(--color-main);
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.2s ease-out;
+}
+
+.main-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.main-card .body {
+  padding: 50px;
+  cursor: pointer;
+}
+@media (max-width: 1299px) {
+  .main-card .body {
+    padding: 30px;
+  }
+}
+.main-card .body .heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-dark-grey);
+  text-align: left;
+}
+@media (max-width: 992px) {
+  .main-card .body .heading {
+    font-size: 16px;
+  }
+}
+.main-card .body .content {
+  font-size: 18px;
+  width: 70%;
+  font-weight: 500;
+  text-align: left;
+  color: var(--color-grey);
+  margin: 14px 0;
+}
+@media (max-width: 992px) {
+  .main-card .body .content {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+.main-card .body .know-btn {
+  font-size: 12px;
+  font-weight: 600;
+}
+.main-card .body .service-logo {
+  width: 52px;
+  height: 52px;
+}
+
 .main-container {
   width: 90%;
   margin: auto;
@@ -2075,6 +2144,81 @@ section:nth-child(odd) {
   margin-bottom: 15px;
 }
 
+.team .main-container .title {
+  color: var(--color-main);
+  font-size: 60px;
+}
+@media (max-width: 768px) {
+  .team .main-container .title {
+    font-size: 30px;
+  }
+}
+.team .main-container .para {
+  max-width: 500px;
+  margin: 0 0 30px;
+}
+.team .main-container .team-slider {
+  position: relative;
+  padding: 24px 0;
+}
+.team .main-container .team-slider .main-card {
+  margin: 15px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
+}
+.team .main-container .team-slider .main-card .img-wrapper {
+  height: 60%;
+}
+.team .main-container .team-slider .main-card .img-wrapper img {
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 3/2;
+}
+.team .main-container .team-slider .main-card .body {
+  height: 40%;
+  padding: 30px;
+}
+.team .main-container .team-slider .slick-prev {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.team .main-container .team-slider .slick-next {
+  border: none;
+  height: 38px;
+  width: 38px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.team .main-container .team-line {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+.team .main-container .team-line span {
+  color: var(--color-dark-grey);
+  font-weight: 700;
+}
+
 .top-banner {
   padding-bottom: 50px;
 }
@@ -2689,75 +2833,6 @@ section:nth-child(odd) {
   border-radius: 20px;
   border: none;
   font-weight: 600;
-}
-
-.hover-btn-link {
-  transition: 0.2s ease-out;
-  gap: 0.5rem;
-}
-.hover-btn-link:hover {
-  color: var(--color-light-2);
-}
-.hover-btn-link:hover .orange-right {
-  transition: transform 0.2s ease-out;
-  transform: translateX(5px);
-}
-.hover-btn-link .orange-right {
-  background-color: var(--color-main);
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  position: relative;
-  transition: transform 0.2s ease-out;
-}
-
-.main-card img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-}
-.main-card .body {
-  padding: 50px;
-  cursor: pointer;
-}
-@media (max-width: 1299px) {
-  .main-card .body {
-    padding: 30px;
-  }
-}
-.main-card .body .heading {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--color-dark-grey);
-  text-align: left;
-}
-@media (max-width: 992px) {
-  .main-card .body .heading {
-    font-size: 16px;
-  }
-}
-.main-card .body .content {
-  font-size: 18px;
-  width: 70%;
-  font-weight: 500;
-  text-align: left;
-  color: var(--color-grey);
-  margin: 14px 0;
-}
-@media (max-width: 992px) {
-  .main-card .body .content {
-    width: 100%;
-    font-size: 12px;
-  }
-}
-.main-card .body .know-btn {
-  font-size: 12px;
-  font-weight: 600;
-}
-.main-card .body .service-logo {
-  width: 52px;
-  height: 52px;
 }
 
 footer {
