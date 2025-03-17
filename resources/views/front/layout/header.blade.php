@@ -6,7 +6,7 @@
                 <ul class="nav-ul">
                     <li class="navbar-item" onclick="extendSubMenu(this)">
                         <a href="#" class="navbar-link" >
-                            Locations <x-down class="down-icon"></x-down>
+                            Locations <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
                             <li>

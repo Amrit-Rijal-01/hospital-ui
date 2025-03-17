@@ -340,14 +340,14 @@ a:hover {
 }
 @media (min-width: 481px) and (max-width: 1199px) {
   .site-header {
-    padding: 10px 0 7px;
+    padding: 10px 10px 7px;
     border-bottom: 1px solid #d9d9d9;
     border-radius: 0;
   }
 }
 @media (max-width: 480px) {
   .site-header {
-    padding: 10px 0;
+    padding: 10px;
     border-radius: 0;
   }
 }
