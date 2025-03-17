@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/career', function() {
     return view('front.pages.career');
 });
+Route::get('/speciality', function () {
+    return view('front.pages.speciality');
+});

@@ -26,13 +26,13 @@
                         </a>
                         <ul class="drop-menu">
                             <li>
-                                <a href="#" class="drop-item">Speciality 1</a>
+                                <a href="/speciality" class="drop-item">Speciality 1</a>
                             </li>
                             <li>
-                                <a href="#" class="drop-item">Speciality 2</a>
+                                <a href="/speciality" class="drop-item">Speciality 2</a>
                             </li>
                             <li>
-                                <a href="#" class="drop-item">Speciality 3</a>
+                                <a href="/speciality" class="drop-item">Speciality 3</a>
                             </li>
                         </ul>
                     </li>

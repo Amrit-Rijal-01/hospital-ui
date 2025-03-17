@@ -1883,6 +1883,13 @@ a:hover {
   flex: 5;
 }
 
+section {
+  padding: 50px 0;
+}
+section:nth-child(odd) {
+  background-color: var(--secondary-white);
+}
+
 .top-banner {
   padding-bottom: 50px;
 }
