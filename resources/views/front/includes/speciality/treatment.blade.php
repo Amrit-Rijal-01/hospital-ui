@@ -12,41 +12,41 @@
             <div class="desktop-list align-self-start align-self-xl-center px-3">
                 <ul>
                     <li>
-                        <button class="custom-tab heading-xs active-btn d-flex justify-content-between"
-                            onclick="setActive(this)" data-target="treatment-1">Transcatheter
+                        <button class="treatment-tab heading-xs active-btn d-flex justify-content-between"
+                            onclick="setTreatmentActive(this)" data-target="ailment-1">Transcatheter
                             aortic valve
                             implantation (TAVI) <i class="bi bi-chevron-right"></i></button>
                     </li>
                     <li>
-                        <button class="custom-tab heading-xs d-flex justify-content-between" onclick="setActive(this)"
-                            data-target="treatment-2">
+                        <button class="treatment-tab heading-xs d-flex justify-content-between" onclick="setTreatmentActive(this)"
+                            data-target="ailment-2">
                             Peripheral Angioplasty
                             <i class="bi bi-chevron-right"></i></button>
                     </li>
                     <li>
-                        <button class="custom-tab heading-xs d-flex justify-content-between" onclick="setActive(this)"
-                            data-target="treatment-3">Coronary Artery Bypass
+                        <button class="treatment-tab heading-xs d-flex justify-content-between" onclick="setTreatmentActive(this)"
+                            data-target="ailment-3">Coronary Artery Bypass
                             Graft surgery (CABG) <i class="bi bi-chevron-right"></i></button>
                     </li>
                     <li>
-                        <button class="custom-tab heading-xs d-flex justify-content-between" onclick="setActive(this)"
-                            data-target="treatment-4">Aneurysm Repair <i class="bi bi-chevron-right"></i></button>
+                        <button class="treatment-tab heading-xs d-flex justify-content-between" onclick="setTreatmentActive(this)"
+                            data-target="ailment-4">Aneurysm Repair <i class="bi bi-chevron-right"></i></button>
                     </li>
                 </ul>
             </div>
 
             <div class="info-container">
-                <div class="custom-tabs active" data-content="treatment-1">
-                    <button class="custom-tab heading-xs active-btn px-3 d-flex justify-content-between"
-                        onclick="setActive(this)" data-target="treatment-1">
+                <div class="treatment-tabs active" data-content="ailment-1">
+                    <button class="treatment-tab heading-xs active-btn px-3 d-flex justify-content-between"
+                        onclick="setTreatmentActive(this)" data-target="ailment-1">
                         Transcatheter aortic valve implantation (TAVI)
                         <i class="bi bi-chevron-up"></i>
                         <i class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="treatment-container" data-content="treatment-1">
+                    <div class="treatment-container" data-content="ailment-1">
                         <div class="img-side px-3">
                             <div class="treatment-img">
-                                <img src="front/img/speciality/treatment.jpg" alt="Treatment Image">
+                                <img src="{{ asset('front/img/speciality/treatment.jpg') }}" alt="Treatment Image">
                             </div>
                         </div>
                         <div class="para-wrap">
@@ -57,17 +57,17 @@
                     </div>
                 </div>
 
-                <div class="custom-tabs" data-content="treatment-2">
-                    <button class="custom-tab heading-xs px-3 d-flex justify-content-between"
-                        onclick="setActive(this)" data-target="treatment-2">
+                <div class="treatment-tabs" data-content="ailment-2">
+                    <button class="treatment-tab heading-xs px-3 d-flex justify-content-between"
+                        onclick="setTreatmentActive(this)" data-target="ailment-2">
                         Peripheral Angioplasty
                         <i class="bi bi-chevron-up"></i>
                         <i class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="treatment-container" data-content="treatment-2">
+                    <div class="treatment-container" data-content="ailment-2">
                         <div class="img-side px-3">
                             <div class="treatment-img">
-                                <img src="front/img/speciality/treatment-2.jpg" alt="Treatment Image">
+                                <img src="{{ asset('front/img/speciality/treatment-2.jpg') }}" alt="Treatment Image">
                             </div>
                         </div>
                         <div class="para-wrap">
@@ -80,17 +80,17 @@
                     </div>
                 </div>
 
-                <div class="custom-tabs" data-content="treatment-3">
-                    <button class="custom-tab heading-xs px-3 d-flex justify-content-between"
-                        onclick="setActive(this)" data-target="treatment-3">
+                <div class="treatment-tabs" data-content="ailment-3">
+                    <button class="treatment-tab heading-xs px-3 d-flex justify-content-between"
+                        onclick="setTreatmentActive(this)" data-target="ailment-3">
                         Coronary Artery Bypass Graft surgery (CABG)
                         <i class="bi bi-chevron-up"></i>
                         <i class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="treatment-container" data-content="treatment-3">
+                    <div class="treatment-container" data-content="ailment-3">
                         <div class="img-side px-3">
                             <div class="treatment-img">
-                                <img src="front/img/speciality/treatment.jpg" alt="Treatment Image">
+                                <img src="{{ asset('front/img/speciality/treatment.jpg') }}" alt="Treatment Image">
                             </div>
                         </div>
                         <div class="para-wrap">
@@ -101,17 +101,17 @@
                     </div>
                 </div>
 
-                <div class="custom-tabs" data-content="treatment-4">
-                    <button class="custom-tab heading-xs px-3 d-flex justify-content-between"
-                        onclick="setActive(this)" data-target="treatment-4">
+                <div class="treatment-tabs" data-content="ailment-4">
+                    <button class="treatment-tab heading-xs px-3 d-flex justify-content-between"
+                        onclick="setTreatmentActive(this)" data-target="ailment-4">
                         Aneurysm Repair
                         <i class="bi bi-chevron-up"></i>
                         <i class="bi bi-chevron-down"></i>
                     </button>
-                    <div class="treatment-container" data-content="treatment-4">
+                    <div class="treatment-container" data-content="ailment-4">
                         <div class="img-side px-3">
                             <div class="treatment-img">
-                                <img src="front/img/speciality/treatment-2.jpg" alt="Treatment Image">
+                                <img src="{{ asset('front/img/speciality/treatment-2.jpg') }}" alt="Treatment Image">
                             </div>
                         </div>
                         <div class="para-wrap">
@@ -124,13 +124,14 @@
         </div>
     </div>
 </section>
-<script>
-    function setActive(el) {
+@push('js')
+    <script>
+    function setTreatmentActive(el) {
         console.log('clicked');
         let targetId = $(el).attr('data-target');
 
-        $('.custom-tab').removeClass('active-btn');
-        $('.custom-tabs').removeClass('active');
+        $('.treatment-tab').removeClass('active-btn');
+        $('.treatment-tabs').removeClass('active');
 
         // Set active state on clicked button
         $(el).addClass('active-btn');
@@ -138,11 +139,12 @@
         // Handle desktop vs mobile view differently
         if ($(el).closest('.desktop-list').length) {
             // Desktop list item was clicked
-            $(`.custom-tabs[data-content="${targetId}"]`).addClass('active');
-            $(`.custom-tabs[data-content="${targetId}"] .custom-tab`).addClass('active-btn');
+            $(`.treatment-tabs[data-content="${targetId}"]`).addClass('active');
+            $(`.treatment-tabs[data-content="${targetId}"] .treatment-tab`).addClass('active-btn');
         } else {
             // Mobile tab was clicked
-            $(el).closest('.custom-tabs').addClass('active');
+            $(el).closest('.treatment-tabs').addClass('active');
         }
     }
 </script>
+@endpush
