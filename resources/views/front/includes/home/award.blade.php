@@ -9,7 +9,7 @@
                 <div class="year sm-heading">
                     2022
                 </div>
-                <div class="content xs-heading">
+                <div class="content heading-xs">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, aperiam.
                 </div>
                 <div class="leaf-right">
@@ -23,7 +23,7 @@
                 <div class="year sm-heading">
                     2022
                 </div>
-                <div class="content xs-heading">
+                <div class="content heading-xs">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, aperiam.
                 </div>
                 <div class="leaf-right">
@@ -37,7 +37,7 @@
                 <div class="year sm-heading">
                     2022
                 </div>
-                <div class="content xs-heading">
+                <div class="content heading-xs">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, aperiam.
                 </div>
                 <div class="leaf-right">
@@ -51,7 +51,7 @@
                 <div class="year sm-heading">
                     2022
                 </div>
-                <div class="content xs-heading">
+                <div class="content heading-xs">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, aperiam.
                 </div>
                 <div class="leaf-right">

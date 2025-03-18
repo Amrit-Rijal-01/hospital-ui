@@ -5,8 +5,8 @@
                 <h1 class="heading-lg">
                     Cardiac Care
                 </h1>
-                <div class="buttons mt-2">
-                    <button class="btn me-3 mt-2">
+                <div class="buttons">
+                    <button class="btn me-3 mt-3">
                         Enquire Now
                     </button>
                     <button class="btn mt-3">
