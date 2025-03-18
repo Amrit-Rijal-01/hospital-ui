@@ -77,6 +77,9 @@
                         </a>
                         <ul class="drop-menu">
                             <li>
+                                <a href="/contact-us" class="drop-item">Contact Us</a>
+                            </li>
+                            <li>
                                 <a href="mailto:hello@example.com" class="drop-item">Mail</a>
                             </li>
                             <li>

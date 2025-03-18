@@ -1,5 +1,4 @@
 .why-hospital {
-    // background: url('/front/img/why-bg.png') center repeat;
     padding-top: 75px;
     position: relative;
 
@@ -234,8 +233,8 @@
                     }
 
                     .heading-sm {
-                        border-bottom: 1px solid var(--color-black);
-                        color: var(--color-black);
+                        border-bottom: 1px solid var(--border-color);
+                        color: var(--color-dark-grey);
                         padding: 0 20px 20px 0;
                         position: relative;
                         font-size: 16px;
@@ -251,8 +250,8 @@
                             height: 8px;
                             border-radius: 2px;
                             display: inline-block;
-                            border-bottom: 2px solid var(--color-black);
-                            border-right: 2px solid var(--color-black);
+                            border-bottom: 2px solid var(--border-color);
+                            border-right: 2px solid var(--border-color);
                             transform: rotate(45deg);
                         }
 

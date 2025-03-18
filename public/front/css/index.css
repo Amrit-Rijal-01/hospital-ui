@@ -649,6 +649,13 @@ a:hover {
   background-color: var(--color-dark-1);
 }
 
+section {
+  padding: 50px 0;
+}
+section:nth-child(odd) {
+  background-color: var(--secondary-white);
+}
+
 .top-banner {
   position: relative;
 }
@@ -894,6 +901,10 @@ a:hover {
 .specialities .main-container .specialities-inner .sp-inner-care .sp-wrapper a:hover {
   color: var(--color-light-2);
 }
+.specialities .main-container .specialities-inner .sp-inner-care .hover-btn {
+  font-size: 13px;
+  font-weight: 600;
+}
 .specialities .main-container .specialities-inner .sp-inner-search {
   flex: 5;
 }
@@ -917,7 +928,7 @@ a:hover {
   text-transform: capitalize;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 13px;
 }
 .specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-by button:hover {
   background-color: var(--color-light-2);
@@ -927,7 +938,6 @@ a:hover {
   max-width: 500px;
   display: flex;
   flex-wrap: wrap;
-  text-transform: capitalize;
   margin-top: 30px;
 }
 .specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-letter .letter-wrap {
@@ -960,11 +970,16 @@ a:hover {
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  text-transform: capitalize;
   transition: 0.2s;
 }
 .specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-letter .letter-wrap button span:hover {
   color: #fff;
-  background-color: var(--color-light-2);
+  background-color: var(--color-main);
+}
+.specialities .main-container .specialities-inner .sp-inner-search .hover-btn {
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .team-section .main-container .meet-doc-content .meet-doc-title {
@@ -1234,8 +1249,8 @@ a:hover {
   cursor: pointer;
 }
 .why-hospital .why-resp-wrapper .why-resp-content .list-accor li .heading-sm {
-  border-bottom: 1px solid var(--color-black);
-  color: var(--color-black);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--color-dark-grey);
   padding: 0 20px 20px 0;
   position: relative;
   font-size: 16px;
@@ -1251,8 +1266,8 @@ a:hover {
   height: 8px;
   border-radius: 2px;
   display: inline-block;
-  border-bottom: 2px solid var(--color-black);
-  border-right: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--border-color);
+  border-right: 2px solid var(--border-color);
   transform: rotate(45deg);
 }
 .why-hospital .why-resp-wrapper .why-resp-content .list-accor li .accor-collapse-wrapper {
@@ -1280,13 +1295,11 @@ a:hover {
 }
 
 .services {
-  padding: 50px 0;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
   color: var(--color-dark-grey);
-  background-color: var(--secondary-white);
 }
 .services .main-container .service-slider {
   padding: 18px 0;
@@ -1325,9 +1338,6 @@ a:hover {
   margin: 20px;
 }
 
-.story {
-  padding: 50px 0;
-}
 .story .main-container {
   padding: 0 20px;
 }
@@ -1376,6 +1386,8 @@ a:hover {
 .story .main-container .videos .video-wrapper .glightbox .each-video {
   position: relative;
   display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .story .main-container .videos .video-wrapper .glightbox .each-video {
@@ -1511,6 +1523,9 @@ a:hover {
     left: 30px;
   }
 }
+.national .main-container-2 .content .inter-doc .text {
+  color: #fff;
+}
 .national .main-container-2 .content .inter-doc .text .heading-sm {
   font-weight: 600;
 }
@@ -1521,6 +1536,7 @@ a:hover {
   font-weight: 600;
   display: flex;
   flex-direction: column;
+  color: var(--color-white);
 }
 @media (max-width: 768px) {
   .national .main-container-2 .content .inter-doc .text .para {
@@ -1634,6 +1650,9 @@ a:hover {
 .national .main-container-2 .inter-counting-mob .stats-container {
   margin: 0 auto;
   text-align: center;
+}
+.national .main-container-2 .inter-counting-mob .stats-container .heading-lg {
+  color: var(--color-white) !important;
 }
 .national .main-container-2 .inter-counting-mob .button-container {
   display: flex;

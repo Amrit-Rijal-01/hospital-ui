@@ -65,7 +65,7 @@
                     <hr>
                 </div>
                 <div class="hover-button">
-                    <x-hoverBtn href="https://www.google.com" target="_blank">
+                    <x-hoverBtn class="hover-btn" href="https://www.google.com" target="_blank">
                         View All Specialities
                     </x-hoverBtn>
                 </div>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="hover-button">
-                    <x-hoverBtn href="#">View All Technologies</x-hoverBtn>
+                    <x-hoverBtn class="hover-btn" href="#">View All Technologies</x-hoverBtn>
                 </div>
 
             </div>

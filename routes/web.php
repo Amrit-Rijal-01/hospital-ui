@@ -11,3 +11,6 @@ Route::get('/career', function() {
 Route::get('/speciality', function () {
     return view('front.pages.speciality');
 });
+Route::get('/contact-us', function() {
+    return view('front.pages.contact-us');
+});

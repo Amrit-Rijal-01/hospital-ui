@@ -2,6 +2,7 @@
     background-color: var(--secondary-white);
 
     padding: 100px 0 50px;
+
     @media (max-width: 769px) {
         padding: 30px 0;
     }
@@ -23,27 +24,27 @@
                     font-weight: 600;
 
                     @media (min-width: 1367px) and (max-width: 1599px) {
-                            font-size: 38px;
-                        }
+                        font-size: 38px;
+                    }
 
-                        @media (min-width: 1200px) and (max-width: 1366px) {
-                            font-size: 30px;
-                        }
+                    @media (min-width: 1200px) and (max-width: 1366px) {
+                        font-size: 30px;
+                    }
 
-                        @media (min-width: 992px) and (max-width: 1199px) {
-                            font-size: 36px;
-                            width: 70%;
-                        }
+                    @media (min-width: 992px) and (max-width: 1199px) {
+                        font-size: 36px;
+                        width: 70%;
+                    }
 
-                        @media (min-width: 769px) and (max-width: 991px) {
-                            font-size: 28px;
-                            width: 100%;
-                            margin-bottom: 20px;
-                        }
+                    @media (min-width: 769px) and (max-width: 991px) {
+                        font-size: 28px;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
 
-                        @media (max-width: 768px) {
-                            display: none;
-                        }
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
                 }
             }
 
@@ -75,6 +76,11 @@
                         }
                     }
                 }
+
+                .hover-btn {
+                    font-size: 13px;
+                    font-weight: 600;
+                }
             }
 
             .sp-inner-search {
@@ -82,17 +88,19 @@
 
                 .sp-wrapper {
                     .sp-subheading {
-                            font-size: 20px;
-                            font-weight: 700;
-                            color: var(--color-grey);
-                            margin-bottom: 26px;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: var(--color-grey);
+                        margin-bottom: 26px;
                     }
+
                     .sp-search-by {
                         .active-btn {
                             background-color: var(--color-main);
                             color: var(--color-white);
                             transition: 0.2s ease-out;
                         }
+
                         button {
                             border: 1px solid var(--color-grey);
                             border-radius: 40px;
@@ -102,7 +110,7 @@
                             text-transform: capitalize;
                             font-style: normal;
                             font-weight: 600;
-                            font-size: 0.8rem;
+                            font-size: 13px;
 
                             &:hover {
                                 background-color: var(--color-light-2);
@@ -115,7 +123,6 @@
                         max-width: 500px;
                         display: flex;
                         flex-wrap: wrap;
-                        text-transform: capitalize;
                         margin-top: 30px;
 
                         .letter-wrap {
@@ -148,16 +155,21 @@
                                     align-items: center;
                                     justify-content: center;
                                     background-color: #fff;
+                                    text-transform: capitalize;
                                     transition: .2s;
 
                                     &:hover {
                                         color: #fff;
-                                        background-color: var(--color-light-2);
+                                        background-color: var(--color-main);
                                     }
                                 }
                             }
                         }
                     }
+                }
+                .hover-btn {
+                    font-size: 13px;
+                    font-weight: 600;
                 }
             }
         }
