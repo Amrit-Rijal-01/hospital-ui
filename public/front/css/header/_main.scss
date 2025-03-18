@@ -132,12 +132,14 @@
                         z-index: 999;
                         width: 280px;
                         list-style: none;
-                        margin-top: 20px;
+                        margin-top: 15px;
 
                         @media screen and (max-width: 1199px) {
                             position: static;
                             width: auto;
                             box-shadow: none;
+                            padding: 0;
+                            margin-top: 0;
                             margin-bottom: 15px;
                         }
 
@@ -155,6 +157,10 @@
                             align-items: center;
                             gap: 10px;
                             min-height: 50px;
+
+                            @media screen and (max-width: 1199px) {
+                                padding-left: 25px;
+                            }
 
                         }
                     }
