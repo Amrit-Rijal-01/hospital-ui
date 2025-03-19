@@ -9,6 +9,7 @@
     @include('front.includes.health-library.health-care')
     @include('front.includes.health-library.technology')
     @include('front.includes.health-library.knowledge')
+    @include('front.includes.health-library.health-wellness')
     @include('front.includes.health-library.download')
     @include('front.includes.health-library.event')
 @endsection

@@ -2921,6 +2921,137 @@ section:nth-of-type(odd) {
   max-height: 1000px;
 }
 
+.banner {
+  padding: 0;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+}
+.banner .title {
+  width: 100%;
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#diseases-section .main-container .search {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+  padding: 0 16px;
+}
+#diseases-section .main-container .search .form-floating {
+  position: relative;
+}
+#diseases-section .main-container .search .form-floating .form-control {
+  border-radius: 50px;
+}
+#diseases-section .main-container .search .form-floating button {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  border-radius: 50%;
+  text-align: center;
+  border: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#diseases-section .main-container .diseases .most-searched-terms ul {
+  margin: 0 -50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+#diseases-section .main-container .diseases .most-searched-terms ul li {
+  width: 50%;
+  padding: 0 50px;
+  font-size: 15px;
+  font-weight: 500;
+}
+#diseases-section .main-container .diseases .most-searched-terms ul li a {
+  color: var(--color-grey);
+  display: block;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border-color);
+}
+#diseases-section .main-container .diseases .most-searched-terms ul li a:hover {
+  color: var(--color-main);
+  border-color: var(--color-main);
+}
+#diseases-section .main-container .diseases .most-searched-terms ul li a:hover i {
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+#diseases-section .main-container .diseases .most-searched-terms ul li span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+#diseases-section .main-container .diseases .most-searched-terms ul li span i {
+  width: 6px;
+  opacity: 0;
+  margin-left: -10px;
+  transition: 0.3s;
+  visibility: hidden;
+}
+#diseases-section .main-container .sp-search-letter {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#diseases-section .main-container .sp-search-letter .letter-wrap {
+  position: relative;
+  width: 16.66%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+#diseases-section .main-container .sp-search-letter .letter-wrap button {
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+  border: 0;
+  border-radius: 50%;
+  width: 100%;
+  background-color: var(--color-white);
+}
+#diseases-section .main-container .sp-search-letter .letter-wrap button span {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 22px #ddd;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  text-transform: capitalize;
+  transition: 0.2s;
+}
+#diseases-section .main-container .sp-search-letter .letter-wrap button span:hover {
+  color: #fff;
+  background-color: var(--color-main);
+}
+
 .top-banner {
   padding-bottom: 50px;
 }

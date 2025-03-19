@@ -14,3 +14,7 @@ Route::get('/speciality', function () {
 Route::get('/contact-us', function() {
     return view('front.pages.contact-us');
 });
+Route::get('/health-library', function() {
+    return view('front.pages.health-library');
+});
+
