@@ -36,6 +36,13 @@ a {
         color: var(--color-light-1);
     }
 }
+section {
+    padding: 50px 0;
+
+    &:nth-of-type(odd) {
+        background-color: var(--secondary-white);
+    }
+}
 
 @import './components/main';
 
@@ -258,7 +265,7 @@ body {
 
 @import './career/main';
 
-
+@import './contact-us/main';
 
 @import './footer/main';
 

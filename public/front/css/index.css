@@ -58,6 +58,13 @@ a:hover {
   color: var(--color-light-1);
 }
 
+section {
+  padding: 50px 0;
+}
+section:nth-of-type(odd) {
+  background-color: var(--secondary-white);
+}
+
 .hover-btn-link {
   transition: 0.2s ease-out;
   gap: 0.5rem;
@@ -647,13 +654,6 @@ a:hover {
 }
 #submit-callback:hover {
   background-color: var(--color-dark-1);
-}
-
-section {
-  padding: 50px 0;
-}
-section:nth-child(odd) {
-  background-color: var(--secondary-white);
 }
 
 .top-banner {
@@ -2006,13 +2006,6 @@ section:nth-child(odd) {
 }
 .events-news .main-container .events .each-event .content {
   flex: 5;
-}
-
-section {
-  padding: 50px 0;
-}
-section:nth-child(odd) {
-  background-color: var(--secondary-white);
 }
 
 .overview .main-container .col-wrapper .btn {
@@ -3542,6 +3535,55 @@ section:nth-child(odd) {
   border-radius: 20px;
   border: none;
   font-weight: 600;
+}
+
+.contact {
+  background: url("/front/img/contact-us/contact-banner-lg.jpg") no-repeat !important;
+  background-size: cover;
+}
+.contact .main-container .heading-group {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  color: var(--color-white);
+}
+.contact .main-container .form-container .detail {
+  background-color: var(--secondary-white);
+  border-radius: 25px;
+  padding: 25px;
+}
+.contact .main-container .form-container .detail .first .logo {
+  background-color: var(--color-main);
+  color: var(--color-white);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .main-container .form-container .detail .first .info .head {
+  font-weight: 600;
+}
+.contact .main-container .form-container .detail .first .info .socials .bi {
+  font-size: 20px;
+}
+.contact .main-container .form-container .form {
+  background-color: var(--secondary-white);
+  border-radius: 25px;
+  padding: 25px;
+}
+.contact .main-container .form-container .form .form-floating label {
+  margin-left: 12px;
+}
+.contact .main-container .form-container .form .submit-btn {
+  border: none;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  border-radius: 25px;
 }
 
 footer {

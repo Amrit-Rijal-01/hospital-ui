@@ -1,10 +1,2 @@
-section {
-    padding: 50px 0;
-
-    &:nth-child(odd) {
-        background-color: var(--secondary-white);
-    }
-}
-
 @import './contact';
 @import './find-us.scss';
