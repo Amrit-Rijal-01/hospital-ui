@@ -3165,6 +3165,36 @@ section:nth-of-type(odd) {
   padding: 30px;
 }
 
+#technology .main-container .heading-group {
+  position: relative;
+}
+#technology .main-container .heading-group .button {
+  position: absolute;
+  top: 0;
+  right: 2%;
+}
+@media (max-width: 768px) {
+  #technology .main-container .heading-group .button {
+    display: none !important;
+  }
+}
+#technology .main-container .technology-slider .tech-card {
+  background-color: var(--color-white);
+}
+#technology .main-container .technology-slider .tech-card img {
+  height: 100%;
+  border-radius: 25px;
+}
+#technology .main-container .mobile-btn {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  #technology .main-container .mobile-btn {
+    display: none;
+  }
+}
+
 .top-banner {
   padding-bottom: 50px;
 }
