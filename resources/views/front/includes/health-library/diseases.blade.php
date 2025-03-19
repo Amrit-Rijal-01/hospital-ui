@@ -38,7 +38,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 find">
                 <div class="heading-sm">
                     Find Diseases & Conditions By First Letter
                 </div>

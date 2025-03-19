@@ -2967,6 +2967,16 @@ section:nth-of-type(odd) {
   border-radius: 50%;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  #diseases-section .main-container .diseases {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  #diseases-section .main-container .diseases .most-searched-terms {
+    margin-bottom: 40px;
+  }
+}
 #diseases-section .main-container .diseases .most-searched-terms ul {
   margin: 0 -50px;
   padding: 0;
@@ -2974,12 +2984,21 @@ section:nth-of-type(odd) {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding-right: 5px;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 240px;
 }
 #diseases-section .main-container .diseases .most-searched-terms ul li {
   width: 50%;
   padding: 0 50px;
   font-size: 15px;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  #diseases-section .main-container .diseases .most-searched-terms ul li {
+    width: 100%;
+  }
 }
 #diseases-section .main-container .diseases .most-searched-terms ul li a {
   color: var(--color-grey);
@@ -3007,6 +3026,11 @@ section:nth-of-type(odd) {
   margin-left: -10px;
   transition: 0.3s;
   visibility: hidden;
+}
+#diseases-section .main-container .find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #diseases-section .main-container .sp-search-letter {
   max-width: 500px;
@@ -3050,6 +3074,49 @@ section:nth-of-type(odd) {
 #diseases-section .main-container .sp-search-letter .letter-wrap button span:hover {
   color: #fff;
   background-color: var(--color-main);
+}
+
+#health-library .main-container .health-library-slide .health-library-card {
+  margin: 15px;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  background: url("/front/img/health-library/pattern-bg.png") top left #fff;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+  padding: 30px;
+  height: 100%;
+}
+#health-library .main-container .health-library-slide .health-library-card:hover {
+  background-color: var(--color-light-1);
+  color: var(--color-white);
+}
+#health-library .main-container .health-library-slide .health-library-card:hover .btn {
+  color: var(--color-white) !important;
+}
+#health-library .main-container .health-library-slide .health-library-card:hover .btn .orange-right {
+  background-color: var(--color-white);
+  color: var(--color-light-1);
+}
+#health-library .main-container .health-library-slide .health-library-card .img-wrapper {
+  width: 82px;
+  margin: 0 auto 20px;
+  flex-shrink: 0;
+  height: 82px;
+}
+#health-library .main-container .health-library-slide .health-library-card .img-wrapper img {
+  width: 82px;
+  height: 82px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#health-library .main-container .health-library-slide .health-library-card .heading-sm {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#health-library .main-container .health-library-slide .health-library-card .btn {
+  align-self: center;
 }
 
 .top-banner {
