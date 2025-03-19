@@ -66,6 +66,7 @@ section:nth-of-type(odd) {
 }
 
 .hover-btn-link {
+  font-weight: 600;
   transition: 0.2s ease-out;
   gap: 0.5rem;
 }
@@ -338,7 +339,7 @@ section:nth-of-type(odd) {
   background-color: #fff;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 1%;
   transform: translateY(-50%);
   z-index: 99;
 }
@@ -353,7 +354,7 @@ section:nth-of-type(odd) {
   position: absolute;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 1%;
   transform: translateY(-50%);
   z-index: 99;
 }
@@ -3117,6 +3118,51 @@ section:nth-of-type(odd) {
 }
 #health-library .main-container .health-library-slide .health-library-card .btn {
   align-self: center;
+}
+
+#health-care .main-container .desktop-card {
+  border-radius: 25px;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  #health-care .main-container .desktop-card {
+    display: none;
+  }
+}
+#health-care .main-container .desktop-card .col-3 {
+  background-color: var(--secondary-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+#health-care .main-container .desktop-card .col-3 img {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  #health-care .main-container .mobile-slider {
+    display: none;
+  }
+}
+#health-care .main-container .mobile-slider .mobile-card {
+  background-color: var(--secondary-white);
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+#health-care .main-container .mobile-slider .mobile-card img {
+  width: 100%;
+}
+#health-care .main-container .mobile-slider .mobile-card .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .top-banner {
