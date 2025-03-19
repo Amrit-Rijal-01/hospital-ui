@@ -42,13 +42,22 @@
                         </a>
                         <ul class="drop-menu">
                             <li>
-                                <a href="#" class="drop-item">Health Library 1</a>
+                                <a href="/health-library" class="drop-item">Health Library</a>
                             </li>
                             <li>
-                                <a href="#" class="drop-item">Health Library 2</a>
+                                <a href="/treatments" class="drop-item">Treatments</a>
                             </li>
                             <li>
-                                <a href="#" class="drop-item">Health Library 3</a>
+                                <a href="/technologies" class="drop-item">Technologies</a>
+                            </li>
+                            <li>
+                                <a href="/ailments" class="drop-item">Ailments</a>
+                            </li>
+                            <li>
+                                <a href="/events" class="drop-item">Events</a>
+                            </li>
+                            <li>
+                                <a href="/downloads" class="drop-item">Downloads</a>
                             </li>
                         </ul>
                     </li>
