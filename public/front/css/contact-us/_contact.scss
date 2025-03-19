@@ -49,7 +49,7 @@
                 background-color: var(--secondary-white);
                 border-radius: 25px;
                 padding: 25px;
-                
+
                 .form-floating {
                     label {
                         margin-left: 12px;
@@ -63,6 +63,11 @@
                     border-radius: 20px;
                     font-weight: 600;
                     border-radius: 25px;
+                    transition: 0.2s ease;
+
+                    &:hover {
+                        background-color: var(--color-dark-1);
+                    }
                 }
             }
         }

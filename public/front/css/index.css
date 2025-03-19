@@ -3584,6 +3584,19 @@ section:nth-of-type(odd) {
   border-radius: 20px;
   font-weight: 600;
   border-radius: 25px;
+  transition: 0.2s ease;
+}
+.contact .main-container .form-container .form .submit-btn:hover {
+  background-color: var(--color-dark-1);
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+.map iframe {
+  width: 100%;
+  height: 450px;
 }
 
 footer {
@@ -3662,7 +3675,6 @@ footer .footer-top .main-container .footer-row .footer-block ul {
 }
 footer .footer-top .main-container .footer-row .footer-block ul li {
   list-style: none;
-  padding: 5px 0;
   color: var(--color-grey);
   margin: 0 0 10px;
   font-size: 14px;
