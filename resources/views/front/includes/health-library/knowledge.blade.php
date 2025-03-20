@@ -1,7 +1,7 @@
 <section id="knowledge">
     <div class="main-container">
         <div class="heading text-center mb-4">
-            knowledge Center
+            Knowledge Center
         </div>
         <div class="knowledge-tabs d-flex justify-content-center gap-3 mb-4">
             <div class="tab blogs active" data-tab="tab-1"><button>Blogs</button></div>

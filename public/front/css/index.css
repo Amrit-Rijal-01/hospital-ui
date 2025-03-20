@@ -138,6 +138,7 @@ section:nth-of-type(odd) {
 .main-container {
   width: 90%;
   margin: auto;
+  padding: 0 20px;
 }
 @media (min-width: 1200px) and (max-width: 1499px) {
   .main-container {
@@ -339,7 +340,7 @@ section:nth-of-type(odd) {
   background-color: #fff;
   position: absolute;
   top: 50%;
-  left: 1%;
+  left: 0;
   transform: translateY(-50%);
   z-index: 99;
 }
@@ -354,7 +355,7 @@ section:nth-of-type(odd) {
   position: absolute;
   position: absolute;
   top: 50%;
-  right: 1%;
+  right: 0;
   transform: translateY(-50%);
   z-index: 99;
 }
@@ -3259,6 +3260,91 @@ section:nth-of-type(odd) {
 }
 #knowledge .main-container .tab-content .active {
   display: block;
+}
+
+#health-wellness .main-container .desktop-blogs {
+  color: var(--color-white);
+}
+@media (max-width: 768px) {
+  #health-wellness .main-container .desktop-blogs {
+    display: none;
+  }
+}
+#health-wellness .main-container .desktop-blogs .big-col {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#health-wellness .main-container .desktop-blogs .big-col img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#health-wellness .main-container .desktop-blogs .big-col .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#health-wellness .main-container .desktop-blogs .big-col .content button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+#health-wellness .main-container .desktop-blogs .small-col {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#health-wellness .main-container .desktop-blogs .small-col img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#health-wellness .main-container .desktop-blogs .small-col .heading-sm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+}
+#health-wellness .main-container .desktop-blogs .small-col .heading-sm button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+@media (min-width: 769px) {
+  #health-wellness .main-container .mobile-blog-slide {
+    display: none;
+  }
+}
+#health-wellness .main-container .mobile-blog-slide .blog-card {
+  margin: 15px;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#health-wellness .main-container .mobile-blog-slide .blog-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#health-wellness .main-container .mobile-blog-slide .blog-card .heading-sm {
+  color: var(--color-white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
 }
 
 .top-banner {

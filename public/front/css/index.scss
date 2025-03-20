@@ -49,6 +49,7 @@ section {
 .main-container {
     width: 90%;
     margin: auto;
+    padding: 0 20px;
 
     @media (min-width: 1200px) and (max-width: 1499px) {
         width: 95%;
@@ -232,7 +233,7 @@ body {
     background-color: #fff;
     position: absolute;
     top: 50%;
-    left: 1%;
+    left: 0;
     transform: translateY(-50%);
     z-index: 99;
 }
@@ -247,7 +248,7 @@ body {
     position: absolute;
     position: absolute;
     top: 50%;
-    right: 1%;
+    right: 0;
     transform: translateY(-50%);
     z-index: 99;
 }
