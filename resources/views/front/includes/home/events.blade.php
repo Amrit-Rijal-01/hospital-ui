@@ -72,7 +72,7 @@
                         <div class="month">Chaitra</div>
                     </div>
                     <div class="content d-flex flex-column gap-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error at ipsa velit saepe consequatur quos expedita ea, vitae corporis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error at ipsa</p>
                         <div class="location">
                             <i class="bi bi-geo-alt"></i> Biratnagar
                         </div>

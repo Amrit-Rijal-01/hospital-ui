@@ -1,7 +1,4 @@
-@push('css')
-    <link rel="stylesheet" type="text/css" />
-@endpush
-<div class="top-banner">
+<section class="top-banner">
     <picture class="img-wrap img-fluid">
 
         <source media="(min-width: 768px)" srcset="{{ asset('front/img/banner.jpg') }}">
@@ -53,7 +50,7 @@
             </a>
         </div>
     </div>
-</div>
+</section>
 
 @push('js')
     <script>

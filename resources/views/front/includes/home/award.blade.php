@@ -10,7 +10,7 @@
                     2022
                 </div>
                 <div class="content heading-xs">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, aperiam.
+                    Similique, aperiam.
                 </div>
                 <div class="leaf-right">
                     <img src="{{ asset('front/img/leaf-right.png') }}" alt="leaf">

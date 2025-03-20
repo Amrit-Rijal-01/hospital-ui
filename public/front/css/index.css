@@ -660,6 +660,7 @@ section:nth-of-type(odd) {
 
 .top-banner {
   position: relative;
+  padding-top: 0;
 }
 .top-banner .search-wrapper {
   position: absolute;
@@ -984,6 +985,9 @@ section:nth-of-type(odd) {
   font-weight: 600;
 }
 
+.team-section {
+  padding-bottom: 0;
+}
 .team-section .main-container .meet-doc-content .meet-doc-title {
   color: var(--color-dark-grey);
 }
@@ -1810,9 +1814,13 @@ section:nth-of-type(odd) {
   padding: 30px 90px;
   text-align: center;
   position: relative;
-  height: 100%;
+  aspect-ratio: 2/1;
   box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .awards .main-container .award-slide .slide-card .leaf-left {
   width: 50px;
@@ -1932,6 +1940,7 @@ section:nth-of-type(odd) {
 .events-news .main-container .post-list .list-card img {
   width: 100%;
   height: auto;
+  aspect-ratio: 1/1;
   border-radius: 10px;
 }
 .events-news .main-container .post-list .list-card .list {
@@ -2001,10 +2010,14 @@ section:nth-of-type(odd) {
   padding: 15px 0;
 }
 .events-news .main-container .events .each-event .date {
-  padding: 35px 10px;
+  padding: 20px 10px;
   border-radius: 10px;
   background-color: var(--secondary-white);
-  flex: 1;
+  flex: 2;
+  height: 115px;
+  width: 115px;
+  font-weight: 800;
+  font-size: 24px;
 }
 .events-news .main-container .events .each-event .content {
   flex: 5;

@@ -31,16 +31,6 @@
                         <li><a href="#">More</a></li>
                     </ul>
                 </div>
-                <div class="footer-block wow fadeInUp" onclick="expand(this)">
-                    <h4 class="block-title"  >Our Hospitals</h4>
-                    <ul class="footer-links">
-                        <li><a>XYZ Kathmandu</a></li>
-                        <li><a>XYZ Pokhara</a></li>
-                        <li><a>XYZ Biratnagar</a></li>
-                        <li><a>XYZ Birtamode</a></li>
-                        <li><a>XYZ Itahari</a></li>
-                    </ul>
-                </div>
                 <div class="footer-block" onclick="expand(this)">
                     <h4 class="block-title" >Corporate</h4>
                     <ul class="footer-links">
