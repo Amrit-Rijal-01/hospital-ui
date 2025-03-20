@@ -15,7 +15,7 @@
                     <p class="para-wrap">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis asperiores quia velit sit.
                     </p>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
             </div>
             <div class="tech-card d-flex flex-column flex-xl-row-reverse m-3 rounded-4 overflow-hidden">
@@ -28,7 +28,7 @@
                     <p class="para-wrap">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis asperiores quia velit sit.
                     </p>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
             </div>
             <div class="tech-card d-flex flex-column flex-xl-row-reverse m-3 rounded-4 overflow-hidden">
@@ -41,7 +41,7 @@
                     <p class="para-wrap">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis asperiores quia velit sit.
                     </p>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
             </div>
             <div class="tech-card d-flex flex-column flex-xl-row-reverse m-3 rounded-4 overflow-hidden">
@@ -54,7 +54,7 @@
                     <p class="para-wrap">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis asperiores quia velit sit.
                     </p>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
             </div>
         </div>

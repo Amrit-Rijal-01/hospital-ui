@@ -10,25 +10,25 @@
                 </div>
                 <div class="col-3">
                     <div class="heading-sm mb-3">Our Doctors</div>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
                 <div class="col-3"> <img src="{{ asset('front/img/health-library/health-library-2.jpg') }}" alt="Doctor"></div>
                 <div class="col-3">
                     <div class="heading-sm mb-3">
                         Our Specialities
                     </div>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
                 <div class="col-3">
                     <div class="heading-sm mb-3">Treatments</div>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
                 <div class="col-3"> <img src="{{ asset('front/img/health-library/health-library-2.jpg') }}" alt="Doctor"></div>
                 <div class="col-3">
                     <div class="heading-sm mb-3">
                         Ailments
                     </div>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
                 <div class="col-3">
                     <img src="{{ asset('front/img/health-library/health-library-1.jpg') }}" alt="Doctor">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="body">
                      <div class="heading-sm mb-3">Our Doctors</div>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
             </div>
             <div class="mobile-card">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="body">
                      <div class="heading-sm mb-3">Our Doctors</div>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
             </div>
             <div class="mobile-card">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="body">
                      <div class="heading-sm mb-3">Our Doctors</div>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
             </div>
             <div class="mobile-card">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="body">
                      <div class="heading-sm mb-3">Our Doctors</div>
-                    <x-hoverBtn>Know More</x-hoverBtn>
+                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@
                 <div class="heading-sm">
                     Diseases & Conditions
                 </div>
-                <x-hoverBtn class="btn">Know More</x-hoverBtn>
+                <x-hoverBtn class="btn heading-xs">Know More</x-hoverBtn>
             </div>
             <div class="health-library-card">
                 <div class="img-wrapper">
@@ -20,7 +20,7 @@
                 <div class="heading-sm">
                     Treatments & Procedures
                 </div>
-                <x-hoverBtn class="btn">Know More</x-hoverBtn>
+                <x-hoverBtn class="btn heading-xs">Know More</x-hoverBtn>
             </div>
             <div class="health-library-card">
                 <div class="img-wrapper">
@@ -29,7 +29,7 @@
                 <div class="heading-sm">
                     Diagnostics & Testing
                 </div>
-                <x-hoverBtn class="btn">Know More</x-hoverBtn>
+                <x-hoverBtn class="btn heading-xs">Know More</x-hoverBtn>
             </div>
             <div class="health-library-card">
                 <div class="img-wrapper">
@@ -38,7 +38,7 @@
                 <div class="heading-sm">
                     Technology & Devices
                 </div>
-                <x-hoverBtn class="btn">Know More</x-hoverBtn>
+                <x-hoverBtn class="btn heading-xs">Know More</x-hoverBtn>
             </div>
         </div>
     </div>

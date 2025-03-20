@@ -3365,19 +3365,20 @@ section:nth-of-type(odd) {
   margin: 15px;
   box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  min-height: 450px;
   height: 100%;
   overflow: hidden;
 }
 #downloads .main-container .download-slider .download-card .img-wrapper {
-  height: 60%;
   overflow: hidden;
+  border-radius: 20px;
 }
 #downloads .main-container .download-slider .download-card img {
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 20px;
 }
 #downloads .main-container .download-slider .download-card .content {
   height: 40%;
@@ -3388,6 +3389,52 @@ section:nth-of-type(odd) {
 }
 @media (min-width: 769px) {
   #downloads .main-container .mobile-btn {
+    display: none;
+  }
+}
+
+#events .main-container .heading-group {
+  position: relative;
+}
+#events .main-container .heading-group .button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 768px) {
+  #events .main-container .heading-group .button {
+    display: none !important;
+  }
+}
+#events .main-container .event-slider .event-card {
+  position: relative;
+  margin: 15px;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+#events .main-container .event-slider .event-card .img-wrapper {
+  height: 60%;
+  overflow: hidden;
+}
+#events .main-container .event-slider .event-card img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+#events .main-container .event-slider .event-card .content {
+  height: 40%;
+}
+#events .main-container .mobile-btn {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  #events .main-container .mobile-btn {
     display: none;
   }
 }

@@ -7,7 +7,7 @@
         <div class="download-slider">
             <div class="download-card">
                 <div>
-                    <a href="{{ asset('front/img/test.mp4') }}" class="glightbox">
+                    <div href="{{ asset('front/img/test.mp4') }}" class="glightbox">
                         <div class="img-wrapper">
                             <img src="{{ asset('front/img/career/staff.jpg') }}" alt="Staff">
                         </div>
@@ -15,12 +15,12 @@
                             <div class="heading-sm mb-3">Heading of the download </div>
                             <div class="date">Updated on: March 21, 2025</div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div class="download-card">
                 <div>
-                    <a href="{{ asset('front/img/test.mp4') }}" class="glightbox">
+                    <div href="{{ asset('front/img/test.mp4') }}" class="glightbox">
                         <div class="img-wrapper">
                             <img src="{{ asset('front/img/career/paramedic.jpg') }}" alt="Paramedic">
                         </div>
@@ -28,12 +28,12 @@
                             <div class="heading-sm mb-3">Heading of the download </div>
                             <div class="date">Updated on: March 21, 2025</div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div class="download-card">
                 <div>
-                    <a href="{{ asset('front/img/test.mp4') }}" class="glightbox">
+                    <div href="{{ asset('front/img/test.mp4') }}" class="glightbox">
                         <div class="img-wrapper">
                             <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Nurse">
                         </div>
@@ -41,12 +41,12 @@
                             <div class="heading-sm mb-3">Heading of the download </div>
                             <div class="date">Updated on: March 21, 2025</div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div class="download-card">
                 <div>
-                    <a href="{{ asset('front/img/test.mp4') }}" class="glightbox">
+                    <div href="{{ asset('front/img/test.mp4') }}" class="glightbox">
                         <div class="img-wrapper">
                             <img class="img-fluid" src="{{ asset('front/img/career/nurse.jpg') }}" alt="Nurse">
                         </div>
@@ -54,7 +54,7 @@
                             <div class="heading-sm mb-3">Heading of the download </div>
                             <div class="date">Updated on: March 21, 2025</div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
