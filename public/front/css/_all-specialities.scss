@@ -1,5 +1,8 @@
 #all-specialities {
     .specialities-cards {
+        .card-col {
+            display: none;
+        }
 
         .each-card {
             box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
@@ -51,4 +54,12 @@
 
         }
     }
+}
+
+#load-more {
+    background-color: var(--color-main);
+    border: none;
+    color: var(--color-white);
+    padding: 10px 15px;
+    border-radius: 25px;
 }

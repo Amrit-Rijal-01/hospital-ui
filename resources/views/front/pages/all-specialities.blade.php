@@ -11,53 +11,60 @@
             </div>
             <div class="specialities-cards">
                 <div class="row">
-                    <div class="col6 col-lg-4 col-md-3">
-                        <div class="each-card">
-                            <div class="img-wrapper">
-                                <img src="{{ asset('front/img/health-library/diseases.png') }}" alt="Diseases">
-                            </div>
-                            <div class="heading-sm">
-                                Diseases & Conditions
-                            </div>
-                            <x-hoverBtn class="btn heading-xs">Know More</x-hoverBtn>
-                        </div>
-                    </div>
-                    <div class="col6 col-lg-4 col-md-3">
-                        <div class="each-card">
-                            <div class="img-wrapper">
-                                <img src="{{ asset('front/img/health-library/diseases.png') }}" alt="Diseases">
-                            </div>
-                            <div class="heading-sm">
-                                Diseases & Conditions
-                            </div>
-                            <x-hoverBtn class="btn heading-xs">Know More</x-hoverBtn>
-                        </div>
-                    </div>
-                    <div class="col6 col-lg-4 col-md-3">
-                        <div class="each-card">
-                            <div class="img-wrapper">
-                                <img src="{{ asset('front/img/health-library/diseases.png') }}" alt="Diseases">
-                            </div>
-                            <div class="heading-sm">
-                                Diseases & Conditions
-                            </div>
-                            <x-hoverBtn class="btn heading-xs">Know More</x-hoverBtn>
-                        </div>
-                    </div>
-                    <div class="col6 col-lg-4 col-md-3">
-                        <div class="each-card">
-                            <div class="img-wrapper">
-                                <img src="{{ asset('front/img/health-library/diseases.png') }}" alt="Diseases">
-                            </div>
-                            <div class="heading-sm">
-                                Diseases & Conditions
-                            </div>
-                            <x-hoverBtn class="btn heading-xs">Know More</x-hoverBtn>
-                        </div>
-                    </div>
+                    @php
+                        $specialities = array_fill(0, 20, [
+                            'image' => asset('front/img/health-library/diseases.png'),
+                            'title' => 'Diseases & Conditions',
+                        ]);
+                    @endphp
 
+                    @foreach ($specialities as $speciality)
+                        <div class="card-col col-lg-3 col-md-6 col-sm-6 p-2">
+                            <div class="each-card">
+                                <div class="img-wrapper">
+                                    <img src="{{ $speciality['image'] }}" alt="{{ $speciality['title'] }}">
+                                </div>
+                                <div class="heading-sm">
+                                    {{ $speciality['title'] }}
+                                </div>
+                                <div class="button d-flex justify-content-center">
+                                    <x-hoverBtn class="btn">Know More</x-hoverBtn>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
+            </div>
+            <div class="btn-container d-flex justify-content-center mt-3">
+                <button id="load-more" class=" heading-xs">Load More</button>
             </div>
         </div>
     </section>
 @endsection
+
+@push('js')
+    <script>
+        $(document).ready(function() {
+            let cardsPerPage = 16;
+            let totalCards = $(".card-col").length;
+            let currentCount = 0;
+
+            function showMoreCards() {
+                $(".card-col").slice(currentCount, currentCount + cardsPerPage).fadeIn();
+                currentCount += cardsPerPage;
+                console.log($('.card-col'), currentCount);
+
+
+                if (currentCount >= totalCards) {
+                    $("#load-more").hide(); // Hide button when all cards are shown
+                }
+            }
+
+            showMoreCards(); // Load the first 16 cards initially
+
+            $("#load-more").on("click", function() {
+                showMoreCards();
+            });
+        });
+    </script>
+@endpush

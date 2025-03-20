@@ -2923,6 +2923,9 @@ section:nth-of-type(odd) {
   max-height: 1000px;
 }
 
+#all-specialities .specialities-cards .card-col {
+  display: none;
+}
 #all-specialities .specialities-cards .each-card {
   box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -2963,6 +2966,14 @@ section:nth-of-type(odd) {
 }
 #all-specialities .specialities-cards .each-card .btn {
   align-self: center;
+}
+
+#load-more {
+  background-color: var(--color-main);
+  border: none;
+  color: var(--color-white);
+  padding: 10px 15px;
+  border-radius: 25px;
 }
 
 .banner {
@@ -4304,7 +4315,3 @@ footer .footer-bottom .copyright {
   height: 24px;
   fill: none;
 }/*# sourceMappingURL=index.css.map */
-
-.testing {
-    background-color: red;
-}
