@@ -2923,6 +2923,48 @@ section:nth-of-type(odd) {
   max-height: 1000px;
 }
 
+#all-specialities .specialities-cards .each-card {
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  background: url("/front/img/health-library/pattern-bg.png") top left #fff;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+  padding: 30px;
+  height: 100%;
+}
+#all-specialities .specialities-cards .each-card:hover {
+  background-color: var(--color-light-1);
+  color: var(--color-white);
+}
+#all-specialities .specialities-cards .each-card:hover .btn {
+  color: var(--color-white) !important;
+}
+#all-specialities .specialities-cards .each-card:hover .btn .orange-right {
+  background-color: var(--color-white);
+  color: var(--color-light-1);
+}
+#all-specialities .specialities-cards .each-card .img-wrapper {
+  width: 82px;
+  margin: 0 auto 20px;
+  flex-shrink: 0;
+  height: 82px;
+}
+#all-specialities .specialities-cards .each-card .img-wrapper img {
+  width: 82px;
+  height: 82px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#all-specialities .specialities-cards .each-card .heading-sm {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#all-specialities .specialities-cards .each-card .btn {
+  align-self: center;
+}
+
 .banner {
   padding: 0;
   position: relative;
@@ -4205,6 +4247,11 @@ footer .footer-top .main-container .footer-row .footer-block ul li {
 footer .footer-top .main-container .footer-row .footer-block ul li a {
   display: block;
   color: inherit;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+footer .footer-top .main-container .footer-row .footer-block ul li a:hover {
+  color: var(--color-black);
 }
 footer .footer-bottom {
   margin-top: 20px;
@@ -4257,3 +4304,7 @@ footer .footer-bottom .copyright {
   height: 24px;
   fill: none;
 }/*# sourceMappingURL=index.css.map */
+
+.testing {
+    background-color: red;
+}
