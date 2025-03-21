@@ -92,6 +92,9 @@ section:nth-of-type(odd) {
   transition: transform 0.2s ease-out;
 }
 
+.main-card {
+  cursor: none;
+}
 .main-card img {
   width: 100%;
   height: 100%;
@@ -161,6 +164,14 @@ section:nth-of-type(odd) {
   border: 0;
   cursor: pointer;
   color: var(--color-grey);
+}
+#all-section .main-container .letter-slider .char.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+#all-section .main-container .letter-slider .active {
+  background-color: var(--color-main);
+  color: var(--color-white);
 }
 #all-section .main-container .search-input {
   width: 700px;

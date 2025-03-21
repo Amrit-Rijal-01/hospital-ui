@@ -41,9 +41,21 @@
         </div>
         <div class="cards-container">
             <div class="row g-3">
-                @for ($i = 0; $i < 50; $i++)
+                @for ($i = 0; $i < 10; $i++)
                     <div class="col-md-6 treatment-card">
-                        <x-card class="bg-white rounded-4" title="{{ $i }} Title For Treatment">Lorem ipsum
+                        <x-card class="bg-white rounded-4" title="B {{ $i }} Title For Treatment">Lorem ipsum
+                            dolor sit amet
+                            consectetur adipisicing elit. Alias natus tenetur hic doloribus ea, corrupti est praesentium
+                            amet ipsam deserunt.</x-card>
+                    </div>
+                    <div class="col-md-6 treatment-card">
+                        <x-card class="bg-white rounded-4" title="E {{ $i }} Title For Treatment">Lorem ipsum
+                            dolor sit amet
+                            consectetur adipisicing elit. Alias natus tenetur hic doloribus ea, corrupti est praesentium
+                            amet ipsam deserunt.</x-card>
+                    </div>
+                    <div class="col-md-6 treatment-card">
+                        <x-card class="bg-white rounded-4" title="J {{ $i }} Title For Treatment">Lorem ipsum
                             dolor sit amet
                             consectetur adipisicing elit. Alias natus tenetur hic doloribus ea, corrupti est praesentium
                             amet ipsam deserunt.</x-card>
@@ -52,11 +64,11 @@
             </div>
         </div>
         <div class="pagination-container d-flex justify-content-center mt-4">
-            <button id="prevPage" class="left-arrow mx-4"><img
-                    src="{{ asset('front/img/vector-left.png') }}" alt="Left Arrow"></button>
+            <button id="prevPage" class="left-arrow mx-4"><img src="{{ asset('front/img/vector-left.png') }}"
+                    alt="Left Arrow"></button>
             <div id="paginationButtons" class="d-flex"></div>
-            <button id="nextPage" class="right-arrow mx-4"><img
-                    src="{{ asset('front/img/vector-right.png') }}" alt="Right Arrow"></button>
+            <button id="nextPage" class="right-arrow mx-4"><img src="{{ asset('front/img/vector-right.png') }}"
+                    alt="Right Arrow"></button>
         </div>
 
     </div>
@@ -104,52 +116,86 @@
 
             const itemsPerPage = 10;
             let currentPage = 1;
+            let selectedLetter = "all";
             const cards = $(".treatment-card");
-            const totalPages = Math.ceil(cards.length / itemsPerPage);
             const paginationContainer = $("#paginationButtons");
+            const searchBox = $("input[name='searchBox']");
+            const letterButtons = $(".char");
 
-            function showPage(page) {
-                cards.hide(); // Hide all cards
-                const start = (page - 1) * itemsPerPage;
-                const end = start + itemsPerPage;
-                cards.slice(start, end).show(); // Show only the selected page cards
+            function getAvailableLetters() {
+                let letters = new Set();
+                cards.each(function() {
+                    let title = $(this).find(".title").text().trim().toLowerCase();
+                    if (title.length) letters.add(title.charAt(0));
+                });
+
+                letterButtons.each(function() {
+                    let letter = $(this).text().trim().toLowerCase();
+                    $(this).prop("disabled", letter !== "all" && !letters.has(letter))
+                        .toggleClass("disabled", letter !== "all" && !letters.has(letter));
+                });
+            }
+
+            function filterCards() {
+                let searchText = searchBox.val().toLowerCase();
+                let filteredCards = cards.filter(function() {
+                    let title = $(this).find(".title").text().trim().toLowerCase();
+                    return (selectedLetter === "all" || title.startsWith(selectedLetter)) && title.includes(
+                        searchText);
+                });
+                showPage(1, filteredCards);
+                createPaginationButtons(filteredCards);
+            }
+
+            function showPage(page, filteredCards) {
+                currentPage = page;
+                cards.hide();
+                let start = (page - 1) * itemsPerPage;
+                let end = start + itemsPerPage;
+                filteredCards.slice(start, end).show();
+
                 $("#prevPage").prop("disabled", page === 1);
-                $("#nextPage").prop("disabled", page === totalPages);
+                $("#nextPage").prop("disabled", page === Math.ceil(filteredCards.length / itemsPerPage));
                 $(".page-btn").removeClass("active");
                 $(`#page-${page}`).addClass("active");
             }
 
-            function createPaginationButtons() {
-                paginationContainer.empty(); // Clear existing buttons
-                for (let i = 1; i <= totalPages; i++) {
-                    let button = $(
-                        `<button class="mx-1 heading page-btn " id="page-${i}">${i}</button>`);
-                    button.click(() => {
-                        currentPage = i;
-                        showPage(currentPage);
-                    });
+            function createPaginationButtons(filteredCards) {
+                paginationContainer.empty();
+                let pages = Math.ceil(filteredCards.length / itemsPerPage);
+                for (let i = 1; i <= pages; i++) {
+                    let button = $(`<button class="mx-1 heading page-btn" id="page-${i}">${i}</button>`);
+
+                    if (i === 1) {
+                        button.addClass("active");
+                    }
+                    button.click(() => showPage(i, filteredCards));
                     paginationContainer.append(button);
                 }
             }
 
-            // Handle button clicks
+            letterButtons.click(function() {
+                if ($(this).is(":disabled")) return;
+                letterButtons.removeClass("active");
+                $(this).addClass("active");
+                selectedLetter = $(this).text().trim().toLowerCase();
+                filterCards();
+            });
+
+            searchBox.on("input", filterCards);
+
             $("#prevPage").click(() => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    showPage(currentPage);
-                }
+                if (currentPage > 1) showPage(currentPage - 1, $(".treatment-card:visible"));
             });
 
             $("#nextPage").click(() => {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    showPage(currentPage);
+                if (currentPage < Math.ceil($(".treatment-card:visible").length / itemsPerPage)) {
+                    showPage(currentPage + 1, $(".treatment-card:visible"));
                 }
             });
 
-            // Initialize pagination
-            createPaginationButtons();
-            showPage(currentPage);
+            getAvailableLetters();
+            filterCards();
         });
     </script>
 @endpush

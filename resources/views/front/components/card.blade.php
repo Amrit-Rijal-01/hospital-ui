@@ -4,7 +4,7 @@
         <img src="{{ $image }}" alt="{{ $title ?? 'Card Image' }}" class="img-fluid">
     @endif
     <div class="body">
-        <h3 class="heading-md">{{ $title ?? 'Default Title' }}</h3>
+        <h3 class="title heading-md">{{ $title ?? 'Default Title' }}</h3>
         <p class="para-wrap content">{{ $slot ?? 'Default content' }}</p>
         <div class="d-flex justify-content-between know-btn">
             <x-hoverBtn>{{ $btn }}</x-hoverBtn>

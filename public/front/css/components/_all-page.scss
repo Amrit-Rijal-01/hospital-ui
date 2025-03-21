@@ -34,6 +34,15 @@
                 cursor: pointer;
                 color: var(--color-grey);
             }
+
+            .char.disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+            .active {
+                background-color: var(--color-main);
+                color: var(--color-white);
+            }
         }
 
         .search-input {
