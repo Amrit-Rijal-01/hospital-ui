@@ -20,4 +20,6 @@ Route::get('/health-library', function() {
 Route::get('/all-specialities', function () {
     return view('front.pages.all-specialities');
 });
-
+Route::get('/treatments', function () {
+    return view('front.pages.all-treatments');
+});

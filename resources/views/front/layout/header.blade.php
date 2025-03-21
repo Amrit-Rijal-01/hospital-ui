@@ -34,6 +34,9 @@
                             <li>
                                 <a href="/speciality" class="drop-item">Speciality 3</a>
                             </li>
+                            <li>
+                                <a href="/all-specialities" class="drop-item">All Specialities</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="navbar-item" onclick="extendSubMenu(this)">
