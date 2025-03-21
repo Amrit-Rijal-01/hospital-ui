@@ -19,7 +19,7 @@
                 <div class="list-card">
                     <div class="list">
                         <img class="img-fluid" src="{{ asset('front/img/post-image.jpg') }}" alt="Post Image">
-                        <div class="body d-flex flex-column gap-2">
+                        <div class="body d-flex flex-column gap-4">
                             <div class="date">Chaitra 1, 2081</div>
                             <div class="content">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quibusdam hic quae corporis sequi enim.
@@ -33,7 +33,7 @@
                 <div class="list-card">
                     <div class="list">
                         <img src="{{ asset('front/img/post-image.jpg') }}" alt="Post Image">
-                        <div class="body d-flex flex-column gap-2">
+                        <div class="body d-flex flex-column gap-4">
                             <div class="date">Chaitra 1, 2081</div>
                             <div class="content">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quibusdam hic quae corporis sequi enim.
@@ -47,7 +47,7 @@
                 <div class="list-card">
                     <div class="list">
                         <img src="{{ asset('front/img/post-image.jpg') }}" alt="Post Image">
-                        <div class="body d-flex flex-column gap-2">
+                        <div class="body d-flex flex-column gap-4">
                             <div class="date">Chaitra 1, 2081</div>
                             <div class="content">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quibusdam hic quae corporis sequi enim.
@@ -62,19 +62,50 @@
             <div class="events">
                 <div class="heading-sm">Upcoming Events</div>
                 <ul class="tabs d-flex justify-content-evenly p-0">
-                    <li><button onclick="changeTab(this)" class="tab active-tab">CME</button></li>
-                    <li><button onclick="changeTab(this)" class="tab ">OPD</button></li>
-                    <li><button onclick="changeTab(this)" class="tab ">Webinar</button></li>
+                    <li><button onclick="changeTab(this)" class="tab active-tab" data-target="tab-1">CME</button></li>
+                    <li><button onclick="changeTab(this)" class="tab " data-target="tab-2">OPD</button></li>
+                    <li><button onclick="changeTab(this)" class="tab " data-target="tab-3">Webinar</button></li>
                 </ul>
-                <div class="each-event d-flex align-items-center gap-2">
-                    <div class="date d-flex flex-column justify-content-center align-items-center">
-                        <div class="number">1</div>
-                        <div class="month">Chaitra</div>
+                <div class="event-list active" id="tab-1">
+                    <div class="each-event cme active d-flex align-items-center gap-4">
+                        <div class="date d-flex flex-column justify-content-center align-items-center">
+                            <div class="number">1</div>
+                            <div class="month">Chaitra</div>
+                        </div>
+                        <div class="content d-flex flex-column gap-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error at ipsa</p>
+                            <div class="location">
+                                <i class="bi bi-geo-alt"></i> Biratnagar
+                            </div>
+                        </div>
                     </div>
-                    <div class="content d-flex flex-column gap-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error at ipsa</p>
-                        <div class="location">
-                            <i class="bi bi-geo-alt"></i> Biratnagar
+                </div>
+                <div class="event-list" id="tab-2">
+                    <div class="each-event opd d-flex align-items-center gap-4">
+                        <div class="date d-flex flex-column justify-content-center align-items-center">
+                            <div class="number">2</div>
+                            <div class="month">Chaitra</div>
+                        </div>
+                        <div class="content d-flex flex-column gap-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error at ipsa</p>
+                            <div class="location">
+                                <i class="bi bi-geo-alt"></i> Biratnagar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-list" id="tab-3">
+                    <div class="each-event webinar d-flex align-items-center gap-4" >
+                        <div class="date d-flex flex-column justify-content-center align-items-center">
+                            <div class="number">3</div>
+                            <div class="month">Chaitra</div>
+                        </div>
+                        <div class="content d-flex flex-column gap-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error at ipsa</p>
+                            <div class="location">
+                                <i class="bi bi-geo-alt"></i> Biratnagar
+                            </div>
+                            <div class="button"><x-hoverBtn>View Details</x-hoverBtn></div>
                         </div>
                     </div>
                 </div>
@@ -86,9 +117,12 @@
 @push('js')
     <script>
         function changeTab(el) {
-
+            let tabId = $(el).data('target');
             $('.tab').removeClass('active-tab');
             $(el).addClass('active-tab');
+
+            $('.event-list').removeClass('active').hide();
+            $('#' + tabId).addClass('active').fadeIn();
         }
     </script>
 @endpush

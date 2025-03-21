@@ -65,30 +65,36 @@
                             slidesToShow: 2,
                             slidesToScroll: 1,
                             infinite: true,
-                            // centerMode: true,
+                            arrows: true,
                             prevArrow: '<button class="slick-prev left-arrow"><img src="{{ asset('front/img/vector-left.png') }}" alt="Left Arrow"></button>',
                             nextArrow: '<button class="slick-next right-arrow"><img src="{{ asset('front/img/vector-right.png') }}" alt="Right Arrow"></button>',
                             responsive: [{
-                                breakpoint: 768,
-                                settings: {
-                                    arrows: false,
-                                    slidesToShow: 2,
+                                    breakpoint: 768,
+                                    settings: {
+                                        arrows: false,
+                                        slidesToShow: 2,
 
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        arrows: false
+                                    }
                                 }
-                            },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                                arrows: false
-                            }
-                        }]
+                            ]
                         })
                     }
                 } else {
                     if ($slider.hasClass("slick-initialized")) {
                         $slider.slick("unslick");
                     }
+                }
+                if ($(window).width() <= 768) {
+                    $('.slick-prev, .slick-next').hide(); // Hide custom arrows
+                } else {
+                    $('.slick-prev, .slick-next').show(); // Show arrows for larger screens
                 }
             }
             initSlider();

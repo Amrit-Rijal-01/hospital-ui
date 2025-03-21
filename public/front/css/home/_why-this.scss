@@ -1,10 +1,9 @@
 .why-hospital {
-    padding-top: 75px;
     position: relative;
 
     @media (max-width: 768px) {
         // background-color: var(--color-main);
-        padding: 0;
+        padding-top: 0;
     }
 
     .why-wrapper {
@@ -19,7 +18,7 @@
         }
 
         .why-details {
-            padding: 100px 0;
+            padding: 100px 0 0;
 
             .why-list {
                 margin: 0 auto;

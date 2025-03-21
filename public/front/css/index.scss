@@ -39,6 +39,10 @@ a {
 section {
     padding: 50px 0;
 
+    @media (max-width: 768px) {
+        padding: 35px 0;
+    }
+
     &:nth-of-type(odd) {
         background-color: var(--secondary-white);
     }
@@ -174,6 +178,7 @@ section {
 .heading {
     font-size: 32px;
     font-weight: 700;
+    color: var(--color-dark-grey);
 
     @media (min-width: 769px) and (max-width: 1599px) {
         font-size: 24px;
@@ -181,7 +186,6 @@ section {
 
     @media (max-width: 768px) {
         font-size: 18px;
-        margin-bottom: 30px;
     }
 }
 

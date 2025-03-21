@@ -6,7 +6,7 @@
                 <h4 class="sp-subheading">Specialities</h4>
                 <h2 class="sp-heading">An Ecosystem for Clinical Excellence</h2>
             </div>
-            <div class="sp-inner-care p-3 pt-0 fw-bold">
+            <div class="sp-inner-care  fw-bold">
                 <div class="sp-wrapper">
                     <a href="#">
                         <div class="speciality-row">
@@ -70,7 +70,7 @@
                     </x-hoverBtn>
                 </div>
             </div>
-            <div class="sp-inner-search p-3 pt-0">
+            <div class="sp-inner-search">
                 <div class="sp-wrapper">
                     <h4 class="sp-subheading">Search By</h4>
                     <div class="sp-search-by d-flex justify-content-evenly gap-1">

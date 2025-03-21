@@ -61,6 +61,11 @@ a:hover {
 section {
   padding: 50px 0;
 }
+@media (max-width: 768px) {
+  section {
+    padding: 35px 0;
+  }
+}
 section:nth-of-type(odd) {
   background-color: var(--secondary-white);
 }
@@ -114,7 +119,6 @@ section:nth-of-type(odd) {
 }
 .main-card .body .content {
   font-size: 18px;
-  width: 70%;
   font-weight: 500;
   text-align: left;
   color: var(--color-grey);
@@ -275,6 +279,7 @@ section:nth-of-type(odd) {
 .heading {
   font-size: 32px;
   font-weight: 700;
+  color: var(--color-dark-grey);
 }
 @media (min-width: 769px) and (max-width: 1599px) {
   .heading {
@@ -284,7 +289,6 @@ section:nth-of-type(odd) {
 @media (max-width: 768px) {
   .heading {
     font-size: 18px;
-    margin-bottom: 30px;
   }
 }
 
@@ -661,6 +665,7 @@ section:nth-of-type(odd) {
 .top-banner {
   position: relative;
   padding-top: 0;
+  background-color: var(--color-white) !important;
 }
 .top-banner .search-wrapper {
   position: absolute;
@@ -830,11 +835,10 @@ section:nth-of-type(odd) {
 
 .specialities {
   background-color: var(--secondary-white);
-  padding: 100px 0 50px;
 }
-@media (max-width: 769px) {
+@media (min-width: 769px) {
   .specialities {
-    padding: 30px 0;
+    padding-top: 100px;
   }
 }
 .specialities .main-container .specialities-inner .sp-inner-heading {
@@ -881,10 +885,16 @@ section:nth-of-type(odd) {
 .specialities .main-container .specialities-inner .sp-inner-care {
   flex: 4;
   border-right: 1px solid var(--border-color);
+  padding: 0 25px 25px;
 }
 @media (max-width: 1199px) {
   .specialities .main-container .specialities-inner .sp-inner-care {
     border-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .specialities .main-container .specialities-inner .sp-inner-care {
+    padding: 0;
   }
 }
 .specialities .main-container .specialities-inner .sp-inner-care .sp-wrapper {
@@ -910,6 +920,13 @@ section:nth-of-type(odd) {
 }
 .specialities .main-container .specialities-inner .sp-inner-search {
   flex: 5;
+  padding: 0 25px 25px;
+}
+@media (max-width: 768px) {
+  .specialities .main-container .specialities-inner .sp-inner-search {
+    padding: 0;
+    padding-top: 25px;
+  }
 }
 .specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-subheading {
   font-size: 20px;
@@ -919,6 +936,7 @@ section:nth-of-type(odd) {
 }
 .specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-by .active-btn {
   background-color: var(--color-main);
+  border: 1px solid var(--color-main);
   color: var(--color-white);
   transition: 0.2s ease-out;
 }
@@ -987,6 +1005,7 @@ section:nth-of-type(odd) {
 
 .team-section {
   padding-bottom: 0;
+  background-color: var(--color-white) !important;
 }
 .team-section .main-container .meet-doc-content .meet-doc-title {
   color: var(--color-dark-grey);
@@ -1047,12 +1066,11 @@ section:nth-of-type(odd) {
 }
 
 .why-hospital {
-  padding-top: 75px;
   position: relative;
 }
 @media (max-width: 768px) {
   .why-hospital {
-    padding: 0;
+    padding-top: 0;
   }
 }
 @media (max-width: 768px) {
@@ -1066,7 +1084,7 @@ section:nth-of-type(odd) {
   padding-bottom: 40px;
 }
 .why-hospital .why-wrapper .why-details {
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 .why-hospital .why-wrapper .why-details .why-list {
   margin: 0 auto;
@@ -1310,6 +1328,14 @@ section:nth-of-type(odd) {
 .services .main-container .service-slider {
   padding: 18px 0;
 }
+.services .main-container .service-slider .each-card .content {
+  font-size: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
 .services .main-container .service-slider .slick-prev {
   border: none;
   height: 38px;
@@ -1501,6 +1527,7 @@ section:nth-of-type(odd) {
 }
 
 .national {
+  background-color: var(--color-white) !important;
   position: relative;
 }
 .national picture img {
@@ -1701,6 +1728,7 @@ section:nth-of-type(odd) {
   background: url("/front/img/updates-bg.jpg") center center/cover no-repeat;
   padding-top: 60px;
   margin-bottom: 50px;
+  background-color: var(--secondary-white) !important;
 }
 .update .main-container {
   padding: 0 20px;
@@ -1710,7 +1738,6 @@ section:nth-of-type(odd) {
   margin-bottom: 30px;
 }
 .update .main-container .update-slider {
-  position: relative;
   border-radius: 20px;
   background-color: #fff;
   border: 1px solid #d9d9d9;
@@ -1720,31 +1747,20 @@ section:nth-of-type(odd) {
   margin-top: -100px;
 }
 .update .main-container .update-slider .slick-prev {
-  border: none;
-  height: 38px;
-  width: 38px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: -3%;
-  transform: translateY(-50%);
-  z-index: 99;
+  left: -1.5%;
+}
+@media (max-width: 768px) {
+  .update .main-container .update-slider .slick-prev {
+    left: 0;
+  }
 }
 .update .main-container .update-slider .slick-next {
-  border: none;
-  height: 38px;
-  width: 38px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  position: absolute;
-  top: 50%;
-  right: -3%;
-  transform: translateY(-50%);
-  z-index: 99;
+  right: -1.5%;
+}
+@media (max-width: 768px) {
+  .update .main-container .update-slider .slick-next {
+    right: 0;
+  }
 }
 .update .main-container .update-slider .update-card {
   text-align: center;
@@ -1778,6 +1794,7 @@ section:nth-of-type(odd) {
 
 .awards {
   margin-top: 150px;
+  background-color: var(--color-white) !important;
   background: url("/front/img/why-bg.png") top left;
   padding: 40px 0;
 }
@@ -1940,7 +1957,7 @@ section:nth-of-type(odd) {
 .events-news .main-container .post-list .list-card img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1/1;
+  aspect-ratio: 5/4;
   border-radius: 10px;
 }
 .events-news .main-container .post-list .list-card .list {
@@ -1985,11 +2002,12 @@ section:nth-of-type(odd) {
 .events-news .main-container .events .tabs li .active-tab {
   background-color: var(--color-main);
   color: var(--color-white);
+  border: 1px solid var(--color-main);
 }
 .events-news .main-container .events .tabs li button {
   padding: 10px 30px;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   border-radius: 50px;
   border: 1px solid var(--color-black);
   color: var(--color-dark-grey);
@@ -2005,17 +2023,32 @@ section:nth-of-type(odd) {
   background-color: var(--color-light-2);
   color: var(--color-white);
 }
+.events-news .main-container .events .event-list {
+  display: none;
+}
+.events-news .main-container .events .active {
+  display: block;
+}
 .events-news .main-container .events .each-event {
   margin-top: 20px;
   padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.events-news .main-container .events .each-event:last-child {
+  border-bottom: none;
+}
+.events-news .main-container .events .each-event p {
+  margin-bottom: 0;
 }
 .events-news .main-container .events .each-event .date {
-  padding: 20px 10px;
+  width: 120px;
+  height: 116px;
+  text-align: center;
+  line-height: 1;
+  padding: 28px 5px;
   border-radius: 10px;
   background-color: var(--secondary-white);
   flex: 2;
-  height: 115px;
-  width: 115px;
   font-weight: 800;
   font-size: 24px;
 }

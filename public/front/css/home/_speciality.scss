@@ -1,10 +1,10 @@
 .specialities {
     background-color: var(--secondary-white);
 
-    padding: 100px 0 50px;
+    // padding: 100px 0 50px;
 
-    @media (max-width: 769px) {
-        padding: 30px 0;
+    @media (min-width: 769px) {
+        padding-top: 100px;
     }
 
     .main-container {
@@ -51,9 +51,14 @@
             .sp-inner-care {
                 flex: 4;
                 border-right: 1px solid var(--border-color);
+                padding: 0 25px 25px;
 
                 @media (max-width: 1199px) {
                     border-right: 0;
+                }
+
+                @media (max-width: 768px) {
+                    padding: 0;
                 }
 
                 .sp-wrapper {
@@ -85,6 +90,12 @@
 
             .sp-inner-search {
                 flex: 5;
+                padding: 0 25px 25px;
+
+                @media (max-width: 768px) {
+                    padding: 0;
+                    padding-top: 25px;
+                }
 
                 .sp-wrapper {
                     .sp-subheading {
@@ -97,6 +108,7 @@
                     .sp-search-by {
                         .active-btn {
                             background-color: var(--color-main);
+                            border: 1px solid var(--color-main);
                             color: var(--color-white);
                             transition: 0.2s ease-out;
                         }
@@ -167,6 +179,7 @@
                         }
                     }
                 }
+
                 .hover-btn {
                     font-size: 13px;
                     font-weight: 600;
