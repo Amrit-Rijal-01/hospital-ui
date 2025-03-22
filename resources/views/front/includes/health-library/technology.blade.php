@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="mobile-btn">
-            <x-hoverBtn>View All Technology</x-hoverBtn>
+            <x-hoverBtn>View All CME</x-hoverBtn>
         </div>
     </div>
 </section>
