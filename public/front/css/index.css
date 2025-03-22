@@ -92,9 +92,6 @@ section:nth-of-type(odd) {
   transition: transform 0.2s ease-out;
 }
 
-.main-card {
-  cursor: none;
-}
 .main-card img {
   width: 100%;
   height: 100%;
@@ -387,6 +384,26 @@ section:nth-of-type(odd) {
 @media (max-width: 768px) {
   .heading-xs {
     font-size: 13px;
+  }
+}
+
+.banner-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1599px) {
+  .banner-title {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .banner-title {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-title {
+    font-size: 28px;
   }
 }
 
@@ -1446,10 +1463,45 @@ section:nth-of-type(odd) {
   z-index: 99;
 }
 .services .main-container .service-slider .slide {
+  background-color: var(--color-white);
+  border-radius: 25px;
+}
+.services .main-container .service-slider .slide img {
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
-  margin: 20px;
+}
+.services .main-container .service-slider .slide .body {
+  padding: 50px;
+  cursor: pointer;
+  text-align: left;
+}
+@media (max-width: 1299px) {
+  .services .main-container .service-slider .slide .body {
+    padding: 30px;
+  }
+}
+.services .main-container .service-slider .slide .body .heading-md {
+  font-weight: 700;
+  color: var(--color-dark-grey);
+}
+.services .main-container .service-slider .slide .body .content {
+  color: var(--color-grey);
+  margin: 14px 0;
+}
+@media (max-width: 992px) {
+  .services .main-container .service-slider .slide .body .content {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+.services .main-container .service-slider .slide .body .know-btn {
+  font-size: 12px;
+  font-weight: 600;
+}
+.services .main-container .service-slider .slide .body .service-logo {
+  width: 52px;
+  height: 52px;
 }
 
 .story .main-container {
@@ -3617,6 +3669,18 @@ section:nth-of-type(odd) {
   #events .main-container .mobile-btn {
     display: none;
   }
+}
+
+#event-top-banner {
+  padding: 0;
+  position: relative;
+}
+#event-top-banner .banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-white);
 }
 
 .top-banner {

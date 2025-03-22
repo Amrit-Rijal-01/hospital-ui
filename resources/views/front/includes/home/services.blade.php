@@ -4,30 +4,53 @@
             Services
         </div>
         <div class="service-slider d-flex justify-content-between gap-5" id="service-slider">
-            <div class="slide">
-                <x-card image="{{ asset('front/img/service-img.jpg') }}" title="Home Care" class="each-card">
-                    We continue to give you the best care possible, even after you reach home
-                </x-card>
+            <div class="slide m-3">
+                <div class="img-wrapper">
+                    <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image" class="img-fluid">
+                </div>
+                <div class="body">
+                    <h3 class="title heading-md">Service Title</h3>
+                    <p class="para-wrap content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                        repellendus.</p>
+                    <div class="d-flex justify-content-between know-btn">
+                        <x-hoverBtn>Know More</x-hoverBtn>
+                        <div class="service-logo">
+                            <img src="{{ asset('front/img/homecare.svg') }}" alt="Home Care">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slide">
-                <x-card image="{{ asset('front/img/service-img.jpg') }}" title="Home Care" class="each-card">
-                    We continue to give you the best care possible, even after you reach home
-                </x-card>
+            <div class="slide m-3">
+                <div class="img-wrapper">
+                    <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image" class="img-fluid">
+                </div>
+                <div class="body">
+                    <h3 class="title heading-md">Service Title</h3>
+                    <p class="para-wrap content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                        repellendus.</p>
+                    <div class="d-flex justify-content-between know-btn">
+                        <x-hoverBtn>Know More</x-hoverBtn>
+                        <div class="service-logo">
+                            <img src="{{ asset('front/img/homecare.svg') }}" alt="Home Care">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slide">
-                <x-card image="{{ asset('front/img/service-img.jpg') }}" title="Home Care" class="each-card">
-                    We continue to give you the best care possible, even after you reach home
-                </x-card>
-            </div>
-            <div class="slide">
-                <x-card image="{{ asset('front/img/service-img.jpg') }}" title="Home Care" class="each-card">
-                    We continue to give you the best care possible, even after you reach home
-                </x-card>
-            </div>
-            <div class="slide">
-                <x-card image="{{ asset('front/img/service-img.jpg') }}" title="Home Care" class="each-card">
-                    We continue to give you the best care possible, even after you reach home
-                </x-card>
+            <div class="slide m-3">
+                <div class="img-wrapper">
+                    <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image" class="img-fluid">
+                </div>
+                <div class="body">
+                    <h3 class="title heading-md">Service Title</h3>
+                    <p class="para-wrap content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                        repellendus.</p>
+                    <div class="d-flex justify-content-between know-btn">
+                        <x-hoverBtn>Know More</x-hoverBtn>
+                        <div class="service-logo">
+                            <img src="{{ asset('front/img/homecare.svg') }}" alt="Home Care">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -35,7 +58,7 @@
 @push('js')
     <script>
         $(document).ready(function() {
-            $('#service-slider').slick({
+            $('.service-slider').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 arrows: true,

@@ -23,3 +23,6 @@ Route::get('/all-specialities', function () {
 Route::get('/treatments', function () {
     return view('front.pages.all-treatments');
 });
+Route::get('/events', function () {
+    return view('front.pages.events');
+});

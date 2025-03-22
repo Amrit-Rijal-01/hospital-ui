@@ -1,5 +1,5 @@
 @props(['class' => '', 'image' => '', 'title' => '', 'btn' => 'Know More'])
-<div class="main-card {{ $class }}">
+<div class="d-flex flex-column flex-xl-row-reverse main-card {{ $class }}">
     @if($image)
         <img src="{{ $image }}" alt="{{ $title ?? 'Card Image' }}" class="img-fluid">
     @endif
