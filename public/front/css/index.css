@@ -4471,6 +4471,91 @@ section:nth-of-type(odd) {
   font-weight: 600;
 }
 
+#downloads .main-container .tabs-container .tab {
+  display: inline-block;
+  margin: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px 26px;
+  border-radius: 25px;
+  border: 1px solid var(--border-color);
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  transition: 0.2s ease;
+}
+#downloads .main-container .tabs-container .tab:hover {
+  background-color: var(--color-light-1);
+  color: var(--color-white);
+  border-color: var(--color-light-1);
+}
+#downloads .main-container .tabs-container .active {
+  background-color: var(--color-main);
+  color: var(--color-white);
+  border: 1px solid var(--color-main);
+}
+@media (max-width: 768px) {
+  #downloads .main-container .content-row .filter-desktop {
+    display: none;
+  }
+}
+#downloads .main-container .content-row .filter-desktop .form-floating {
+  position: relative;
+}
+#downloads .main-container .content-row .filter-desktop .form-floating input {
+  border-radius: 35px;
+  padding-left: 22px;
+}
+#downloads .main-container .content-row .filter-desktop .form-floating label {
+  margin-left: 10px;
+}
+#downloads .main-container .content-row .filter-desktop .form-floating .search-icon {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  display: flex;
+}
+#downloads .main-container .content-row .content-col .card-row .download-card {
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: var(--color-white);
+}
+#downloads .main-container .content-row .content-col .card-row .download-card .img-wrapper {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#downloads .main-container .content-row .content-col .card-row .download-card .img-wrapper img {
+  border-radius: 25px;
+}
+#downloads .main-container .content-row .content-col .card-row .download-card .img-wrapper .logo {
+  display: inline-block;
+  font-size: 24px;
+  padding: 0 25px;
+  width: 100%;
+  position: absolute;
+  top: 15px;
+}
+#downloads .main-container .content-row .content-col .card-row .download-card .body {
+  padding: 25px;
+}
+
+.modal-body-btn {
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: 1px solid var(--color-grey);
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+.modal-body-btn:hover {
+  background-color: var(--color-main);
+  color: var(--color-white);
+  border-color: var(--color-main);
+}
+
 .contact {
   background: url("/front/img/contact-us/contact-banner-lg.jpg") no-repeat !important;
   background-size: cover;

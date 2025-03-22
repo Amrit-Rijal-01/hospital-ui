@@ -26,3 +26,6 @@ Route::get('/treatments', function () {
 Route::get('/events', function () {
     return view('front.pages.events');
 });
+Route::get('/downloads', function () {
+    return view('front.pages.downloads');
+});
