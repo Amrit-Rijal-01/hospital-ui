@@ -18,7 +18,7 @@ Route::get('/health-library', function() {
     return view('front.pages.health-library.health-library');
 });
 Route::get('/all-specialities', function () {
-    return view('front.pages.health-library.all-specialities');
+    return view('front.pages.all-specialities');
 });
 Route::get('/technologies', function () {
     return view('front.pages.health-library.technologies');
