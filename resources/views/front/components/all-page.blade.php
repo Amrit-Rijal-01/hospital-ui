@@ -1,6 +1,6 @@
 <section id="all-section">
     <div class="main-container">
-        <div class="heading mb-4 text-center">All Heading</div>
+        <div class="heading mb-4 text-center">{{ $title }}</div>
         <div class="letter-slider">
             <div class="char-wrapper"><button class="char char-all active">All</button></div>
             <div class="char-wrapper"><button class="char char-a">A</button></div>
@@ -40,27 +40,8 @@
             </form>
         </div>
         <div class="cards-container">
-            <div class="row g-3">
-                @for ($i = 0; $i < 10; $i++)
-                    <div class="col-md-6 treatment-card">
-                        <x-card class="bg-white rounded-4" title="B {{ $i }} Title For Treatment">Lorem ipsum
-                            dolor sit amet
-                            consectetur adipisicing elit. Alias natus tenetur hic doloribus ea, corrupti est praesentium
-                            amet ipsam deserunt.</x-card>
-                    </div>
-                    <div class="col-md-6 treatment-card">
-                        <x-card class="bg-white rounded-4" title="E {{ $i }} Title For Treatment">Lorem ipsum
-                            dolor sit amet
-                            consectetur adipisicing elit. Alias natus tenetur hic doloribus ea, corrupti est praesentium
-                            amet ipsam deserunt.</x-card>
-                    </div>
-                    <div class="col-md-6 treatment-card">
-                        <x-card class="bg-white rounded-4" title="J {{ $i }} Title For Treatment">Lorem ipsum
-                            dolor sit amet
-                            consectetur adipisicing elit. Alias natus tenetur hic doloribus ea, corrupti est praesentium
-                            amet ipsam deserunt.</x-card>
-                    </div>
-                @endfor
+            <div class="row g-4">
+                {{ $slot }}
             </div>
         </div>
         <div class="pagination-container d-flex justify-content-center mt-4">
@@ -117,7 +98,7 @@
             const itemsPerPage = 10;
             let currentPage = 1;
             let selectedLetter = "all";
-            const cards = $(".treatment-card");
+            const cards = $(".each-card");
             const paginationContainer = $("#paginationButtons");
             const searchBox = $("input[name='searchBox']");
             const letterButtons = $(".char");
@@ -185,12 +166,12 @@
             searchBox.on("input", filterCards);
 
             $("#prevPage").click(() => {
-                if (currentPage > 1) showPage(currentPage - 1, $(".treatment-card:visible"));
+                if (currentPage > 1) showPage(currentPage - 1, $(".each-card:visible"));
             });
 
             $("#nextPage").click(() => {
-                if (currentPage < Math.ceil($(".treatment-card:visible").length / itemsPerPage)) {
-                    showPage(currentPage + 1, $(".treatment-card:visible"));
+                if (currentPage < Math.ceil($(".each-card:visible").length / itemsPerPage)) {
+                    showPage(currentPage + 1, $(".each-card:visible"));
                 }
             });
 

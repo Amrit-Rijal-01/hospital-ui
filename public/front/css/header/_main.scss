@@ -213,7 +213,9 @@
                                 padding-left: 25px;
                             }
                             &.knowledge-link {
-                                border-bottom: none;
+                                @media (max-width: 1199px) {
+                                    border-bottom: none;
+                                }
                             }
 
                         }

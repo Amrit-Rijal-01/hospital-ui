@@ -15,17 +15,35 @@ Route::get('/contact-us', function() {
     return view('front.pages.contact-us');
 });
 Route::get('/health-library', function() {
-    return view('front.pages.health-library');
+    return view('front.pages.health-library.health-library');
 });
 Route::get('/all-specialities', function () {
-    return view('front.pages.all-specialities');
+    return view('front.pages.health-library.all-specialities');
+});
+Route::get('/technologies', function () {
+    return view('front.pages.health-library.technologies');
 });
 Route::get('/treatments', function () {
-    return view('front.pages.all-treatments');
+    return view('front.pages.health-library.treatments');
+});
+Route::get('/ailments', function () {
+    return view('front.pages.health-library.ailments');
 });
 Route::get('/events', function () {
-    return view('front.pages.events');
+    return view('front.pages.health-library.events');
 });
 Route::get('/downloads', function () {
-    return view('front.pages.downloads');
+    return view('front.pages.health-library.downloads');
+});
+Route::get('/blogs', function () {
+    return view('front.pages.health-library.knowledge.blogs');
+});
+Route::get('/videos', function () {
+    return view('front.pages.health-library.knowledge.videos');
+});
+Route::get('/case-studies', function () {
+    return view('front.pages.health-library.knowledge.case-studies');
+});
+Route::get('/news-letter', function () {
+    return view('front.pages.health-library.knowledge.news-letter');
 });
