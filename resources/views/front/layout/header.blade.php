@@ -5,7 +5,7 @@
             <div class="">
                 <ul class="nav-ul">
                     <li class="navbar-item" onclick="extendSubMenu(this)">
-                        <a href="#" class="navbar-link" >
+                        <a href="#" class="navbar-link">
                             Locations <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
@@ -21,7 +21,7 @@
                         </ul>
                     </li>
                     <li class="navbar-item" onclick="extendSubMenu(this)">
-                        <a href="#" class="navbar-link" >
+                        <a href="#" class="navbar-link">
                             Speciality <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
@@ -40,7 +40,7 @@
                         </ul>
                     </li>
                     <li class="navbar-item" onclick="extendSubMenu(this)">
-                        <a href="#" class="navbar-link" >
+                        <a href="#" class="navbar-link">
                             Health Library <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
@@ -56,6 +56,25 @@
                             <li>
                                 <a href="/ailments" class="drop-item">Ailments</a>
                             </li>
+                            <li class="navbar-item knowledge-drop" onclick="extendKnowledgeSubMenu(this, event)">
+                                <a href="#" class="drop-item navbar-link knowledge-link d-flex justify-content-between">
+                                    <span>Knowledge</span> <i class="bi bi-chevron-right"></i>
+                                </a>
+                                <ul class="knowledge-drop-menu">
+                                    <li>
+                                        <a href="/blogs" class="drop-item">Blogs</a>
+                                    </li>
+                                    <li>
+                                        <a href="/videos" class="drop-item">Videos</a>
+                                    </li>
+                                    <li>
+                                        <a href="/case-studies" class="drop-item">Case Studies</a>
+                                    </li>
+                                    <li>
+                                        <a href="/news-letter" class="drop-item">News Letter</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li>
                                 <a href="/events" class="drop-item">Events</a>
                             </li>
@@ -65,7 +84,7 @@
                         </ul>
                     </li>
                     <li class="navbar-item" onclick="extendSubMenu(this)">
-                        <a href="#" class="navbar-link" >
+                        <a href="#" class="navbar-link">
                             Services <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
@@ -84,7 +103,7 @@
                         <a href="/career" class="navbar-link ">Career</a>
                     </li>
                     <li class="navbar-item" onclick="extendSubMenu(this)">
-                        <a href="#" class="navbar-link" >
+                        <a href="#" class="navbar-link">
                             Contact Us <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
@@ -118,7 +137,8 @@
                 <span>Emergency</span>
             </a>
 
-            <button href="#" class="call-back navbar-link" data-bs-toggle="modal" data-bs-target="#resume-modal">
+            <button href="#" class="call-back navbar-link" data-bs-toggle="modal"
+                data-bs-target="#resume-modal">
                 <img src="{{ asset('front/img/phone-icon.png') }}" alt="Call Back" class="call-back-image me-1">
                 <small>Request Call Back</small>
             </button>
@@ -130,53 +150,67 @@
     </div>
 </header>
 <div class="modal fade " id="resume-modal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content p-4">
-                <div class="modal-header p-0 pb-3 border-bottom-0">
-                     <h2 class="modal-title heading-md text-center">Request Call Back</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form action="">
-                    @csrf
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="name" placeholder="Full Name *" required>
-                                <label for="name">Full Name *</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <input type="tel" class="form-control" name="phoneNumber" placeholder="Phone Number *" required>
-                                <label for="phoneNumber">Phone Number *</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" name="email" placeholder="Email Address *" required>
-                                <label for="email" >Email
-                                    Address *</label>
-                            </div>
-                        </div>
-                            <div class="col-12 submit-btn">
-                                <button class="w-100" id="submit-callback">Submit</button>
-                            </div>
-                    </div>
-                </form>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+            <div class="modal-header p-0 pb-3 border-bottom-0">
+                <h2 class="modal-title heading-md text-center">Request Call Back</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <form action="">
+                @csrf
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Full Name *"
+                                required>
+                            <label for="name">Full Name *</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" name="phoneNumber"
+                                placeholder="Phone Number *" required>
+                            <label for="phoneNumber">Phone Number *</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Email Address *"
+                                required>
+                            <label for="email">Email
+                                Address *</label>
+                        </div>
+                    </div>
+                    <div class="col-12 submit-btn">
+                        <button class="w-100" id="submit-callback">Submit</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 @push('js')
     <script>
-            function extendSubMenu(el) {
-                if($(el).hasClass('active-list')) {
-                    $(el).removeClass('active-list');
-                    return;
-                }
-                $('.navbar-item').removeClass('active-list');
-
-               $(el).toggleClass('active-list');
-               event.preventDefault();
+        function extendSubMenu(el) {
+            if ($(el).hasClass('active-list')) {
+                $(el).removeClass('active-list');
+                return;
             }
+            $('.navbar-item').removeClass('active-list');
+
+            $(el).addClass('active-list');
+        }
+
+        function extendKnowledgeSubMenu(el, event) {
+            event.stopPropagation();
+            console.log('clicked');
+
+            if ($(el).hasClass('active-knowledge')) {
+                $(el).removeClass('active-knowledge');
+                return;
+            }
+            $(el).addClass('active-knowledge');
+            // event.preventDefault();
+        }
     </script>
 @endpush
