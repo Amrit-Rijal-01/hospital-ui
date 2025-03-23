@@ -29,7 +29,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        function equalizeCardHeight(selector) {
+            let maxHeight = 0;
 
+            $(selector).css('height', 'auto').each(function() {
+                maxHeight = Math.max(maxHeight, $(this).height());
+            });
+
+            $(selector).height(maxHeight);
+        }
+    </script>
     @stack('js')
 </body>
 

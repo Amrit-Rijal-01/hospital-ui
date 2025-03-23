@@ -25,6 +25,7 @@
                     <div class="body">
                         <h3 class="heading">Doctor</h3>
                         <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam tempore
+                            dolorum nisi provident consequatur? amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur?</p>
                         <div class="d-flex justify-content-center know-btn">
                             <x-hoverBtn>View Jobs</x-hoverBtn>
@@ -101,5 +102,8 @@
             slickToggler();
             $(window).resize(slickToggler);
         })
+        $(window).on('load resize', function() {
+                equalizeCardHeight('.each-card');
+            });
     </script>
 @endpush

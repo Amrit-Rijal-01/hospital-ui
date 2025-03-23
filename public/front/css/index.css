@@ -2480,7 +2480,7 @@ section:nth-of-type(odd) {
   box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
 }
 .team .main-container .team-slider .main-card .img-wrapper {
-  height: 60%;
+  width: 100%;
 }
 .team .main-container .team-slider .main-card .img-wrapper img {
   width: 100%;
@@ -2488,7 +2488,7 @@ section:nth-of-type(odd) {
   aspect-ratio: 3/2;
 }
 .team .main-container .team-slider .main-card .body {
-  height: 40%;
+  width: 100%;
   padding: 30px;
 }
 .team .main-container .team-slider .slick-prev {
@@ -2898,7 +2898,7 @@ section:nth-of-type(odd) {
   box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
 }
 .tech .main-container .content-slider .main-card .img-wrapper {
-  height: 60%;
+  width: 100%;
 }
 .tech .main-container .content-slider .main-card .img-wrapper img {
   width: 100%;
@@ -2906,7 +2906,7 @@ section:nth-of-type(odd) {
   aspect-ratio: 3/2;
 }
 .tech .main-container .content-slider .main-card .body {
-  height: 40%;
+  width: 100%;
   padding: 30px;
 }
 .tech .main-container .content-slider .main-card .body .body-head {
@@ -2933,7 +2933,6 @@ section:nth-of-type(odd) {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #fff;
-  position: absolute;
   position: absolute;
   top: 50%;
   right: 0;
@@ -4076,7 +4075,7 @@ section:nth-of-type(odd) {
   }
 }
 .profession .main-container .card-wrapper .slide .each-card {
-  max-width: 400px;
+  width: 25%;
   text-align: center;
   box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
   height: auto;
@@ -4119,6 +4118,9 @@ section:nth-of-type(odd) {
   font-weight: 500;
   color: var(--color-grey);
   margin: 14px 0;
+  max-height: 6rem;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 @media (max-width: 992px) {
   .profession .main-container .card-wrapper .slide .each-card .body .content {

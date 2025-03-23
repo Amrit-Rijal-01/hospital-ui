@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-card ">
+            <div class="main-card full-height">
                 <div class="img-wrapper">
                     <img src="{{ asset('front/img/speciality/technology-2.jpg') }}" alt="Team Image" class="img-fluid">
                 </div>
@@ -85,6 +85,11 @@
                     }
                 }]
             })
+
+
+            $(window).on('load resize', function() {
+                equalizeCardHeight('.main-card');
+            });
         })
     </script>
 @endpush
