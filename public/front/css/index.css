@@ -4727,6 +4727,9 @@ section:nth-of-type(odd) {
   margin: 0 auto;
   color: var(--color-white);
 }
+.contact .main-container .heading-group .heading {
+  color: var(--color-white);
+}
 .contact .main-container .form-container .detail {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -4778,6 +4781,9 @@ section:nth-of-type(odd) {
 .contact .main-container .form-container .form textarea {
   border: 1px solid black;
   font-size: 12px;
+  resize: none;
+  min-height: 100px;
+  border-radius: 15px;
 }
 .contact .main-container .form-container .form .submit-btn {
   border: none;

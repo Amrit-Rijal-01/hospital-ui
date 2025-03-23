@@ -8,6 +8,9 @@
             max-width: 100%;
             margin: 0 auto;
             color: var(--color-white);
+            .heading {
+                color: var(--color-white);
+            }
         }
 
         .form-container {
@@ -76,6 +79,9 @@
                 textarea {
                     border: 1px solid black;
                     font-size: 12px;
+                    resize: none;
+                    min-height: 100px;
+                    border-radius: 15px;
                 }
 
                 .submit-btn {
