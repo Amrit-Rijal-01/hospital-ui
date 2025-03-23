@@ -1,3 +1,9 @@
+<div class="mob-back-img">
+    <img src="{{ asset('front/img/contact-us/contact-banner-xs.jpg') }}" alt="Mobile Background Image" class="img-fluid w-100">
+    <div class="banner-title">
+        Contact Us
+    </div>
+</div>
 <section class="contact">
     <div class="main-container">
         <div class="heading-group mb-5">
@@ -34,12 +40,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="form col-lg-7">
+                <form class="form col-lg-7">
                     @csrf
                     <div class="heading-md mb-4">Feedback</div>
                     <div class="row">
                         <div class="mb-3 col-md-6">
-                            <label for="fullName">Full Name *</label>
+                            <label for="fullName">Name *</label>
                             <input type="text" name="fullName" class="form-control" placeholder="Enter Your Name" required>
                         </div>
                         <div class="mb-3 col-md-6">
@@ -58,7 +64,7 @@
                     <div class="button align-self-center">
                         <button class="submit-btn">Submit</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

@@ -413,7 +413,7 @@ section:nth-of-type(odd) {
 }
 
 .banner-title {
-  font-size: 48px;
+  font-size: 58px;
   font-weight: 600;
 }
 @media screen and (max-width: 1599px) {
@@ -4717,18 +4717,60 @@ section:nth-of-type(odd) {
   border-color: var(--color-main);
 }
 
+.mob-back-img {
+  position: relative;
+}
+@media (min-width: 991px) {
+  .mob-back-img {
+    display: none;
+  }
+}
+.mob-back-img .banner-title {
+  color: var(--color-white);
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .mob-back-img .banner-title {
+    padding: 0 20px;
+    position: absolute;
+    z-index: 25;
+    left: 0;
+    right: 0;
+    width: 820px;
+    max-width: 100%;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 .contact {
-  background: url("/front/img/contact-us/contact-banner-lg.jpg") no-repeat !important;
+  background: url("/front/img/contact-us/contact-banner-lg.jpg") no-repeat;
   background-size: cover;
 }
+@media (max-width: 991px) {
+  .contact {
+    background: none;
+  }
+}
 .contact .main-container .heading-group {
-  width: 500px;
+  width: 640px;
   max-width: 100%;
   margin: 0 auto;
   color: var(--color-white);
 }
+@media (max-width: 991px) {
+  .contact .main-container .heading-group {
+    color: var(--color-dark-grey);
+  }
+}
 .contact .main-container .heading-group .heading {
   color: var(--color-white);
+}
+@media (max-width: 991px) {
+  .contact .main-container .heading-group .heading {
+    display: none;
+  }
 }
 .contact .main-container .form-container .detail {
   -webkit-backdrop-filter: blur(10px);
@@ -4757,13 +4799,18 @@ section:nth-of-type(odd) {
   font-size: 20px;
 }
 .contact .main-container .form-container .form {
+  padding: 50px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
-  padding: 25px;
   color: var(--color-grey);
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  .contact .main-container .form-container .form {
+    padding: 30px;
+  }
 }
 .contact .main-container .form-container .form input {
   border: none;
