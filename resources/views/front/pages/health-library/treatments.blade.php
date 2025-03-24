@@ -7,7 +7,7 @@
     <x-allPage title="All Treatments">
         @for ($i = 0; $i < 10; $i++)
                     <div class="col-md-6 each-card">
-                        <x-card class="bg-white" title="B {{ $i }} Title For Treatment" image="{{ asset('front/img/health-library/technologies.jpg') }}">Lorem ipsum
+                        <x-card class="bg-white" title="B {{ $i }} Title For Treatment" image="{{ asset('front/img/health-library/technologies.jpg') }}" href="/per-treatment">Lorem ipsum
                             dolor sit amet
                             consectetur adipisicing elit. Alias natus tenetur hic doloribus ea, corrupti est praesentium
                             amet ipsam deserunt.</x-card>

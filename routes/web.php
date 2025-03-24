@@ -47,3 +47,6 @@ Route::get('/case-studies', function () {
 Route::get('/news-letter', function () {
     return view('front.pages.health-library.knowledge.news-letter');
 });
+Route::get('/per-treatment', function () {
+    return view('front.pages.treatments.per-treatment');
+});
