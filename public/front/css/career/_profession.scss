@@ -65,12 +65,13 @@
 
                         .content {
                             font-size: 15px;
+                            line-height: 20px;
                             font-weight: 500;
                             color: var(--color-grey);
                             margin: 14px 0;
-                            max-height: 6rem;
-                            overflow-y: auto;
-                            scrollbar-gutter: stable;
+                            height: 80px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
 
                             @media (max-width: 992px) {
                                 width: 100%;

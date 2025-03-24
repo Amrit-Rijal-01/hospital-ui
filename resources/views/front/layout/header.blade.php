@@ -6,22 +6,6 @@
                 <ul class="nav-ul">
                     <li class="navbar-item" onclick="extendSubMenu(this)">
                         <a href="#" class="navbar-link">
-                            Locations <i class="bi bi-chevron-down"></i>
-                        </a>
-                        <ul class="drop-menu">
-                            <li>
-                                <a href="#" class="drop-item">Location 1</a>
-                            </li>
-                            <li>
-                                <a href="#" class="drop-item">Location 2</a>
-                            </li>
-                            <li>
-                                <a href="#" class="drop-item">Location 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item" onclick="extendSubMenu(this)">
-                        <a href="#" class="navbar-link">
                             Speciality <i class="bi bi-chevron-down"></i>
                         </a>
                         <ul class="drop-menu">
