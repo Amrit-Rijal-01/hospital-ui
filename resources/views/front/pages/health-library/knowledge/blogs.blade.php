@@ -36,10 +36,9 @@
             <section id="all-blogs">
                 <div class="heading-group mb-4">
                     <div class="heading mb-2">All Blogs</div>
-                    <div class="form-floating ">
+                    <div class="floating">
                         <input type="text" id="search-all-blogs" name="allBlogs" class="form-control"
                             placeholder="Search All Blogs">
-                        <label for="allBlogs">Search All Blogs</label>
                         <div class="search-icon"><i class="bi bi-search"></i></div>
                     </div>
                 </div>

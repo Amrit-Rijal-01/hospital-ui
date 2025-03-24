@@ -979,7 +979,7 @@ section:nth-of-type(odd) {
   width: auto;
 }
 .top-banner .slide-list .floating-tab a:hover {
-  background-color: var(--color-light-2);
+  background-color: var(--color-light-1);
   color: #fff;
 }
 .top-banner .slide-list .floating-tab .left-hover {
@@ -1993,8 +1993,12 @@ section:nth-of-type(odd) {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  height: 66px;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .update .main-container .update-slider .update-card .button {
   margin-top: 1rem;
@@ -3755,8 +3759,8 @@ section:nth-of-type(odd) {
 }
 #blogs .heading-group .search-icon {
   position: absolute;
-  right: 20px;
-  top: 16px;
+  right: 15px;
+  top: 6px;
 }
 #blogs .heading-group .search-icon i {
   font-size: 18px;
@@ -3765,14 +3769,14 @@ section:nth-of-type(odd) {
   #blogs .heading-group {
     position: relative;
   }
-  #blogs .heading-group .form-floating {
+  #blogs .heading-group .floating {
     position: absolute;
     top: 0;
     right: 0;
   }
 }
 @media (min-width: 769px) and (max-width: 768px) {
-  #blogs .heading-group .form-floating {
+  #blogs .heading-group .floating {
     position: initial;
   }
 }
