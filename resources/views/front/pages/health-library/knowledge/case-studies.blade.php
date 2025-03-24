@@ -38,9 +38,30 @@
                                     <div class="heading-xs date">Chaitra 10, 2081</div>
                                 </div>
                                 <div class="body">
-                                    <div class="para-wrap mb-1">Case Study</div>
-                                    <h3 class="title heading-sm mb-3">News Title</h3>
-                                    <div class="name-post mb-2">
+                                    <div class="para-wrap">Case Study</div>
+                                    <h3 class="title heading-sm">News Title</h3>
+                                    <div class="name-post">
+                                        <span class="name">
+                                            Dr Name
+                                        </span>
+                                        <br>
+                                        <span class="post">Post, Nobel</span>
+                                    </div>
+                                    <div class="speciality">Liver Transplant <a href="">View Profile</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 case-study-item">
+                            <div class="slide m-3">
+                                <div class="img-wrapper">
+                                    <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image"
+                                        class="img-fluid w-100">
+                                    <div class="heading-xs date">Chaitra 10, 2081</div>
+                                </div>
+                                <div class="body">
+                                    <div class="para-wrap">Case Study</div>
+                                    <h3 class="title heading-sm">second</h3>
+                                    <div class="name-post">
                                         <span class="name">
                                             Dr Name
                                         </span>
