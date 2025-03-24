@@ -145,7 +145,7 @@
                 paginationContainer.empty();
                 let pages = Math.ceil(filteredCards.length / itemsPerPage);
                 for (let i = 1; i <= pages; i++) {
-                    let button = $(`<button class="mx-1 heading page-btn" id="page-${i}">${i}</button>`);
+                    let button = $(`<button class="mx-1 page-btn" id="page-${i}">${i}</button>`);
 
                     if (i === 1) {
                         button.addClass("active");
