@@ -21,9 +21,9 @@
                             <div class="body">
                                 <h3 class="heading">Name</h3>
                                 <p class="card-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
-                                    ipsam
-                                    tempore
-                                    dolorum nisi provident consequatur?</p>
+                                    ipsam tempore dolorum nisi provident consequatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+                                    ipsam tempore dolorum nisi provident consequatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+                                    ipsam tempore dolorum nisi provident consequatur?</p>
                             </div>
                         </div>
                         <div class="each-card">
