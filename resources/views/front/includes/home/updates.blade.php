@@ -16,7 +16,7 @@
                 <div class="d-flex justify-content-center">
                     <img src="{{ asset('front/img/care.png') }}" alt="care">
                 </div>
-                <div class="head">Elder Care Program</div>
+                <div class="head">Elder Care Program Elder Care Program Elder Care Program Elder Care Program</div>
                 <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat et ducimus soluta
                     dolores aliquam nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat et ducimus soluta
                     dolores aliquam nobis.</div>

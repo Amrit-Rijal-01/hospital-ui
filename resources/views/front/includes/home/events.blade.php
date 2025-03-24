@@ -19,7 +19,7 @@
                 <div class="list-card">
                     <div class="list">
                         <img class="img-fluid" src="{{ asset('front/img/post-image.jpg') }}" alt="Post Image">
-                        <div class="body d-flex flex-column gap-4">
+                        <div class="body d-flex flex-column gap-2">
                             <div class="date">Chaitra 1, 2081</div>
                             <div class="content">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quibusdam hic quae corporis sequi enim.
@@ -33,7 +33,7 @@
                 <div class="list-card">
                     <div class="list">
                         <img src="{{ asset('front/img/post-image.jpg') }}" alt="Post Image">
-                        <div class="body d-flex flex-column gap-4">
+                        <div class="body d-flex flex-column gap-2">
                             <div class="date">Chaitra 1, 2081</div>
                             <div class="content">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quibusdam hic quae corporis sequi enim.
@@ -47,7 +47,7 @@
                 <div class="list-card">
                     <div class="list">
                         <img src="{{ asset('front/img/post-image.jpg') }}" alt="Post Image">
-                        <div class="body d-flex flex-column gap-4">
+                        <div class="body d-flex flex-column gap-2">
                             <div class="date">Chaitra 1, 2081</div>
                             <div class="content">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quibusdam hic quae corporis sequi enim.
