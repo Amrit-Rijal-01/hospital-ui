@@ -9,41 +9,52 @@
                 sunt?
             </div>
             <div class="team-slider">
-                <div class="main-card ">
-                    <div class="img-wrapper">
-                        <img src="{{ asset('front/img/speciality/team-card-1.png') }}" alt="Team Image" class="img-fluid">
-                    </div>
-                    <div class="body text-left para-wrap">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus, in, impedit beatae sit
-                        quae alias quos soluta voluptate, repellendus similique doloremque sapiente nihil ratione?
-                    </div>
-                </div>
-                <div class="main-card">
-                    <div class="img-wrapper">
-                        <img src="{{ asset('front/img/speciality/team-card-2.jpg') }}" alt="Team Image" class="img-fluid">
-                    </div>
-                    <div class="body text-left para-wrap">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus, in, impedit beatae sit
-                        quae alias quos soluta voluptate, repellendus similique doloremque sapiente nihil ratione?
-                    </div>
-                </div>
-                <div class="main-card">
-                    <div class="img-wrapper">
-                        <img src="{{ asset('front/img/speciality/team-card-1.png') }}" alt="Team Image" class="img-fluid">
-                    </div>
-                    <div class="body text-left para-wrap">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus, in, impedit beatae sit
-                    </div>
-                </div>
-                <div class="main-card">
-                    <div class="img-wrapper">
-                        <img src="{{ asset('front/img/speciality/team-card-2.jpg') }}" alt="Team Image" class="img-fluid">
-                    </div>
-                    <div class="body text-left para-wrap">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus, in, impedit beatae sit
-                        quae alias quos soluta voluptate, repellendus similique doloremque sapiente nihil ratione?
-                    </div>
-                </div>
+               <div>
+                  <div class="main-card ">
+                      <div class="img-wrapper">
+                          <img src="{{ asset('front/img/speciality/team-card-1.png') }}" alt="Team Image" class="img-fluid">
+                      </div>
+                      <div class="body text-left para-wrap">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus, in, impedit beatae sit
+                          quae alias quos soluta voluptate, repellendus similique doloremque sapiente nihil ratione?
+                      </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="main-card">
+                      <div class="img-wrapper">
+                          <img src="{{ asset('front/img/speciality/team-card-2.jpg') }}" alt="Team Image"
+                              class="img-fluid">
+                      </div>
+                      <div class="body text-left para-wrap">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus, in, impedit beatae sit
+                          quae alias quos soluta voluptate, repellendus similique doloremque sapiente nihil ratione?
+                      </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="main-card">
+                      <div class="img-wrapper">
+                          <img src="{{ asset('front/img/speciality/team-card-1.png') }}" alt="Team Image"
+                              class="img-fluid">
+                      </div>
+                      <div class="body text-left para-wrap">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus, in, impedit beatae sit
+                      </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="main-card">
+                      <div class="img-wrapper">
+                          <img src="{{ asset('front/img/speciality/team-card-2.jpg') }}" alt="Team Image"
+                              class="img-fluid">
+                      </div>
+                      <div class="body text-left para-wrap">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus, in, impedit beatae sit
+                          quae alias quos soluta voluptate, repellendus similique doloremque sapiente nihil ratione?
+                      </div>
+                  </div>
+               </div>
             </div>
             <div class="heading-xs team-line">
                 <span>Heart Team : </span>
@@ -76,8 +87,5 @@
 
             })
         })
-        $(window).on('load resize', function() {
-                equalizeCardHeight('.main-card');
-            });
     </script>
 @endpush
