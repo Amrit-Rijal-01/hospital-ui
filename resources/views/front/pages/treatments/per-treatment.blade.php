@@ -8,4 +8,5 @@
     @include('front.includes.per-treatment.overview')
     @include('front.includes.per-treatment.how')
     @include('front.includes.per-treatment.benefit-risk')
+    @include('front.includes.per-treatment.treated')
 @endsection

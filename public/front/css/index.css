@@ -399,107 +399,109 @@ section:nth-of-type(odd) {
   display: block;
 }
 
-#type-2 .heading-group {
-  width: 500px;
+.type-2 .heading-group {
+  width: 700px;
   max-width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  #type-2 .heading-group {
+  .type-2 .heading-group {
     padding: 0 15px;
   }
 }
-#type-2 .heading-group .heading {
+.type-2 .heading-group .heading {
   margin-bottom: 10px;
 }
-#type-2 .heading-group .heading-xs {
+.type-2 .heading-group .heading-xs {
   margin-bottom: 30px;
+  font-weight: 500;
 }
-#type-2 .content-wrapper button {
+.type-2 .content-wrapper button {
   border: none;
   background-color: transparent;
+  font-weight: 500;
 }
-#type-2 .content-wrapper .desktop-list {
+.type-2 .content-wrapper .desktop-list {
   width: 33.34%;
   padding: 0 16px;
 }
 @media (max-width: 768px) {
-  #type-2 .content-wrapper .desktop-list {
+  .type-2 .content-wrapper .desktop-list {
     display: none;
   }
 }
-#type-2 .content-wrapper .desktop-list ul {
+.type-2 .content-wrapper .desktop-list ul {
   width: 100%;
   list-style: none;
   padding: 0;
   border-top: 1px solid var(--border-color);
 }
-#type-2 .content-wrapper .desktop-list ul li button {
+.type-2 .content-wrapper .desktop-list ul li button {
   width: 100%;
   padding: 16px 0;
   border-bottom: 1px solid var(--border-color);
   text-align: left;
 }
-#type-2 .content-wrapper .desktop-list .active-btn {
+.type-2 .content-wrapper .desktop-list .active-btn {
   color: var(--color-main);
   font-weight: 800;
   border-bottom: 1px solid var(--color-main) !important;
 }
-#type-2 .content-wrapper .info-container {
+.type-2 .content-wrapper .info-container {
   width: 66.66%;
 }
 @media (max-width: 768px) {
-  #type-2 .content-wrapper .info-container {
+  .type-2 .content-wrapper .info-container {
     width: 100%;
     padding: 0 16px;
   }
 }
-#type-2 .content-wrapper .info-container .type-2-tabs button {
+.type-2 .content-wrapper .info-container .type-2-tabs button {
   width: 100%;
   padding: 16px 30px 16px 0;
   border-bottom: 1px solid var(--border-color);
   text-align: left;
 }
-#type-2 .content-wrapper .info-container .type-2-tabs button .bi-chevron-up {
+.type-2 .content-wrapper .info-container .type-2-tabs button .bi-chevron-up {
   display: none;
 }
-#type-2 .content-wrapper .info-container .type-2-tabs .type-2-tab {
+.type-2 .content-wrapper .info-container .type-2-tabs .type-2-tab {
   width: 100%;
   border-bottom: 1px solid var(--border-color);
 }
 @media (min-width: 768px) {
-  #type-2 .content-wrapper .info-container .type-2-tabs .type-2-tab {
+  .type-2 .content-wrapper .info-container .type-2-tabs .type-2-tab {
     display: none !important;
   }
 }
-#type-2 .content-wrapper .info-container .type-2-tabs .active-btn {
+.type-2 .content-wrapper .info-container .type-2-tabs .active-btn {
   color: var(--color-main);
   font-weight: 800;
   border-bottom: 1px solid var(--color-main) !important;
 }
-#type-2 .content-wrapper .info-container .type-2-tabs .treatment-container {
+.type-2 .content-wrapper .info-container .type-2-tabs .treatment-container {
   display: none;
   flex-direction: column;
 }
 @media (min-width: 1200px) {
-  #type-2 .content-wrapper .info-container .type-2-tabs .treatment-container {
+  .type-2 .content-wrapper .info-container .type-2-tabs .treatment-container {
     flex-direction: row;
   }
 }
 @media (max-width: 768px) {
-  #type-2 .content-wrapper .info-container .type-2-tabs .treatment-container {
+  .type-2 .content-wrapper .info-container .type-2-tabs .treatment-container {
     margin: 30px 0;
   }
 }
-#type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side {
+.type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side {
   width: 50%;
 }
 @media (max-width: 1199px) {
-  #type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side {
+  .type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side {
     width: 100%;
   }
 }
-#type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img {
+.type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img {
   width: 400px;
   height: 400px;
   display: flex;
@@ -512,18 +514,18 @@ section:nth-of-type(odd) {
   margin-bottom: 30px;
 }
 @media (min-width: 769px) and (max-width: 1599px) {
-  #type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img {
+  .type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img {
     width: 360px;
     height: 360px;
   }
 }
 @media (max-width: 768px) {
-  #type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img {
+  .type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img {
     width: 300px;
     height: 300px;
   }
 }
-#type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img img {
+.type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img img {
   width: 340px;
   height: 340px;
   -o-object-fit: cover;
@@ -534,38 +536,38 @@ section:nth-of-type(odd) {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.14);
 }
 @media (min-width: 769px) and (max-width: 1599px) {
-  #type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img img {
+  .type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img img {
     width: 300px;
     height: 300px;
   }
 }
 @media (max-width: 768px) {
-  #type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img img {
+  .type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .img-side .treatment-img img {
     width: 260px;
     height: 260px;
   }
 }
-#type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .para-wrap {
+.type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .para-wrap {
   width: 50%;
   font-weight: 500;
   align-self: center;
   padding: 0 16px;
 }
 @media (max-width: 1199px) {
-  #type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .para-wrap {
+  .type-2 .content-wrapper .info-container .type-2-tabs .treatment-container .para-wrap {
     width: 100%;
   }
 }
-#type-2 .content-wrapper .info-container .active button .bi-chevron-up,
-#type-2 .content-wrapper .info-container .active-tab button .bi-chevron-up {
+.type-2 .content-wrapper .info-container .active button .bi-chevron-up,
+.type-2 .content-wrapper .info-container .active-tab button .bi-chevron-up {
   display: block;
 }
-#type-2 .content-wrapper .info-container .active button .bi-chevron-down,
-#type-2 .content-wrapper .info-container .active-tab button .bi-chevron-down {
+.type-2 .content-wrapper .info-container .active button .bi-chevron-down,
+.type-2 .content-wrapper .info-container .active-tab button .bi-chevron-down {
   display: none;
 }
-#type-2 .content-wrapper .info-container .active .treatment-container,
-#type-2 .content-wrapper .info-container .active-tab .treatment-container {
+.type-2 .content-wrapper .info-container .active .treatment-container,
+.type-2 .content-wrapper .info-container .active-tab .treatment-container {
   display: flex;
 }
 
@@ -4307,7 +4309,7 @@ section:nth-of-type(odd) {
 
 #treatment-banner {
   position: relative;
-  padding-top: 0;
+  padding: 0;
 }
 @media (min-width: 992px) {
   #treatment-banner {
@@ -4447,6 +4449,9 @@ section:nth-of-type(odd) {
   outline: 0;
 }
 
+#overview {
+  background-color: var(--secondary-white);
+}
 #overview .main-container .heading {
   width: 34%;
   padding: 0 15px;
@@ -4493,6 +4498,39 @@ section:nth-of-type(odd) {
 
 #how {
   background: url("/front/img/health-library/pattern-bg.png") top left #fff;
+}
+
+#benefit-risk {
+  background-color: var(--secondary-white);
+}
+
+#treated {
+  background-color: #fff;
+}
+#treated .each-card {
+  background: url("/front/img/health-library/pattern-bg.png") top left #fff;
+  position: relative;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+#treated .each-card .body {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 1199px) {
+  #treated .each-card .body {
+    font-size: 15px;
+    line-height: 22px;
+    height: 44px;
+  }
 }
 
 #event-top-banner {

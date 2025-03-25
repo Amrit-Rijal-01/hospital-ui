@@ -1,10 +1,12 @@
-<div id="type-2">
+@props(['heading' => 'Default Heading', 'subHeading' => 'Default sub-heading'])
+<div class="type-2">
     <div class="heading-group text-center">
         <div class="heading">
             {{ $heading }}
         </div>
         <div class="heading-xs">
-            Team approach and compassionate care for holistic heart health
+            {{ $subHeading }}
+
         </div>
     </div>
     <div class="content-wrapper d-flex">
@@ -121,38 +123,28 @@
 </div>
 @push('js')
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Use event delegation to handle clicks on type-2-tab buttons
-            document.addEventListener('click', function(event) {
-                // Find the closest button with type-2-tab class
-                const button = event.target.closest('.type-2-tab');
-
-                // If no matching button, exit
-                if (!button) return;
-
-                // Find the parent container of this specific component
-                const componentContainer = button.closest('#type-2');
+        $(document).ready(function() {
+            // Use event delegation on the document
+            $(document).on('click', '.type-2-tab', function(event) {
+                // Find the parent component container
+                const componentContainer = $(this).closest('.type-2');
 
                 // Remove active states within this specific component
-                componentContainer.querySelectorAll('.type-2-tab').forEach(tab => {
-                    tab.classList.remove('active-btn');
-                });
-                componentContainer.querySelectorAll('.type-2-tabs').forEach(tabs => {
-                    tabs.classList.remove('active');
-                });
+                componentContainer.find('.type-2-tab').removeClass('active-btn');
+                componentContainer.find('.type-2-tabs').removeClass('active');
 
                 // Add active state to clicked button
-                button.classList.add('active-btn');
+                $(this).addClass('active-btn');
 
                 // Get the target content ID
-                const targetId = button.getAttribute('data-target');
+                const targetId = $(this).data('target');
 
                 // Activate the corresponding content
-                const targetContent = componentContainer.querySelector(
-                    `.type-2-tabs[data-content="${targetId}"]`);
-                if (targetContent) {
-                    targetContent.classList.add('active');
-                    targetContent.querySelector('.type-2-tab').classList.add('active-btn');
+                const targetContent = componentContainer.find(`.type-2-tabs[data-content="${targetId}"]`);
+
+                if (targetContent.length) {
+                    targetContent.addClass('active');
+                    targetContent.find('.type-2-tab').addClass('active-btn');
                 }
             });
         });
