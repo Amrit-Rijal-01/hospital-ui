@@ -4,7 +4,7 @@
             Name of the treatment
         </div>
         <div class="content-wrapper">
-            <p class="para-wrap">
+            <p class="para-wrap collapsed">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab dolorum accusantium sit est, fuga fugit
                 animi exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab dolorum
                 accusantium sit est, fuga fugit

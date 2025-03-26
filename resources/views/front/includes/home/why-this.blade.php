@@ -12,7 +12,7 @@
                         <div class="click-text">
                             <div class="block-head active">Exceptional clinical talent </div>
                             <div class="common-button">
-                                <x-hoverBtn href="#" class="anchor-button">Know
+                                <x-hoverBtn href="/why-us" class="anchor-button">Know
                                     More
                                 </x-hoverBtn>
                             </div>
