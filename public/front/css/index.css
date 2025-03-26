@@ -6002,6 +6002,43 @@ section:nth-of-type(odd) {
   color: #fff !important;
 }
 
+#infrastructure .content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  #infrastructure .content {
+    flex-direction: column-reverse;
+  }
+}
+#infrastructure .content .para-wrap {
+  width: 50%;
+  padding: 0 15px;
+  font-weight: 500;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  #infrastructure .content .para-wrap {
+    width: 100%;
+  }
+}
+#infrastructure .content .img-wrapper {
+  width: 50%;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  #infrastructure .content .img-wrapper {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+#infrastructure .content .img-wrapper .image img {
+  transition: 0.2s ease;
+}
+#infrastructure .content .img-wrapper .image img:hover {
+  transform: scale(1.1);
+}
+
 footer {
   padding-bottom: 90px;
 }
