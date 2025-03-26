@@ -1,5 +1,5 @@
 @props(['heading' => 'Default Heading', 'subHeading' => '', 'item' => ''])
-<div id="type-1">
+<div class="type-1">
     <div class="heading-group mb-4">
         @if ($subHeading)
             <div class="heading mb-2"> {{ $heading }} </div>
