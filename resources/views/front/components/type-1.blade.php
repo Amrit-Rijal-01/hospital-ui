@@ -1,6 +1,13 @@
-@props(['heading' =>'', 'item' => ''])
+@props(['heading' => 'Default Heading', 'subHeading' => '', 'item' => ''])
 <div id="type-1">
-    <div class="heading mb-4">How Treatment Name Done?</div>
+    <div class="heading-group mb-4">
+        @if ($subHeading)
+            <div class="heading mb-2"> {{ $heading }} </div>
+            <div class="para-wrap">{{ $subHeading }}</div>
+        @else
+            <div class="heading"> {{ $heading }} </div>
+        @endif
+    </div>
     <div class="content-wrapper">
         <div class="custom-tabs-desktop">
             <ul>

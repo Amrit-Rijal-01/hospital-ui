@@ -1,6 +1,7 @@
 #technology-overview {
-   background-color: var(--secondary-white);
-
+   @media (max-width: 991px) {
+      padding-bottom: 50px;
+   }
    .main-container {
       .heading {
          width: 34%;

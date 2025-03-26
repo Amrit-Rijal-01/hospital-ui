@@ -244,6 +244,12 @@ section:nth-of-type(odd) {
   color: var(--color-white);
 }
 
+#type-1 .heading-group {
+  width: 700px;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
 #type-1 .content-wrapper {
   display: flex;
 }
@@ -403,11 +409,7 @@ section:nth-of-type(odd) {
   width: 700px;
   max-width: 100%;
   margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .type-2 .heading-group {
-    padding: 0 15px;
-  }
+  text-align: center;
 }
 .type-2 .heading-group .heading {
   margin-bottom: 10px;
@@ -4311,6 +4313,11 @@ section:nth-of-type(odd) {
   position: relative;
   padding: 0;
 }
+@media (max-width: 991px) {
+  #treatment-banner {
+    padding-bottom: 50px;
+  }
+}
 @media (min-width: 992px) {
   #treatment-banner {
     height: 600px;
@@ -4449,9 +4456,6 @@ section:nth-of-type(odd) {
   outline: 0;
 }
 
-#overview {
-  background-color: var(--secondary-white);
-}
 #overview .main-container .heading {
   width: 34%;
   padding: 0 15px;
@@ -4497,16 +4501,9 @@ section:nth-of-type(odd) {
 }
 
 #how {
-  background: url("/front/img/health-library/pattern-bg.png") top left #fff;
+  background: url("/front/img/health-library/pattern-bg.png") top left var(--secondary-white);
 }
 
-#benefit-risk {
-  background-color: var(--secondary-white);
-}
-
-#treated {
-  background-color: #fff;
-}
 #treated .each-card {
   background: url("/front/img/health-library/pattern-bg.png") top left #fff;
   position: relative;
@@ -4537,6 +4534,11 @@ section:nth-of-type(odd) {
 #technology-banner {
   position: relative;
   padding: 0;
+}
+@media (max-width: 991px) {
+  #technology-banner {
+    padding-bottom: 50px;
+  }
 }
 @media (min-width: 992px) {
   #technology-banner {
@@ -4658,8 +4660,10 @@ section:nth-of-type(odd) {
   outline: 0;
 }
 
-#technology-overview {
-  background-color: var(--secondary-white);
+@media (max-width: 991px) {
+  #technology-overview {
+    padding-bottom: 50px;
+  }
 }
 #technology-overview .main-container .heading {
   width: 34%;

@@ -1,4 +1,4 @@
-<section id="treatment-banner">
+<section id="technology-banner">
     <div class="wrapper">
         <picture class="img-wrap">
             <source media="(min-width: 768px)" srcset="{{ asset('front/img/per-technology/banner.jpg') }}">

@@ -3,10 +3,11 @@
          width: 700px;
          max-width: 100%;
          margin: 0 auto;
+         text-align: center;
    
-         @media (max-width:768px) {
-            padding: 0 15px;
-         }
+         // @media (max-width:768px) {
+         //    padding: 0 15px;
+         // }
    
          .heading {
             margin-bottom: 10px;

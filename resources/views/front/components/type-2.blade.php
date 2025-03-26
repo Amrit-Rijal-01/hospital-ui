@@ -1,13 +1,12 @@
 @props(['heading' => 'Default Heading', 'subHeading' => 'Default sub-heading'])
 <div class="type-2">
-    <div class="heading-group text-center">
-        <div class="heading">
-            {{ $heading }}
-        </div>
-        <div class="heading-xs">
-            {{ $subHeading }}
-
-        </div>
+    <div class="heading-group mb-4">
+        @if ($subHeading)
+            <div class="heading mb-2"> {{ $heading }} </div>
+            <div class="para-wrap">{{ $subHeading }}</div>
+        @else
+            <div class="heading"> {{ $heading }} </div>
+        @endif
     </div>
     <div class="content-wrapper d-flex">
         <div class="desktop-list align-self-start align-self-xl-center px-3">
