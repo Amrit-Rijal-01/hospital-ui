@@ -1,15 +1,15 @@
-<section id="technology-banner">
+<section id="treatment-banner">
     <div class="wrapper">
         <picture class="img-wrap">
             <source media="(min-width: 768px)" srcset="{{ asset('front/img/per-technology/banner.jpg') }}">
             <source media="(min-width: 320px)" srcset="{{ asset('front/img/per-technology/banner-md.jpg') }}">
 
-            <img src="{{ asset('front/img/per-technology/banner.jpg') }}" class="img-fluid"
+            <img src="{{ asset('front/img/per-treatment/top-banner.jpg') }}" class="img-fluid"
                 alt="Treatment Banner Image">
         </picture>
         <div class="banner-wrapper">
             <div class="banner-title">
-                Name of the treatment (Name Operation)
+                Name of the Technology
             </div>
         </div>
     </div>

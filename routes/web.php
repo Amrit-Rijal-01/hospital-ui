@@ -50,3 +50,6 @@ Route::get('/news-letter', function () {
 Route::get('/per-treatment', function () {
     return view('front.pages.treatments.per-treatment');
 });
+Route::get('/per-technology', function () {
+   return view('front.pages.per-technology.per-technology');
+});
