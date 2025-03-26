@@ -601,6 +601,17 @@ section:nth-of-type(odd) {
   }
 }
 
+.slider-component .heading-group {
+  width: 700px;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.slider-component .heading-group .heading-xs {
+  font-weight: 500 !important;
+  color: var(--color-grey);
+}
+
 .main-container {
   width: 90%;
   margin: auto;
@@ -5948,6 +5959,47 @@ section:nth-of-type(odd) {
 .map iframe {
   width: 100%;
   height: 450px;
+}
+
+#talent .main-container .glightbox .each-video {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  #talent .main-container .glightbox .each-video {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+#talent .main-container .glightbox .each-video img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+#talent .main-container .glightbox .each-video .play-icon {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  z-index: 55;
+  transition: 0.3s;
+}
+#talent .main-container .glightbox .each-video .caption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  text-align: center;
+  color: #fff !important;
 }
 
 footer {

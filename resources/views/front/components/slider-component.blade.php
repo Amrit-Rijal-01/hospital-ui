@@ -1,15 +1,15 @@
 @props(['heading' => 'Default Heading', 'subHeading' => '', 'sliderId' => uniqid('slider-')])
 
-<div  class="slider-component">
-    @if ($subHeading)
-        <div class="heading-group">
-            <div class="heading">{{ $heading }}</div>
+<div class="slider-component">
+    <div class="heading-group mb-4">
+        @if ($subHeading)
+            <div class="heading mb-2">{{ $heading }}</div>
             <div class="heading-xs">{{ $subHeading }}</div>
-        </div>
-    @else
-        <div class="heading">{{ $heading }}</div>
-    @endif
-    <div class="{{$sliderId}}">
+        @else
+            <div class="heading">{{ $heading }}</div>
+        @endif
+    </div>
+    <div class="{{ $sliderId }}">
         {{ $slot }}
     </div>
 </div>
@@ -17,7 +17,7 @@
     <script>
         $(document).ready(function() {
 
-            $('.{{$sliderId}}').slick({
+            $('.{{ $sliderId }}').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 arrows: true,
