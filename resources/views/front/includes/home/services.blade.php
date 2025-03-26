@@ -53,9 +53,6 @@
                 </div>
             </div>
         </div>
-         <div class="mobile-btn">
-            <x-hoverBtn>View All Technology</x-hoverBtn>
-        </div>
     </div>
 </section>
 @push('js')

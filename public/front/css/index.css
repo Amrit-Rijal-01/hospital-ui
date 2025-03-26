@@ -2544,18 +2544,24 @@ section:nth-of-type(odd) {
 .events-news .main-container .post-list .list-card img {
   width: 100%;
   height: auto;
-  aspect-ratio: 5/4;
   border-radius: 10px;
 }
 .events-news .main-container .post-list .list-card .list {
   padding: 0 0 20px;
   display: grid;
   gap: 20px;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 30% 70%;
   align-items: center;
 }
 .events-news .main-container .post-list .list-card .list .date {
   font-weight: 500;
+}
+.events-news .main-container .post-list .list-card .list .content {
+  font-size: 14px;
+  line-height: 18px;
+  height: 54px;
+  overflow: hidden;
+  text-overflow: clip;
 }
 .events-news .main-container .events {
   flex: 1;

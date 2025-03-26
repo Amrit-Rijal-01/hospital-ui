@@ -12,7 +12,7 @@
                         <div class="click-text">
                             <div class="block-head active">Exceptional clinical talent </div>
                             <div class="common-button">
-                                <x-hoverBtn href="/why-us" class="anchor-button">Know
+                                <x-hoverBtn href="/why-us#talent" class="anchor-button">Know
                                     More
                                 </x-hoverBtn>
                             </div>
@@ -30,7 +30,7 @@
                         <div class="click-text">
                             <div class="block-head ">World-class infrastructure</div>
                             <div class="common-button">
-                                <x-hoverBtn href="#" class="anchor-button">Know More
+                                <x-hoverBtn href="/why-us#infrastructure" class="anchor-button">Know More
                                 </x-hoverBtn>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                         <div class="click-text">
                             <div class="block-head ">Latest high-end technology</div>
                             <div class="common-button">
-                                <x-hoverBtn href="#" class="anchor-button">Know More
+                                <x-hoverBtn href="/why-us#technology" class="anchor-button">Know More
                                 </x-hoverBtn>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                         <div class="click-text">
                             <div class="block-head ">Caring systems and processes</div>
                             <div class="common-button">
-                                <x-hoverBtn href="#" class="anchor-button">Know
+                                <x-hoverBtn href="/why-us#care" class="anchor-button">Know
                                     More
                                 </x-hoverBtn>
                             </div>
@@ -68,7 +68,7 @@
                         <div class="click-text">
                             <div class="block-head">Trust-based compassionate care</div>
                             <div class="common-button">
-                                <x-hoverBtn href="#" class="anchor-button">Know More
+                                <x-hoverBtn href="/why-us#trust" class="anchor-button">Know More
                                 </x-hoverBtn>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                                 <img loading="lazy" src="{{ asset('front/img/center-1.webp') }}" alt="Why Nobel"
                                     width="460" height="460">
                                 <div class="common-button">
-                                    <x-hoverBtn href="#" class="anchor-button">Know More </x-hoverBtn>
+                                    <x-hoverBtn href="/why-us#talent" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
                             </div>
                         </li>
@@ -102,7 +102,7 @@
                             <div class="accor-collapse-wrapper">
                                 <img loading="lazy" src="{{ asset('front/img/center-2.webp') }}" alt="Why Nobel">
                                 <div class="common-button">
-                                    <x-hoverBtn href="#" class="anchor-button">Know More </x-hoverBtn>
+                                    <x-hoverBtn href="/why-us#infrastructure" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
                             </div>
                         </li>
@@ -111,7 +111,7 @@
                             <div class="accor-collapse-wrapper">
                                 <img loading="lazy" src="{{ asset('front/img/center-3.webp') }}" alt="Why Nobel">
                                 <div class="common-button">
-                                    <x-hoverBtn href="#" class="anchor-button">Know More </x-hoverBtn>
+                                    <x-hoverBtn href="/why-us#technology" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
                             </div>
                         </li>
@@ -120,7 +120,7 @@
                             <div class="accor-collapse-wrapper">
                                 <img loading="lazy" src="{{ asset('front/img/center-4.webp') }}" alt="Why Nobel">
                                 <div class="common-button">
-                                    <x-hoverBtn href="#" class="anchor-button">Know More </x-hoverBtn>
+                                    <x-hoverBtn href="/why-us#care" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
                             </div>
                         </li>
@@ -129,7 +129,7 @@
                             <div class="accor-collapse-wrapper">
                                 <img loading="lazy" src="{{ asset('front/img/center-5.webp') }}" alt="Why Nobel">
                                 <div class="common-button">
-                                    <x-hoverBtn href="#" class="anchor-button">Know More </x-hoverBtn>
+                                    <x-hoverBtn href="/why-us#trust" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
                             </div>
                         </li>
