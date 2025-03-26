@@ -59,3 +59,6 @@ Route::get('/per-technology', function () {
 Route::get('/per-ailment', function () {
    return view('front.pages.per-ailment.per-ailment');
 });
+Route::get('/doctor-listing', function () {
+   return view('front.pages.doctor-listing');
+});
