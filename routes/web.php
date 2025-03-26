@@ -48,8 +48,11 @@ Route::get('/news-letter', function () {
     return view('front.pages.health-library.knowledge.news-letter');
 });
 Route::get('/per-treatment', function () {
-    return view('front.pages.treatments.per-treatment');
+    return view('front.pages.per-treatment.per-treatment');
 });
 Route::get('/per-technology', function () {
    return view('front.pages.per-technology.per-technology');
+});
+Route::get('/per-ailment', function () {
+   return view('front.pages.per-ailment.per-ailment');
 });
