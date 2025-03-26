@@ -1689,7 +1689,7 @@ section:nth-of-type(odd) {
   right: 0;
   margin: auto;
   text-align: center;
-  width: 30%;
+  width: 38%;
 }
 @media (min-width: 1199px) {
   .why-hospital .why-wrapper .why-details .why-list .why-block-a {
@@ -2380,10 +2380,9 @@ section:nth-of-type(odd) {
 }
 
 .awards {
-  margin-top: 150px;
+  padding-top: 80px;
   background-color: var(--color-white) !important;
   background: url("/front/img/why-bg.png") top left;
-  padding: 40px 0;
 }
 .awards .main-container .award-slide .slick-prev {
   border: none;
@@ -2511,7 +2510,7 @@ section:nth-of-type(odd) {
 .events-news .main-container .post-card {
   background-color: var(--color-white);
   border-radius: 20px;
-  flex: 1;
+  width: 33.33%;
 }
 @media (max-width: 1199px) {
   .events-news .main-container .post-card {
@@ -2539,7 +2538,7 @@ section:nth-of-type(odd) {
   padding: 10px 0;
 }
 .events-news .main-container .post-list {
-  flex: 1;
+  width: 33.33%;
 }
 .events-news .main-container .post-list .list-card img {
   width: 100%;
@@ -2563,23 +2562,54 @@ section:nth-of-type(odd) {
   overflow: hidden;
   text-overflow: clip;
 }
+.events-news .main-container .mob-event-slider .event-card {
+  position: relative;
+  margin: 15px;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+.events-news .main-container .mob-event-slider .event-card .img-wrapper {
+  height: 60%;
+  overflow: hidden;
+}
+.events-news .main-container .mob-event-slider .event-card img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.events-news .main-container .mob-event-slider .event-card .content {
+  height: 40%;
+}
+.events-news .main-container .mob-event-slider .event-card .content .date {
+  font-size: 13px;
+  font-weight: 500;
+}
+.events-news .main-container .mob-event-slider .event-card .content .para-wrap {
+  font-weight: 600;
+}
 .events-news .main-container .events {
-  flex: 1;
+  width: 33.34%;
   padding: 30px;
   overflow: scroll;
   border-radius: 20px;
   background-color: var(--color-white);
   height: 550px;
 }
-@media (min-width: 1024px) and (max-width: 1366px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
   .events-news .main-container .events {
     height: 470px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .events-news .main-container .events {
     height: auto;
     overflow: visible;
+    width: 100%;
   }
 }
 .events-news .main-container .events .heading-sm {

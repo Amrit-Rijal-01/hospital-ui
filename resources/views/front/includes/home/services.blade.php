@@ -3,7 +3,7 @@
         <div class="heading">
             Services
         </div>
-        <div class="service-slider d-flex justify-content-between gap-5" id="service-slider">
+        <div class="service-slider" id="service-slider">
             <div class="slide m-3">
                 <div class="img-wrapper">
                     <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image" class="img-fluid">

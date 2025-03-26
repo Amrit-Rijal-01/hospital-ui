@@ -44,7 +44,7 @@
     <picture class="image-block">
         <source media="(min-width:768px)" srcset="{{ asset('front/img/doctors-desktop.webp') }}" alt="meet-our-doctors">
         <source media="(min-width:320px)" srcset="{{ asset('front/img/doctor-mobile.webp') }}" alt="meet-our-doctors">
-        <img class="img-fluid" src="{{ asset('front/img/doctors-desktop.webp') }}" alt="meet-our-doctors">
+        <img class="img-fluid w-100" src="{{ asset('front/img/doctors-desktop.webp') }}" alt="meet-our-doctors">
     </picture>
 </section>
 @push('js')

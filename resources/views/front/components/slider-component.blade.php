@@ -1,14 +1,16 @@
-@props(['heading' => 'Default Heading', 'subHeading' => '', 'sliderId' => uniqid('slider-')])
+@props(['heading' => '', 'subHeading' => '', 'sliderId' => uniqid('slider-')])
 
 <div class="slider-component">
-    <div class="heading-group mb-4">
-        @if ($subHeading)
-            <div class="heading mb-2">{{ $heading }}</div>
-            <div class="heading-xs">{{ $subHeading }}</div>
-        @else
-            <div class="heading">{{ $heading }}</div>
-        @endif
-    </div>
+    @if ($heading)
+        <div class="heading-group mb-4">
+            @if ($subHeading)
+                <div class="heading mb-2">{{ $heading }}</div>
+                <div class="heading-xs">{{ $subHeading }}</div>
+            @else
+                <div class="heading">{{ $heading }}</div>
+            @endif
+        </div>
+    @endif
     <div class="{{ $sliderId }}">
         {{ $slot }}
     </div>
