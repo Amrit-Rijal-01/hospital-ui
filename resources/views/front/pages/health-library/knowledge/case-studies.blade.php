@@ -75,34 +75,126 @@
                     @endfor
                 </div>
             </div>
+            <div class="pagination-container d-flex justify-content-center mt-4">
+                <button id="prevPage" class="left-arrow mx-4"><img src="{{ asset('front/img/vector-left.png') }}"
+                        alt="Left Arrow"></button>
+                <div id="paginationButtons" class="d-flex"></div>
+                <button id="nextPage" class="right-arrow mx-4"><img src="{{ asset('front/img/vector-right.png') }}"
+                        alt="Right Arrow"></button>
+            </div>
         </div>
     </section>
 @endsection
 
 @push('js')
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const selectWrap = document.getElementById('select-wrap');
-            const defaultSelect = document.getElementById('default-select');
-            const searchInput = document.getElementById('search-input');
-            const caseStudyList = document.getElementById('case-study-list');
-            const caseStudyItems = document.querySelectorAll('.case-study-item');
+        $(document).ready(function() {
+            const selectWrap = $('#select-wrap');
+            const defaultSelect = $('#default-select');
+            const searchInput = $('#search-input');
+            const caseStudyItems = $('.case-study-item');
 
-            defaultSelect.addEventListener('click', function() {
-                selectWrap.classList.toggle('active');
+            defaultSelect.on('click', function() {
+                selectWrap.toggleClass('active');
             });
 
-            searchInput.addEventListener('input', function() {
-                const searchTerm = searchInput.value.toLowerCase();
-                caseStudyItems.forEach(function(item) {
-                    const title = item.querySelector('.title').textContent.toLowerCase();
-                    if (title.includes(searchTerm)) {
-                        item.style.display = '';
-                    } else {
-                        item.style.display = 'none';
-                    }
+            // Pagination variables
+            const cardsPerPage = 9;
+            let currentPage = 1;
+            let filteredItems = caseStudyItems;
+
+            function filterItems() {
+                const searchTerm = searchInput.val().toLowerCase();
+
+                filteredItems = caseStudyItems.filter(function() {
+                    const title = $(this).find('.title').text().toLowerCase();
+                    const speciality = $(this).find('.speciality').text().toLowerCase();
+                    return title.includes(searchTerm) || speciality.includes(searchTerm);
                 });
+
+                // Recalculate pagination based on filtered items
+                const totalCards = filteredItems.length;
+                const totalPages = Math.ceil(totalCards / cardsPerPage);
+
+                // Reset to first page after filtering
+                currentPage = 1;
+
+                // Recreate pagination buttons
+                createPaginationButtons(totalPages);
+
+                // Show first page of filtered results
+                showPage(1);
+            }
+
+            function showPage(page) {
+                // Hide all items first
+                caseStudyItems.hide();
+
+                // Show only the filtered items for current page
+                filteredItems.slice((page - 1) * cardsPerPage, page * cardsPerPage).show();
+
+                updatePaginationButtons(page);
+                $('html, body').scrollTop($('#case-studies').offset().top);
+            }
+
+            function createPaginationButtons(totalPages) {
+                const paginationContainer = $('#paginationButtons').empty();
+
+                // Only create pagination if there are multiple pages
+                if (totalPages > 1) {
+                    for (let i = 1; i <= totalPages; i++) {
+                        $('<button>', {
+                            text: i,
+                            class: 'page-button mx-1 px-3 py-1' + (i === currentPage ? ' active' : ''),
+                            click: function(event) {
+                                event.stopPropagation();
+                                event.preventDefault();
+                                $(this).blur();
+                                currentPage = i;
+                                showPage(currentPage);
+                                return false;
+                            }
+                        }).appendTo(paginationContainer);
+                    }
+                }
+            }
+
+            function updatePaginationButtons(page) {
+                const totalPages = Math.ceil(filteredItems.length / cardsPerPage);
+
+                $('.page-button').removeClass('active').eq(page - 1).addClass('active');
+                $('#prevPage').prop('disabled', page === 1);
+                $('#nextPage').prop('disabled', page === totalPages);
+            }
+
+            // Event listeners for pagination
+            $('#prevPage').on('click', function(event) {
+                event.stopPropagation();
+                event.preventDefault();
+                $(this).blur();
+                if (currentPage > 1) {
+                    showPage(--currentPage);
+                }
+                return false;
             });
+
+            $('#nextPage').on('click', function(event) {
+                event.stopPropagation();
+                event.preventDefault();
+                $(this).blur();
+                const totalPages = Math.ceil(filteredItems.length / cardsPerPage);
+                if (currentPage < totalPages) {
+                    showPage(++currentPage);
+                }
+                return false;
+            });
+
+            // Search input event
+            searchInput.on('input', filterItems);
+
+            // Initial setup
+            createPaginationButtons(Math.ceil(caseStudyItems.length / cardsPerPage));
+            showPage(1);
         });
     </script>
 @endpush

@@ -98,6 +98,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <a href="/doctor-profile" class="meet-doc">Meet The Doctor</a>
                             </div>
                         </div>
                     @endfor
