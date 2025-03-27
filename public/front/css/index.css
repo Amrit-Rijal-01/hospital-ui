@@ -6636,6 +6636,12 @@ section:nth-of-type(odd) {
     height: 44px;
   }
 }
+#dr-specialization .all-btn {
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
 
 #dr-milestone .each-card {
   box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
@@ -6675,7 +6681,56 @@ section:nth-of-type(odd) {
   border-radius: 25px;
 }
 #dr-article .all-btn {
-  margin-top: 2%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#dr-media {
+  background: url("/front/img/health-library/pattern-bg.png") top left;
+}
+#dr-media .glightbox .each-video {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  #dr-media .glightbox .each-video {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+#dr-media .glightbox .each-video img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+#dr-media .glightbox .each-video .play-icon {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  z-index: 55;
+  transition: 0.3s;
+}
+#dr-media .glightbox .each-video .heading-sm {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+}
+#dr-media .all-btn {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
 }
