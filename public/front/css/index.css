@@ -6661,6 +6661,25 @@ section:nth-of-type(odd) {
   color: var(--color-main);
 }
 
+#dr-article .article-card {
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+}
+#dr-article .article-card:hover {
+  color: initial !important;
+}
+#dr-article .article-card img {
+  height: 100%;
+  border-radius: 25px;
+}
+#dr-article .all-btn {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
 #per-blog {
   background-color: #fff;
 }
