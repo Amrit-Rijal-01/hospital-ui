@@ -49,6 +49,12 @@ section {
         background-color: var(--secondary-white);
     }
 }
+[id] {
+   scroll-margin-top: 85px;
+   @media (max-width: 1199px) {
+      scroll-margin-top: 65px;
+   }
+}
 
 @import './components/main';
 
@@ -299,5 +305,6 @@ body {
 @import './why-us/main';
 @import './doctor-listing/main';
 @import './doctor-profile/main';
+@import './per-blog/main';
 @import './footer/main';
 @import './mobile-nav/main';

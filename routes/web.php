@@ -65,3 +65,7 @@ Route::get('/doctor-listing', function () {
 Route::get('/doctor-profile', function () {
    return view('front.pages.doctor-profile');
 });
+Route::get('/per-blog', function () {
+   return view('front.pages.per-blog.per-blog');
+});
+
