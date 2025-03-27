@@ -5328,7 +5328,6 @@ section:nth-of-type(odd) {
   padding: 0 20px;
 }
 .employee-section .main-container .heading {
-  padding-bottom: 30px;
   margin: 0;
 }
 .employee-section .main-container .tabs {
@@ -5357,6 +5356,7 @@ section:nth-of-type(odd) {
 }
 .employee-section .main-container .content-main {
   padding-top: 30px;
+  display: none;
 }
 .employee-section .main-container .content-main .employee-flex .employee {
   width: 50%;
@@ -5519,6 +5519,48 @@ section:nth-of-type(odd) {
   display: inline-block;
   height: 100px;
 }
+.employee-section .main-container .content-main.active {
+  display: block;
+}
+.employee-section .main-container .content-main .philosophy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  .employee-section .main-container .content-main .philosophy {
+    flex-direction: column;
+  }
+}
+.employee-section .main-container .content-main .philosophy .img-wrapper {
+  width: 50%;
+  padding: 0 15px;
+  overflow: hidden;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .employee-section .main-container .content-main .philosophy .img-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+}
+.employee-section .main-container .content-main .philosophy .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.employee-section .main-container .content-main .philosophy .content {
+  width: 50%;
+  padding: 0 15px;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .employee-section .main-container .content-main .philosophy .content {
+    width: 100%;
+    padding: 0;
+  }
+}
 
 .leader {
   padding: 50px 0;
@@ -5598,6 +5640,7 @@ section:nth-of-type(odd) {
 }
 
 .not-sure {
+  padding: 0;
   background-color: var(--secondary-white);
   display: flex;
   align-items: center;
