@@ -62,3 +62,6 @@ Route::get('/per-ailment', function () {
 Route::get('/doctor-listing', function () {
    return view('front.pages.doctor-listing');
 });
+Route::get('/doctor-profile', function () {
+   return view('front.pages.doctor-profile');
+});

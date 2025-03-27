@@ -6463,6 +6463,46 @@ section:nth-of-type(odd) {
   color: var(--color-white);
 }
 
+#dr-banner .content-wrapper .img-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#dr-banner .content-wrapper .img-container::before {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 70%;
+  background-color: var(--color-main);
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+#dr-banner .content-wrapper .img-container::after {
+  width: calc(70% + 30px);
+  margin: auto;
+  padding-bottom: calc(70% + 30px);
+  border: 1px dashed var(--border-color);
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+#dr-banner .content-wrapper .img-container img {
+  position: relative;
+  width: 75%;
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+}
+
 footer {
   padding-bottom: 90px;
 }
