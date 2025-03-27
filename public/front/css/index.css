@@ -6637,6 +6637,30 @@ section:nth-of-type(odd) {
   }
 }
 
+#dr-milestone .each-card {
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 15px;
+}
+#dr-milestone .each-card i {
+  font-size: 25px;
+}
+#dr-milestone .each-card .heading-sm {
+  font-size: 20px;
+  line-height: 25px;
+  height: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#dr-milestone .each-card .year {
+  color: var(--color-main);
+}
+
 #per-blog {
   background-color: #fff;
 }
