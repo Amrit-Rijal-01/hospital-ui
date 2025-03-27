@@ -5417,6 +5417,9 @@ section:nth-of-type(odd) {
 .employee-section .main-container .content-main .employee-flex .employee .employee-slider .each-card .body {
   padding: 15px;
 }
+.employee-section .main-container .content-main .employee-flex .employee .employee-slider .each-card .heading {
+  margin-bottom: 10px;
+}
 .employee-section .main-container .content-main .employee-flex .employee .employee-slider .each-card .card-content {
   font-size: 15px;
   line-height: 24px;
@@ -6555,6 +6558,38 @@ section:nth-of-type(odd) {
   z-index: 1;
   max-width: 100%;
   height: auto;
+}
+#dr-banner .content-wrapper .details {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+@media (max-width: 991px) {
+  #dr-banner .content-wrapper .details {
+    width: 100%;
+  }
+}
+#dr-banner .content-wrapper .details .name {
+  font-weight: 700;
+}
+#dr-banner .content-wrapper .details button {
+  padding: 10px 12px;
+  border-color: var(--color-main);
+  border-radius: 15px;
+  background-color: transparent;
+  color: var(--color-main);
+  transition: 0.2s ease;
+  font-size: 14px;
+  font-weight: 600;
+}
+#dr-banner .content-wrapper .details button i {
+  font-size: 16px;
+}
+#dr-banner .content-wrapper .details button:hover {
+  background-color: var(--color-main);
+  color: var(--color-white);
 }
 
 #per-blog {

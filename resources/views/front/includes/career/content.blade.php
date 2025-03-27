@@ -19,7 +19,7 @@
                                 <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
                             </div>
                             <div class="body">
-                                <h3 class="heading">Name</h3>
+                                <h3 class="heading mb-2">Name</h3>
                                 <p class="card-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
                                     ipsam tempore dolorum nisi provident consequatur? Lorem ipsum dolor sit, amet
                                     consectetur adipisicing elit. Est
