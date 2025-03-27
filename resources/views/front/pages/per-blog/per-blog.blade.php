@@ -17,7 +17,7 @@
                                 By <strong>Dr. Name</strong> in <strong>Speciality Name</strong>
                             </div>
                             <div class="heading-sm date mb-3">Feb 26, 2025</div>
-                            <div class="share-links d-flex gap-3 fs-2">
+                            <div class="share-links d-flex gap-3 fs-2 mb-5">
                                <a href="#">
                               <i class="bi bi-link-45deg"></i> 
                               </a>
