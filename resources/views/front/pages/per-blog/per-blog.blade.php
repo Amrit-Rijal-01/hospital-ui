@@ -17,8 +17,25 @@
                                 By <strong>Dr. Name</strong> in <strong>Speciality Name</strong>
                             </div>
                             <div class="heading-sm date mb-3">Feb 26, 2025</div>
-                            <div class="share-links">
-
+                            <div class="share-links d-flex gap-3 fs-2">
+                               <a href="#">
+                              <i class="bi bi-link-45deg"></i> 
+                              </a>
+                              <a href="#">
+                                 <i class="bi bi-facebook"></i>
+                              </a>
+                              <a href="#">
+                                 <i class="bi bi-whatsapp"></i>
+                              </a>
+                              <a href="#">
+                                 <i class="bi bi-linkedin"></i>
+                              </a>
+                              <a href="#">
+                                 <i class="bi bi-twitter-x"></i>
+                              </a>
+                              <a href="#">
+                                 <i class="bi bi-envelope"></i>
+                              </a>
                             </div>
                             <div class="blog-main-img mb-3">
                               <img src="{{ asset('front/img/health-library/blog-placeholder.jpg') }}" alt="Blog Image">
