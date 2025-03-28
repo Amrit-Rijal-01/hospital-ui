@@ -1,7 +1,7 @@
 @extends('front.layout.app')
 
-@section('title', 'Home')
-@section('meta', 'Home page for the website')
+@section('title', 'Patient Stories')
+@section('meta', 'Patient Stories page for the website')
 
 @section('content')
     <section id="patient-banner">

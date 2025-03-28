@@ -40,9 +40,9 @@
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Feedback</a></li>
                         <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">News &amp; Events</a></li>
+                        <li><a href="#">News & Events</a></li>
                         <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Policies &amp; Forms</a></li>
+                        <li><a href="/policy-form">Policies & Forms</a></li>
                         <li><a href="#">Coronary Stent Prices</a></li>
                         <li><a href="#">Orthopaedic Knee Implant Prices</a></li>
                         <li><a href="#">Biomedical Waste Report</a></li>

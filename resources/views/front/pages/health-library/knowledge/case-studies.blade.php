@@ -1,7 +1,7 @@
 @extends('front.layout.app')
 
-@section('title', 'Blogs')
-@section('meta', 'Blogs page for the website')
+@section('title', 'Case Study')
+@section('meta', 'Case Study page for the website')
 
 @section('content')
     <section id="case-studies">
