@@ -12,7 +12,7 @@
                         <li><a href="#">Emergency 24x7</a></li>
                         <li><a href="#">Technology</a></li>
                         <li><a href="/patient-stories">Patient Testimonials</a></li>
-                        <li><a href="#">CPR</a></li>
+                        <li><a href="/cpr">CPR</a></li>
                     </ul>
                 </div>
                 <div class="footer-block wow fadeInUp" onclick="expand(this)">

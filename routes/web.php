@@ -80,4 +80,8 @@ Route::get('/all-videos', function () {
 Route::get('/help-desk', function () {
    return view('front.pages.help-desk');
 });
+Route::get('/cpr', function () {
+   return view('front.pages.cpr');
+});
+
 
