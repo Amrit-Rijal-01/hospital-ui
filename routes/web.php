@@ -77,4 +77,7 @@ Route::get('/policy-form', function () {
 Route::get('/all-videos', function () {
    return view('front.pages.all-videos');
 });
+Route::get('/help-desk', function () {
+   return view('front.pages.help-desk');
+});
 
