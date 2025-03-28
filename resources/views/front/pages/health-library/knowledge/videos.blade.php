@@ -20,7 +20,7 @@
         <div class="main-container">
             <div class="heading-group">
                 <div class="heading text-center">Doctor Videos</div>
-                <x-hoverBtn class="button">View All</x-hoverBtn>
+                <x-hoverBtn class="button" href="/all-videos">View All</x-hoverBtn>
             </div>
             <div class="doctor-slider">
                 <div class="video-card doctor-card">
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="mobile-btn">
-                <x-hoverBtn>View All</x-hoverBtn>
+                <x-hoverBtn href="/all-videos">View All</x-hoverBtn>
             </div>
         </div>
     </section>
@@ -85,7 +85,7 @@
         <div class="main-container">
             <div class="heading-group">
                 <div class="heading text-center">Testimonials</div>
-                <x-hoverBtn class="button">View All</x-hoverBtn>
+                <x-hoverBtn class="button" href="/all-videos">View All</x-hoverBtn>
             </div>
             <div class="testimonials-slider">
                 <div class="video-card testimonials-card">
@@ -141,7 +141,7 @@
                 </div>
             </div>
             <div class="mobile-btn">
-                <x-hoverBtn>View All</x-hoverBtn>
+                <x-hoverBtn href="/all-videos">View All</x-hoverBtn>
             </div>
         </div>
     </section>
@@ -150,7 +150,7 @@
         <div class="main-container">
             <div class="heading-group">
                 <div class="heading text-center">Animated/Explanatory Videos</div>
-                <x-hoverBtn class="button">View All</x-hoverBtn>
+                <x-hoverBtn class="button" href="/all-videos">View All</x-hoverBtn>
             </div>
             <div class="animated-slider">
                 <div class="video-card animated-card">
@@ -206,7 +206,7 @@
                 </div>
             </div>
             <div class="mobile-btn">
-                <x-hoverBtn>View All</x-hoverBtn>
+                <x-hoverBtn href="/all-videos">View All</x-hoverBtn>
             </div>
         </div>
     </section>

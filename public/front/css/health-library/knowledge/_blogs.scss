@@ -1,7 +1,4 @@
 #blogs {
-    section {
-        background-color: var(--color-white) !important;
-    }
 
     .heading-group {
         input {
@@ -102,5 +99,6 @@
         color: var(--color-white);
         padding: 10px 15px;
         border-radius: 25px;
+        margin-top: 25px;
     }
 }

@@ -74,4 +74,7 @@ Route::get('/patient-stories', function () {
 Route::get('/policy-form', function () {
    return view('front.pages.policy');
 });
+Route::get('/all-videos', function () {
+   return view('front.pages.all-videos');
+});
 
