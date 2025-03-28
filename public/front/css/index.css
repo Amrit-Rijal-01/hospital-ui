@@ -6839,6 +6839,38 @@ section:nth-of-type(odd) {
   color: var(--color-main);
 }
 
+#why-learn {
+  padding: 0;
+}
+#why-learn .main-content {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 991px) {
+  #why-learn .main-content {
+    flex-direction: column;
+  }
+}
+#why-learn .video-wrapper {
+  width: 55%;
+}
+@media (max-width: 991px) {
+  #why-learn .video-wrapper {
+    width: 100%;
+  }
+}
+#why-learn .para-wrap {
+  width: 45%;
+  align-self: center;
+  padding: 80px;
+}
+@media (max-width: 991px) {
+  #why-learn .para-wrap {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 #patient-banner {
   position: relative;
   padding: 0;
