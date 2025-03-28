@@ -68,4 +68,7 @@ Route::get('/doctor-profile', function () {
 Route::get('/per-blog', function () {
    return view('front.pages.per-blog.per-blog');
 });
+Route::get('/patient-stories', function () {
+   return view('front.pages.patient-stories');
+});
 

@@ -1,4 +1,7 @@
 #dr-banner {
+   @media (min-width: 992px) {
+      padding-bottom: 0;
+   }
    .content-wrapper {
       .img-container {
          display: flex;
