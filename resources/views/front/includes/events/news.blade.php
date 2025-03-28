@@ -1,10 +1,62 @@
-<section id="news">
+<section id="event-page">
     <div class="main-container">
         <div class="heading-group mb-4">
             <div class="heading text-center">News</div>
             <x-hoverBtn class="button">View All News</x-hoverBtn>
         </div>
-        <div class="news-slider">
+        <div class="event-slider">
+            <div class="slide m-3">
+                <div class="img-wrapper">
+                    <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image" class="img-fluid">
+                    <div class="heading-xs date">Chaitra 10, 2081</div>
+                </div>
+                <div class="body">
+                    <h3 class="title heading-sm mb-2">News Title</h3>
+                    <div class="para-wrap location mb-2"><i class="bi bi-geo-alt-fill"></i> Biratnagar</div>
+                    <div class="d-flex justify-content-between know-btn">
+                        <x-hoverBtn>View Event Details</x-hoverBtn>
+                    </div>
+                </div>
+            </div>
+            <div class="slide m-3">
+                <div class="img-wrapper">
+                    <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image" class="img-fluid">
+                    <div class="heading-xs date">Chaitra 10, 2081</div>
+                </div>
+                <div class="body">
+                    <h3 class="title heading-sm mb-2">News Title</h3>
+                    <div class="para-wrap location mb-2"><i class="bi bi-geo-alt-fill"></i> Biratnagar</div>
+                    <div class="d-flex justify-content-between know-btn">
+                        <x-hoverBtn>View Event Details</x-hoverBtn>
+                    </div>
+                </div>
+            </div>
+            <div class="slide m-3">
+                <div class="img-wrapper">
+                    <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image" class="img-fluid">
+                    <div class="heading-xs date">Chaitra 10, 2081</div>
+                </div>
+                <div class="body">
+                    <h3 class="title heading-sm mb-2">News Title</h3>
+                    <div class="para-wrap location mb-2"><i class="bi bi-geo-alt-fill"></i> Biratnagar</div>
+                    <div class="d-flex justify-content-between know-btn">
+                        <x-hoverBtn>View Event Details</x-hoverBtn>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="mobile-btn">
+            <x-hoverBtn>View All News</x-hoverBtn>
+        </div>
+    </div>
+</section>
+<section id="event-page">
+    <div class="main-container">
+        <div class="heading-group mb-4">
+            <div class="heading text-center">News</div>
+            <x-hoverBtn class="button">View All News</x-hoverBtn>
+        </div>
+        <div class="event-slider">
             <div class="slide m-3">
                 <div class="img-wrapper">
                     <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image" class="img-fluid">
@@ -53,7 +105,7 @@
 @push('js')
     <script>
         $(document).ready(function() {
-            $('.news-slider').slick({
+            $('.event-slider').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 arrows: true,

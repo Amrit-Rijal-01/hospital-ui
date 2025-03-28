@@ -12,17 +12,16 @@
                         <ul>
                             <li>
                                 <button class="type-2-tab heading-xs active-btn d-flex justify-content-between"
-                                    data-target="treatment-1">Coronary Artery Disease 
+                                    data-target="treatment-1">Getting To The Hospital 
                             </li>
                             <li>
                                 <button class="type-2-tab heading-xs d-flex justify-content-between"
                                     data-target="treatment-2">
-                                    Rheumatic Heart Disease</button>
+                                    Meeting Doctors</button>
                             </li>
                             <li>
                                 <button class="type-2-tab heading-xs d-flex justify-content-between"
-                                    data-target="treatment-3">Heart
-                                    Failure</button>
+                                    data-target="treatment-3">Getting Admitted</button>
                             </li>
                             <li>
                                 <button class="type-2-tab heading-xs d-flex justify-content-between"
@@ -35,7 +34,7 @@
                         <div class="type-2-tabs active" data-content="treatment-1">
                             <button class="type-2-tab heading-xs active-btn px-3 d-flex justify-content-between"
                                 data-target="treatment-1">
-                                Coronary Artery Disease
+                                Getting To The Hospital
                             </button>
                             <div class="treatment-container" data-content="treatment-1">
 
@@ -50,7 +49,7 @@
                         <div class="type-2-tabs" data-content="treatment-2">
                             <button class="type-2-tab heading-xs px-3 d-flex justify-content-between"
                                 data-target="treatment-2">
-                                Rheumatic Heart Disease
+                                Meeting Doctors
                             </button>
                             <div class="treatment-container" data-content="treatment-2">
 
@@ -79,7 +78,7 @@
                         <div class="type-2-tabs" data-content="treatment-3">
                             <button class="type-2-tab heading-xs px-3 d-flex justify-content-between"
                                 data-target="treatment-3">
-                                Heart Failure
+                                Getting Admitted
                             </button>
                             <div class="treatment-container" data-content="treatment-3">
 
