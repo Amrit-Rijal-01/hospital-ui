@@ -1,7 +1,7 @@
 <section id="why-learn">
     <div class="main-content">
-        <div class="video-wrapper">
-            <iframe width="100%" height="515" src="https://youtube.com/embed/rXcm9WvHvCk?si=Y5tg6HtO105Zzr_j" title="CPR"
+        <div class="video-wrapper object-fit-contain">
+            <iframe width="100%" height="100%" src="https://youtube.com/embed/rXcm9WvHvCk?si=Y5tg6HtO105Zzr_j" title="CPR"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
