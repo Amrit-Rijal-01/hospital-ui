@@ -876,6 +876,13 @@ section:nth-of-type(odd) {
   display: block !important;
 }
 
+.play-icon {
+  height: 48px !important;
+  width: 48px !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
 .site-header {
   padding: 18px 0;
   position: fixed;

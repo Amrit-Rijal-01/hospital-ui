@@ -290,6 +290,11 @@ body {
     display: block !important;
 }
 
+.play-icon {
+   height: 48px !important;
+   width: 48px !important;
+   object-fit: contain !important;
+}
 
 @import './header/main';
 @import './home/main';
