@@ -7,7 +7,7 @@
         <div class="download-slider">
             <div class="download-card">
                 <div>
-                    <div href="{{ asset('front/img/test.mp4') }}" class="glightbox">
+                    <div href="{{ asset('front/img/test.mp4') }}" class="">
                         <div class="img-wrapper">
                             <img src="{{ asset('front/img/career/staff.jpg') }}" alt="Staff">
                         </div>
@@ -20,7 +20,7 @@
             </div>
             <div class="download-card">
                 <div>
-                    <div href="{{ asset('front/img/test.mp4') }}" class="glightbox">
+                    <div href="{{ asset('front/img/test.mp4') }}" class="">
                         <div class="img-wrapper">
                             <img src="{{ asset('front/img/career/paramedic.jpg') }}" alt="Paramedic">
                         </div>
@@ -33,7 +33,7 @@
             </div>
             <div class="download-card">
                 <div>
-                    <div href="{{ asset('front/img/test.mp4') }}" class="glightbox">
+                    <div href="{{ asset('front/img/test.mp4') }}" class="">
                         <div class="img-wrapper">
                             <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Nurse">
                         </div>
@@ -46,7 +46,7 @@
             </div>
             <div class="download-card">
                 <div>
-                    <div href="{{ asset('front/img/test.mp4') }}" class="glightbox">
+                    <div href="{{ asset('front/img/test.mp4') }}" class="">
                         <div class="img-wrapper">
                             <img class="img-fluid" src="{{ asset('front/img/career/nurse.jpg') }}" alt="Nurse">
                         </div>

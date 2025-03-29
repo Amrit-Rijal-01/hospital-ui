@@ -689,6 +689,7 @@ section:nth-of-type(odd) {
 
 .heading-sm {
   font-size: 22px;
+  font-weight: 600;
   color: var(--color-grey);
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -6915,6 +6916,199 @@ section:nth-of-type(odd) {
   #cpr-mission .content .heading-sm {
     width: 100%;
   }
+}
+
+#vision-cpr .heading-group {
+  width: 700px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+#vision-cpr .vision-content .img-wrapper {
+  width: 60%;
+}
+@media (max-width: 991px) {
+  #vision-cpr .vision-content .img-wrapper {
+    width: 100%;
+  }
+}
+#vision-cpr .vision-content .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+#vision-cpr .vision-content .small-box {
+  width: 40%;
+}
+@media (max-width: 991px) {
+  #vision-cpr .vision-content .small-box {
+    width: 100%;
+  }
+}
+#vision-cpr .vision-content .small-card {
+  text-align: center;
+}
+#vision-cpr .vision-content .small-card i {
+  font-size: 50px;
+}
+
+#cpr-aim {
+  padding: 0;
+}
+#cpr-aim .main-content {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 991px) {
+  #cpr-aim .main-content {
+    flex-direction: column;
+  }
+}
+#cpr-aim .img-wrapper {
+  width: 55%;
+}
+@media screen and (max-width: 991px) {
+  #cpr-aim .img-wrapper {
+    width: 100%;
+  }
+}
+#cpr-aim .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#cpr-aim .para-wrap {
+  width: 45%;
+  align-self: center;
+  padding: 80px;
+}
+@media (max-width: 991px) {
+  #cpr-aim .para-wrap {
+    width: 100%;
+    flex-direction: column;
+    padding: 25px;
+  }
+}
+
+#message .glightbox {
+  margin: 15px;
+}
+#message .glightbox .each-video {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  #message .glightbox .each-video {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+#message .glightbox .each-video img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+#message .glightbox .each-video .play-icon {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  z-index: 55;
+  transition: 0.3s;
+}
+#message .glightbox .each-video .heading-sm {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+#cpr-training {
+  background: url("/front/img/health-library/pattern-bg.png") top left repeat;
+}
+
+#cpr-blog .article-card {
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+}
+#cpr-blog .article-card:hover {
+  color: initial !important;
+}
+#cpr-blog .article-card img {
+  height: 100%;
+  border-radius: 25px;
+}
+#cpr-blog .all-btn {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#cpr-file {
+  position: relative;
+  padding: 0;
+}
+#cpr-file .wrapper {
+  position: relative;
+}
+#cpr-file .wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#cpr-file .wrapper .banner-wrapper {
+  line-height: 1.2;
+  width: 820px;
+  margin: auto;
+  padding: 20px;
+  max-width: 100%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #cpr-file .wrapper .banner-wrapper {
+    width: 480px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #cpr-file .wrapper .banner-wrapper {
+    width: 350px;
+  }
+}
+#cpr-file .wrapper .banner-wrapper a {
+  display: inline-block;
+  padding: 14px 18px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 35px;
+  cursor: pointer;
+  min-width: 150px;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  background-color: var(--color-main);
 }
 
 #patient-banner {
