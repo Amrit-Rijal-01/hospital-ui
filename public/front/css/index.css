@@ -7643,6 +7643,41 @@ section:nth-of-type(odd) {
   padding: 0;
 }
 
+#about-nobel .img-wrap {
+  width: 50%;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  #about-nobel .img-wrap {
+    width: 100%;
+  }
+}
+#about-nobel .img-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#about-nobel .content {
+  width: 50%;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  #about-nobel .content {
+    width: 100%;
+  }
+}
+#about-nobel .small-card-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+#about-nobel .small-card-wrap .small-card {
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.1);
+}
+
 footer {
   padding-bottom: 90px;
 }
