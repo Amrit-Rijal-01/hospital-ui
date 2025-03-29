@@ -86,3 +86,6 @@ Route::get('/cpr', function () {
 Route::get('/about-us', function () {
    return view('front.pages.about-us');
 });
+Route::get('/single-event', function () {
+   return view('front.pages.single-event');
+});

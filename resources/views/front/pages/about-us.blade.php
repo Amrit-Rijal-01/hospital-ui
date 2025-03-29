@@ -6,8 +6,6 @@
 @section('content')
    @include('front.includes.about-us.about-us-banner')
    @include('front.includes.about-us.about-nobel')
-   @include('front.includes.about-us.about-philosophy')
-   @include('front.includes.about-us.about-has')
    @include('front.includes.about-us.about-mission')
    @include('front.includes.about-us.about-value')
    @include('front.includes.about-us.about-award')

@@ -45,13 +45,14 @@
                 margin: 20px;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
+                gap: 20px;
                 align-items: center;
 
                 .leaf-left {
                     width: 50px;
                     position: absolute;
-                    left: 35px;
+                    left: 10px;
                     top: 50%;
                     z-index: 1;
                     transform: translateY(-50%);
@@ -88,7 +89,7 @@
                 .leaf-right {
                     width: 50px;
                     position: absolute;
-                    right: 35px;
+                    right: 10px;
                     top: 50%;
                     z-index: 1;
                     transform: translateY(-50%);
