@@ -35,7 +35,7 @@
                     <h4 class="block-title" >Corporate</h4>
                     <ul class="footer-links">
                         <li><a href="/help-desk">Help Desk</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="/about-us">About us</a></li>
                         <li><a href="#">Blogs</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Feedback</a></li>

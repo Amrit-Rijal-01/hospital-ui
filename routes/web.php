@@ -83,5 +83,6 @@ Route::get('/help-desk', function () {
 Route::get('/cpr', function () {
    return view('front.pages.cpr');
 });
-
-
+Route::get('/about-us', function () {
+   return view('front.pages.about-us');
+});

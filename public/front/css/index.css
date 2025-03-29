@@ -7632,6 +7632,10 @@ section:nth-of-type(odd) {
   display: flex;
 }
 
+#about-us-banner {
+  padding: 0;
+}
+
 footer {
   padding-bottom: 90px;
 }
