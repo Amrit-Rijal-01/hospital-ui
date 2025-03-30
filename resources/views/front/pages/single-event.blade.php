@@ -1,7 +1,7 @@
 @extends('front.layout.app')
 
-@section('title', 'Home')
-@section('meta', 'Home page for the website')
+@section('title', 'Event Name')
+@section('meta', 'Single Event page for the website')
 
 @section('content')
     <section id="single-event">

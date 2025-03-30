@@ -5727,6 +5727,12 @@ section:nth-of-type(odd) {
 #downloads .main-container .content-row .content-col .card-row .download-card .body {
   padding: 25px;
 }
+#downloads .main-container .content-row .content-col .card-row .download-card .body .heading-sm {
+  line-height: 25px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .modal-body-btn {
   padding: 15px 20px;
