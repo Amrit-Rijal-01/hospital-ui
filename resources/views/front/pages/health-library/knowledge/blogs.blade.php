@@ -4,92 +4,88 @@
 @section('meta', 'Blogs page for the website')
 
 @section('content')
-    <div id="blogs" class="border-bottom pb-5">
-            <section id="featured-blog">
-               <div class="main-container">
-                  <div class="heading mb-4">Featured Blogs</div>
-                  <div class="row g-4">
-                      @for ($i = 0; $i < 6; $i++)
-                          <div class="col-md-6 col-xl-3 featured-blog-card">
-                              <div class="blog-card ">
-                                  <div class="img-wrapper">
-                                      <img src="{{ asset('front/img/health-library/blog-placeholder.jpg') }}" alt="Blog Title">
-                                  </div>
-                                  <div class="body">
-                                      <div class="type para-wrap mb-3">Blog Type</div>
-                                      <div class="heading-md blog-title mb-3">
-                                          Title of the Blog
-                                      </div>
-                                      <div class="date-name para-wrap">
-                                          <span class="date">Chaitra 10, 2081</span>
-                                          <span class="name">Dr Name</span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      @endfor
-                  </div>
-               </div>
-               <div class="btn-container d-flex justify-content-center">
-                   <button id="load-more-featured" class="load-more heading-xs">Load More</button>
-               </div>
-            </section>
-            <section id="all-blogs">
-               <div class="main-container">
-                  <div class="heading-group mb-4">
-                      <div class="heading mb-2">All Blogs</div>
-                      <div class="floating">
-                          <input type="text" id="search-all-blogs" name="allBlogs" class="form-control"
-                              placeholder="Search All Blogs">
-                          <div class="search-icon"><i class="bi bi-search"></i></div>
-                      </div>
-                  </div>
-                  <div class="row g-4">
-                      @for ($i = 0; $i < 6; $i++)
-                          <div class="col-md-6 col-xl-3 all-blog-card">
-                              <div class="blog-card ">
-                                  <div class="img-wrapper">
-                                      <img src="{{ asset('front/img/health-library/blog-placeholder.jpg') }}"
-                                          alt="Blog Title">
-                                  </div>
-                                  <div class="body">
-                                      <div class="type para-wrap mb-3">Blog Type</div>
-                                      <div class="heading-md blog-title mb-3">
-                                          Title of the Blog
-                                      </div>
-                                      <div class="date-name para-wrap">
-                                          <span class="date">Chaitra 10, 2081</span>
-                                          <span class="name">Dr Name</span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6 col-xl-3 all-blog-card">
-                              <div class="blog-card ">
-                                  <div class="img-wrapper">
-                                      <img src="{{ asset('front/img/health-library/blog-placeholder.jpg') }}"
-                                          alt="Blog Title">
-                                  </div>
-                                  <div class="body">
-                                      <div class="type para-wrap mb-3">Blog Type</div>
-                                      <div class="heading-md blog-title mb-3">
-                                          Testing
-                                      </div>
-                                      <div class="date-name para-wrap">
-                                          <span class="date">Chaitra 10, 2081</span>
-                                          <span class="name">Dr Name</span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      @endfor
-                  </div>
-               </div>
-               <div class="btn-container d-flex justify-content-center">
-                   <button id="load-more-all" class="load-more heading-xs">Load More</button>
-               </div>
-            </section>
-    </div>
+    <section id="featured-blogs">
+        <div class="main-container">
+            <div class="heading mb-4">Featured Blogs</div>
+            <div class="row g-4">
+                @for ($i = 0; $i < 6; $i++)
+                    <div class="col-md-6 col-xl-3 featured-blog-card">
+                        <div class="blog-card">
+                            <div class="img-wrapper">
+                                <img src="{{ asset('front/img/health-library/blog-placeholder.jpg') }}" alt="Blog Title">
+                            </div>
+                            <div class="body">
+                                <div class="type para-wrap mb-3">Blog Type</div>
+                                <div class="heading-md blog-title mb-3">
+                                    Title of the Blog
+                                </div>
+                                <div class="date-name para-wrap">
+                                    <span class="date">Chaitra 10, 2081</span>
+                                    <span class="name">Dr Name</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endfor
+            </div>
+        </div>
+        <div class="btn-container d-flex justify-content-center">
+            <button id="load-more-featured" class="load-more heading-xs">Load More</button>
+        </div>
+    </section>
+    <section id="all-blogs">
+        <div class="main-container">
+            <div class="heading-group mb-4">
+                <div class="heading mb-2">All Blogs</div>
+                <div class="floating">
+                    <input type="text" id="search-all-blogs" name="allBlogs" class="form-control"
+                        placeholder="Search All Blogs">
+                    <div class="search-icon"><i class="bi bi-search"></i></div>
+                </div>
+            </div>
+            <div class="row g-4">
+                @for ($i = 0; $i < 6; $i++)
+                    <div class="col-md-6 col-xl-3 all-blog-card">
+                        <div class="blog-card ">
+                            <div class="img-wrapper">
+                                <img src="{{ asset('front/img/health-library/blog-placeholder.jpg') }}" alt="Blog Title">
+                            </div>
+                            <div class="body">
+                                <div class="type para-wrap mb-3">Blog Type</div>
+                                <div class="heading-md blog-title mb-3">
+                                    Title of the Blog
+                                </div>
+                                <div class="date-name para-wrap">
+                                    <span class="date">Chaitra 10, 2081</span>
+                                    <span class="name">Dr Name</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 all-blog-card">
+                        <div class="blog-card ">
+                            <div class="img-wrapper">
+                                <img src="{{ asset('front/img/health-library/blog-placeholder.jpg') }}" alt="Blog Title">
+                            </div>
+                            <div class="body">
+                                <div class="type para-wrap mb-3">Blog Type</div>
+                                <div class="heading-md blog-title mb-3">
+                                    Testing
+                                </div>
+                                <div class="date-name para-wrap">
+                                    <span class="date">Chaitra 10, 2081</span>
+                                    <span class="name">Dr Name</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endfor
+            </div>
+        </div>
+        <div class="btn-container d-flex justify-content-center">
+            <button id="load-more-all" class="load-more heading-xs">Load More</button>
+        </div>
+    </section>
 @endsection
 @push('js')
     <script>
@@ -102,9 +98,13 @@
                 console.log('featured-blog');
 
                 let totalCards = $(".featured-blog-card").length;
+                console.log('total blog featured: ', totalCards);
+                
                 featuredCount += cardPerPage;
+                
                 $('.featured-blog-card').slice(currentFeaturedCount, currentFeaturedCount + cardPerPage).fadeIn();
                 currentFeaturedCount += cardPerPage;
+                console.log('currfeaturedCount: ', currentFeaturedCount);
 
                 if (currentFeaturedCount >= totalCards) {
                     $("#load-more-featured").hide();

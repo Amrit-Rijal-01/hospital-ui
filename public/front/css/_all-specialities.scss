@@ -18,6 +18,9 @@
             &:hover {
                 background-color: var(--color-light-1);
                 color: var(--color-white);
+                .heading-sm {
+                  color: var(--color-white) !important;
+                }
 
                 .btn {
                     color: var(--color-white) !important;

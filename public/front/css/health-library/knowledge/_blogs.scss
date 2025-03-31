@@ -1,4 +1,4 @@
-#blogs {
+#all-blogs, #featured-blogs {
 
     .heading-group {
         input {
@@ -33,7 +33,6 @@
         }
     }
 
-    .featured-blog-card,
     .all-blog-card {
         display: none;
     }
