@@ -99,8 +99,8 @@
                     <li><button onclick="changeTab(this)" class="tab " data-target="tab-3">Webinar</button></li>
                 </ul>
                 <div class="event-list active" id="tab-1">
-                    <div class="each-event cme active d-flex align-items-center gap-4">
-                        <div class="date d-flex flex-column justify-content-center align-items-center">
+                    <div class="each-event cme active d-flex align-items-center">
+                        <div class="date d-flex flex-column justify-content-center ">
                             <div class="number">1</div>
                             <div class="month">Chaitra</div>
                         </div>
@@ -113,8 +113,8 @@
                     </div>
                 </div>
                 <div class="event-list" id="tab-2">
-                    <div class="each-event opd d-flex align-items-center gap-4">
-                        <div class="date d-flex flex-column justify-content-center align-items-center">
+                    <div class="each-event opd d-flex align-items-center">
+                        <div class="date d-flex flex-column justify-content-center">
                             <div class="number">2</div>
                             <div class="month">Chaitra</div>
                         </div>
@@ -127,10 +127,23 @@
                     </div>
                 </div>
                 <div class="event-list" id="tab-3">
-                    <div class="each-event webinar d-flex align-items-center gap-4">
-                        <div class="date d-flex flex-column justify-content-center align-items-center">
+                    <div class="each-event webinar d-flex align-items-center">
+                        <div class="date d-flex flex-column justify-content-center ">
                             <div class="number">3</div>
                             <div class="month">Chaitra</div>
+                        </div>
+                        <div class="content d-flex flex-column gap-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error at ipsa</p>
+                            <div class="location">
+                                <i class="bi bi-geo-alt"></i> Biratnagar
+                            </div>
+                            <div class="button"><x-hoverBtn>View Details</x-hoverBtn></div>
+                        </div>
+                    </div>
+                    <div class="each-event webinar d-flex align-items-center">
+                        <div class="date d-flex flex-column justify-content-center ">
+                            <div class="number">3</div>
+                            <div class="month">February</div>
                         </div>
                         <div class="content d-flex flex-column gap-2">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error at ipsa</p>

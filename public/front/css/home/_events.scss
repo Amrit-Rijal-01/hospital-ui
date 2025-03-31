@@ -211,6 +211,7 @@
             margin-top: 20px;
             padding: 15px 0;
             border-bottom: 1px solid var(--border-color);
+            gap: 5%;
 
             &:last-child {
                border-bottom: none;
@@ -222,13 +223,15 @@
 
             .date {
                width: 120px;
-               height: 116px;
+               height: 120px;
+               white-space: nowrap;
+               overflow: hidden;
+               text-overflow: ellipsis;
                text-align: center;
                line-height: 1;
                padding: 28px 5px;
                border-radius: 10px;
                background-color: var(--secondary-white);
-               flex: 2;
                font-weight: 800;
                font-size: 24px;
             }

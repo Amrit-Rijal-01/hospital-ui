@@ -87,47 +87,47 @@
 
                 <div class="accor-list wow fadeInUp">
                     <ul class="list-accor">
-                        <li onclick="expand(this)">
+                        <li onclick="expandRespLi(this)" class="resp-li">
                             <h3 class="heading-sm accor-heading">Exceptional clinical talent</h3>
                             <div class="accor-collapse-wrapper">
-                                <img loading="lazy" src="{{ asset('front/img/center-1.webp') }}" alt="Why Nobel"
+                                <img src="{{ asset('front/img/center-1.webp') }}" alt="Why Nobel"
                                     width="460" height="460">
                                 <div class="common-button">
                                     <x-hoverBtn href="/why-us#talent" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
                             </div>
                         </li>
-                        <li onclick="expand(this)">
+                        <li onclick="expandRespLi(this)" class="resp-li">
                             <h3 class="heading-sm accor-heading ">World-class infrastructure</h3>
                             <div class="accor-collapse-wrapper">
-                                <img loading="lazy" src="{{ asset('front/img/center-2.webp') }}" alt="Why Nobel">
+                                <img src="{{ asset('front/img/center-2.webp') }}" alt="Why Nobel">
                                 <div class="common-button">
                                     <x-hoverBtn href="/why-us#infrastructure" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
                             </div>
                         </li>
-                        <li onclick="expand(this)">
+                        <li onclick="expandRespLi(this)" class="resp-li">
                             <h3 class="heading-sm accor-heading ">Latest high-end technology</h3>
                             <div class="accor-collapse-wrapper">
-                                <img loading="lazy" src="{{ asset('front/img/center-3.webp') }}" alt="Why Nobel">
+                                <img src="{{ asset('front/img/center-3.webp') }}" alt="Why Nobel">
                                 <div class="common-button">
                                     <x-hoverBtn href="/why-us#technology" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
                             </div>
                         </li>
-                        <li onclick="expand(this)">
+                        <li onclick="expandRespLi(this)" class="resp-li">
                             <h3 class="heading-sm accor-heading ">Caring systems and processes</h3>
                             <div class="accor-collapse-wrapper">
-                                <img loading="lazy" src="{{ asset('front/img/center-4.webp') }}" alt="Why Nobel">
+                                <img src="{{ asset('front/img/center-4.webp') }}" alt="Why Nobel">
                                 <div class="common-button">
                                     <x-hoverBtn href="/why-us#care" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
                             </div>
                         </li>
-                        <li onclick="expand(this)">
+                        <li onclick="expandRespLi(this)" class="resp-li">
                             <h3 class="heading-sm accor-heading ">Trust-based compassionate care</h3>
                             <div class="accor-collapse-wrapper">
-                                <img loading="lazy" src="{{ asset('front/img/center-5.webp') }}" alt="Why Nobel">
+                                <img src="{{ asset('front/img/center-5.webp') }}" alt="Why Nobel">
                                 <div class="common-button">
                                     <x-hoverBtn href="/why-us#trust" class="anchor-button">Know More </x-hoverBtn>
                                 </div>
@@ -176,6 +176,11 @@
                 $(this).closest('.why-block').addClass('active-why');
             });
             $('.center-image').addClass('normal');
-        })
+
+         })
+         function expandRespLi(el) {
+            $('.resp-li').removeClass('active');
+             $(el).addClass('active');
+         }
     </script>
 @endpush

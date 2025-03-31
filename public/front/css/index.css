@@ -2266,33 +2266,16 @@ section:last-child:nth-of-type(even) {
   margin-bottom: 30px;
 }
 .update .main-container .update-slider {
-  border-radius: 20px;
-  background-color: #fff;
-  border: 1px solid #d9d9d9;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   bottom: -100px;
   position: relative;
   margin-top: -100px;
 }
-.update .main-container .update-slider .slick-prev {
-  left: -1.5%;
-}
-@media (max-width: 768px) {
-  .update .main-container .update-slider .slick-prev {
-    left: 0;
-  }
-}
-.update .main-container .update-slider .slick-next {
-  right: -1.5%;
-}
-@media (max-width: 768px) {
-  .update .main-container .update-slider .slick-next {
-    right: 0;
-  }
-}
 .update .main-container .update-slider .update-card {
+  border-radius: 20px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border-right: 1px solid var(--border-color);
+  margin: 15px;
   padding: 30px;
 }
 .update .main-container .update-slider .update-card img {
@@ -2606,6 +2589,7 @@ section:last-child:nth-of-type(even) {
   margin-top: 20px;
   padding: 15px 0;
   border-bottom: 1px solid var(--border-color);
+  gap: 5%;
 }
 .events-news .main-container .events .each-event:last-child {
   border-bottom: none;
@@ -2615,13 +2599,15 @@ section:last-child:nth-of-type(even) {
 }
 .events-news .main-container .events .each-event .date {
   width: 120px;
-  height: 116px;
+  height: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   text-align: center;
   line-height: 1;
   padding: 28px 5px;
   border-radius: 10px;
   background-color: var(--secondary-white);
-  flex: 2;
   font-weight: 800;
   font-size: 24px;
 }
