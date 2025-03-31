@@ -30,6 +30,15 @@
                                         <li data-value="1">Cardiac Care</li>
                                         <li data-value="2">Cancer Care</li>
                                         <li data-value="3">Neuro Science</li>
+                                        <li data-value="1">Cardiac Care</li>
+                                        <li data-value="2">Cancer Care</li>
+                                        <li data-value="3">Neuro Science</li>
+                                        <li data-value="1">Cardiac Care</li>
+                                        <li data-value="2">Cancer Care</li>
+                                        <li data-value="3">Neuro Science</li>
+                                        <li data-value="1">Cardiac Care</li>
+                                        <li data-value="2">Cancer Care</li>
+                                        <li data-value="3">Neuro Science</li>
                                     </ul>
                                     <input type="hidden" name="find-doc-speciality" id="find-doc-speciality-input">
                                 </div>

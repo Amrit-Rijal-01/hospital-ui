@@ -69,9 +69,6 @@ section {
 section:nth-of-type(odd) {
   background-color: var(--secondary-white);
 }
-section:last-child:nth-of-type(even) {
-  border-bottom: 1px solid var(--border-color);
-}
 
 [id] {
   scroll-margin-top: 85px;
@@ -1620,6 +1617,7 @@ section:last-child:nth-of-type(even) {
   cursor: pointer;
   position: relative;
   z-index: 100;
+  background-color: var(--color-white);
 }
 .team-section .main-container .meet-doc-content .find-doc .find-doc-form .select-wrap .find-doc-speciality-wrap .list-wrap {
   padding: 10px 0 20px;
@@ -1627,9 +1625,6 @@ section:last-child:nth-of-type(even) {
   border-radius: 25px;
   background-color: #fff;
   display: none;
-  overflow: hidden;
-  overflow-y: auto;
-  max-height: 240px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1641,6 +1636,9 @@ section:last-child:nth-of-type(even) {
   list-style: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 240px;
 }
 .team-section .main-container .meet-doc-content .find-doc .find-doc-form .select-wrap .find-doc-speciality-wrap .list-wrap .find-doc-list-speciality li {
   font-weight: 600;
