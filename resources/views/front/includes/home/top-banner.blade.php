@@ -1,25 +1,25 @@
-<section class="top-banner">
+<section id="home-top-banner">
     <div class="top-banner-slider">
         <div class="image-card">
             <picture>
-                <source media="(min-width: 768px)" srcset="{{ asset('front/img/banner.jpg') }}">
-                <source media="(max-width: 767px)" srcset="{{ asset('front/img/mobile-banner.jpg') }}">
+                <source media="(min-width: 769px)" srcset="{{ asset('front/img/banner.jpg') }}">
+                <source media="(max-width: 768px)" srcset="{{ asset('front/img/mobile-banner.jpg') }}">
                 <img class="img-fluid" src="{{ asset('front/img/banner.jpg') }}" alt="Slider Image">
             </picture>
 
         </div>
         <div class="image-card">
             <picture>
-                <source media="(min-width: 768px)" srcset="{{ asset('front/img/career/slide-banner-2.jpg') }}">
-                <source media="(max-width: 767px)" srcset="{{ asset('front/img/career/slide-banner-mob-2.jpg') }}">
+                <source media="(min-width: 769px)" srcset="{{ asset('front/img/career/slide-banner-2.jpg') }}">
+                <source media="(max-width: 768px)" srcset="{{ asset('front/img/career/slide-banner-mob-2.jpg') }}">
                 <img class="img-fluid" src="{{ asset('front/img/career/slide-banner-2.jpg') }}" alt="Slider Image">
             </picture>
 
         </div>
         <div class="image-card">
             <picture>
-                <source media="(min-width:768px)" srcset="{{ asset('front/img/career/slide-banner-3.png') }}">
-                <source media="(max-width:767px)" srcset="{{ asset('front/img/career/slide-banner-mob-3.jpg') }}">
+                <source media="(min-width:769px)" srcset="{{ asset('front/img/career/slide-banner-3.png') }}">
+                <source media="(max-width:768px)" srcset="{{ asset('front/img/career/slide-banner-mob-3.jpg') }}">
                 <img src="{{ asset('front/img/career/slide-banner-3.png') }}" alt="Slider Image" class="img-fluid">
             </picture>
         </div>

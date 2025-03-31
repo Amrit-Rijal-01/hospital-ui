@@ -34,18 +34,18 @@ body {
 }
 
 main {
-  margin-top: 82px;
+  margin-top: 85px;
 }
 @media (min-width: 769px) and (max-width: 1199px) {
   main {
-    margin-top: 64px;
+    margin-top: 93px;
   }
 }
 @media (max-width: 768px) {
   main {
     display: flex;
     flex-direction: column;
-    margin-top: 62px;
+    margin-top: 93px;
   }
 }
 
@@ -887,7 +887,7 @@ section:last-child:nth-of-type(even) {
 }
 
 .site-header {
-  padding: 18px 0;
+  padding: 5px 0;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -915,7 +915,7 @@ section:last-child:nth-of-type(even) {
   align-items: center;
 }
 .site-header .main-container .logo {
-  max-height: 40px;
+  max-height: 75px;
   width: auto;
 }
 .site-header .main-container .navbar {
@@ -1231,19 +1231,19 @@ section:last-child:nth-of-type(even) {
   background-color: var(--color-dark-1);
 }
 
-.top-banner {
+#home-top-banner {
   position: relative;
-  padding-top: 0;
+  padding: 0;
   background-color: var(--color-white) !important;
 }
-.top-banner .top-banner-slider .image-card {
+#home-top-banner .top-banner-slider .image-card {
   height: auto;
 }
-.top-banner .top-banner-slider .image-card img {
+#home-top-banner .top-banner-slider .image-card img {
   width: 100%;
 }
-.top-banner .top-banner-slider .slick-dots {
-  bottom: 25px;
+#home-top-banner .top-banner-slider .slick-dots {
+  bottom: 40px;
   display: flex;
   position: absolute;
   left: 0;
@@ -1254,35 +1254,35 @@ section:last-child:nth-of-type(even) {
   gap: 10px;
   padding: 0;
 }
-.top-banner .top-banner-slider .slick-dots li button {
+#home-top-banner .top-banner-slider .slick-dots li button {
   display: none;
 }
-.top-banner .top-banner-slider .slick-dots li.slick-active {
+#home-top-banner .top-banner-slider .slick-dots li.slick-active {
   color: var(--color-main);
 }
-.top-banner .search-wrapper {
+#home-top-banner .search-wrapper {
   position: absolute;
   z-index: 99;
   top: 0;
   left: 0;
   right: 0;
   border-radius: 0 0 28px 28px;
-  padding: 4px 15px 15px;
+  padding: 10px 15px 15px;
   background-color: #fff;
   width: 540px;
   max-width: 100%;
   margin: auto;
 }
 @media (max-width: 768px) {
-  .top-banner .search-wrapper {
-    padding: 30px 20px;
+  #home-top-banner .search-wrapper {
+    padding: 0 20px 20px;
     position: static;
   }
 }
-.top-banner .search-field {
+#home-top-banner .search-field {
   position: relative;
 }
-.top-banner .search-field .search-box {
+#home-top-banner .search-field .search-box {
   font-weight: 700;
   border: 1px solid var(--primary);
   outline: 0;
@@ -1293,13 +1293,13 @@ section:last-child:nth-of-type(even) {
   height: 48px;
   background-color: var(--color-main);
 }
-.top-banner .search-field .search-box::-moz-placeholder {
+#home-top-banner .search-field .search-box::-moz-placeholder {
   color: #fff;
 }
-.top-banner .search-field .search-box::placeholder {
+#home-top-banner .search-field .search-box::placeholder {
   color: #fff;
 }
-.top-banner .search-field .search-icon {
+#home-top-banner .search-field .search-icon {
   background-color: #fff;
   text-align: center;
   border: 0;
@@ -1311,7 +1311,7 @@ section:last-child:nth-of-type(even) {
   top: 5px;
   cursor: pointer;
 }
-.top-banner .slide-list .floating-tab {
+#home-top-banner .slide-list .floating-tab {
   border-radius: 15px;
   position: absolute;
   width: calc(90% - 40px);
@@ -1320,13 +1320,13 @@ section:last-child:nth-of-type(even) {
   left: 50%;
   transform: translate(-50%, 0);
   bottom: -45px;
-  box-shadow: 0 0 20px #f0f0f0;
+  box-shadow: 0 0 10px #f0f0f0;
   border-radius: 15px;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 768px) {
-  .top-banner .slide-list .floating-tab {
+  #home-top-banner .slide-list .floating-tab {
     position: relative;
     transform: none;
     left: 0;
@@ -1338,7 +1338,7 @@ section:last-child:nth-of-type(even) {
     box-shadow: none;
   }
 }
-.top-banner .slide-list .floating-tab .slick-prev {
+#home-top-banner .slide-list .floating-tab .slick-prev {
   border: none;
   height: 38px;
   width: 38px;
@@ -1349,7 +1349,7 @@ section:last-child:nth-of-type(even) {
   left: -2%;
   z-index: 99;
 }
-.top-banner .slide-list .floating-tab .slick-next {
+#home-top-banner .slide-list .floating-tab .slick-next {
   border: none;
   height: 38px;
   width: 38px;
@@ -1361,12 +1361,12 @@ section:last-child:nth-of-type(even) {
   z-index: 99;
 }
 @media screen and (max-width: 767px) {
-  .top-banner .slide-list .floating-tab .slick-list {
+  #home-top-banner .slide-list .floating-tab .slick-list {
     padding: 20px 50px 20px 0;
     border-radius: 0;
   }
 }
-.top-banner .slide-list .floating-tab a {
+#home-top-banner .slide-list .floating-tab a {
   padding: 10px 25px;
   display: flex;
   align-items: center;
@@ -1379,7 +1379,7 @@ section:last-child:nth-of-type(even) {
   border-right: 1px solid var(--border-color-light);
 }
 @media (max-width: 768px) {
-  .top-banner .slide-list .floating-tab a {
+  #home-top-banner .slide-list .floating-tab a {
     border-radius: 15px;
     flex-direction: column;
     text-align: center;
@@ -1391,37 +1391,37 @@ section:last-child:nth-of-type(even) {
     border-right: 0;
   }
 }
-.top-banner .slide-list .floating-tab a img {
+#home-top-banner .slide-list .floating-tab a img {
   height: 35px;
   width: auto;
 }
-.top-banner .slide-list .floating-tab a:hover {
+#home-top-banner .slide-list .floating-tab a:hover {
   background-color: var(--color-light-1);
   color: #fff;
 }
-.top-banner .slide-list .floating-tab .left-hover {
+#home-top-banner .slide-list .floating-tab .left-hover {
   border-radius: 15px 0 0 15px;
 }
 @media (min-width: 769px) and (max-width: 1299px) {
-  .top-banner .slide-list .floating-tab .left-hover {
+  #home-top-banner .slide-list .floating-tab .left-hover {
     border-radius: 0;
   }
 }
 @media (max-width: 768px) {
-  .top-banner .slide-list .floating-tab .left-hover {
+  #home-top-banner .slide-list .floating-tab .left-hover {
     border-radius: 15px;
   }
 }
-.top-banner .slide-list .floating-tab .right-hover {
+#home-top-banner .slide-list .floating-tab .right-hover {
   border-radius: 0 15px 15px 0;
 }
 @media (min-width: 769px) and (max-width: 1299px) {
-  .top-banner .slide-list .floating-tab .right-hover {
+  #home-top-banner .slide-list .floating-tab .right-hover {
     border-radius: 0;
   }
 }
 @media (max-width: 768px) {
-  .top-banner .slide-list .floating-tab .right-hover {
+  #home-top-banner .slide-list .floating-tab .right-hover {
     border-radius: 15px;
   }
 }
