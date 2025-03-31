@@ -127,10 +127,12 @@
 
             .content {
                height: 40%;
+
                .date {
                   font-size: 13px;
                   font-weight: 500;
                }
+
                .para-wrap {
                   font-weight: 600;
                }
@@ -224,9 +226,7 @@
             .date {
                width: 120px;
                height: 120px;
-               white-space: nowrap;
-               overflow: hidden;
-               text-overflow: ellipsis;
+
                text-align: center;
                line-height: 1;
                padding: 28px 5px;
@@ -234,6 +234,12 @@
                background-color: var(--secondary-white);
                font-weight: 800;
                font-size: 24px;
+
+               .month {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+               }
             }
 
             .content {

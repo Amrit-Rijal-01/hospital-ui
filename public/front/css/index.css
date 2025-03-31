@@ -2598,9 +2598,6 @@ section:nth-of-type(odd) {
 .events-news .main-container .events .each-event .date {
   width: 120px;
   height: 120px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   text-align: center;
   line-height: 1;
   padding: 28px 5px;
@@ -2608,6 +2605,11 @@ section:nth-of-type(odd) {
   background-color: var(--secondary-white);
   font-weight: 800;
   font-size: 24px;
+}
+.events-news .main-container .events .each-event .date .month {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .events-news .main-container .events .each-event .content {
   flex: 5;
