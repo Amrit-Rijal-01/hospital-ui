@@ -34,21 +34,22 @@
       }
 
       .logo {
-         height: 75px;
-         width: auto;
-         z-index: 999;
+         align-self: center;
+         // height: 75px;
+         // width: auto;
+         // z-index: 999;
 
-         @media screen and (max-width: 1199px) {
-            height: 50px;
-         }
+         // @media screen and (max-width: 1199px) {
+         //    height: 50px;
+         // }
 
-         @media (max-width: 480px) {
-            width: 100%;
-            height: auto;
-            max-height: 75px;
-            margin-bottom: 10px;
+         // @media (max-width: 480px) {
+         //    width: 100%;
+         //    height: auto;
+         //    max-height: 75px;
+         //    margin-bottom: 10px;
 
-         }
+         // }
       }
 
       .navbar {
@@ -275,6 +276,9 @@
 
          @media screen and (max-width: 769px) {
             gap: 15px;
+         }
+         @media (max-width: 480px) {
+            justify-content: center;
          }
 
          a,
