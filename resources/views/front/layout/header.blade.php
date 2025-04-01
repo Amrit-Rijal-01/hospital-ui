@@ -41,7 +41,8 @@
                                 <a href="/ailments" class="drop-item">Ailments</a>
                             </li>
                             <li class="navbar-item knowledge-drop" onclick="extendKnowledgeSubMenu(this, event)">
-                                <a href="#" class="drop-item navbar-link knowledge-link d-flex justify-content-between">
+                                <a href="#"
+                                    class="drop-item navbar-link knowledge-link d-flex justify-content-between">
                                     <span>Knowledge</span> <i class="bi bi-chevron-right"></i>
                                 </a>
                                 <ul class="knowledge-drop-menu">
@@ -105,7 +106,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="feedback-contact d-flex">
+        <div class="feedback-contact">
             <a href="#" class="feedback-btn navbar-link">
                 <img src="{{ asset('front/img/write-message.png') }}" class="feedback-image" alt="Feedback">
             </a>
@@ -196,5 +197,23 @@
             $(el).addClass('active-knowledge');
             // event.preventDefault();
         }
+
+        function toggleFeedback() {
+            if ($(window).width() < 481) {
+                $(window).on("scroll", function() {
+                    if ($(window).scrollTop() > 100) {
+                        $(".feedback-contact").addClass('hide-feedback');
+
+                    } else {
+                        $(".feedback-contact").removeClass('hide-feedback');
+                    }
+                });
+            } else {
+                $(window).off("scroll");
+            }
+        }
+
+        toggleFeedback();
+        $(window).on("resize", toggleFeedback);
     </script>
 @endpush

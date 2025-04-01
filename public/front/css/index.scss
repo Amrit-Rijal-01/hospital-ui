@@ -16,14 +16,17 @@ body {
 main {
    margin-top: 85px;
 
-   @media (min-width: 769px) a\nd (max-width: 1199px) {
-      margin-top: 93px;
+   @media (min-width: 769px) and (max-width: 1199px) {
+      margin-top: 68px;
    }
 
-   @media (max-width: 768px) {
+   @media screen and (max-width: 768px) {
       display: flex;
       flex-direction: column;
-      margin-top: 93px;
+      margin-top: 63px;
+   }
+   @media (max-width: 480px) {
+      margin-top: 149px;
    }
 }
 
