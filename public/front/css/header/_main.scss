@@ -32,7 +32,9 @@
          column-gap: 10px;
          align-items: flex-start;
       }
-
+      .logo-link {
+         align-self: center;
+      }
       .logo {
          align-self: center;
          height: 75px;
@@ -274,11 +276,11 @@
          background-color: var(--color-white);
          max-height: 50px;
 
-         @media screen and (max-width: 769px) {
-            gap: 15px;
-         }
+         // @media screen and (max-width: 769px) {
+         //    gap: 10%;
+         // }
          @media (max-width: 480px) {
-            justify-content: center;
+            align-self: center;
          }
 
          a,
