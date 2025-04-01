@@ -384,8 +384,6 @@
 
       .hide-feedback {
          @media (max-width: 480px) {
-            // z-index: -1;
-            width: 100%;
             max-height: 0;
             transform: translateY(-100%);
             opacity: 0;

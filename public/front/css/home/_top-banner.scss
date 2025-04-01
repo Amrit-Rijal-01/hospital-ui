@@ -120,6 +120,9 @@
                 background-color: transparent;
                 box-shadow: none;
             }
+            .slick-list {
+               border-radius: 15px;
+            }
 
             .slick-prev {
 
@@ -163,7 +166,7 @@
                 transition: background-color 0.5s, color 0.5s;
                 justify-content: center;
                 min-height: 80px;
-                border-right: 1px solid var(--border-color-light);
+                border-right: 1px solid var(--border-color);
 
 
                 @media (max-width: 768px) {
