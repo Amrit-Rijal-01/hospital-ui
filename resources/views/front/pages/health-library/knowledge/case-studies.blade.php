@@ -10,16 +10,16 @@
             <div class="filters">
                 <div class="select-field">
                     <div class="default-select d-flex" id="default-select">
-                        <span class="default-item text-truncate">Cardiac Care</span>
+                        <span class="default-item text-truncate">All</span>
                         <span class="anchor-down-btn" style="border-color: #000"></span>
                     </div>
                     <div class="select-wrap" id="select-wrap">
                         <ul class="select-list" id="select-list">
-                            <li data-value="1">Liver Transplant</li>
-                            <li data-value="2">Cancer Care</li>
-                            <li data-value="3">Neuro Science</li>
+                           <li>All</li>
+                            <li data-target="1">Liver Transplant</li>
+                            <li data-target="2">Cancer Care</li>
                         </ul>
-                        <input type="hidden" name="find-doc-speciality" id="find-doc-speciality-input">
+                        <input type="hidden" name="find-case-study" id="find-case-study-input">
                     </div>
                 </div>
                 <div class="search-field">
@@ -29,8 +29,8 @@
             </div>
             <div class="case-study-content">
                 <div class="row g-2" id="case-study-list">
-                    @for ($i = 0; $i < 5; $i++)
-                        <div class="col-xl-4 col-md-6 case-study-item">
+                    @for ($i = 0; $i < 50; $i++)
+                        <div class="col-xl-4 col-md-6 case-study-item" data-content="liver-transplant">
                             <div class="slide m-3">
                                 <div class="img-wrapper">
                                     <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image"
@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="body">
                                     <div class="para-wrap">Case Study</div>
-                                    <h3 class="title heading-sm">News Title</h3>
+                                    <h3 class="title heading-sm">liver Title</h3>
                                     <div class="name-post">
                                         <span class="name">
                                             Dr Name
@@ -51,7 +51,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-md-6 case-study-item">
+                        <div class="col-xl-4 col-md-6 case-study-item" data-content="cancer-care">
                             <div class="slide m-3">
                                 <div class="img-wrapper">
                                     <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image"
@@ -60,7 +60,7 @@
                                 </div>
                                 <div class="body">
                                     <div class="para-wrap">Case Study</div>
-                                    <h3 class="title heading-sm">second</h3>
+                                    <h3 class="title heading-sm">cancer title</h3>
                                     <div class="name-post">
                                         <span class="name">
                                             Dr Name
@@ -94,8 +94,25 @@
             const searchInput = $('#search-input');
             const caseStudyItems = $('.case-study-item');
 
-            defaultSelect.on('click', function() {
+            defaultSelect.on('click', function(e) {
+                e.stopPropagation();
                 selectWrap.toggleClass('active');
+            });
+
+            $('#select-list li').on('click', function() {
+                let selectedText = $(this).text();
+                let selectedValue = $(this).data('target') || 'All';
+
+                $('.default-item').text(selectedText);
+                $('#find-case-study-input').val(selectedValue);
+                selectWrap.removeClass('active');
+
+                // Apply filtering when option is selected
+                filterItems();
+            });
+
+            $(document).on('click', function() {
+                selectWrap.removeClass('active');
             });
 
             // Pagination variables
@@ -105,11 +122,32 @@
 
             function filterItems() {
                 const searchTerm = searchInput.val().toLowerCase();
+                const selectedCategory = $('.default-item').text().toLowerCase();
 
                 filteredItems = caseStudyItems.filter(function() {
                     const title = $(this).find('.title').text().toLowerCase();
                     const speciality = $(this).find('.speciality').text().toLowerCase();
-                    return title.includes(searchTerm) || speciality.includes(searchTerm);
+                    const content = $(this).data('content') || '';
+
+                    // Match search term
+                    const matchesSearch = title.includes(searchTerm) ||
+                        speciality.includes(searchTerm);
+
+                    // Match category filter (if not 'all')
+                    let matchesCategory = true;
+                    if (selectedCategory !== 'cardiac care') { // Default option
+                        // Map dropdown text to data-content values
+                        let categoryValue = '';
+                        if (selectedCategory === 'liver transplant') {
+                            categoryValue = 'liver-transplant';
+                        } else if (selectedCategory === 'cancer care') {
+                            categoryValue = 'cancer-care';
+                        }
+
+                        matchesCategory = content === categoryValue;
+                    }
+
+                    return matchesSearch && matchesCategory;
                 });
 
                 // Recalculate pagination based on filtered items

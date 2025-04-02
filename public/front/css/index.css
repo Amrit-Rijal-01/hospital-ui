@@ -3679,6 +3679,9 @@ section:nth-of-type(odd) {
   background-color: var(--color-light-1);
   color: var(--color-white);
 }
+#health-library .main-container .health-library-slide .health-library-card:hover .heading-sm {
+  color: var(--color-white);
+}
 #health-library .main-container .health-library-slide .health-library-card:hover .btn {
   color: var(--color-white) !important;
 }
@@ -3701,6 +3704,10 @@ section:nth-of-type(odd) {
 #health-library .main-container .health-library-slide .health-library-card .heading-sm {
   text-align: center;
   margin-bottom: 10px;
+  line-height: 25px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #health-library .main-container .health-library-slide .health-library-card .btn {
   align-self: center;
@@ -4265,10 +4272,13 @@ section:nth-of-type(odd) {
 }
 #case-studies .filters .select-field .select-wrap .select-list li {
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border-color-light);
   font-size: 14px;
   cursor: pointer;
+}
+#case-studies .filters .select-field .select-wrap .select-list li:last-child {
+  border-bottom: none;
 }
 #case-studies .filters .select-field .active {
   display: block;

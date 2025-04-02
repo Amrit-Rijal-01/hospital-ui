@@ -16,7 +16,9 @@
                 &:hover {
                     background-color: var(--color-light-1);
                     color: var(--color-white);
-
+                     .heading-sm {
+                        color: var(--color-white);
+                     }
                     .btn {
                         color: var(--color-white) !important;
                         .orange-right {
@@ -42,6 +44,10 @@
                 .heading-sm {
                 text-align: center;
                 margin-bottom: 10px;
+                line-height: 25px;
+                height: 50px;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 }
                 .btn {
                     align-self: center;
