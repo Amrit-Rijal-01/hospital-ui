@@ -1147,6 +1147,7 @@ section:nth-of-type(odd) {
 @media (max-width: 480px) {
   .site-header .main-container .feedback-contact {
     align-self: center;
+    gap: 30px;
   }
 }
 .site-header .main-container .feedback-contact a,
