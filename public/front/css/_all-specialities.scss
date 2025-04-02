@@ -1,68 +1,107 @@
 #all-specialities {
-    .specialities-cards {
-        .card-col {
-            display: none;
-        }
+   .heading-group {
+      input {
+         border-radius: 35px;
+      }
 
-        .each-card {
-            box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            padding: 30px;
-            background: url('/front/img/health-library/pattern-bg.png') top left #fff;
-            display: flex;
-            flex-direction: column;
-            transition: 0.3s ease;
-            padding: 30px;
-            height: 100%;
+      .search-icon {
+         position: absolute;
+         right: 15px;
+         top: 6px;
 
-            &:hover {
-                background-color: var(--color-light-1);
-                color: var(--color-white);
-                .heading-sm {
-                  color: var(--color-white) !important;
-                }
+         @media (max-width: 768px) {
+            top: initial;
+            bottom: 5px;
 
-                .btn {
-                    color: var(--color-white) !important;
+         }
 
-                    .orange-right {
-                        background-color: var(--color-white);
-                        color: var(--color-light-1);
-                    }
-                }
+         i {
+            font-size: 18px;
+         }
+      }
+
+      @media (min-width:769px) {
+         position: relative;
+
+         .floating {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            @media (max-width:768px) {
+               position: initial;
             }
 
-            .img-wrapper {
-                width: 82px;
-                margin: 0 auto 20px;
-                flex-shrink: 0;
-                height: 82px;
 
-                img {
-                    width: 82px;
-                    height: 82px;
-                    object-fit: contain;
-                }
-            }
+         }
+      }
+   }
+
+   .specialities-cards {
+      .card-col {
+         display: none;
+      }
+
+      .each-card {
+         box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+         border-radius: 12px;
+         padding: 30px;
+         background: url('/front/img/health-library/pattern-bg.png') top left #fff;
+         display: flex;
+         flex-direction: column;
+         transition: 0.3s ease;
+         padding: 30px;
+         height: 100%;
+
+         &:hover {
+            background-color: var(--color-light-1);
+            color: var(--color-white);
 
             .heading-sm {
-                text-align: center;
-                margin-bottom: 10px;
+               color: var(--color-white) !important;
             }
 
             .btn {
-                align-self: center;
+               color: var(--color-white) !important;
+
+               .orange-right {
+                  background-color: var(--color-white);
+                  color: var(--color-light-1);
+               }
             }
+         }
+
+         .img-wrapper {
+            width: 82px;
+            margin: 0 auto 20px;
+            flex-shrink: 0;
+            height: 82px;
+
+            img {
+               width: 82px;
+               height: 82px;
+               object-fit: contain;
+            }
+         }
+
+         .heading-sm {
+            text-align: center;
+            margin-bottom: 10px;
+         }
+
+         .btn {
+            align-self: center;
+         }
 
 
-        }
-    }
+      }
+   }
 }
 
 #load-more {
-    background-color: var(--color-main);
-    border: none;
-    color: var(--color-white);
-    padding: 10px 15px;
-    border-radius: 25px;
+   background-color: var(--color-main);
+   border: none;
+   color: var(--color-white);
+   padding: 10px 15px;
+   border-radius: 25px;
 }

@@ -4,7 +4,7 @@
 @section('meta', 'Events & News page for the website')
 
 @section('content')
-    <section id="downloads">
+    <section id="download">
         <div class="main-container">
             <div class="tabs-container mb-4">
                 <button class="tab active">All</button>
@@ -19,111 +19,47 @@
                         <label for="name">Search</label>
                         <div class="search-icon"><i class="bi bi-search"></i></div>
                     </div>
-                    <div class="filter-list">
-                        <ul>
-
-                        </ul>
-                    </div>
                 </div>
                 <div class="col-md-8 content-col">
                     <div class="row g-3 card-row">
                         @for ($i = 0; $i < 3; $i++)
                             <div class="col-md-6 col-xl-4" data-content="info-graphics">
-                                <div class="download-card" data-bs-target="#disease-modal">
-                                    <div class="img-wrapper">
-                                        <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image"
-                                            class="w-100 img-fluid">
-                                        <div class="logo d-flex justify-content-between">
-                                            <a class="z-1" href="#" target="_blank">
-                                                <i class="bi bi-file-earmark"></i>
-                                            </a>
-                                            <div class="end d-flex gap-3">
-                                                <a class="z-1" href="#">
-                                                    <i class="bi bi-eye"></i>
-                                                </a>
-                                                <a class="z-1" href="#">
-                                                    <i class="bi bi-download"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <h3 class="title heading-sm mb-2">{{ $i }}{{ $i }} for
-                                            info-graphics Title</h3>
+                                <div class="download-card p-4">
+                                    <h3 class="title heading-sm mb-4">{{ $i }}{{ $i }} for
+                                        info-graphics Title</h3>
+                                    <div class="date-download d-flex justify-content-between">
                                         <div class="para-wrap date">12/12/2081</div>
+                                        <a class="z-1" href="#">
+                                            <i class="bi bi-download"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-4" data-content="leaflets">
-                                <div class="download-card" data-bs-target="#disease-modal">
-                                    <div class="img-wrapper">
-                                        <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image"
-                                            class="w-100 img-fluid">
-                                        <div class="logo d-flex justify-content-between">
-                                            <a class="z-1" href="#" target="_blank">
-                                                <i class="bi bi-file-earmark"></i>
-                                            </a>
-                                            <div class="end d-flex gap-3">
-                                                <a class="z-1" href="#">
-                                                    <i class="bi bi-eye"></i>
-                                                </a>
-                                                <a class="z-1" href="#">
-                                                    <i class="bi bi-download"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <h3 class="title heading-sm mb-2">{{ $i }}{{ $i }} for
-                                            leaflets Title</h3>
+                                <div class="download-card p-4">
+                                    <h3 class="title heading-sm mb-4">{{ $i }}{{ $i }} for
+                                        leaflets Title</h3>
+                                    <div class="date-download d-flex justify-content-between">
                                         <div class="para-wrap date">12/12/2081</div>
+                                        <a class="z-1" href="#">
+                                            <i class="bi bi-download"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-4" data-content="brochures">
-                                <div class="download-card" data-bs-target="#disease-modal">
-                                    <div class="img-wrapper">
-                                        <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image"
-                                            class="w-100 img-fluid">
-                                        <div class="logo d-flex justify-content-between">
-                                            <a class="z-1" href="#" target="_blank">
-                                                <i class="bi bi-file-earmark"></i>
-                                            </a>
-                                            <div class="end d-flex gap-3">
-                                                <a class="z-1" href="#">
-                                                    <i class="bi bi-eye"></i>
-                                                </a>
-                                                <a class="z-1" href="#">
-                                                    <i class="bi bi-download"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="body">
-                                        <h3 class="title heading-sm mb-2">{{ $i }}{{ $i }} for
-                                            brochures Title</h3>
+                                <div class="download-card p-4">
+                                    <h3 class="title heading-sm mb-4">{{ $i }}{{ $i }} for
+                                        brochures Title</h3>
+                                    <div class="date-download d-flex justify-content-between">
                                         <div class="para-wrap date">12/12/2081</div>
+                                        <a class="z-1" href="#">
+                                            <i class="bi bi-download"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         @endfor
-                    </div>
-                </div>
-                <div class="modal" tabindex="-1" id="disease-modal">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header border-bottom-0">
-                                <div class="modal-title heading-md">
-                                    Disease Name
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <button class="modal-body-btn">View PDF</button>
-                                <button class="modal-body-btn">Download PDF</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -133,12 +69,6 @@
 @push('js')
     <script>
         $(document).ready(function() {
-            // Modal functionality
-            $('.download-card').click(function(e) {
-                if (!$(e.target).closest('a').length) {
-                    $('#disease-modal').modal('show');
-                }
-            });
 
             // Tab switching functionality
             $('.tab').click(function() {
@@ -158,7 +88,7 @@
             function debounce(func, wait) {
                 let timeout;
                 return function() {
-                  
+
                     const context = this;
                     const args = arguments;
                     clearTimeout(timeout);

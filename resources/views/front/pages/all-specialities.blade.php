@@ -6,9 +6,15 @@
 @section('content')
     <section id="all-specialities">
         <div class="main-container">
-            <div class="heading text-center mb-4">
+         <div class="heading-group mb-4">
+            <div class="heading text-center mb-2">
                 All Specialities
             </div>
+            <div class="floating">
+                <input type="text" id="search-all-blogs" name="allBlogs" class="form-control" placeholder="Search All Blogs">
+                <div class="search-icon"><i class="bi bi-search"></i></div>
+            </div>
+         </div>
             <div class="specialities-cards">
                 <div class="row">
                     @php

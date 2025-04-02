@@ -1,60 +1,43 @@
-#downloads {
-    .main-container {
-        .heading-group {
-            position: relative;
+#health-library-download {
+   .main-container {
+      .heading-group {
+         position: relative;
 
-            .button {
-                position: absolute;
-                top: 0;
-                right: 0;
+         .button {
+            position: absolute;
+            top: 0;
+            right: 0;
 
-                @media (max-width:768px) {
-                    display: none !important;
-                }
+            @media (max-width:768px) {
+               display: none !important;
             }
-        }
+         }
+      }
 
-        .download-slider {
-            .download-card {
-                position: relative;
-                margin: 15px;
-                box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
-                border-radius: 20px;
-                height: 100%;
-                overflow: hidden;
+      .download-slider {
+         .download-card {
+            box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            height: 100%;
+            overflow: hidden;
+            margin: 15px;
 
-                // a {
-                //     &:hover {
-                //         color: currentColor;
-                //     }
-                // }
-
-                .img-wrapper {
-                    overflow: hidden;
-                    border-radius: 20px;
-                }
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    aspect-ratio: 1/1;
-                    object-fit: cover;
-                    border-radius: 20px;
-                }
-
-                .content {
-                    height: 40%;
-                }
+            .heading-sm {
+               line-height: 25px;
+               height: 50px;
+               overflow: hidden;
+               text-overflow: ellipsis;
             }
-        }
+         }
+      }
 
-        .mobile-btn {
-            display: flex;
-            justify-content: center;
+      .mobile-btn {
+         display: flex;
+         justify-content: center;
 
-            @media (min-width:769px) {
-                display: none;
-            }
-        }
-    }
+         @media (min-width:769px) {
+            display: none;
+         }
+      }
+   }
 }

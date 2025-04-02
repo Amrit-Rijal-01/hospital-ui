@@ -1,60 +1,44 @@
-<section id="downloads">
+<section id="health-library-download">
     <div class="main-container">
         <div class="heading-group">
             <div class="heading text-center">Downloads</div>
             <x-hoverBtn class="button">Downloads</x-hoverBtn>
         </div>
         <div class="download-slider">
-            <div class="download-card">
-                <div>
-                    <div href="{{ asset('front/img/test.mp4') }}" class="">
-                        <div class="img-wrapper">
-                            <img src="{{ asset('front/img/career/staff.jpg') }}" alt="Staff">
-                        </div>
-                        <div class="content p-3">
-                            <div class="heading-sm mb-3">Heading of the download </div>
-                            <div class="date">Updated on: March 21, 2025</div>
-                        </div>
-                    </div>
+            <div class="download-card p-4">
+                <h3 class="title heading-sm mb-4">Heading of the download</h3>
+                <div class="date-download d-flex justify-content-between">
+                    <div class="para-wrap date">12/12/2081</div>
+                    <a class="z-1" href="#">
+                        <i class="bi bi-download"></i>
+                    </a>
                 </div>
             </div>
-            <div class="download-card">
-                <div>
-                    <div href="{{ asset('front/img/test.mp4') }}" class="">
-                        <div class="img-wrapper">
-                            <img src="{{ asset('front/img/career/paramedic.jpg') }}" alt="Paramedic">
-                        </div>
-                        <div class="content p-3">
-                            <div class="heading-sm mb-3">Heading of the download </div>
-                            <div class="date">Updated on: March 21, 2025</div>
-                        </div>
-                    </div>
+            <div class="download-card p-4">
+                <h3 class="title heading-sm mb-4">Heading of the download</h3>
+                <div class="date-download d-flex justify-content-between">
+                    <div class="para-wrap date">12/12/2081</div>
+                    <a class="z-1" href="#">
+                        <i class="bi bi-download"></i>
+                    </a>
                 </div>
             </div>
-            <div class="download-card">
-                <div>
-                    <div href="{{ asset('front/img/test.mp4') }}" class="">
-                        <div class="img-wrapper">
-                            <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Nurse">
-                        </div>
-                        <div class="content p-3">
-                            <div class="heading-sm mb-3">Heading of the download </div>
-                            <div class="date">Updated on: March 21, 2025</div>
-                        </div>
-                    </div>
+            <div class="download-card p-4">
+                <h3 class="title heading-sm mb-4">Heading of the download</h3>
+                <div class="date-download d-flex justify-content-between">
+                    <div class="para-wrap date">12/12/2081</div>
+                    <a class="z-1" href="#">
+                        <i class="bi bi-download"></i>
+                    </a>
                 </div>
             </div>
-            <div class="download-card">
-                <div>
-                    <div href="{{ asset('front/img/test.mp4') }}" class="">
-                        <div class="img-wrapper">
-                            <img class="img-fluid" src="{{ asset('front/img/career/nurse.jpg') }}" alt="Nurse">
-                        </div>
-                        <div class="content p-3">
-                            <div class="heading-sm mb-3">Heading of the download </div>
-                            <div class="date">Updated on: March 21, 2025</div>
-                        </div>
-                    </div>
+            <div class="download-card p-4">
+                <h3 class="title heading-sm mb-4">Heading of the download</h3>
+                <div class="date-download d-flex justify-content-between">
+                    <div class="para-wrap date">12/12/2081</div>
+                    <a class="z-1" href="#">
+                        <i class="bi bi-download"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -78,12 +62,12 @@
                     settings: {
                         slidesToShow: 3
                     }
-                },{
-                    breakpoint:991,
+                }, {
+                    breakpoint: 991,
                     settings: {
                         slidesToShow: 2
                     }
-                },{
+                }, {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
@@ -94,4 +78,3 @@
         })
     </script>
 @endpush
-
