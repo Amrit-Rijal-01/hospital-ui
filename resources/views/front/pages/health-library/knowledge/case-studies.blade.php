@@ -15,9 +15,9 @@
                     </div>
                     <div class="select-wrap" id="select-wrap">
                         <ul class="select-list" id="select-list">
-                           <li>All</li>
-                            <li data-target="1">Liver Transplant</li>
-                            <li data-target="2">Cancer Care</li>
+                            <li data-content="All">All</li>
+                            <li data-target="liver-transplant">Liver Transplant</li>
+                            <li data-target="cancer-care">Cancer Care</li>
                         </ul>
                         <input type="hidden" name="find-case-study" id="find-case-study-input">
                     </div>
@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="body">
                                     <div class="para-wrap">Case Study</div>
-                                    <h3 class="title heading-sm">liver Title</h3>
+                                    <h3 class="title heading-sm">test liver Title</h3>
                                     <div class="name-post">
                                         <span class="name">
                                             Dr Name
@@ -101,10 +101,16 @@
 
             $('#select-list li').on('click', function() {
                 let selectedText = $(this).text();
-                let selectedValue = $(this).data('target') || 'All';
+                let selectedContent = $(this).data('content');
+                let selectedTarget = $(this).data('target');
 
+                // Set the displayed text in the dropdown
                 $('.default-item').text(selectedText);
+
+                // Store the selected value (prioritize content over target)
+                let selectedValue = selectedContent || selectedTarget || 'All';
                 $('#find-case-study-input').val(selectedValue);
+
                 selectWrap.removeClass('active');
 
                 // Apply filtering when option is selected
@@ -122,37 +128,35 @@
 
             function filterItems() {
                 const searchTerm = searchInput.val().toLowerCase();
-                const selectedCategory = $('.default-item').text().toLowerCase();
+                const selectedCategory = $('#find-case-study-input').val();
 
                 filteredItems = caseStudyItems.filter(function() {
                     const title = $(this).find('.title').text().toLowerCase();
                     const speciality = $(this).find('.speciality').text().toLowerCase();
-                    const content = $(this).data('content') || '';
+                    const itemContent = $(this).data('content') || '';
 
-                    // Match search term
+                    // Match search term (title or speciality contains search term)
                     const matchesSearch = title.includes(searchTerm) ||
                         speciality.includes(searchTerm);
 
-                    // Match category filter (if not 'all')
+                    // Match category filter
                     let matchesCategory = true;
-                    if (selectedCategory !== 'cardiac care') { // Default option
-                        // Map dropdown text to data-content values
-                        let categoryValue = '';
-                        if (selectedCategory === 'liver transplant') {
-                            categoryValue = 'liver-transplant';
-                        } else if (selectedCategory === 'cancer care') {
-                            categoryValue = 'cancer-care';
-                        }
-
-                        matchesCategory = content === categoryValue;
+                    if (selectedCategory && selectedCategory !== 'All') {
+                        matchesCategory = itemContent === selectedCategory;
                     }
 
                     return matchesSearch && matchesCategory;
                 });
 
-                // Recalculate pagination based on filtered items
-                const totalCards = filteredItems.length;
-                const totalPages = Math.ceil(totalCards / cardsPerPage);
+                // Update counts and UI elements
+                const totalItems = filteredItems.length;
+                const totalPages = Math.ceil(totalItems / cardsPerPage);
+
+                // Display message if no results found
+                if (totalItems === 0) {
+                    $('#case-study-list').append(
+                        '<div class="col-12 text-center my-5"><h3>No case studies found</h3></div>');
+                }
 
                 // Reset to first page after filtering
                 currentPage = 1;
@@ -165,14 +169,22 @@
             }
 
             function showPage(page) {
+                // Remove any "no results" message
+                $('#case-study-list .col-12.text-center').remove();
+
                 // Hide all items first
                 caseStudyItems.hide();
 
                 // Show only the filtered items for current page
                 filteredItems.slice((page - 1) * cardsPerPage, page * cardsPerPage).show();
 
+                // If no items to show and no message displayed, show message
+                if (filteredItems.length === 0) {
+                    $('#case-study-list').append(
+                        '<div class="col-12 text-center my-5"><h3>No case studies found</h3></div>');
+                }
+
                 updatePaginationButtons(page);
-                $('html, body').scrollTop($('#case-studies').offset().top);
             }
 
             function createPaginationButtons(totalPages) {
@@ -200,9 +212,16 @@
             function updatePaginationButtons(page) {
                 const totalPages = Math.ceil(filteredItems.length / cardsPerPage);
 
-                $('.page-button').removeClass('active').eq(page - 1).addClass('active');
+                // Update active state
+                $('.page-button').removeClass('active');
+                $(`.page-button:contains(${page})`).addClass('active');
+
+                // Enable/disable prev/next buttons
                 $('#prevPage').prop('disabled', page === 1);
-                $('#nextPage').prop('disabled', page === totalPages);
+                $('#nextPage').prop('disabled', page === totalPages || totalPages === 0);
+
+                // Show/hide pagination container based on results
+                $('.pagination-container').toggle(filteredItems.length > cardsPerPage);
             }
 
             // Event listeners for pagination
