@@ -94,6 +94,7 @@
             let featuredCount = 0;
             let currentFeaturedCount = 0;
 
+            $(".featured-blog-card").hide();
             function showMoreFeatured() {
                 console.log('featured-blog');
 
