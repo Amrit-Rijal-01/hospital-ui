@@ -11,11 +11,11 @@
                 <div class="select-field">
                     <div class="default-select d-flex" id="default-select">
                         <span class="default-item text-truncate">All</span>
-                        <span class="anchor-down-btn" style="border-color: #000"></span>
+                        <span class="anchor-down-btn"></span>
                     </div>
                     <div class="select-wrap" id="select-wrap">
                         <ul class="select-list" id="select-list">
-                            <li data-content="All">All</li>
+                            <li data-target="All">All</li>
                             <li data-target="liver-transplant">Liver Transplant</li>
                             <li data-target="cancer-care">Cancer Care</li>
                         </ul>

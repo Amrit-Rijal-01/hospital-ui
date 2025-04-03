@@ -89,3 +89,6 @@ Route::get('/about-us', function () {
 Route::get('/single-event', function () {
    return view('front.pages.single-event');
 });
+Route::get('/jobs', function () {
+   return view('front.pages.job');
+});

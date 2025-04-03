@@ -28,7 +28,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-floating">
+                            <div class="form-floating mb-3">
                                 <input type="tel" class="form-control" name="phoneNumber" placeholder="Phone Number *" required>
                                 <label for="phoneNumber">Phone Number *</label>
                             </div>
@@ -44,14 +44,12 @@
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="location" placeholder="Location*"
                                     required>
-                                <label for="location">Location*</label>
+                                <label for="location">Location *</label>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="col-md-6 mb-3">
-                                <label for="resumeFile">Upload File *</label>
-                                <input type="file" name="resumeFile" class="form-control" required>
-                            </div>
+                        </div>  
+                        <div class="col-12 mb-3">
+                                <label for="resumeFile">Upload File (accepted only pdf, docx) *</label>
+                                <input type="file" name="resumeFile" class="form-control" accept=".pdf,.docx" required>
                         </div>
                         <div class="col-md-6">
                             <div class="submit-btn">

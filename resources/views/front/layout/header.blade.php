@@ -134,7 +134,7 @@
         </div>
     </div>
     <hr>
-    <div class="main-container">
+    {{-- <div class="main-container">
         <nav class="section-nav" id="section-nav">
             <div class="section-navbar-container">
                 <ul id="sectionLinks">
@@ -142,9 +142,9 @@
                 </ul>
             </div>
         </nav>
-    </div>
+    </div> --}}
 </header>
-<div class="modal fade " id="resume-modal">
+<div class="modal fade " id="callback-modal">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-4">
             <div class="modal-header p-0 pb-3 border-bottom-0">

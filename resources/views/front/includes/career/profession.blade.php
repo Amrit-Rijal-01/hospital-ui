@@ -14,7 +14,7 @@
                         <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur?</p>
                         <div class="d-flex justify-content-center know-btn">
-                            <x-hoverBtn>View Jobs</x-hoverBtn>
+                            <x-hoverBtn href="/jobs">View Jobs</x-hoverBtn>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                             dolorum nisi provident consequatur? amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur?</p>
                         <div class="d-flex justify-content-center know-btn">
-                            <x-hoverBtn>View Jobs</x-hoverBtn>
+                            <x-hoverBtn href="/jobs">View Jobs</x-hoverBtn>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                         <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur?</p>
                         <div class="d-flex justify-content-center know-btn">
-                            <x-hoverBtn>View Jobs</x-hoverBtn>
+                            <x-hoverBtn href="/jobs">View Jobs</x-hoverBtn>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                             dolorum nisi provident consequatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur?</p>
                         <div class="d-flex justify-content-center know-btn">
-                            <x-hoverBtn>View Jobs</x-hoverBtn>
+                            <x-hoverBtn href="/jobs">View Jobs</x-hoverBtn>
                         </div>
                     </div>
                 </div>
