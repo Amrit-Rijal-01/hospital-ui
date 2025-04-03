@@ -1,0 +1,21 @@
+#job-detail-header {
+   .desc {
+      .heading {
+         .bi {
+            cursor: pointer;
+            transition: color 0.2s ease;
+            &:hover {
+               color: var(--color-main);
+            }
+         }
+      }
+   }
+}
+#job-detail-description {
+   .job-detail-title {
+      margin: 25px 0 10px;
+   }
+   ul {
+      font-weight: 500;
+   }
+}

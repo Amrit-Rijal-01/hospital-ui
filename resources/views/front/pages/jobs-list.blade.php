@@ -1,7 +1,7 @@
 @extends('front.layout.app')
 
-@section('title', 'Home')
-@section('meta', 'Home page for the website')
+@section('title', 'Jobs List')
+@section('meta', 'Jobs List page for the website')
 
 @section('content')
     <section id="job-career">
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="apply-btn">
-                            <x-hoverBtn>Apply</x-hoverBtn>
+                            <x-hoverBtn href="/job-detail">Apply</x-hoverBtn>
                         </div>
                     </div>
                     <div class="job" data-content="nursing">
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <div class="apply-btn">
-                            <x-hoverBtn>Apply</x-hoverBtn>
+                            <x-hoverBtn href="/job-detail">Apply</x-hoverBtn>
                         </div>
                     </div>
                     <div class="job" data-content="paramedic">
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="apply-btn">
-                            <x-hoverBtn>Apply</x-hoverBtn>
+                            <x-hoverBtn href="/job-detail">Apply</x-hoverBtn>
                         </div>
                     </div>
                     <div class="job" data-content="administrative-staff">
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="apply-btn">
-                            <x-hoverBtn>Apply</x-hoverBtn>
+                            <x-hoverBtn href="/job-detail">Apply</x-hoverBtn>
                         </div>
                     </div>
                 @endfor

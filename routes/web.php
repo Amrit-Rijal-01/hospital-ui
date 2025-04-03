@@ -90,5 +90,8 @@ Route::get('/single-event', function () {
    return view('front.pages.single-event');
 });
 Route::get('/jobs', function () {
-   return view('front.pages.job');
+   return view('front.pages.jobs-list');
+});
+Route::get('/job-detail', function () {
+   return view('front.pages.job-detail');
 });
