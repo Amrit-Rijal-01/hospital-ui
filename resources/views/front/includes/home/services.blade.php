@@ -11,7 +11,7 @@
                 <div class="body">
                     <h3 class="title heading-md">Service Title</h3>
                     <p class="para-wrap content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                        repellendus.</p>
+                        repellendus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti hic, veniam enim, mollitia incidunt quibusdam ipsam itaque eaque quasi alias quam maiores quas debitis ut porro sit? Nemo iusto facere quam alias dolorem qui pariatur necessitatibus saepe odio aut consequatur, totam voluptatem repudiandae nostrum non ullam quibusdam? Itaque, ut dolore.</p>
                     <div class="d-flex justify-content-between know-btn">
                         <x-hoverBtn>Know More</x-hoverBtn>
                         <div class="service-logo">

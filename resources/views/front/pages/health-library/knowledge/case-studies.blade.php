@@ -4,7 +4,7 @@
 @section('meta', 'Case Study page for the website')
 
 @section('content')
-    <section id="case-studies">
+    <section id="case-studies" data-content="Case Studies">
         <div class="main-container">
             <div class="heading text-center mb-4">Case Studies</div>
             <div class="filters">

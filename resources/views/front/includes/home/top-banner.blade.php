@@ -31,8 +31,8 @@
                <button class="search-icon" type="button" name="search"><i class="bi bi-search"></i></button>
            </div>
        </div>
-       <div class=" slide-list d-flex">
-           <div class="swiper-wrapper floating-tab d-flex" id="slick-slider">
+       <div class=" slide-list">
+           <div class="swiper-wrapper floating-tab" id="slick-slider">
                <a href="#" class="swiper-slide left-hover" target="_blank">
                    <img src="{{ asset('front/img/calendar-tick.svg') }}" class="me-2" alt="Appointment Image">
                    <span>Book Appointment</span>

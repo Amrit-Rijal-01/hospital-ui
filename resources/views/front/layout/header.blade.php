@@ -133,6 +133,16 @@
             </a>
         </div>
     </div>
+    <hr>
+    <div class="main-container">
+        <nav class="section-nav" id="section-nav">
+            <div class="section-navbar-container">
+                <ul id="sectionLinks">
+
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
 <div class="modal fade " id="resume-modal">
     <div class="modal-dialog modal-dialog-centered">
@@ -215,5 +225,51 @@
 
         toggleFeedback();
         $(window).on("resize", toggleFeedback);
+
+        $(document).ready(function() {
+            // Get all sections with data-content attribute
+            const $sections = $('section[data-content]');
+            const $sectionLinks = $('#sectionLinks');
+
+            // Generate navigation links from sections
+            $sections.each(function() {
+                const sectionId = $(this).attr('id');
+                const sectionName = $(this).data('content');
+
+                // Create the list item and link
+                const $listItem = $('<li>');
+                const $link = $('<a>')
+                    .attr('href', `#${sectionId}`)
+                    .text(sectionName)
+                    .on('click', function(e) {
+                        e.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: $(`#${sectionId}`).offset().top - 120
+                        }, 800);
+                    });
+
+                // Append elements to the navigation
+                $listItem.append($link);
+                $sectionLinks.append($listItem);
+            });
+
+            // Active link highlighting when scrolling
+            $(window).on('scroll', function() {
+                let current = '';
+
+                $sections.each(function() {
+                    const sectionTop = $(this).offset().top;
+                    const sectionHeight = $(this).outerHeight();
+
+                    if ($(window).scrollTop() >= (sectionTop - 150)) {
+                        current = $(this).attr('id');
+                    }
+                });
+
+                // Update active class
+                $('#sectionLinks a').removeClass('active');
+                $(`#sectionLinks a[href="#${current}"]`).addClass('active');
+            });
+        });
     </script>
 @endpush

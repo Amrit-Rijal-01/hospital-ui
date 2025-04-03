@@ -61,6 +61,10 @@
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 15px;
             margin-bottom: 15px;
+            line-height: 25px;
+            height: 55px;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             &::after {
                 left: 0;
