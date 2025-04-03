@@ -33,7 +33,7 @@
        </div>
        <div class=" slide-list">
            <div class="swiper-wrapper floating-tab" id="slick-slider">
-               <a href="#" class="swiper-slide left-hover" target="_blank">
+               <a href="#" class="swiper-slide" target="_blank">
                    <img src="{{ asset('front/img/calendar-tick.svg') }}" class="me-2" alt="Appointment Image">
                    <span>Book Appointment</span>
                </a>
@@ -43,30 +43,12 @@
    
                    <span>Second Opinion</span>
                </a>
-   
                <a href="#" class="swiper-slide">
-                   <img src="{{ asset('front/img/checkup.svg') }}" class="me-2" alt="Checkup Image">
-                   <span>Get Health Checkup</span>
+                   <img src="{{ asset('front/img/doctor.svg') }}" class="me-2" alt="Doctor Image">
+   
+                   <span>Second Opinion</span>
                </a>
    
-               <a href="#" class="swiper-slide">
-                   <img src="{{ asset('front/img/consultation.svg') }}" class="me-2" alt="Consultation Image">
-   
-                   <span>Book A Virtual Consultation</span>
-               </a>
-   
-   
-               <a href="#" class="swiper-slide">
-                   <img src="{{ asset('front/img/homecare.svg') }}" class="me-2" alt="Home Care Image">
-   
-                   <span>Home Care</span>
-               </a>
-   
-               <a href="#" class="swiper-slide right-hover">
-   
-                   <img src="{{ asset('front/img/test.svg') }}" class="me-2" alt="Test Image">
-                   <span>Book a Test</span>
-               </a>
            </div>
        </div>
     </div>
@@ -88,7 +70,7 @@
                         $slider.slick({
                             slidesToShow: 2,
                             slidesToScroll: 1,
-                            infinite: true,
+                            infinite: false,
                             arrows: true,
                             prevArrow: '<button class="slick-prev left-arrow"><img src="{{ asset('front/img/vector-left.png') }}" alt="Left Arrow"></button>',
                             nextArrow: '<button class="slick-next right-arrow"><img src="{{ asset('front/img/vector-right.png') }}" alt="Right Arrow"></button>',
