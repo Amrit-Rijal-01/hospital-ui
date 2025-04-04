@@ -101,7 +101,7 @@
             <ul>
                <li>Lorem ipsum dolor sit amet.</li>
          </div>
-         <x-hoverBtn href="/job-detail/form">Apply for this position</x-hoverBtn>
+         <x-hoverBtn href="/job-form">Apply for this position</x-hoverBtn>
       </div>
     </section>
 @endsection

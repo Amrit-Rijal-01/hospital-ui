@@ -10,7 +10,7 @@
                         <img src="{{ asset('front/img/career/doctor.jpg') }}" alt="Card Image" class="img-fluid">
                     </div>
                     <div class="body">
-                        <h3 class="heading">Doctor</h3>
+                        <h3 class="heading-md">Administrative Administrative Staff</h3>
                         <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur?</p>
                         <div class="d-flex justify-content-center know-btn">
@@ -23,7 +23,7 @@
                         <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
                     </div>
                     <div class="body">
-                        <h3 class="heading">Doctor</h3>
+                        <h3 class="heading-md">Doctor</h3>
                         <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur? amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur?</p>
@@ -37,7 +37,7 @@
                         <img src="{{ asset('front/img/career/paramedic.jpg') }}" alt="Card Image" class="img-fluid">
                     </div>
                     <div class="body">
-                        <h3 class="heading">Doctor</h3>
+                        <h3 class="heading-md">Doctor</h3>
                         <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur?</p>
                         <div class="d-flex justify-content-center know-btn">
@@ -50,7 +50,7 @@
                         <img src="{{ asset('front/img/career/staff.jpg') }}" alt="Card Image" class="img-fluid">
                     </div>
                     <div class="body">
-                        <h3 class="heading">Doctor</h3>
+                        <h3 class="heading-md">Doctor</h3>
                         <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam tempore
                             dolorum nisi provident consequatur?</p>

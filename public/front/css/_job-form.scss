@@ -1,0 +1,54 @@
+#job-form-header {
+   .desc {
+      .category-type {
+         display: flex;
+         gap: 20px;
+      }
+   }
+}
+
+#job-form-header {
+   .desc {
+      .para-wrap {
+         position: relative;
+         display: -webkit-box;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         max-height: none;
+         transition: max-height 0.3s ease;
+         margin-bottom: 0;
+
+         &.collapsed {
+            -webkit-line-clamp: 2;
+         }
+
+      }
+
+      .category-type {
+         display: flex;
+         gap: 20px;
+      }
+
+      .read-more-btn {
+         display: none;
+         border: none;
+         background-color: transparent;
+         color: var(--color-main);
+         font-weight: 600;
+         font-size: 14px;
+         padding: 0;
+
+         .bi {
+            &::before {
+               font-weight: bold;
+               display: inline-block;
+               color: var(--color-main);
+            }
+         }
+      }
+   }
+}
+
+#job-form-form {
+   
+}

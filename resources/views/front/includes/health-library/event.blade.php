@@ -27,7 +27,7 @@
                         </div>
                         <div class="content p-3">
                             <div class="heading-sm mb-3">Heading of the event </div>
-                            <p class="para-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, optio.</p>
+                            <p class="para-wrap">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita qui quam autem facilis! Ipsa, error sunt quidem dolore ad id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, optio.</p>
                             <x-hoverBtn class="heading-xs">Read Post</x-hoverBtn>
                         </div>
                     </div>

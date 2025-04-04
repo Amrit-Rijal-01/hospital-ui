@@ -95,6 +95,9 @@ Route::get('/jobs', function () {
 Route::get('/job-detail', function () {
    return view('front.pages.job-detail');
 });
+Route::get('/job-form', function () {
+   return view('front.pages.job-form');
+});
 Route::get('/each-update', function () {
    return view('front.pages.each-update');
 });

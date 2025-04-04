@@ -18,19 +18,36 @@
          .tech-card {
             background-color: var(--color-white);
             justify-content: space-between;
-            .image-wrapper {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+            .img-wrapper {
                flex: 2;
             }
 
             img {
-               max-width: 250px;
+               // max-width: 250px;
                height: 100%;
                aspect-ratio: 1/1;
                object-fit: cover;
-               border-radius: 25px;
+               border-radius: 16px;
             }
+
             .body {
                flex: 3;
+
+               .heading-sm {
+                  line-height: 25px;
+                  height: 50px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+               }
+
+               .para-wrap {
+                  line-height: 18px;
+                  height: 72px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+               }
             }
          }
       }
@@ -38,10 +55,6 @@
       .mobile-btn {
          display: flex;
          justify-content: center;
-
-         @media (min-width:769px) {
-            display: none;
-         }
       }
    }
 }

@@ -1,54 +1,67 @@
 #events {
-    .main-container {
-        .heading-group {
+   .main-container {
+      .heading-group {
+         position: relative;
+
+         .button {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            @media (max-width:768px) {
+               display: none !important;
+            }
+         }
+      }
+
+      .event-slider {
+         .event-card {
             position: relative;
+            margin: 15px;
+            box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            height: 100%;
+            overflow: hidden;
 
-            .button {
-                position: absolute;
-                top: 0;
-                right: 0;
-
-                @media (max-width:768px) {
-                    display: none !important;
-                }
+            .img-wrapper {
+               height: 60%;
+               overflow: hidden;
             }
-        }
 
-        .event-slider {
-            .event-card {
-                position: relative;
-                margin: 15px;
-                box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
-                border-radius: 20px;
-                height: 100%;
-                overflow: hidden;
-
-                .img-wrapper {
-                    height: 60%;
-                    overflow: hidden;
-                }
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    aspect-ratio: 1/1;
-                    object-fit: cover;
-                    border-radius: 20px;
-                }
-
-                .content {
-                    height: 40%;
-                }
+            img {
+               width: 100%;
+               height: 250px;
+               object-fit: cover;
+               border-radius: 20px;
             }
-        }
 
-        .mobile-btn {
-            display: flex;
-            justify-content: center;
+            .content {
+               .heading-sm {
+                  line-height: 24px;
+                  height: 48px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
 
-            @media (min-width:769px) {
-                display: none;
+                  @media (max-width: 768px) {
+                     line-height: 20px;
+                     height: 40px;
+                  }
+               }
+
+               .para-wrap {
+                  line-height: 18px;
+                  height: 72px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+               }
             }
-        }
-    }
+         }
+      }
+
+      .mobile-btn {
+         display: flex;
+         justify-content: center;
+
+      }
+   }
 }
