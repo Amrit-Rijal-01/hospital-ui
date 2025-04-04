@@ -175,8 +175,33 @@
                  }
              });
 
+
              getAvailableLetters();
+
+             let paramLetter = getUrlParameter('letter');
+             if (paramLetter) {
+                 paramLetter = paramLetter.toLowerCase();
+                 let letterButton = $(`.char-${paramLetter}`);
+                 if (letterButton.length && !letterButton.hasClass("disabled")) {
+                     letterButtons.removeClass("active");
+                     letterButton.addClass("active");
+                     selectedLetter = paramLetter;
+                 } else {
+                     selectedLetter = "all";
+                     letterButtons.removeClass("active");
+                     $('.char-all').addClass('active');
+                     alert('No Result Found For Letter ' + paramLetter)
+                 }
+             }
+
              filterCards();
          });
+
+         function getUrlParameter(name) {
+             name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+             var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+             var results = regex.exec(location.search);
+             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+         }
      </script>
  @endpush

@@ -133,10 +133,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="hover-button">
-                    <x-hoverBtn class="hover-btn" href="#"><a href="/ailments" class="hover-btn-text">View All Ailments</a></x-hoverBtn>
+                <div class="hover-button-sp active">
+                    <x-hoverBtn class="hover-btn" href="/ailments" data-content="ailments"><span
+                            class="hover-text">View All Ailments</span></x-hoverBtn>
                 </div>
-
+                <div class="hover-button-sp">
+                    <x-hoverBtn class="hover-btn" href="/treatments" data-content="treatments"><span
+                            class="hover-text">View All Treatments</span></x-hoverBtn>
+                </div>
+                <div class="hover-button-sp">
+                    <x-hoverBtn class="hover-btn" href="/technologies" data-content="technologies"><span
+                            class="hover-text">View All Technologies</span></x-hoverBtn>
+                </div>
             </div>
         </div>
     </div>
@@ -147,7 +155,7 @@
 @push('js')
     <script>
         $(document).ready(function() {
-            // Function to set active button and update hover button link
+            // Function to set active button and update hover button href
             window.setActive = function(button) {
                 // Remove active class from all buttons
                 $('.sp-search-by .sp-btn').removeClass('active-btn');
@@ -156,66 +164,73 @@
                 $(button).addClass('active-btn');
 
                 // Get the category text from the active button
-                const category = $(button).text().trim();
+                const category = $(button).text().trim().toLowerCase();
 
-                // Update the hover button text and link
-                const $hoverBtn = $('.hover-btn-text');
-                $hoverBtn.text(`View All ${category}`);
-
-                // Set the appropriate link based on the category
-                switch (category) {
-                    case 'Ailments':
-                        $hoverBtn.attr('href', '/ailments');
-                        break;
-                    case 'Treatments':
-                        $hoverBtn.attr('href', '/treatments');
-                        break;
-                    case 'Technologies':
-                        $hoverBtn.attr('href', '/technologies');
-                        break;
-                    default:
-                        $hoverBtn.attr('href', '/ailments');
+                // Get the appropriate URL based on category
+                let targetUrl = '/ailments'; // Default
+                if (category === 'treatments') {
+                    targetUrl = '/treatments';
+                } else if (category === 'technologies') {
+                    targetUrl = '/technologies';
                 }
+
+                // Store the current category URL for letter buttons to use
+                $('.sp-search-letter').attr('data-current-category', category);
+                $('.sp-search-letter').attr('data-current-url', targetUrl);
+
+                // Update the hover button href and text without changing inner structure
+                $('.hover-button-sp .hover-btn').each(function() {
+                    // Update href
+                    $(this).attr('href', targetUrl);
+
+                    // Try to find a text element to update
+                    let textEl = $(this).find('.hover-text');
+                    if (textEl.length === 0) {
+                        // If no dedicated text element exists, update text carefully
+                        const newText = 'View All ' + category.charAt(0).toUpperCase() + category.slice(
+                            1);
+
+                        // Clone to work with its contents
+                        const $clone = $(this).clone();
+                        $clone.children().remove();
+
+                        // Store original HTML
+                        const originalHTML = $(this).html();
+
+                        // Replace the text content
+                        const originalText = $clone.text().trim();
+                        if (originalText) {
+                            const newHTML = originalHTML.replace(originalText, newText);
+                            $(this).html(newHTML);
+                        }
+                    } else {
+                        // If we found a dedicated text element, just update it
+                        textEl.text('View All ' + category.charAt(0).toUpperCase() + category.slice(1));
+                    }
+                });
             };
 
-            // Function to handle letter button clicks
+            // Function to handle letter button clicks - now directly navigates
             window.setActiveLetter = function(letterButton) {
-                // Get all letter buttons
-                const $letterButtons = $('.sp-search-letter .letter-wrap button');
-
-                // Remove active class from all letter buttons
-                $letterButtons.removeClass('active');
-
                 // Add active class to clicked letter
+                $('.sp-search-letter .letter-wrap button').removeClass('active');
                 $(letterButton).addClass('active');
 
                 // Get the letter from the button
-                const letter = $(letterButton).find('span').text().trim();
+                const letter = $(letterButton).find('span').text().trim().toLowerCase();
 
-                // Get the current category from active button
-                const activeCategory = $('.sp-search-by .active-btn').text().trim();
+                // Get the current category base URL from data attribute
+                const categoryUrl = $('.sp-search-letter').attr('data-current-url') || '/ailments';
 
-                // Update hover button to include the letter
-                const $hoverBtn = $('.hover-btn');
-                $hoverBtn.text(`View ${letter.toUpperCase()} ${activeCategory}`);
-
-                // Update the link to include the letter parameter
-                const currentHref = $hoverBtn.attr('href').split('?')[0]; // Get base URL without query params
-                $hoverBtn.attr('href', `${currentHref}?letter=${letter.toLowerCase()}`);
+                // Directly navigate to the category+letter page
+                window.location.href = `${categoryUrl}?letter=${letter}`;
             };
 
-            // Set initial hover button state based on default active button
+            // Set initial state based on default active button
             const $defaultActiveBtn = $('.sp-search-by .active-btn');
             if ($defaultActiveBtn.length) {
                 setActive($defaultActiveBtn[0]);
             }
-
-            // Add click event listeners to all letter buttons
-            $('.sp-search-letter .letter-wrap button').each(function() {
-                $(this).on('click', function() {
-                    setActiveLetter(this);
-                });
-            });
         });
     </script>
 @endpush
