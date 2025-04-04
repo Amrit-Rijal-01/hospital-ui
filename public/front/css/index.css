@@ -149,16 +149,38 @@ section:nth-of-type(odd) {
 .main-card .body .heading-md {
   font-weight: 700;
   color: var(--color-dark-grey);
+  line-height: 30px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 1599px) {
+  .main-card .body .heading-md {
+    line-height: 25px;
+    height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .main-card .body .heading-md {
+    line-height: 20px;
+    height: 40px;
+  }
 }
 .main-card .body .content {
   text-align: left;
   color: var(--color-grey);
   margin: 14px 0;
+  line-height: 18px;
+  height: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media (max-width: 992px) {
   .main-card .body .content {
     width: 100%;
     font-size: 12px;
+    line-height: 15px;
+    height: 60px;
   }
 }
 .main-card .body .know-btn {

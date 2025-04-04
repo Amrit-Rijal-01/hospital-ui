@@ -1,7 +1,7 @@
 @extends('front.layout.app')
 
 @section('title', 'All Technologies')
-@section('meta', 'All TEchnologies page for the website')
+@section('meta', 'All Tchnologies page for the website')
 
 @section('content')
     <x-allPage title="All Technologies">
