@@ -8197,6 +8197,115 @@ section:nth-of-type(odd) {
   font-weight: 500;
 }
 
+#each-update {
+  background-color: #fff;
+}
+#each-update .single-update .heading-sm {
+  font-weight: 500;
+}
+#each-update .single-update .event-main-img {
+  width: 100%;
+  overflow: hidden;
+}
+#each-update .single-update .event-main-img .glightbox {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#each-update .single-update .event-main-img .glightbox img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#each-update .single-update .event-main-img .glightbox .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+}
+#each-update .second-col .query-form form {
+  max-width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+}
+#each-update .second-col .query-form form .heading-md {
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+@media (min-width: 1600px) {
+  #each-update .second-col .query-form form .heading-md {
+    font-size: 25px;
+  }
+}
+#each-update .second-col .query-form form .input-wrap {
+  margin-bottom: 15px;
+}
+#each-update .second-col .query-form form input {
+  border: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0;
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 12px;
+  height: 38px;
+  background-color: transparent;
+  width: 100%;
+}
+#each-update .second-col .query-form form label {
+  font-size: 15px;
+  font-weight: 600;
+}
+#each-update .second-col .query-form form button {
+  display: inline-block;
+  padding: 14px 18px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: var(--color-main);
+  font-size: 13px;
+  border-radius: 35px;
+  cursor: pointer;
+  min-width: 150px;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+}
+#each-update .second-col .recent-event {
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+}
+#each-update .second-col .recent-event .event-card {
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+#each-update .second-col .recent-event .event-card .img-wrapper {
+  width: 100%;
+}
+#each-update .second-col .recent-event .event-card .img-wrapper img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#each-update .second-col .recent-event .event-card .body {
+  padding: 15px;
+}
+#each-update .second-col .recent-event .event-card .body .heading-md {
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
 footer {
   padding-bottom: 90px;
 }
