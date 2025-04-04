@@ -1,31 +1,47 @@
 #technology {
-    .main-container{
-        .heading-group {
-            position: relative;
-            .button {
-                @media (max-width:768px) {
-                    display: none !important;
-                }
-                position: absolute;
-                top: 4px;
-                right: 2%;
+   .main-container {
+      .heading-group {
+         position: relative;
+
+         .button {
+            @media (max-width:768px) {
+               display: none !important;
             }
-        }
-        .technology-slider {
-            .tech-card {
-                background-color: var(--color-white);
-                img {
-                    height: 100%;
-                    border-radius: 25px;
-                }
+
+            position: absolute;
+            top: 4px;
+            right: 2%;
+         }
+      }
+
+      .technology-slider {
+         .tech-card {
+            background-color: var(--color-white);
+            justify-content: space-between;
+            .image-wrapper {
+               flex: 2;
             }
-        }
-        .mobile-btn {
-            display: flex;
-            justify-content: center;
-            @media (min-width:769px) {
-                display: none;
+
+            img {
+               max-width: 250px;
+               height: 100%;
+               aspect-ratio: 1/1;
+               object-fit: cover;
+               border-radius: 25px;
             }
-        }
-    }
+            .body {
+               flex: 3;
+            }
+         }
+      }
+
+      .mobile-btn {
+         display: flex;
+         justify-content: center;
+
+         @media (min-width:769px) {
+            display: none;
+         }
+      }
+   }
 }

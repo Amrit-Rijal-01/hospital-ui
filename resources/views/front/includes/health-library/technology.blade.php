@@ -18,45 +18,6 @@
                     <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
                 </div>
             </div>
-            <div class="tech-card d-flex flex-column flex-xl-row-reverse m-3 rounded-4 overflow-hidden">
-                <div class="img-wrapper">
-                    <img class="w-100 img-fluid" src="{{ asset('front/img/health-library/health-library-1.jpg') }}"
-                        alt="Doctor">
-                </div>
-                <div class="body d-flex flex-column justify-content-center p-4">
-                    <div class="heading-sm mb-3">256 Slice CT</div>
-                    <p class="para-wrap">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis asperiores quia velit sit.
-                    </p>
-                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
-                </div>
-            </div>
-            <div class="tech-card d-flex flex-column flex-xl-row-reverse m-3 rounded-4 overflow-hidden">
-                <div class="img-wrapper">
-                    <img class="w-100 img-fluid" src="{{ asset('front/img/health-library/health-library-1.jpg') }}"
-                        alt="Doctor">
-                </div>
-                <div class="body d-flex flex-column justify-content-center p-4">
-                    <div class="heading-sm mb-3">256 Slice CT</div>
-                    <p class="para-wrap">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis asperiores quia velit sit.
-                    </p>
-                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
-                </div>
-            </div>
-            <div class="tech-card d-flex flex-column flex-xl-row-reverse m-3 rounded-4 overflow-hidden">
-                <div class="img-wrapper">
-                    <img class="w-100 img-fluid" src="{{ asset('front/img/health-library/health-library-1.jpg') }}"
-                        alt="Doctor">
-                </div>
-                <div class="body d-flex flex-column justify-content-center p-4">
-                    <div class="heading-sm mb-3">256 Slice CT</div>
-                    <p class="para-wrap">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt voluptatibus perspiciatis asperiores quia velit sit.
-                    </p>
-                    <x-hoverBtn class="heading-xs">Know More</x-hoverBtn>
-                </div>
-            </div>
         </div>
         <div class="mobile-btn">
             <x-hoverBtn>View All CME</x-hoverBtn>
