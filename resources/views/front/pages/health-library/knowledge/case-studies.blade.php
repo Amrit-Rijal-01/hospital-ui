@@ -32,14 +32,16 @@
                     @for ($i = 0; $i < 50; $i++)
                         <div class="col-xl-4 col-md-6 case-study-item" data-content="liver-transplant">
                             <div class="slide m-3">
-                                <div class="img-wrapper">
-                                    <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image"
-                                        class="img-fluid w-100">
-                                    <div class="heading-xs date">Chaitra 10, 2081</div>
-                                </div>
+                              <a href="/single-case-study">
+                                 <div class="img-wrapper">
+                                     <img src="{{ asset('front/img/service-img.jpg') }}" alt="Service Image"
+                                         class="img-fluid w-100">
+                                     <div class="heading-xs date">Chaitra 10, 2081</div>
+                                 </div>
+                              </a>
                                 <div class="body">
-                                    <div class="para-wrap">Case Study</div>
-                                    <h3 class="title heading-sm">test liver Title</h3>
+                                    <div class="para-wrap"> Case Study</div>
+                                    <h3 class="title heading-sm"> <a href="/single-case-study">test liver Title</a></h3>
                                     <div class="name-post">
                                         <span class="name">
                                             Dr Name
