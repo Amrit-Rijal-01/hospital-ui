@@ -92,6 +92,9 @@ Route::get('/single-event', function () {
 Route::get('/single-case-study', function () {
    return view('front.pages.single-case-study');
 });
+Route::get('/single-service', function () {
+   return view('front.pages.service.single-service');
+});
 Route::get('/jobs', function () {
    return view('front.pages.jobs-list');
 });

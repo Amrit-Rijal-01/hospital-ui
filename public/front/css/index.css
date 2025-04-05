@@ -8192,6 +8192,303 @@ section:nth-of-type(odd) {
   margin-bottom: 6px;
 }
 
+#single-service-top-banner {
+  position: relative;
+  padding: 0;
+}
+@media (max-width: 991px) {
+  #single-service-top-banner {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #single-service-top-banner {
+    height: 600px;
+  }
+}
+#single-service-top-banner .wrapper {
+  height: 100%;
+}
+@media (max-width: 1199px) {
+  #single-service-top-banner .wrapper {
+    position: relative;
+  }
+}
+#single-service-top-banner .wrapper .img-wrap {
+  display: block;
+}
+#single-service-top-banner .wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  #single-service-top-banner .wrapper img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+#single-service-top-banner .wrapper .banner-wrapper {
+  line-height: 1.2;
+  width: 820px;
+  margin: auto;
+  padding: 20px;
+  max-width: 100%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #single-service-top-banner .wrapper .banner-wrapper {
+    width: 480px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #single-service-top-banner .wrapper .banner-wrapper {
+    width: 350px;
+  }
+}
+#single-service-top-banner .wrapper .banner-wrapper button {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 15px 20px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid var(--color-main);
+  border-radius: 25px;
+  color: var(--color-main);
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+#single-service-top-banner .wrapper .banner-wrapper button:hover {
+  border-color: var(--color-main);
+  background-color: var(--color-main);
+  color: #fff;
+}
+#single-service-top-banner .callback-form form {
+  width: 300px;
+  max-width: 100%;
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 991px) {
+  #single-service-top-banner .callback-form form {
+    width: 440px;
+    position: static;
+    margin: 30px auto;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  #single-service-top-banner .callback-form form {
+    width: 90%;
+  }
+}
+#single-service-top-banner .callback-form form .heading-md {
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+@media (min-width: 1600px) {
+  #single-service-top-banner .callback-form form .heading-md {
+    font-size: 25px;
+  }
+}
+#single-service-top-banner .callback-form form .input-wrap {
+  margin-bottom: 15px;
+}
+#single-service-top-banner .callback-form form input {
+  border: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0;
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 12px;
+  height: 38px;
+  background-color: transparent;
+  width: 100%;
+}
+#single-service-top-banner .callback-form form label {
+  font-size: 15px;
+  font-weight: 600;
+}
+#single-service-top-banner .callback-form form button {
+  display: inline-block;
+  padding: 14px 18px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: var(--color-main);
+  font-size: 13px;
+  border-radius: 35px;
+  cursor: pointer;
+  min-width: 150px;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+}
+
+#single-service-overview .main-container .heading {
+  width: 34%;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  #single-service-overview .main-container .heading {
+    width: 100%;
+  }
+}
+#single-service-overview .main-container .content-wrapper {
+  width: 66%;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  #single-service-overview .main-container .content-wrapper {
+    width: 100%;
+  }
+}
+#single-service-overview .main-container .para-wrap {
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: none;
+  transition: max-height 0.3s ease;
+}
+#single-service-overview .main-container .para-wrap.collapsed {
+  -webkit-line-clamp: 3;
+}
+#single-service-overview .main-container .read-more-btn {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: var(--color-main);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0;
+}
+#single-service-overview .main-container .read-more-btn .bi::before {
+  font-weight: bold;
+  display: inline-block;
+  color: var(--color-main);
+}
+
+#single-service-faq .faq-container {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media (max-width: 768px) {
+  #single-service-faq .faq-container {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+}
+#single-service-faq .question-answer {
+  width: 100%;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 8px;
+}
+#single-service-faq .question-answer .question {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+}
+#single-service-faq .question-answer .question p {
+  margin: 0;
+}
+#single-service-faq .question-answer .question .bi::before {
+  transition: transform 0.2s ease;
+}
+#single-service-faq .question-answer .answer {
+  visibility: hidden;
+  opacity: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease, padding 0.2s ease, opacity 0.2s ease;
+}
+#single-service-faq .question-answer.active .question {
+  font-weight: 700;
+  color: var(--color-main);
+  border-bottom: 2px solid var(--color-main);
+}
+#single-service-faq .question-answer.active .question .bi::before {
+  transform: rotate(90deg);
+}
+#single-service-faq .question-answer.active .answer {
+  padding: 12px 0 18px;
+  visibility: visible;
+  max-height: 500px;
+  opacity: 1;
+}
+
+#single-service-our-services .our-service-card {
+  background: url("/front/img/health-library/pattern-bg.png") top left repeat;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+#single-service-our-services .our-service-card i {
+  font-size: 60px;
+}
+#single-service-our-services .our-service-card .card-title {
+  font-size: 22px;
+  line-height: 25px;
+  height: 50px;
+  font-weight: 600;
+  color: var(--color-dark-grey);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 768px) {
+  #single-service-our-services .our-service-card .card-title {
+    font-size: 18px;
+    line-height: 21px;
+    height: 42px;
+  }
+}
+#single-service-our-services .our-service-card .para-wrap {
+  font-weight: 600;
+}
+
+#single-service-connect .connect-card {
+  background: url("/front/img/health-library/pattern-bg.png") top left repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 15px;
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+#single-service-connect .connect-card i {
+  font-size: 60px;
+}
+
 #job-career {
   background: url("/front/img/why-bg.png") top left repeat;
 }
