@@ -8240,7 +8240,7 @@ section:nth-of-type(odd) {
   display: none;
   overflow: hidden;
   overflow-y: auto;
-  max-height: 300px;
+  max-height: 350px;
   position: absolute;
   top: 0;
   left: 0;
@@ -8397,6 +8397,163 @@ section:nth-of-type(odd) {
   font-weight: bold;
   display: inline-block;
   color: var(--color-main);
+}
+
+#job-form-form .form-content-container {
+  display: flex;
+  gap: 10%;
+}
+@media (max-width: 991px) {
+  #job-form-form .form-content-container {
+    flex-direction: column;
+  }
+}
+#job-form-form .form-content-container .progression-bar {
+  display: flex;
+  justify-content: space-around;
+  gap: 5%;
+  flex-wrap: nowrap;
+  position: relative;
+  margin-bottom: 24px;
+}
+#job-form-form .form-content-container .progression-bar::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  width: 1px;
+  height: 100%;
+  background-color: var(--border-color);
+}
+@media (max-width: 991px) {
+  #job-form-form .form-content-container .progression-bar::after {
+    width: 100%;
+    height: 1%;
+    right: initial;
+    top: 15px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  #job-form-form .form-content-container .progression-bar {
+    flex-direction: column;
+    flex: 3;
+  }
+}
+#job-form-form .form-content-container .progression-bar .steps-click {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  align-self: self-start;
+}
+@media (min-width: 992px) {
+  #job-form-form .form-content-container .progression-bar .steps-click {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+#job-form-form .form-content-container .progression-bar .steps-click p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-dark-grey);
+}
+@media (max-width: 768px) {
+  #job-form-form .form-content-container .progression-bar .steps-click p {
+    font-size: 14px;
+  }
+}
+#job-form-form .form-content-container .progression-bar .step-count {
+  border: 1px solid var(--border-color);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 50%;
+  z-index: 100;
+  background-color: var(--color-white);
+}
+#job-form-form .form-content-container .progression-bar .step-count.active {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+@media (min-width: 992px) {
+  #job-form-form .form-content-container .form-container {
+    flex: 7;
+  }
+}
+#job-form-form .form-content-container .form-step {
+  display: none;
+}
+#job-form-form .form-content-container .form-step.active {
+  display: block;
+}
+#job-form-form .form-content-container .form-step input,
+#job-form-form .form-content-container .form-step select {
+  border: none;
+  border-bottom: 1px solid var(--color-black);
+  border-radius: 0;
+  background-color: transparent;
+  padding-left: 0;
+  font-weight: 500;
+  color: var(--color-grey);
+  font-size: 12px;
+}
+#job-form-form .form-content-container .form-step input:focus,
+#job-form-form .form-content-container .form-step select:focus {
+  box-shadow: none !important;
+}
+#job-form-form .form-content-container .form-step label {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+#job-form-form .form-content-container .form-step select {
+  background: url("../img/vector-down.png") right no-repeat;
+}
+#job-form-form .form-content-container .form-step .radio-label {
+  font-weight: 500;
+}
+#job-form-form .form-content-container .form-step input[type=number]::-webkit-outer-spin-button,
+#job-form-form .form-content-container .form-step input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#job-form-form .form-content-container .form-step input[type=number] {
+  -moz-appearance: textfield;
+}
+#job-form-form .form-content-container .form-step .file-input {
+  border: 1px solid var(--border-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+#job-form-form .form-content-container .form-step textarea {
+  border: 1px solid var(--color-black);
+  font-size: 12px;
+  resize: none;
+  min-height: 100px;
+  border-radius: 15px;
+}
+#job-form-form .form-content-container .form-step button {
+  border: none;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: 0.2s ease;
+}
+#job-form-form .form-content-container .form-step button:first-child {
+  margin-right: 12px;
+}
+#job-form-form .form-content-container .form-step button:hover {
+  background-color: var(--color-dark-1);
 }
 
 #each-update {
