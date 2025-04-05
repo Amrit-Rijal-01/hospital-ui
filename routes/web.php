@@ -95,6 +95,9 @@ Route::get('/single-case-study', function () {
 Route::get('/single-service', function () {
    return view('front.pages.service.single-service');
 });
+Route::get('/single-package-service', function () {
+   return view('front.pages.service.package-service');
+});
 Route::get('/jobs', function () {
    return view('front.pages.jobs-list');
 });
