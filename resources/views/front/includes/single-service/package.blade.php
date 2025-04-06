@@ -50,7 +50,7 @@
                         Name of the package
                      </div>
                      <span class="price">Rs. 20,000</span>
-                     <x-hoverBtn class="para-wrap">Know More</x-hoverBtn>
+                     <x-hoverBtn href="/single-package" class="para-wrap">Know More</x-hoverBtn>
                   </div>
                </div>
             </div>
@@ -64,7 +64,7 @@
                         Name of the package
                      </div>
                      <span class="price">Rs. 20,000</span>
-                     <x-hoverBtn class="para-wrap">Know More</x-hoverBtn>
+                     <x-hoverBtn href="/single-package" class="para-wrap">Know More</x-hoverBtn>
                   </div>
                </div>
             </div>
@@ -78,7 +78,7 @@
                         Name of the package
                      </div>
                      <span class="price">Rs. 20,000</span>
-                     <x-hoverBtn class="para-wrap">Know More</x-hoverBtn>
+                     <x-hoverBtn href="/single-package" class="para-wrap">Know More</x-hoverBtn>
                   </div>
                </div>
             </div>
@@ -92,7 +92,7 @@
                         Name of the package
                      </div>
                      <span class="price">Rs. 20,000</span>
-                     <x-hoverBtn class="para-wrap">Know More</x-hoverBtn>
+                     <x-hoverBtn href="/single-package" class="para-wrap">Know More</x-hoverBtn>
                   </div>
                </div>
             </div>

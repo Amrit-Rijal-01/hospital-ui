@@ -180,7 +180,7 @@ section {
    }
 
    @media (max-width: 768px) {
-      font-size: 16px;
+      font-size: 24px;
    }
 }
 
@@ -320,6 +320,7 @@ body {
 @import './single-event';
 @import './single-case-study';
 @import './single-service/main';
+@import './single-package';
 @import './jobs-list';
 @import 'job-detail';
 @import 'job-form';
