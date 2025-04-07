@@ -184,9 +184,6 @@
 </div>
 @push('js')
      <script>
-      window.appConfig = window.appConfig || {};
-      window.appConfig.showSectionNav = window.appConfig.showSectionNav !== undefined ?
-       window.appConfig.showSectionNav : true;
       $(function () {
        const $sections = $('section[data-content]');
        const $sectionLinks = $('#sectionLinks');

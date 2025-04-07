@@ -880,6 +880,20 @@ section:nth-of-type(odd) {
      object-fit: contain !important;
 }
 
+#breadcrumbs-section {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+#breadcrumbs-section .breadcrumb {
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .site-header {
   padding: 5px 0;
   position: fixed;
@@ -6426,6 +6440,7 @@ hr {
 #doctor-list .list .doctor-card .body {
   border-top: 1px solid #e1e1e1;
   padding: 20px;
+  min-height: 220px;
 }
 #doctor-list .list .doctor-card .body .tabs {
   color: var(--color-dark-grey);
