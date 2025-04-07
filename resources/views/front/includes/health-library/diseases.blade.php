@@ -1,4 +1,4 @@
-<section id="diseases-section">
+<section id="diseases-section" data-content="Diseases">
     <div class="main-container">
         <div class="search">
             <form action="">

@@ -405,34 +405,49 @@
    @import './mobile';
 }
 
+hr {
+   margin: 6px;
+}
+
 .section-nav {
-   padding: 12px 0;
+   padding: 5px 0;
    position: sticky;
    top: 0;
    z-index: 100;
 
    .section-navbar-container {
-      max-width: 1200px;
-      // margin: 0 auto;
       display: flex;
       justify-content: flex-start;
-      overflow-x: auto;
-      scrollbar-width: thin;
+      position: relative;
+      padding-bottom: 5px;
+      width: 100%;
+      overflow: hidden;
 
-      ul {
+      #sectionLinks {
          display: flex;
+         white-space: nowrap;
+         transition: transform 0.2s ease;
          list-style: none;
          gap: 20px;
          padding: 0 10px;
-         margin
+         margin: 0;
+         overflow: hidden;
+         overflow-x: auto;
+
+         @media (max-width: 768px) {
+            gap: 10px;
+         }
 
          li {
+            display: flex;
+            flex-wrap: nowrap;
+
             a {
                text-decoration: none;
                color: var(--color-grey);
-               font-size: 14px;
-               font-weight: 500;
-               padding: 5px 10px;
+               font-size: 12px;
+               font-weight: 600;
+               padding: 5px;
                border-radius: 20px;
                transition: all 0.3s ease;
                white-space: nowrap;
@@ -440,26 +455,47 @@
                &:hover {
                   color: var(--color-light-1);
                }
+
                &.active {
                   color: var(--color-main);
                }
             }
+
+            &::before {
+               content: '';
+               width: 5px;
+               height: 5px;
+               border-radius: 50%;
+               display: inline-block;
+               margin: 0 18px;
+               background: var(--border-color);
+               vertical-align: middle;
+               align-self: center;
+
+               @media (max-width: 768px) {
+                  margin: 0 8px;
+               }
+            }
+
+            &:first-child::before {
+               background-color: transparent;
+            }
          }
       }
    }
-}
 
-#submit-callback {
-   color: var(--color-white);
-   background-color: var(--color-main);
-   font-weight: 600;
-   font-size: 14px;
-   padding: 15px 20px;
-   border-radius: 50px;
-   transition: 0.2s ease;
-   border: none;
+   #submit-callback {
+      color: var(--color-white);
+      background-color: var(--color-main);
+      font-weight: 600;
+      font-size: 14px;
+      padding: 15px 20px;
+      border-radius: 50px;
+      transition: 0.2s ease;
+      border: none;
 
-   &:hover {
-      background-color: var(--color-dark-1);
+      &:hover {
+         background-color: var(--color-dark-1);
+      }
    }
 }

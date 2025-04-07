@@ -1,4 +1,4 @@
-<section id="home-top-banner">
+<section id="home-top-banner" data-content="Top Banner">
     <div class="top-banner-slider">
         <div class="image-card">
             <picture>

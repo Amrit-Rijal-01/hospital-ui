@@ -31,6 +31,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
+      window.appConfig = {
+         showSectionNav: true
+      };
         function equalizeCardHeight(selector) {
             let maxHeight = 0;
 

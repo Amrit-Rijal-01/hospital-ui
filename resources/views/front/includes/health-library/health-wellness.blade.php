@@ -1,4 +1,4 @@
-<section id="health-wellness">
+<section id="health-wellness" data-content="Health Wellness">
     <div class="main-container">
         <div class="heading text-center mb-4">
             Health & Wellness Blog

@@ -1,4 +1,4 @@
-<section class="specialities">
+<section class="specialities" data-content="Specialities">
 
     <div class="main-container">
         <div class="specialities-inner d-flex flex-column flex-xl-row gap-2">

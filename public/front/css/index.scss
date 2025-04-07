@@ -13,23 +13,6 @@ body {
    overflow-x: hidden;
 }
 
-main {
-   margin-top: 85px;
-
-   @media (min-width: 769px) and (max-width: 1199px) {
-      margin-top: 68px;
-   }
-
-   @media screen and (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      margin-top: 63px;
-   }
-   @media (max-width: 480px) {
-      margin-top: 149px;
-   }
-}
-
 a {
    text-decoration: none;
    color: inherit;

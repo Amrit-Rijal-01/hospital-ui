@@ -34,27 +34,6 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  margin-top: 85px;
-}
-@media (min-width: 769px) and (max-width: 1199px) {
-  main {
-    margin-top: 68px;
-  }
-}
-@media screen and (max-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    margin-top: 63px;
-  }
-}
-@media (max-width: 480px) {
-  main {
-    margin-top: 149px;
-  }
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -1272,43 +1251,80 @@ section:nth-of-type(odd) {
   }
 }
 
+hr {
+  margin: 6px;
+}
+
 .section-nav {
-  padding: 12px 0;
+  padding: 5px 0;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 .section-nav .section-navbar-container {
-  max-width: 1200px;
   display: flex;
   justify-content: flex-start;
-  overflow-x: auto;
-  scrollbar-width: thin;
+  position: relative;
+  padding-bottom: 5px;
+  width: 100%;
+  overflow: hidden;
 }
-.section-nav .section-navbar-container ul {
+.section-nav .section-navbar-container #sectionLinks {
   display: flex;
+  white-space: nowrap;
+  transition: transform 0.2s ease;
   list-style: none;
   gap: 20px;
   padding: 0 10px;
+  margin: 0;
+  overflow: hidden;
+  overflow-x: auto;
 }
-.section-nav .section-navbar-container ul margin li a {
+@media (max-width: 768px) {
+  .section-nav .section-navbar-container #sectionLinks {
+    gap: 10px;
+  }
+}
+.section-nav .section-navbar-container #sectionLinks li {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.section-nav .section-navbar-container #sectionLinks li a {
   text-decoration: none;
   color: var(--color-grey);
-  font-size: 14px;
-  font-weight: 500;
-  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
   border-radius: 20px;
   transition: all 0.3s ease;
   white-space: nowrap;
 }
-.section-nav .section-navbar-container ul margin li a:hover {
+.section-nav .section-navbar-container #sectionLinks li a:hover {
   color: var(--color-light-1);
 }
-.section-nav .section-navbar-container ul margin li a.active {
+.section-nav .section-navbar-container #sectionLinks li a.active {
   color: var(--color-main);
 }
-
-#submit-callback {
+.section-nav .section-navbar-container #sectionLinks li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 18px;
+  background: var(--border-color);
+  vertical-align: middle;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .section-nav .section-navbar-container #sectionLinks li::before {
+    margin: 0 8px;
+  }
+}
+.section-nav .section-navbar-container #sectionLinks li:first-child::before {
+  background-color: transparent;
+}
+.section-nav #submit-callback {
   color: var(--color-white);
   background-color: var(--color-main);
   font-weight: 600;
@@ -1318,7 +1334,7 @@ section:nth-of-type(odd) {
   transition: 0.2s ease;
   border: none;
 }
-#submit-callback:hover {
+.section-nav #submit-callback:hover {
   background-color: var(--color-dark-1);
 }
 

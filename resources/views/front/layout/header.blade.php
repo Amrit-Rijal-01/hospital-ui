@@ -131,16 +131,19 @@
          </a>
       </div>
    </div>
-   <hr>
-   {{-- <div class="main-container">
-      <nav class="section-nav" id="section-nav">
-         <div class="section-navbar-container">
-            <ul id="sectionLinks">
+   <div class="sectionNavbarMainContainer">
+      <hr>
+      <div class="main-container">
+         <nav class="section-nav" id="section-nav">
+            <div class="section-navbar-container">
+               <ul id="sectionLinks">
+   
+               </ul>
+            </div>
+         </nav>
+      </div>
 
-            </ul>
-         </div>
-      </nav>
-   </div> --}}
+   </div>
 </header>
 <div class="modal fade " id="callback-modal">
    <div class="modal-dialog modal-dialog-centered">
@@ -180,94 +183,130 @@
    </div>
 </div>
 @push('js')
-   <script>
-      function extendSubMenu(el) {
-        if ($(window).width < 1300) {
-          if ($(el).hasClass('active-list')) {
-            $(el).removeClass('active-list');
-            return;
-          }
-          $('.navbar-item').removeClass('active-list');
+     <script>
+      window.appConfig = window.appConfig || {};
+      window.appConfig.showSectionNav = window.appConfig.showSectionNav !== undefined ?
+       window.appConfig.showSectionNav : true;
+      $(function () {
+       const $sections = $('section[data-content]');
+       const $sectionLinks = $('#sectionLinks');
+       const $mainSectionNavbarContainer = $('.sectionNavbarMainContainer');
+       let scrolling = false;
+       let scrollTimeout;
 
-          $(el).addClass('active-list');
+       // Generate section nav links
 
-        }
-      }
+       if(window.appConfig.showSectionNav && $sectionLinks.length) {
+         $mainSectionNavbarContainer.show();
 
-      function extendKnowledgeSubMenu(el, event) {
-        event.stopPropagation();
-        console.log('clicked');
+         $sections.each(function () {
+         const sectionId = $(this).attr('id');
+         const sectionName = $(this).data('content');
 
-        if ($(el).hasClass('active-knowledge')) {
-          $(el).removeClass('active-knowledge');
-          return;
-        }
-        $(el).addClass('active-knowledge');
-        // event.preventDefault();
-      }
-
-      function toggleFeedback() {
-        if ($(window).width() < 481) {
-          $(window).on("scroll", function () {
-            if ($(window).scrollTop() > 100) {
-               $(".feedback-contact").addClass('hide-feedback');
-
-            } else {
-               $(".feedback-contact").removeClass('hide-feedback');
-            }
-          });
-        } else {
-          $(window).off("scroll");
-        }
-      }
-
-      toggleFeedback();
-      $(window).on("resize", toggleFeedback);
-
-      $(document).ready(function () {
-        // Get all sections with data-content attribute
-        const $sections = $('section[data-content]');
-        const $sectionLinks = $('#sectionLinks');
-
-        // Generate navigation links from sections
-        $sections.each(function () {
-          const sectionId = $(this).attr('id');
-          const sectionName = $(this).data('content');
-
-          // Create the list item and link
-          const $listItem = $('<li>');
-          const $link = $('<a>')
+         $('<li>')
+         .append(
+            $('<a>')
             .attr('href', `#${sectionId}`)
             .text(sectionName)
             .on('click', function (e) {
-               e.preventDefault();
-               $('html, body').animate({
-                 scrollTop: $(`#${sectionId}`).offset().top - 120
-               }, 800);
-            });
+              e.preventDefault();
+              scrolling = true;
 
-          // Append elements to the navigation
-          $listItem.append($link);
-          $sectionLinks.append($listItem);
-        });
+              $('#sectionLinks a').removeClass('active');
+              $(this).addClass('active');
 
-        // Active link highlighting when scrolling
-        $(window).on('scroll', function () {
-          let current = '';
+              $('html, body').animate({
+               scrollTop: $(`#${sectionId}`).offset().top - 120
+              }, 10, function () {
+               setTimeout(() => scrolling = false, 100);
+              });
 
-          $sections.each(function () {
-            const sectionTop = $(this).offset().top;
-            const sectionHeight = $(this).outerHeight();
+              scrollActiveLinkIntoView();
+            })
+         )
+         .appendTo($sectionLinks);
+       });
 
-            if ($(window).scrollTop() >= (sectionTop - 150)) {
-               current = $(this).attr('id');
+       $(window).on('scroll', function () {
+         if (scrolling) return;
+
+         clearTimeout(scrollTimeout);
+         scrollTimeout = setTimeout(() => {
+         let currentId = '';
+
+         $($sections.get().reverse()).each(function () {
+            if ($(window).scrollTop() >= $(this).offset().top - 150) {
+            currentId = $(this).attr('id');
+            return false;
             }
-          });
+         });
 
-          // Update active class
-          $('#sectionLinks a').removeClass('active');
-          $(`#sectionLinks a[href="#${current}"]`).addClass('active');
-        });
+         if (currentId) {
+            $('#sectionLinks a').removeClass('active');
+            $(`#sectionLinks a[href="#${currentId}"]`).addClass('active');
+            scrollActiveLinkIntoView();
+         }
+         }, 100);
+       });
+      } else {
+         $mainSectionNavbarContainer.hide();
+      }
+
+       function scrollActiveLinkIntoView() {
+         if ($(window).width() < 1200) {
+         const $activeLink = $('#sectionLinks a.active');
+
+         if ($activeLink.length) {
+            const $ul = $('#sectionLinks');
+            const linkOffset = $activeLink.parent().position().left + 23;
+
+            $ul.css({
+            'transition': 'transform 0.3s ease',
+            'transform': `translateX(${-linkOffset}px)`
+            });
+         }
+         }
+       }
+
+       function adjustMainMargin() {
+         $('main').css('margin-top', $('header').outerHeight() + 'px');
+       }
+
+       $(window).trigger('scroll');
+       adjustMainMargin();
+
+       $(window).on('resize', function () {
+         adjustMainMargin();
+       });
       });
-   </script>
+
+      function extendSubMenu(el) {
+       if ($(window).width() < 1300) {
+         if ($(el).hasClass('active-list')) {
+         $(el).removeClass('active-list');
+         return;
+         }
+         $('.navbar-item').removeClass('active-list');
+         $(el).addClass('active-list');
+       }
+      }
+
+      function extendKnowledgeSubMenu(el, event) {
+       event.stopPropagation();
+       $(el).toggleClass('active-knowledge');
+      }
+
+      function toggleFeedback() {
+       if ($(window).width() < 481) {
+         $(window).on("scroll", function () {
+         $(".feedback-contact").toggleClass('hide-feedback', $(window).scrollTop() > 100);
+         });
+       } else {
+         $(window).off("scroll");
+       }
+      }
+
+      toggleFeedback();
+      $(window).on('resize', toggleFeedback);
+     </script>
 @endpush

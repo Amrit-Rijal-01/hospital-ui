@@ -1,4 +1,4 @@
-<section class="team-section">
+<section class="team-section" data-content="Team">
     <div class="main-container">
         <div class="meet-doc-content">
             <h3 class="text-center fw-bold mb-4 meet-doc-title">Doctors, Pioneers, Life Savers</h3>
