@@ -32,9 +32,7 @@
 @push('js')
     <script>
         $(document).ready(function() {
-            setTimeout(function() {
                 $("#homepageModal").modal("show");
-            }, 500);
         });
     </script>
 @endpush

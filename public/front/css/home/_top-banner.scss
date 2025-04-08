@@ -4,11 +4,18 @@
    background-color: var(--color-white) !important;
 
    .top-banner-slider {
+    max-height: 500px;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 768px) {
+        max-height: 320px;
+    }
       .image-card {
          height: auto;
 
          img {
             width: 100%;
+            height: auto;
          }
 
       }

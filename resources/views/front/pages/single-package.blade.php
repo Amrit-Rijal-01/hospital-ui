@@ -100,20 +100,21 @@
       </section>
 @endsection
 @push('js')
-   <script>
-      $('#single-package-overview .read-more-btn').on('click', function () {
-        $('#single-package-overview').find('.content-wrapper').toggleClass('active');
-      })
+       <script>
+        toggleBreadcrumbs(true);
+          $('#single-package-overview .read-more-btn').on('click', function () {
+            $('#single-package-overview').find('.content-wrapper').toggleClass('active');
+          })
 
-      $('.tab').on('click', function () {
-        $('.tab').removeClass('active');
-        $(this).addClass('active');
+          $('.tab').on('click', function () {
+            $('.tab').removeClass('active');
+            $(this).addClass('active');
 
-        let $tab = $(this).data('target');
-        $('.tab-content').removeClass('active');
+            let $tab = $(this).data('target');
+            $('.tab-content').removeClass('active');
 
-        $($tab).addClass('active');
+            $($tab).addClass('active');
 
-      })
-   </script>
+          })
+       </script>
 @endpush

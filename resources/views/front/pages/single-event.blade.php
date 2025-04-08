@@ -64,3 +64,8 @@
         </div>
     </section>
 @endsection
+@push('js')
+    <script>
+        toggleBreadcrumbs(true); 
+    </script>
+@endpush

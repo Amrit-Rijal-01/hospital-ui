@@ -881,13 +881,27 @@ section:nth-of-type(odd) {
 }
 
 #breadcrumbs-section {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
+  background-color: var(--secondary-white);
+  padding-top: 30px;
   position: sticky;
   top: 0;
   z-index: 100;
   transition: all 0.3s ease;
+}
+#breadcrumbs-section .breadcrumb-item {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-grey);
+}
+#breadcrumbs-section .breadcrumb-item.active {
+  color: var(--color-main);
+}
+#breadcrumbs-section .breadcrumb-item::before {
+  content: "/";
+  color: var(--color-grey);
+}
+#breadcrumbs-section .breadcrumb-itemshow {
+  display: block !important;
 }
 #breadcrumbs-section .breadcrumb {
   margin-bottom: 0;
@@ -1366,11 +1380,22 @@ hr {
   padding: 0;
   background-color: var(--color-white) !important;
 }
+#home-top-banner .top-banner-slider {
+  max-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  #home-top-banner .top-banner-slider {
+    max-height: 320px;
+  }
+}
 #home-top-banner .top-banner-slider .image-card {
   height: auto;
 }
 #home-top-banner .top-banner-slider .image-card img {
   width: 100%;
+  height: auto;
 }
 #home-top-banner .top-banner-slider .slick-dots {
   bottom: 40px;
@@ -3666,7 +3691,6 @@ hr {
   }
 }
 #diseases-section .main-container .diseases .most-searched-terms ul {
-  margin: 0 -50px;
   padding: 0;
   list-style: none;
   display: flex;

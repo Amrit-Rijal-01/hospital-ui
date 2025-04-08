@@ -5,12 +5,14 @@
 @import url('https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css');
 @import './variables';
 
+
 body {
     color: #58595B;
     font-family: var(--font-main);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    // font-size: 16px;
 }
 
 a {
@@ -279,17 +281,41 @@ body {
 }
 
 #breadcrumbs-section {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+    background-color: var(--secondary-white);
+
+    padding-top: 30px;
     position: sticky;
     top: 0;
     z-index: 100;
     transition: all 0.3s ease;
 
+    .main-container {
+        
+    }
+
+    .breadcrumb-item {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-grey);
+
+        &.active {
+            color: var(--color-main);
+        }
+
+        &::before {
+            content: "/";
+            color: var(--color-grey);
+        }
+
+        &show {
+            display: block !important;
+        }
+    }
+
     .breadcrumb {
         margin-bottom: 0;
         padding: 0;
+        // border-bottom: 1px solid var(--border-color);
     }
 }
 

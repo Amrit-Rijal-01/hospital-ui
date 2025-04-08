@@ -15,7 +15,8 @@
 @endsection
 
 @push('js')
-   <script>
-      toggleSectionNav(false);
-   </script>
+       <script>
+          toggleSectionNav(true);
+          
+       </script>
 @endpush
