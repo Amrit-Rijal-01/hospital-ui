@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <link rel="preload" as="image" href="{{ asset('front/img/logo.png') }}">
+    <link rel="preload" as="image" href="{{ asset('front/img/mobile-banner.jpg') }}">
     
     <link rel="stylesheet" href="{{ asset('front/css/index.css') }}">
 
@@ -76,16 +77,6 @@
 
             $('main').css('margin-top', headerBaseHeight + 'px');
         }
-
-        // function equalizeCardHeight(selector) {
-        //     let maxHeight = 0;
-
-        //     $(selector).css('height', 'auto').each(function () {
-        //         maxHeight = Math.max(maxHeight, $(this).height());
-        //     });
-
-        //     $(selector).height(maxHeight);
-        // }
 
 
     </script>

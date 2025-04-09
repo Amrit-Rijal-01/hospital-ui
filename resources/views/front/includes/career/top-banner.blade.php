@@ -3,25 +3,24 @@
         <div class="slider" id="slick-slider">
             <div class="image-card">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="{{ asset('front/img/career/slide-banner-1.jpg') }}">
-                    <source media="(max-width: 767px)" srcset="{{ asset('front/img/career/slide-banner-mob-1.jpg') }}">
-                    <img class="img-fluid" src="{{ asset('front/img/career/slide-banner-1.jpg') }}" alt="Slider Image">
+                    <source height="500" width="1920" media="(min-width: 768px)" srcset="{{ asset('front/img/career/slide-banner-1.jpg') }}">
+                    <source width="480" height="320" media="(max-width: 767px)" srcset="{{ asset('front/img/career/slide-banner-mob-1.jpg') }}">
+                    <img height="500" width="1920" class="img-fluid" src="{{ asset('front/img/career/slide-banner-1.jpg') }}" alt="Slider Image">
+                </picture>
+            </div>
+            <div class="image-card">
+                <picture>
+                    <source height="500" width="1920" media="(min-width: 768px)" srcset="{{ asset('front/img/career/slide-banner-2.jpg') }}">
+                    <source width="480" height="320" media="(max-width: 767px)" srcset="{{ asset('front/img/career/slide-banner-mob-2.jpg') }}">
+                    <img height="500" width="1920" class="img-fluid" src="{{ asset('front/img/career/slide-banner-2.jpg') }}" alt="Slider Image">
                 </picture>
 
             </div>
             <div class="image-card">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="{{ asset('front/img/career/slide-banner-2.jpg') }}">
-                    <source media="(max-width: 767px)" srcset="{{ asset('front/img/career/slide-banner-mob-2.jpg') }}">
-                    <img class="img-fluid" src="{{ asset('front/img/career/slide-banner-2.jpg') }}" alt="Slider Image">
-                </picture>
-
-            </div>
-            <div class="image-card">
-                <picture>
-                    <source media="(min-width:768px)" srcset="{{ asset('front/img/career/slide-banner-3.png') }}">
-                    <source media="(max-width:767px)" srcset="{{ asset('front/img/career/slide-banner-mob-3.jpg') }}">
-                    <img src="{{ asset('front/img/career/slide-banner-3.png') }}" alt="Slider Image" class="img-fluid">
+                    <source height="500" width="1920" media="(min-width:768px)" srcset="{{ asset('front/img/career/slide-banner-3.png') }}">
+                    <source width="480" height="320" media="(max-width:767px)" srcset="{{ asset('front/img/career/slide-banner-mob-3.jpg') }}">
+                    <img height="500" width="1920" src="{{ asset('front/img/career/slide-banner-3.png') }}" alt="Slider Image" class="img-fluid">
                 </picture>
             </div>
         </div>

@@ -5267,19 +5267,21 @@ hr {
 }
 
 .top-banner {
+  padding: 0;
   padding-bottom: 50px;
 }
 .top-banner .main-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
   position: relative;
 }
 .top-banner .main-container .slider {
   position: relative;
 }
-.top-banner .main-container .slider .image-card {
-  height: auto !important;
-}
 .top-banner .main-container .slider .image-card img {
   width: 100%;
+  height: auto !important;
 }
 .top-banner .main-container .slider .slick-dots {
   bottom: 25px;
@@ -8635,7 +8637,7 @@ hr {
 }
 
 #single-service-our-services .our-service-card {
-  background: url("/front/img/health-library/pattern-bg.png") top left repeat;
+  background: url("/front/img/health-library/pattern-bg.png") top left repeat #fff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   margin: 15px;
   padding: 30px;

@@ -1,5 +1,5 @@
 @extends('front.layout.app')
-@section('title', 'Career');
+@section('title', 'Career')
 @section('meta', 'Career page for the website')
 
 @section('content')

@@ -7,7 +7,7 @@
             <div class="slide" id="slide">
                 <div class="each-card">
                     <div class="image-container">
-                        <img src="{{ asset('front/img/career/doctor.jpg') }}" alt="Card Image" class="img-fluid">
+                        <img height="350" width="350" src="{{ asset('front/img/career/doctor.jpg') }}" alt="Card Image" class="img-fluid">
                     </div>
                     <div class="body">
                         <h3 class="heading-md">Administrative Administrative Staff</h3>
@@ -20,7 +20,7 @@
                 </div>
                 <div class="each-card">
                     <div class="image-container">
-                        <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
+                        <img height="350" width="350" src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
                     </div>
                     <div class="body">
                         <h3 class="heading-md">Doctor</h3>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="each-card">
                     <div class="image-container">
-                        <img src="{{ asset('front/img/career/paramedic.jpg') }}" alt="Card Image" class="img-fluid">
+                        <img height="350" width="350" src="{{ asset('front/img/career/paramedic.jpg') }}" alt="Card Image" class="img-fluid">
                     </div>
                     <div class="body">
                         <h3 class="heading-md">Doctor</h3>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="each-card">
                     <div class="image-container">
-                        <img src="{{ asset('front/img/career/staff.jpg') }}" alt="Card Image" class="img-fluid">
+                        <img height="350" width="350" src="{{ asset('front/img/career/staff.jpg') }}" alt="Card Image" class="img-fluid">
                     </div>
                     <div class="body">
                         <h3 class="heading-md">Doctor</h3>

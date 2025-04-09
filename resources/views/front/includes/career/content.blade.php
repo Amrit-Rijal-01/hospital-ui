@@ -16,7 +16,7 @@
                     <div class="employee-slider" id="slide">
                         <div class="each-card">
                             <div class="image-container">
-                                <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
+                                <img height="350" width="350" src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
                             </div>
                             <div class="body">
                                 <h3 class="heading mb-2">Name</h3>
@@ -30,7 +30,7 @@
                         </div>
                         <div class="each-card">
                             <div class="image-container">
-                                <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
+                                <img height="350" width="350" src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
                             </div>
                             <div class="body">
                                 <h3 class="heading">Name</h3>
@@ -42,7 +42,7 @@
                         </div>
                         <div class="each-card">
                             <div class="image-container">
-                                <img src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
+                                <img height="350" width="350" src="{{ asset('front/img/career/nurse.jpg') }}" alt="Card Image" class="img-fluid">
                             </div>
                             <div class="body">
                                 <h3 class="heading">Name</h3>
