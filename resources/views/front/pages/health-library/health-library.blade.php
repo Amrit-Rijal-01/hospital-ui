@@ -17,6 +17,5 @@
 @push('js')
        <script>
           toggleSectionNav(true);
-          
        </script>
 @endpush
