@@ -1,6 +1,7 @@
 <header class="site-header" id="site-header">
     <div class="main-container" id="mainNavbar">
-        <a href="/" class="logo-link"><img height="75" width="250" src="{{ asset('front/img/logo.png') }}" class="logo" alt=""></a>
+        <a href="/" class="logo-link"><img height="75" width="250" src="{{ asset('front/img/logo.png') }}" class="logo"
+                alt=""></a>
         <nav class="navbar navbar-expand p-0" id="navbar">
             <div class="">
                 <ul class="nav-ul">
@@ -106,29 +107,10 @@
             </div>
         </nav>
         <div class="feedback-contact">
-            <a href="#" class="feedback-btn navbar-link">
-                <img src="{{ asset('front/img/write-message.png') }}" class="feedback-image" alt="Feedback">
-            </a>
-            <a href="#" class="whatsapp-link">
-                <img src="{{ asset('front/img/whatsapp.png') }}" alt="WhatsApp" class="whatsapp-image">
-                <span>WhatsApp</span>
-            </a>
-            <a class="emergency-btn" href="tel:1068">
-                <img src="{{ asset('front/img/emergency.png') }}" alt="Emergency" width="50" height="50">
-            </a>
-            <a class="md-emergency-btn" href="tel:1068">
-                <img src="{{ asset('front/img/emergency.png') }}" alt="Emergency" width="50" height="50">
-                <span>Emergency</span>
-            </a>
-
-            <button href="#" class="call-back navbar-link" data-bs-toggle="modal" data-bs-target="#resume-modal">
-                <img src="{{ asset('front/img/phone-icon.png') }}" alt="Call Back" class="call-back-image me-1">
-                <small>Request Call Back</small>
-            </button>
-            <a href="#" class="md-contact-us">
-                <img src="{{ asset('front/img/phone-grey-icon.png') }}" alt="Call Back" class="call-back-image me-1">
-                <span>Contact</span>
-            </a>
+            <div class="cancer-care">
+                <img src="{{ asset('front/img/nobel cancer.png') }}" alt="">
+            </div>
+           
         </div>
     </div>
     <div class="sectionNavbarMainContainer d-none">
@@ -145,45 +127,7 @@
 
     </div>
 </header>
-<div class="modal fade " id="callback-modal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content p-4">
-            <div class="modal-header p-0 pb-3 border-bottom-0">
-                <h2 class="modal-title heading-md text-center">Request Call Back</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form action="">
-                @csrf
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="name" placeholder="Full Name *" required>
-                            <label for="name">Full Name *</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-floating mb-3">
-                            <input type="tel" class="form-control" name="phoneNumber" placeholder="Phone Number *"
-                                required>
-                            <label for="phoneNumber">Phone Number *</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" name="email" placeholder="Email Address *"
-                                required>
-                            <label for="email">Email
-                                Address *</label>
-                        </div>
-                    </div>
-                    <div class="col-12 submit-btn">
-                        <button class="w-100" id="submit-callback">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+
 @push('js')
     <script>
         $(function () {
@@ -299,6 +243,6 @@
         toggleFeedback();
         $(window).on('resize', toggleFeedback);
 
-        
+
     </script>
 @endpush
