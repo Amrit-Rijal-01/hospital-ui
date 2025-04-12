@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link rel="preload" as="image" href="{{ asset('front/img/logo.png') }}">
+    {{-- <link rel="preload" as="image" href="{{ asset('front/img/logo.png') }}"> --}}
     
     <link rel="stylesheet" href="{{ asset('front/css/index.css') }}">
 

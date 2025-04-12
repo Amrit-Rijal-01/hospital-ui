@@ -79,6 +79,30 @@
                                                     <span> <i class="bi bi-check2-circle"></i></span>
                                                     Specialization Name
                                                 </li>
+                                                <li>
+                                                    <span> <i class="bi bi-check2-circle"></i></span>
+                                                    Cancer Care
+                                                </li>
+                                                <li>
+                                                    <span> <i class="bi bi-check2-circle"></i></span>
+                                                    Specialization Name
+                                                </li>
+                                                <li>
+                                                    <span> <i class="bi bi-check2-circle"></i></span>
+                                                    Specialization Name
+                                                </li>
+                                                <li>
+                                                    <span> <i class="bi bi-check2-circle"></i></span>
+                                                    Cancer Care
+                                                </li>
+                                                <li>
+                                                    <span> <i class="bi bi-check2-circle"></i></span>
+                                                    Specialization Name
+                                                </li>
+                                                <li>
+                                                    <span> <i class="bi bi-check2-circle"></i></span>
+                                                    Specialization Name
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="tab-panel">

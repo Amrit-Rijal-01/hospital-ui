@@ -70,7 +70,7 @@ section:nth-of-type(odd) {
   gap: 0.5rem;
 }
 .hover-btn-link:hover {
-  color: var(--color-light-2);
+  color: var(--color-main);
 }
 .hover-btn-link:hover .orange-right {
   transition: transform 0.2s ease-out;
@@ -1157,7 +1157,7 @@ section:nth-of-type(odd) {
   position: relative;
 }
 .site-header .main-container .navbar .nav-ul .navbar-item .navbar-link:hover {
-  color: var(--color-light-2);
+  color: var(--color-main);
 }
 .site-header .main-container .navbar .nav-ul .navbar-item .navbar-link::after {
   display: none;
@@ -1245,9 +1245,6 @@ section:nth-of-type(odd) {
   color: #fff;
   background-color: var(--color-main);
   border: none;
-}
-.site-header .main-container .feedback-contact .call-back:hover {
-  background-color: var(--color-dark-1);
 }
 @media (max-width: 1199px) {
   .site-header .main-container .feedback-contact .call-back small {
@@ -1373,9 +1370,6 @@ hr {
   border-radius: 50px;
   transition: 0.2s ease;
   border: none;
-}
-.section-nav #submit-callback:hover {
-  background-color: var(--color-dark-1);
 }
 
 #homepageModal .modal-dialog {
@@ -1538,7 +1532,7 @@ hr {
 }
 #home-top-banner .feedback-section .button-secondary {
   background-color: var(--color-white);
-  color: var(--color-dark-1);
+  color: var(--color-main);
   border: 1px solid var(--color-grey);
 }
 #home-top-banner .feedback-section .button-secondary:hover {
@@ -1682,9 +1676,6 @@ hr {
   transition: 0.2s ease;
   border: none;
 }
-#submit-callback:hover {
-  background-color: var(--color-dark-1);
-}
 
 .specialities {
   background-color: var(--secondary-white);
@@ -1765,7 +1756,7 @@ hr {
   margin-right: 1rem;
 }
 .specialities .main-container .specialities-inner .sp-inner-care .sp-wrapper a:hover {
-  color: var(--color-light-2);
+  color: var(--color-main);
 }
 .specialities .main-container .specialities-inner .sp-inner-care .hover-btn {
   font-size: 13px;
@@ -1805,7 +1796,7 @@ hr {
   font-size: 13px;
 }
 .specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-by button:hover {
-  background-color: var(--color-light-2);
+  background-color: var(--color-main);
   color: #fff;
 }
 .specialities .main-container .specialities-inner .sp-inner-search .sp-wrapper .sp-search-letter {
@@ -2852,7 +2843,7 @@ hr {
   }
 }
 .events-news .main-container .events .tabs li button:hover {
-  background-color: var(--color-light-2);
+  background-color: var(--color-main);
   color: var(--color-white);
 }
 .events-news .main-container .events .event-list {
@@ -5845,9 +5836,6 @@ hr {
   transition: 0.2s ease;
   border: none;
 }
-.not-sure .banner-para .resume:hover {
-  background-color: var(--color-dark-1);
-}
 .not-sure .banner-img {
   flex: 1;
 }
@@ -6228,9 +6216,6 @@ hr {
   border-radius: 25px;
   transition: 0.2s ease;
 }
-.contact .main-container .form-container .form .submit-btn:hover {
-  background-color: var(--color-dark-1);
-}
 
 .map {
   width: 100%;
@@ -6582,9 +6567,10 @@ hr {
   border-color: var(--color-main);
 }
 #doctor-list .list .doctor-card .body .tab-container {
-  max-height: 220px;
+  height: 220px;
   overflow: hidden;
   overflow-y: auto;
+  scrollbar-width: thin;
   padding-right: 5px;
 }
 #doctor-list .list .doctor-card .body .tab-container .tab-panel {
@@ -9090,9 +9076,6 @@ hr {
   transition: 0.2s ease;
   border: none;
 }
-#job-bottom-banner .banner-desc .resume-btn:hover {
-  background-color: var(--color-dark-1);
-}
 
 #job-detail-header .desc .heading .bi {
   cursor: pointer;
@@ -9301,9 +9284,6 @@ hr {
 }
 #job-form-form .form-content-container .form-step button:first-child {
   margin-right: 12px;
-}
-#job-form-form .form-content-container .form-step button:hover {
-  background-color: var(--color-dark-1);
 }
 
 #each-update {

@@ -260,7 +260,7 @@
                   position: relative;
 
                   &:hover {
-                     color: var(--color-light-2);
+                     color: var(--color-main);
                   }
 
                   &::after {
@@ -359,9 +359,7 @@
             background-color: var(--color-main);
             border: none;
 
-            &:hover {
-               background-color: var(--color-dark-1);
-            }
+            
 
             small {
                @media (max-width: 1199px) {
@@ -498,8 +496,6 @@ hr {
       transition: 0.2s ease;
       border: none;
 
-      &:hover {
-         background-color: var(--color-dark-1);
-      }
+      
    }
 }

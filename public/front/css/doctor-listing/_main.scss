@@ -209,9 +209,10 @@
                 }
 
                 .tab-container {
-                    max-height: 220px;
+                    height: 220px;
                     overflow: hidden;
                     overflow-y: auto;
+                    scrollbar-width: thin;
                     padding-right: 5px;
 
                     .tab-panel {

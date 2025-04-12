@@ -59,190 +59,6 @@
         }
     }
 
-    // .search-wrapper {
-    //     margin-top: 50px;
-    //     display: flex;
-    //     gap: 25px;
-
-    //     @media (max-width: 480px) {
-    //         flex-direction: column;
-    //     }
-
-    //     //   position: absolute;
-    //     // z-index: 99;
-    //     // top: 0;
-    //     // left: 0;
-    //     // right: 0;
-    //     // border-radius: 0 0 28px 28px;
-    //     // padding: 10px 15px 15px;
-    //     // background-color: #fff;
-    //     // width: 540px;
-    //     // max-width: 100%;
-    //     // margin: auto;
-
-    //     // @media (max-width: 768px) {
-    //     //     padding: 20px 20px;
-    //     //     position: static;
-    //     // }
-
-    //     .search-field {
-    //         width: 50%;
-    //         padding: 0 15px;
-    //         position: relative;
-
-
-
-    //         .search-box {
-    //             font-weight: 700;
-    //             border: 1px solid var(--primary);
-    //             outline: 0;
-    //             padding: 3px 60px 3px 25px;
-    //             font-size: 13px;
-    //             width: 100%;
-    //             border-radius: 35px;
-    //             height: 48px;
-    //             background-color: var(--color-main);
-
-    //             &::placeholder {
-    //                 color: #fff;
-    //             }
-    //         }
-
-    //         .search-icon {
-    //             background-color: #fff;
-    //             text-align: center;
-    //             border: 0;
-    //             width: 38px;
-    //             height: 38px;
-    //             border-radius: 50%;
-    //             position: absolute;
-    //             right: 7px;
-    //             top: 50%;
-    //             transform: translateY(-50%);
-    //             cursor: pointer;
-    //         }
-    //     }
-
-    //     .feedback-section {
-    //         width: 50%;
-    //         padding: 0 15px;
-    //         height: 48px;
-    //         display: flex;
-    //         gap: 25px;
-
-    //         @media (max-width: 480px) {
-    //             justify-content: space-evenly;
-    //         }
-
-    //         a,
-    //         button {
-    //             font-weight: 700;
-    //             display: flex;
-    //             padding: 10px 18px;
-    //             border-radius: 40px;
-    //             border: 1px solid var(--color-main);
-    //             color: var(--color-grey);
-    //             justify-content: center;
-    //             align-items: center;
-    //             text-align: center;
-
-    //             @media (max-width:768px) {
-    //                 padding: 20px;
-    //                 border-radius: 35px;
-    //                 box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    //             }
-    //         }
-
-    //         img {
-    //             width: 24px;
-    //             height: 24px;
-    //         }
-
-    //         .feedback-btn {
-    //             color: #fff;
-    //             background-color: var(--color-main);
-    //             border: none;
-    //             display: flex;
-    //             align-items: center;
-    //             gap: 5px;
-
-    //             @media (max-width: 769px) {
-    //                 display: none;
-    //             }
-    //         }
-
-    //         .whatsapp-link {
-    //             display: none;
-
-    //             @media (max-width: 768px) {
-    //                 display: flex;
-    //                 flex-direction: column;
-    //                 border: none;
-    //                 gap: 5px;
-    //                 font-size: 10px;
-
-    //             }
-
-    //             span {
-    //                 font-weight: 700;
-    //             }
-    //         }
-
-    //         .emergency-btn {
-    //             color: #fff;
-    //             background-color: var(--color-main);
-    //             border: none;
-    //             display: flex;
-    //             align-items: center;
-    //             gap: 5px;
-
-    //             @media (max-width: 768px) {
-    //                 display: none;
-    //             }
-    //         }
-
-    //         .md-emergency-btn {
-    //             display: none;
-
-    //             @media (max-width: 768px) {
-    //                 display: flex;
-    //                 flex-direction: column;
-    //                 gap: 5px;
-    //                 border: none;
-    //                 font-size: 10px;
-    //                 font-weight: 700;
-    //             }
-    //         }
-
-    //         .call-back {
-    //             color: #fff;
-    //             background-color: var(--color-main);
-    //             border: none;
-
-    //             &:hover {
-    //                 background-color: var(--color-dark-1);
-    //             }
-
-    //             @media (max-width: 769px) {
-    //                 display: none;
-    //             }
-    //         }
-
-    //         .md-contact-us {
-    //             display: none;
-
-    //             @media(max-width: 769px) {
-    //                 display: flex;
-    //                 flex-direction: column;
-    //                 gap: 5px;
-    //                 border: none;
-    //                 font-size: 10px;
-    //                 font-weight: 700;
-    //             }
-    //         }
-    //     }
-    // }
-
     .search-wrapper {
         margin: 32px auto;
         max-width: 1200px;
@@ -265,56 +81,6 @@
             width: 100%;
         }
 
-        // .search-box {
-        //     width: 100%;
-        //     height: 52px;
-        //     padding: 8px 56px 8px 24px;
-        //     border-radius: 50px;
-        //     border: 2px solid var(--color-main);
-        //     background-color: white;
-        //     font-size: 16px;
-        //     font-weight: 500;
-        //     color: var(--color-dark-1);
-        //     transition: all 0.2s ease;
-        //     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-        //     &:focus {
-        //         outline: none;
-        //         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-        //         border-color: var(--color-main);
-        //     }
-
-        //     &::placeholder {
-        //         color: var(--color-grey);
-        //         opacity: 0.8;
-        //     }
-        // }
-
-        // .search-icon {
-        //     position: absolute;
-        //     right: 8px;
-        //     top: 50%;
-        //     transform: translateY(-50%);
-        //     background-color: var(--color-main);
-        //     color: white;
-        //     border: none;
-        //     width: 40px;
-        //     height: 40px;
-        //     border-radius: 50%;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     cursor: pointer;
-        //     transition: all 0.2s ease;
-
-        //     &:hover {
-        //         background-color: var(--color-main);
-        //     }
-
-        //     i {
-        //         font-size: 18px;
-        //     }
-        // }
 
         .btn-action {
             padding: 11px 16px;
@@ -404,7 +170,7 @@
 
         .button-secondary {
             background-color: var(--color-white);
-            color: var(--color-dark-1);
+            color: var(--color-main);
             border: 1px solid var(--color-grey);
 
             &:hover {
@@ -564,7 +330,4 @@
     transition: 0.2s ease;
     border: none;
 
-    &:hover {
-        background-color: var(--color-dark-1);
-    }
 }
