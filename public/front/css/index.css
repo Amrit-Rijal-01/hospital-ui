@@ -177,6 +177,11 @@ section:nth-of-type(odd) {
   padding: 0 40px;
   width: 70%;
 }
+@media (max-width: 768px) {
+  #all-section .main-container .letter-slider {
+    width: 100%;
+  }
+}
 #all-section .main-container .letter-slider > * {
   padding: 15px;
 }
@@ -6632,12 +6637,18 @@ hr {
   align-items: center;
   width: 48px;
   height: 48px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   font-weight: 600;
   color: var(--color-grey);
   box-shadow: 0 3px 17px rgba(0, 0, 0, 0.1);
   border: none;
   background-color: var(--color-white);
+}
+#doctor-list .pagination-container #paginationButtons {
+  padding: 15px 0;
+  max-width: 100%;
+  overflow-y: auto;
 }
 #doctor-list .pagination-container .right-arrow,
 #doctor-list .pagination-container .left-arrow {

@@ -5,6 +5,9 @@
          margin-bottom: 30px;
          padding: 0 40px;
          width: 70%;
+         @media (max-width:768px) {
+            width: 100%;
+         }
 
          &>* {
             padding: 15px;
