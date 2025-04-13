@@ -43,7 +43,19 @@
 
                     .body-head {
                         font-weight: 700;
-                        margin-bottom: 10px;
+                        margin-bottom: 6px;
+                        font-size: 18px;
+                        line-height: 22px;
+                        height: 44px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .para-wrap {
+                        line-height: 18px;
+                        height: 72px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                 }
             }

@@ -54,6 +54,11 @@
                .location {
                   color: var(--color-main);
                }
+               .title {
+                height: 2lh;
+                overflow: hidden;
+                text-overflow: ellipsis;
+               }
             }
          }
       }

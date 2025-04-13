@@ -140,7 +140,10 @@
             .title {
                font-weight: 600;
                color: var(--color-dark-grey);
-               margin-bottom: 15px;
+               margin-bottom: 6px;
+               height: 2lh;
+               overflow: hidden;
+               text-overflow: ellipsis;
             }
 
             .name-post {

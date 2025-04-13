@@ -98,7 +98,7 @@ Route::get('/single-service', function () {
 Route::get('/single-package-service', function () {
    return view('front.pages.service.package-service');
 });
-Route::get('/single-package-service/single-package', function () {
+Route::get('/single-package', function () {
    return view('front.pages.single-package');
 });
 Route::get('/jobs', function () {

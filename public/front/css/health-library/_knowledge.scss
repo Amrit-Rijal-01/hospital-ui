@@ -49,8 +49,16 @@
                                 color: var(--color-main);
                             }
 
+                            .heading-xs {
+                                line-height: 1.2;
+                                height: 2lh;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
                         }
                     }
+
                     .video-card {
                         position: relative;
                         margin: 15px;
@@ -58,8 +66,10 @@
                         border-radius: 20px;
                         overflow: hidden;
                         aspect-ratio: 1/1;
+
                         div {
                             transition: 0.3s ease;
+
                             &:hover {
                                 transform: scale(1.1);
                             }
@@ -69,6 +79,7 @@
                             width: 100%;
                             aspect-ratio: 1/1;
                         }
+
                         .play-icon {
                             position: absolute;
                             top: 50%;
