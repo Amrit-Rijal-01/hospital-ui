@@ -47,7 +47,7 @@
                                             Dr Name
                                         </span>
                                         <br>
-                                        <span class="post">Post, Nobel</span>
+                                        {{-- <span class="post">Post, Nobel</span> --}}
                                     </div>
                                     <div class="speciality">Liver Transplant <a href="">View Profile</a> </div>
                                 </div>
@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="body">
                                     <div class="para-wrap">Case Study</div>
-                                    <h3 class="title heading-sm">cancer title</h3>
+                                    <h3 class="title heading-sm">cancer title Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, molestiae.</h3>
                                     <div class="name-post">
                                         <span class="name">
                                             Dr Name

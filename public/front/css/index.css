@@ -4566,6 +4566,7 @@ hr {
   min-height: 60px;
   border-radius: 25px;
   box-shadow: 0 3px 17px rgba(0, 0, 0, 0.14);
+  height: calc(100% - 15px);
 }
 #case-studies .case-study-content .slide .img-wrapper {
   position: relative;
