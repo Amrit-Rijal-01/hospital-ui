@@ -126,6 +126,8 @@ $packages = [
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
+                 autoplay: true,
+                autoplaySpeed: 3000, 
                 arrows: true,
                 prevArrow: '<button class="slick-prev left-arrow"><img src="{{ asset('front/img/vector-left.png') }}" alt="Left Arrow"></button>',
                 nextArrow: '<button class="slick-next right-arrow"><img src="{{ asset('front/img/vector-right.png') }}" alt="Right Arrow"></button>',
