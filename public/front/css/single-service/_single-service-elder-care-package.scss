@@ -1,0 +1,104 @@
+#single-service-elder {
+    .package-list {
+        .package-slider {
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0 15px;
+
+            .slick-prev {
+                left: -15px;
+            }
+            .slick-next {
+                right: -15px;
+            }
+            .draggable {
+                overflow: hidden;
+                border-radius: 20px;
+            }
+
+            .each-package {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                border-right: 1px solid var(--border-color);
+                height: 100%;
+                &:last-child {
+                    border-right: none;
+                }
+
+                .heading-sm {
+                    text-align: center;
+                    text-transform: capitalize;
+                    padding: 20px 0;
+                    font-weight: 700;
+                    background-color: var(--color-main);
+                    color: var(--color-white);
+                }
+
+                .package-body {
+                    padding: 15px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        min-height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+
+                        li {
+                            text-transform: capitalize;
+                            text-align: center;
+                            padding: 8px 0;
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .package-price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-top: 1px solid var(--border-color);
+                    padding: 15px;
+
+                    .price {
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+
+                    .enroll-btn {
+                        font-weight: 700;
+                        font-size: 15px;
+                        padding: 8px 12px;
+                        background-color: var(--color-white);
+                        color: var(--color-main);
+                        border-radius: 12px;
+                        border: 1px solid var(--border-color);
+                        transition: color 0.2s ease,
+                            background-color 0.2s ease,
+                            border-color 0.2s ease;
+
+                        &:hover {
+                            color: var(--color-white);
+                            background-color: var(--color-main);
+                            border-color: var(--color-main);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#enrollModal {
+    form {
+        .form-select {
+            text-transform: capitalize;
+        }
+    }
+}
