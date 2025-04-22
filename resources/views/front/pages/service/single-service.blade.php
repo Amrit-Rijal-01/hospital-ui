@@ -6,7 +6,9 @@
 @section('content')
     @include('front.includes.single-service.top-banner')
     @include('front.includes.single-service.overview')
+    @include('front.includes.single-service.second-opinion-qn')
     @include('front.includes.single-service.faq')
+    @include('front.includes.single-service.elder-care-package')
     @include('front.includes.single-service.our-services')
     @include('front.includes.single-service.connect')
 @endsection
