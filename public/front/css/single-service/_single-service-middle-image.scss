@@ -50,8 +50,10 @@
         }
 
         .image-middle {
-            width: 350px;
-            height: 350px;
+            max-width: 350px;
+            max-height: 350px;
+            width: 100%;
+            height: 100%;
             aspect-ratio: 1/1;
             flex-shrink: 0;
             order: 2;

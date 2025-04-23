@@ -5,7 +5,7 @@
         </div>
         <div class="update-slider">
             <div class="update-card">
-                <div class="d-flex justify-content-center">
+                <div class="card-image d-flex justify-content-center">
                     <img src="{{ asset('front/img/care.png') }}" alt="care">
                 </div>
                 <div class="head">Elder Care Program</div>
@@ -13,7 +13,7 @@
                 <x-hoverBtn class="button">Know More</x-hoverBtn>
             </div>
             <div class="update-card">
-                <div class="d-flex justify-content-center">
+                <div class="card-image d-flex justify-content-center">
                     <img src="{{ asset('front/img/care.png') }}" alt="care">
                 </div>
                 <div class="head">Elder Care Program Elder Care Program Elder Care Program Elder Care Program</div>
@@ -23,7 +23,7 @@
                 <x-hoverBtn class="button">Know More</x-hoverBtn>
             </div>
             <div class="update-card">
-                <div class="d-flex justify-content-center">
+                <div class="card-image d-flex justify-content-center">
                     <img src="{{ asset('front/img/care.png') }}" alt="care">
                 </div>
                 <div class="head">Elder Care Program</div>
@@ -32,7 +32,7 @@
                 <x-hoverBtn class="button">Know More</x-hoverBtn>
             </div>
             <div class="update-card">
-                <div class="d-flex justify-content-center">
+                <div class="card-image d-flex justify-content-center">
                     <img src="{{ asset('front/img/care.png') }}" alt="care">
                 </div>
                 <div class="head">Elder Care Program</div>

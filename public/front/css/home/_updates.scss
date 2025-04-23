@@ -24,8 +24,17 @@
             text-align: center;
             margin: 15px;
 
-            img {
-               margin-bottom: 20px;
+            .card-image {
+                width: 85px;
+                height: 85px;
+                aspect-ratio: 1/1;
+                align-items: center;
+                margin: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                   margin-bottom: 20px;
+                }
             }
 
             padding: 30px;
@@ -36,8 +45,7 @@
                color: var(--color-dark-grey);
                margin-bottom: 10px;
                font-size: 16px;
-               line-height: 20px;
-               height: 20px;
+               height: 1lh;
                overflow: hidden;
                text-overflow: ellipsis;
             }
@@ -46,13 +54,10 @@
                width: 300px;
                max-width: 100%;
                margin: auto;
-               overflow: hidden;
-               display: -webkit-box;
-               -webkit-box-orient: vertical;
                font-weight: 500;
                font-size: 14px;
                line-height: 18px;
-               height: 54px;
+               height: 4lh;
                overflow: hidden;
                text-overflow: ellipsis;
             }
