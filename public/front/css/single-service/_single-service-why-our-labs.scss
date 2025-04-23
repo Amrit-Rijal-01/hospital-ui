@@ -1,0 +1,40 @@
+#single-service-why-our-labs {
+
+    .why-labs-card {
+        background: url('/front/img/health-library/pattern-bg.png') top left repeat #fff;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+        padding: 30px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+
+        i {
+            font-size: 60px;
+        }
+
+        .card-title {
+            font-size: 22px;
+            height: 2lh;
+            font-weight: 600;
+            color: var(--color-dark-grey);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+
+            @media (max-width: 768px) {
+                font-size: 18px;
+                line-height: 21px;
+                height: 42px;
+            }
+        }
+
+        .para-wrap {
+            font-weight: 600;
+        }
+    }
+}
