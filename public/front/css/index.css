@@ -8856,6 +8856,88 @@ hr {
   font-weight: 600;
 }
 
+#single-service-middle-image .image-main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  #single-service-middle-image .image-main {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+#single-service-middle-image .image-main .image-left,
+#single-service-middle-image .image-main .image-right {
+  width: 35%;
+}
+@media (max-width: 991px) {
+  #single-service-middle-image .image-main .image-left,
+  #single-service-middle-image .image-main .image-right {
+    width: 100%;
+  }
+}
+#single-service-middle-image .image-main .image-left ul,
+#single-service-middle-image .image-main .image-right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#single-service-middle-image .image-main .image-left ul li,
+#single-service-middle-image .image-main .image-right ul li {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px dashed var(--color-black);
+  font-size: 18px;
+  font-weight: 500;
+}
+#single-service-middle-image .image-main .image-left ul li:last-child,
+#single-service-middle-image .image-main .image-right ul li:last-child {
+  border-bottom: none;
+}
+#single-service-middle-image .image-main .image-left {
+  order: 1;
+}
+@media (max-width: 991px) {
+  #single-service-middle-image .image-main .image-left {
+    order: 2;
+  }
+  #single-service-middle-image .image-main .image-left li {
+    border-bottom: 1px dashed var(--color-black) !important;
+  }
+}
+#single-service-middle-image .image-main .image-middle {
+  width: 350px;
+  height: 350px;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+  order: 2;
+  padding: 15px;
+  border-radius: 50%;
+  align-self: center;
+  border: 1px dashed var(--color-black);
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  #single-service-middle-image .image-main .image-middle {
+    order: 1;
+    margin-bottom: 25px;
+  }
+}
+#single-service-middle-image .image-main .image-middle img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#single-service-middle-image .image-main .image-right {
+  order: 3;
+}
+
 #single-service-elder .package-list .package-slider {
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
