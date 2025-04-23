@@ -18,12 +18,12 @@
 
         .card-title {
             font-size: 22px;
-            height: 2lh;
+            height: 3lh;
             font-weight: 600;
             color: var(--color-dark-grey);
             overflow: hidden;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
 
             @media (max-width: 768px) {
